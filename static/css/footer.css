@@ -1,0 +1,324 @@
+#footer{
+    background-color: transparent;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    height: auto;
+    padding: 0;
+}
+
+.ul-1{
+    color:#808080;
+    margin-top: 0px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.logo-footer{
+    position: relative;
+    top: 20px;
+}
+
+.ul-2{
+    color:#808080;
+    margin-top: 0px;
+    font-size: 15px;
+    font-weight: 500;
+    left: -44px;
+    position: relative;
+}
+
+.firma {
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+.no-dot{
+    color: #ccc;
+    font-weight: 100;
+    font-size: 16px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+img#vitrineate_img_logo_footer {
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+}
+
+.d-o {
+    left: 90px;
+    position: relative;
+    top: 0px;
+    margin-bottom: 0px;
+}
+
+
+.img-foot{
+ /*   width: 72%;
+    margin-top: 17px;*/
+    height: 51px;
+    width: 250px;
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 21px;
+    object-fit: scale-down;
+}
+
+.caja-fo{
+    height: 51px;
+    width: 100px;
+    /*float: left;*/
+    margin-top: 17px;
+    margin-bottom: 21px;
+    left: -81px;
+    position: relative;
+}
+
+.de{
+   left: -44px;
+   position: relative;
+   color:#808080;
+}
+
+.a-footer{
+    position: relative;
+    left: 13px;
+    top: 11px;
+    font-size: 12px;
+    color:#808080;
+}
+
+.gun{
+    color:#808080;
+}
+
+/*----------------Responsive---------------------*/
+
+
+@media (max-width: 1040px){
+
+.caja-fo {
+    margin-top: -10px;
+}
+
+}
+
+@media (max-width: 991px){
+    .no-dot {
+    font-size: 14px;
+}
+
+.caja-fo {
+    left: -93px;
+    margin-top: 10px;
+}
+
+.d-o {
+    left: 85px;
+    position: relative;
+    top: 0px;
+    margin-bottom: 0px;
+}
+
+.inform-2.su {
+    position: relative;
+    left: 0px;
+}
+
+}
+
+
+@media (max-width: 838px){
+.d-o {
+    left: 85px;
+    position: relative;
+    width: 108%;
+}
+
+.caja-fo {
+    left: 0px;
+}
+
+.img-foot {
+    left: -92px;
+    position: relative;
+}
+
+}
+
+@media (max-width: 800px){
+    .inform {
+   /* left: 19px;*/
+}
+
+}
+
+@media (max-width: 767px){
+
+.img-foot {
+    left: 0px;
+    position: relative;
+    text-align: center;
+}
+
+.inform-comerc{
+    text-align: center;
+}
+
+.inform-2 {
+    text-align: center;
+}
+
+.d-o{
+    text-align: center;
+    left: 0px;
+}
+
+.inform{
+    text-align: center;
+}
+
+.caja-fo {
+    left: 217px;
+    margin-top: 34px;
+}
+
+.de{
+   left: 0px;
+   position: relative;
+}
+
+.a-footer{
+    position: relative;
+    right: 0px;
+}
+
+.d-o {
+    text-align: center;
+    left: 0px;
+    width: 100%;
+}
+
+}
+
+
+@media (max-width: 700px){
+    .img-foot {
+    left: -25px;
+    position: relative;
+    text-align: center;
+}
+
+}
+
+
+@media (max-width: 600px){
+.img-foot {
+    left: -74px;
+    position: relative;
+    text-align: center;
+}
+
+
+}
+
+@media (max-width: 480px){
+    .img-foot {
+    left: -140px;
+    position: relative;
+    text-align: center;
+}
+
+
+}
+
+@media (max-width: 414px){
+.caja-fo {
+    margin-top: 33px;
+
+}
+
+.img-foot {
+    left: -183px;
+    position: relative;
+    text-align: center;
+}
+
+
+}
+
+
+@media (max-width: 412px){
+    .caja-fo {
+    margin-top: 18px;
+}
+
+}
+
+@media (max-width: 400px){
+
+.caja-fo {
+    margin-top: 87px;
+}
+
+
+}
+
+
+@media screen and (max-width: 700px){
+
+
+}
+
+@media (max-width: 375px){
+
+.img-foot {
+    left: -222px;
+    position: relative;
+    text-align: center;
+}
+
+.logo-footer{
+    position: relative;
+    top: 100px;
+    left: 110px;
+}
+
+.firma{
+    top: 65px;
+}
+
+}
+
+@media (max-width: 360px){
+    .caja-fo {
+    margin-top: 86px;
+}
+
+}
+
+
+@media (max-width: 320px){
+
+.caja-fo {
+    margin-top: 55px;
+}
+
+.img-foot {
+    left: -248px;
+    position: relative;
+    text-align: center;
+}
+
+
+}
+
+@media (max-width: 270px){
+
+}

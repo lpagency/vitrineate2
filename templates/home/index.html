@@ -1,0 +1,35 @@
+{% extends "../base.html" %}
+
+{% block title %}
+{{ site.name }}
+{% end %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{ site_base }}/common/js/bodegas/dist/bodegas.client.css">
+{% end %}
+
+
+{% block body %}
+
+{% if is_admin %}
+{% set editabletext = 'editabletext' %}
+{% else %}
+{% set editabletext = '' %}
+{% end %}
+<div class="container">
+	<a href="https://www.instagram.com/vitrineate/?hl=es-la">
+		<img src="https://84static.loadingplay.com/static/images/557fbc669b1051c8b7e6dbf7a83b8cb6_BO.A" style="object-fit: scale-down;width: 100%;">
+	</a>
+
+	{% if is_admin %}
+		<div class="image-upload logo-editable logo-5 visible-movil">
+			<label for="img_header_main_brand_5">
+				<img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+			</label>
+			<input type="file" class="editableimage editar-header" image-id="{{ site.name }}_header_main_brand_5" name="image" id="img_header_main_brand_5" >
+		</div>
+	{% end %}
+	<img id="{{ site.name }}_header_main_brand_5" src="{{ read_image(site.name + '_header_main_brand_5', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_header_main_brand_5',) }}'" class="logos-item" alt="item" style="width: 5px; height: 5px;">
+</div>
+
+{% end %}
