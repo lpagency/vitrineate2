@@ -23,6 +23,7 @@ div.image-upload.part1 {
 
 .bordes-desc{
     border-bottom: solid 2px #686965;
+    font-weight: bold !important;
 }
 
 .signos-desc{
@@ -437,10 +438,10 @@ hr.detalle {
 .product-price-2{
     position: relative;
     top: 6px;
-    font-size: 18px;
+    font-size: 25px;
     color: black;
     text-align: left;
-    height: 54px;
+    height: 44px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 400;
