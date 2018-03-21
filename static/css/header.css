@@ -16,6 +16,20 @@
     cursor: pointer;
 }
 
+.unidades{
+    font-size: 10px;
+    position: relative;
+    left: 132px;
+    width: 30%;
+    height: 30px;
+    top: -21px;
+    padding-left: 13px;
+    padding-top: 7px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(https://cdn.loadingplay.com/static/images/1a51b1d…_carrito_lleno.png);
+}
+
 .cerrar-huincha{
     float: right;
     background: none;
