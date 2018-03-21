@@ -461,17 +461,27 @@
                 }
             });
 
-            $(document).on("click", ".add-to-cart", function()
+            $(document).on("click", ".add-to-cart, .remove-from-cart, .remove-one, .add-one", function()
             {
+                if($(".unidades").hasClass("hidden"))
+                {
+                    $(this).removeClass("hidden");
+                }
+                if($(".unidades-carrito").html() == 0)
+                {
+                    $(this).addClass("hidden");
+                }
                 $(".unidades").html($(".unidades-carrito").html());
             });
         });
 
         $(window).load(function()
         {
-            console.log($(".unidades-carrito").html());
             $(".unidades").html($(".unidades-carrito").html());
-            $(".unidades").removeClass("hidden");
+            if($(".unidades-carrito").html() > 0)
+            {
+                $(".unidades").removeClass("hidden");
+            }
         });
     </script>
 
