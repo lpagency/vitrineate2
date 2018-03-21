@@ -1,0 +1,85 @@
+{% extends "../base.html" %}
+
+{% block title %}
+{{ site.name }}
+{% end %}
+
+{% block header %}
+{% include '../home/header.html' %}
+{% end %}
+
+{% block css %}
+{% end %}
+
+{% block javascript %}
+{% end %}
+
+
+{% block body %}
+
+{% if is_admin %}
+{% set editabletext = 'editabletext' %}
+{% else %}
+{% set editabletext = '' %}
+{% end %}
+
+
+
+
+
+<!-- *contenido* -->
+<body id="lapimport">
+
+<div class="container min">
+<section>
+    <div class="mobile" style="background:url('{{ read_image(site.name + '_loc',500) }}'); height:400px; background-size:cover; margin-top: 0px;  filter: grayscale(0%) brightness(65%); -webkit-filter: grayscale(0%) brightness(65%); -moz-filter: grayscale(0%) brightness(65%); -ms-filter: grayscale(0%) brightness(65%);-o-filter: grayscale(0%) brightness(65%); background-position:center;" data-img-width="1600" data-img-height="1064" data-diff="100">
+        {% if is_admin %}
+        <div class="image-upload part1 lapiz visible-movil">
+            <label for="img_loc">
+                <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+            </label>
+            <input type="file" class="editableimage" image-id="{{ site.name }}_loc" name="image" id="img_loc" >
+        </div>
+        {% end %}
+        <img id="{{ site.name }}_loc" src="{{ read_image(site.name + '_loc', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_loc',500) }}'" class="banner_uno_list hidden" alt="item">
+    </div>
+
+    <div class="container">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="text-center titulo-about {{editabletext}}" text-id="{{ site.name + '_loc' }}"> {{ read_text(site.name +  '_loc') }}</div>
+        </div>
+    </div>
+ 
+</section>
+</div>
+
+<section>
+<div class="container min">
+
+  <div class="col-md-12 col-sm-12 col-xs-12">
+   <div class="mar {{editabletext}}" text-id="{{ site.name + '_fer' }}"> {{ read_text(site.name +  '_fer') }}</div>
+   <hr>
+  </div>
+
+
+    <div class="col-md-6 col-sm-6 col-xs-12"> 
+          <div class="texto-con {{editabletext}}" text-id="{{ site.name + '_tienda_3' }}"> {{ read_text(site.name +  '_tienda_3') }}</div>
+      </div>
+    
+    <div class="col-md-6 col-sm-6 col-xs-12"> 
+    <iframe class="map-mo" src="" width="480" height="435" frameborder="0" style="" allowfullscreen></iframe>
+    </div>
+
+    </div>
+</section>
+
+
+
+
+</body>
+
+
+{% include '../home/footer.html' %}
+{% end %}
+
+

@@ -4,57 +4,56 @@
 {{ site.name }}
 {% end %}
 
-{% block scripts %}
-{% end %}
-
 {% block header %}
-{% include '../home/inside_header.html' %}
+ {% include '../home/header_inside.html' %}
 {% end %}
-
 
 
 {% block body %}
-    <div id="wrap">
-        <h2>
-            {% if not(tagsonly) %}
-                {% try %}
-                    {{ search_query }}
-                {% except %}{% end %}
-            {% else %}
-                <h1 {% if is_admin %}class="editabletext" text-id="me-{{ page_uri }}"{% end %} >
-                    {{ read_text('me-'+ page_uri) }}
-                </h1>
-            {% end %}
-        </h2>
-        <!-- registration -->
-        <div class="container-fluid productlist">
-            <!-- raw 1 -->
-            <div class="row">
-                {% set box_counter = 1 %}
-                {% set box_index = 0 %}
-                {% for cnt in results %}
-                    <div class="col-sm-4 sobre-botones caja-m">
-                    {% if cnt["content_type"] == "article" %}
-                        {% include '../content/content_box/box_m_article.html' %}
-                    {% elif cnt["content_type"] == "event" %}
-                        {% include '../content/content_box/box_m_event.html' %}
-                    {% elif cnt["content_type"] == "banner" %}
-                        {% include '../content/content_box/box_m_banner.html' %}
-                    {% elif cnt["content_type"] == "profile" %}
-                        {% include '../content/content_box/box_m_profile.html' %}
-                    {% elif cnt["content_type"] == "gallery" %}
-                        {% include '../content/content_box/box_m_gallery.html' %}
-                    {% elif cnt["content_type"] == "product" %}
-                        {% include '../content/content_box/box_m_product.html' %}
-                    {% end %}
-                    </div>
-                    {% set box_index += 1 %}
-                {% end %}
-            </div>
-            <div class="carritoproductos clearfix">
-                <div class="flecha clearfix">
+{% if is_admin %}
+    {% set editabletext = 'editabletext' %}
+{% else %}
+    {% set editabletext = '' %}
+{% end %}
+
+
+<section>
+      <div style="position: relative;">
+        {% if is_admin %}
+               <div class="image-upload part1 lapiz visible-movil">
+                   <label for="img_cont_uno">
+                       <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+                   </label>
+                   <input type="file" class="editableimage" image-id="{{ site.name }}_cont_uno" name="image" id="img_cont_uno" >
+               </div>
+        {% end %}
+                <img id="{{ site.name }}_cont_uno" src="{{ read_image(site.name + '_cont_uno', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_cont_uno',500) }}'" class="banner_result" alt="item">
+
+                <div class="col-md-12">
+                    <h1 class="text-center titulo-result {{editabletext}}" text-id="{{ site.name + '_til_busqueda' }}"> {{ read_text(site.name +  '_til_busqueda') }}</h1>
                 </div>
-            </div>
+
+       </div>
+</section>
+
+<section>
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="bajada text-center {{editabletext}}" text-id="{{ site.name + '_cont_uno' }}"> {{ read_text(site.name +  '_cont_uno') }} </h1>
         </div>
     </div>
+
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            {{ getArticleSearch(search_query) }}
+        </div>
+    </div>
+
+</section>
+
+{% include '../home/footer.html' %}
+
 {% end %}

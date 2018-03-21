@@ -1,0 +1,25 @@
+
+<script type="text/template" id="product_template" class="hidden">
+  <div class="grin">
+    <div class="clearfix-dos"> </div>
+    <div class="col-md-3 col-sm-3 col-xs-6 art-hi">
+      <div alig="center">
+        <a href="{{ site_base }}/sc/product/detail/{{! name|friendly }}/{{! id }}">
+          <div class="fufi {{! id }}">
+            <div class="letreros">
+              <div class="letrero-sale hidden {{! promotion_price }}">OFERTA</div>
+              <div class="letrero-new hidden {{! id }}">NUEVO</div>
+            </div>
+            <img src="{{! images[0]['thumb_500'] }}" alt="" class="img-responsive img-pro" >
+            <div class="overlay {{! id }}">
+              <div class="text">COMPRAR</div>
+            </div>  
+            <p class="inf ellipsis multiline">{{! name }}</p>
+            <div class="product-price-3 producto {{! id }}">{{! main_price|money }} </div>
+            <div class="product-price-3 {{! sku }}">{{! promotion_price|money }} </div>
+          </div>
+        </a>
+      </div>
+    </div> 
+  </div>          
+</script>
