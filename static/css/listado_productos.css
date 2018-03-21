@@ -21,6 +21,18 @@ div.image-upload.part1 {
   opacity: 1;
 }
 
+.bordes-desc{
+    border-bottom: solid 2px #686965;
+}
+
+.signos-desc{
+    float: right;
+}
+
+.desc-font{
+    font-size: 13px !important;
+}
+
 .stock-product{
     margin-bottom: 30px;
     font-size: 12px;

@@ -24,6 +24,26 @@
         });
     </script>
 
+<script type="text/javascript">
+  $(document).ready(function()
+  {
+    $(document).on("click", ".signos-desc", function()
+    {
+      $(this).parent().parent().children(".hide-info").toggle("slow");
+      if($(this).hasClass("fa-plus"))
+      {
+        $(this).removeClass("fa-plus");
+        $(this).addClass("fa-minus");
+      }
+      else
+      {
+        $(this).removeClass("fa-minus");
+        $(this).addClass("fa-plus");
+      }
+    });
+  });
+</script>
+
 <script type="text/javascript" src="{{ site_base }}/static/js/product_detail.ec5.js?12"></script>
 
 <script type="text/javascript">
@@ -351,8 +371,10 @@
 
           <div class="col-md-5 col-sm-5 col-xs-12 text-prod-desk">
              <h1 class="name name_prod_detail ellipsis multiline" class="line" href="#">{{! name }}</h1>
-              <h3 class="descr_prod_detail ellipsis multiline">
-             {{! description }}</h3>
+              <div class="descripcion-producto">
+                <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Descripción<i class="fa fa-plus signos-desc" aria-hidden="true"></i></h3>
+                <h3 class="descr_prod_detail desc-font ellipsis multiline hide-info" style="display: none">{{! description }}</h3>
+              </div>
               <div class="title-stock">Stock por producto SKU:</div>
              <div class="stock-product"></div>
              <div class="col-md-6">
