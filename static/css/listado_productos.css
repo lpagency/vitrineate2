@@ -385,13 +385,21 @@ hr.detalle {
     right: 15px;
 }
 
+.bolsa-agregar{
+    margin-top: -4px;
+    margin-right: 11px;
+}
+
 .btn-success.comprar {
-    color: #fff;
-    background-color: gray;
-    border-color: gray;
+    margin-top: 11px;
+    color: black;
+    background-color: #00e0ba;
+    border-color: #00e0ba;
     border-radius: 0px;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

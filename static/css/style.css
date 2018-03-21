@@ -65,6 +65,12 @@ a:link{
     height: 537px;
     padding-right: 0px;
 }
+.image_little{
+    padding-left: 0;
+}
+.text-prod-desk{
+    background-color: #e9ffc6;
+}
 .cont-prefooter{
     background-color: #3eedff;
     width: 100% !important;

@@ -335,49 +335,19 @@
 <section>
 
       <div class="container min">
-        <div class="row">
-           <div class="offset-md-1  offset-sm-1 col-xs-12 col-md-6 col-sm-6 image_little">
-
-                        <div class="img-container">
-                            <img class="{{! images[1]['thumb_500']|hide_if_empty}} col-xs-3 img_prod_little" src="{{! images[1]['thumb_500'] }}" onload="this.onload='';this.src={{! images[1]['thumb_500']}}" />
-                         </div>
-                         <div class="img-container">
-                             <img class="{{! images[2]['thumb_500']|hide_if_empty }} col-xs-3 img_prod_little " src="{{! images[2]['thumb_500'] }}" onload="this.onload='';this.src={{! images[2]['thumb_500']}}" />
-                         </div>
-
-                          <div class="img-container">
-                            <img class="{{! images[3]['thumb_500']|hide_if_empty }} col-xs-3  img_prod_little" src="{{! images[3]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[3]['thumb_500']}}" />
-                          </div>
-
-                          <div class="img-container">
-                               <img class="{{! images[4]['thumb_500']|hide_if_empty }} col-xs-3  img_prod_little" src="{{! images[4]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[4]['thumb_500']}}" />
-                          </div>
-
-                          <div class="img-container">
-                             <img class="{{! images[5]['thumb_500']|hide_if_empty }} col-xs-3  img_prod_little" src="{{! images[5]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[5]['thumb_500']}}" />
-                         </div>
-
-                         <div class="img-container">
-                             <img class="{{! images[6]['thumb_500']|hide_if_empty }} col-xs-3  img_prod_little" src="{{! images[6]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[6]['thumb_500']}}" />
-                         </div>
-
-          </div>
-        </div>
-                <div align="center">
-            <div class="col-md-6 col-sm-6 col-xs-12 img-ppal-movil">
-                  <div id="mainDiv">
-                    <div class="main-img-container">
-                      <div class="letreros-detalle">
-                        <div class="letrero-sale-detail hidden {{! sku }}">OFERTA</div>
-                        <div class="letrero-new-detail hidden {{! sku }}">NUEVO</div>
-                      </div>
-                       <img id='mainImage' class="fondo-detalle" src="{{! images[1]['thumb_500'] }}"/>
-                    </div>
-                  </div>
+        <div align="center">
+          <div class="col-md-6 col-sm-6 col-xs-12 img-ppal-movil">
+            <div id="mainDiv">
+              <div class="main-img-container">
+                <div class="letreros-detalle">
+                  <div class="letrero-sale-detail hidden {{! sku }}">OFERTA</div>
+                  <div class="letrero-new-detail hidden {{! sku }}">NUEVO</div>
+                </div>
+                <img id='mainImage' class="fondo-detalle" src="{{! images[1]['thumb_500'] }}"/>
+              </div>
+            </div>
            </div>
          </div>
-
-
 
           <div class="col-md-5 col-sm-5 col-xs-12 text-prod-desk">
              <h1 class="name name_prod_detail ellipsis multiline" class="line" href="#">{{! name }}</h1>
@@ -385,26 +355,30 @@
              {{! description }}</h3>
               <div class="title-stock">Stock por producto SKU:</div>
              <div class="stock-product"></div>
-              <div class="product-price-2 main-price">{{! main_price|money }} </div>
-              <div class="product-price-2 promotion-price">{{! promotion_price|money }} </div>
+             <div class="col-md-6">
+                <div class="product-price-2 main-price">{{! main_price|money }} </div>
+                <div class="product-price-2 promotion-price">{{! promotion_price|money }} </div>
+             </div>
+             <div class="col-md-6">
+              <button
+               type="button"
+               class="btn add-to-cart btn-success comprar"
+               id="open-cart"
+               data-toggle="modal"
+               data-target="#myModal"
+               product-upp="{{! upp }}"
+               product-name="{{! name }}"
+               product-price="{{! main_price }}"
+               product-sku="{{! sku }}"
+               product-id="{{! id }}"
+               product-img="{{! images[0]['thumb_500'] }}"
+               product-weight="{{! weight }}"
+               disabled
+               lp-cart-add
+               > <img class="bolsa-agregar" src="https://cdn.loadingplay.com/static/images/a99be0bd09ebc9845d83e325177baa2d_bolsita_comprar.png">Comprar</button>
+             </div>
               <div class="col-md-12 mover variants-container">
               </div>
-             <button
-             type="button"
-             class="btn add-to-cart btn-success comprar"
-             id="open-cart"
-             data-toggle="modal"
-             data-target="#myModal"
-             product-upp="{{! upp }}"
-             product-name="{{! name }}"
-             product-price="{{! main_price }}"
-             product-sku="{{! sku }}"
-             product-id="{{! id }}"
-             product-img="{{! images[0]['thumb_500'] }}"
-             product-weight="{{! weight }}"
-             disabled
-             lp-cart-add
-             >Comprar</button>
           </div>
 
     </section>
@@ -414,6 +388,31 @@
         <div class="container">
 
         </div>
+    </div>
+
+    <div class="container min">
+      <div class="clearfix" style="padding-bottom: 50px">
+      </div>
+      <div class="offset-md-1  offset-sm-1 col-xs-12 col-md-6 col-sm-6 image_little">
+            <div class="img-container">
+              <img class="{{! images[1]['thumb_500']|hide_if_empty}} col-xs-3 img_prod_little" src="{{! images[1]['thumb_500'] }}" onload="this.onload='';this.src={{! images[1]['thumb_500']}}" />
+            </div>
+            <div class="img-container">
+              <img class="{{! images[2]['thumb_500']|hide_if_empty }} col-xs-3 img_prod_little " src="{{! images[2]['thumb_500'] }}" onload="this.onload='';this.src={{! images[2]['thumb_500']}}" />
+            </div>
+            <div class="img-container">
+              <img class="{{! images[3]['thumb_500']|hide_if_empty }} col-xs-3  img_prod_little" src="{{! images[3]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[3]['thumb_500']}}" />
+            </div>
+            <div class="img-container">
+              <img class="{{! images[4]['thumb_500']|hide_if_empty }} col-xs-3  img_prod_little" src="{{! images[4]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[4]['thumb_500']}}" />
+            </div>
+            <div class="img-container">
+              <img class="{{! images[5]['thumb_500']|hide_if_empty }} col-xs-3  img_prod_little" src="{{! images[5]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[5]['thumb_500']}}" />
+            </div>
+            <div class="img-container">
+              <img class="{{! images[6]['thumb_500']|hide_if_empty }} col-xs-3  img_prod_little" src="{{! images[6]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[6]['thumb_500']}}" />
+            </div>
+          </div>
     </div>
 
 </script>
