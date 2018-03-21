@@ -165,6 +165,7 @@
                 <li class="bolsa-movil" id="open-cart" data-toggle="modal" data-target="#myModal">
                   <!-- <a href="" class="com"> Comprar </a> -->
                   <img class="img-bolsa" src="https://cdn.loadingplay.com/static/images/34b9602179fdac2bb493e006a8eac7a1_carrito.png">
+                  <div class="unidades hidden"></div>
                 </li>
                 <li class="lupa-movil">
                   <input class="img-lupa img-lupa-movil" type="image" src="https://7static.loadingplay.com/static/images/1da6ee373afe0e65ad1b94c0d7cd9e9d_Vector_search_iconclaro.png" border="0"/>
@@ -250,16 +251,16 @@
         <div class="col-xs-12 buscador-movil">
           <div class="categorias-movil">
             <div class="col-sm-3 col-xs-3 nombre-categorias-movil">
-              <a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat1_mujer">Mujer</a>
+              <a class="textos-movil-menu" tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat1_mujer">Mujer</a>
             </div>
             <div class="col-sm-3 col-xs-3 nombre-categorias-movil">
-              <a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat1_hombre">Hombre</a>
+              <a class="textos-movil-menu" tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat1_hombre">Hombre</a>
             </div>
             <div class="col-sm-3 col-xs-3 nombre-categorias-movil">
-              <a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat1_ninos">Niños</a>
+              <a class="textos-movil-menu" tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat1_ninos">Niños</a>
             </div>
             <div class="col-sm-3 col-xs-3 nombre-categorias-movil">
-              <a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat1_accesorios">Accesorios</a>
+              <a class="textos-movil-menu" tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat1_accesorios">Accesorios</a>
             </div>
           </div>
           <form id="searchform" class="form-search forma-movil hidden" role="search" action="{{ site_base }}/listado_productos" method="get">

@@ -407,6 +407,20 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
       -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
     }
 
+    .unidades{
+        font-size: 10px;
+        position: relative;
+        left: 671px;
+        width: 11%;
+        height: 30px;
+        top: 31px;
+        padding-left: 63px;
+        padding-top: 7px;
+        background-size: 44%;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
     .huincha-header{
         position: fixed;
         left: -2%;
@@ -430,7 +444,7 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
     .lupa-movil{
         position: relative;
         left: -60px;
-        top: 11px;
+        top: -13px;
     }
 
     .movil-logo{
@@ -484,7 +498,7 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
         width: 4%;
         position: relative;
         left: -1%;
-        top: 6px;
+        top: 13px;
         float: right;
         cursor: pointer;
     }
@@ -501,7 +515,7 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
         border-radius: 0% 0%;
         position: relative;
         left: 1%;
-        top: 4px;
+        top: -22px;
         margin-top: 7px;
         margin-right: 40px;
         
@@ -707,21 +721,48 @@ input.busca.search {
     width: 7%;
     position: relative;
     left: -13px;
-    top: 13px;
+    top: 18px;
     cursor: pointer;
     float: right;
 }
+
+.unidades{
+    font-size: 10px;
+    position: relative;
+    left: 319px;
+    width: 22%;
+    height: 30px;
+    top: 35px;
+    padding-left: 75px;
+    padding-top: 7px;
+    background-size: 34%;
+}
+
 .img-lupa {
     width: 7%;
     position: relative;
     top: 6px;
-    left: 28px;
+    left: 4px;
     cursor: pointer;
     float: right;
 }
 }
 
 @media (max-width: 400px){
+
+    .nombre-categorias-movil{
+        left: -11px;
+    }
+
+    .unidades{
+        font-size: 10px;
+        position: relative;
+        left: 289px;
+        width: 22%;
+        height: 30px;
+        top: 35px;
+        padding-left: 68px;
+    }
 
     .navbar-collapse.collapse.in{
         max-height: 300px;
@@ -732,7 +773,7 @@ input.busca.search {
     border-radius: 0%;
     position: relative;
     z-index: 200;
-    left: 0%;
+    left: -12%;
     margin-right: 0;
 }
 
@@ -773,10 +814,29 @@ input.busca.search {
     border-radius: 0%;
     position: relative;
     z-index: 200;
-    left: 0%;
+    left: -30%;
     margin-right: 0;
-    top: -5px;
+    top: -26px;
 }
+
+.img-bolsa {
+    top: 21px;
+}
+
+.unidades {
+    font-size: 10px;
+    position: relative;
+    left: 244px;
+    width: 23%;
+    height: 30px;
+    top: 32px;
+    padding-left: 58px;
+}
+
+.textos-movil-menu{
+    font-size: 12px;
+}
+
 .logo {
     width: 150px;
     position: absolute;

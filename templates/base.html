@@ -460,10 +460,16 @@
                     $(".huincha-header").toggle("slow");
                 }
             });
+
+            $(document).on("click", "add-to-cart", function()
+            {
+                $(".unidades").html($(".unidades-carrito").html());
+            });
         });
 
         $(window).load(function()
         {
+            console.log($(".unidades-carrito").html());
             $(".unidades").html($(".unidades-carrito").html());
             $(".unidades").removeClass("hidden");
         });
