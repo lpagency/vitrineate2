@@ -166,10 +166,11 @@ div.image-upload.part1 {
     top: -48px;
     font-size: 15px;
     color: black;
-    text-align: center;
+    text-align: left;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 400;
+    min-height: 16px;
 }
 
 .titulo-prou {
@@ -191,15 +192,18 @@ div.image-upload.part1 {
     bottom: 11px;
     width: 100%;
     margin-top: 25px;
-    text-align: center;
+    text-align: left;
     left: 0%;
     color: black;
     font-size: 15px;
+    display: inline-block;
+    white-space: nowrap !important;
+    text-overflow: ellipsis;
     font-weight: bold;
-    margin-bottom: 35px;
+    margin-bottom: 28px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    height: 50px;
+    height: 26px;
 }
 
 .clearfix-dos{
@@ -304,8 +308,8 @@ hr.len {
 
 .art-hi {
     overflow: hidden;
-    padding: 0px 10px;
-    max-height: 351px;
+    padding: 0px 34px;
+    max-height: 420px;
 }
 
 #mainImage{
@@ -325,7 +329,8 @@ hr.len {
 }*/
 
 
-.img-pro {    width: 220px;
+.img-pro {
+    width: 220px;
     height: 220px;
     object-fit: cover;
     margin-bottom: 22px;
@@ -339,7 +344,6 @@ hr.len {
 
 .fufi {
     position: relative;
-    width: 220px;
     margin: auto;
     height: 351px;
 }
@@ -476,6 +480,10 @@ hr.detalle {
     }
 }
 @media (max-width: 991px){
+
+    .art-hi{
+        height: 410px;
+    }
 
 .img-ambos {
     top: -59px !important;
@@ -640,7 +648,7 @@ hr.detalle {
 @media (max-width: 575px){
 
     .art-hi{
-        max-height: 260px;
+        max-height: 315px;
     }
 
 .product-detail{
@@ -763,10 +771,17 @@ hr.detalle {
     top: inherit;
     font-size: 15px;
     color: #262626;
-    text-align: center;
+    text-align: left;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 400;
+    min-height: 16px;
+}
+.col-md-6.precios-div {
+    top: -26px;
+}
+.col-md-6.boton-comprar {
+    top: -80px;
 }
 .img-ppal-movil{
     position: relative;
@@ -923,13 +938,22 @@ hr.detalle {
     top: 24px;
 }
 
+.art-hi{
+    padding: 0px 0px;
+}
+
     .overlay{
         height: 77% !important;
         width: 100%;
     }
 
     .art-hi{
-        height: 260px;
+        height: 310px;
+    }
+
+    .brand-color{
+        left: 11px;
+        font-size: 12px;
     }
 
     .img_prod_little {
@@ -987,6 +1011,7 @@ hr.detalle {
         font-weight: 400;
         margin-bottom: 0px;
         bottom: 20px;
+        min-height: 16px;
     }
     .product-price-3 {
         position: relative;

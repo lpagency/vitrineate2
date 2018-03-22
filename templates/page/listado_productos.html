@@ -19,12 +19,12 @@
 
 
 {% block javascript %}
-<script type="text/javascript" src="{{ site_base }}/static/js/cart.config.js?15"></script>
+<script type="text/javascript" src="{{ site_base }}/static/js/cart.config.js?16"></script>
 <script type="text/javascript" src="{{ site_base }}/static/js/banners.js?15"></script>
 <script type="text/javascript">
     $(document).ready(function()
     {
-    //   
+    //
     $(document).on("click", ".subcateg", function(ev){
         // ev.preventDefault();
     $(".subcateg").removeClass('active');
@@ -66,7 +66,7 @@
 
 <!-- *contenido* -->
 <body id="lapimport">
-   <div class="container min"> 
+   <div class="container min">
    <section>
 
         <!--ROSARIO SCARINI-->
@@ -92,7 +92,7 @@
     </div>
 
 
-    
+
 
     <!--END ROSARIO SCARINI-->
 
@@ -117,7 +117,7 @@
     <div class="col-md-12">
         <div align="center" class=" hidden listado_productos_marca2 texto-one {{editabletext}}" text-id="{{ site.name + '_marca2' }}"> {{ read_text(site.name +  '_marca2') }}</div>
     </div>
-    
+
     <!--END ANA BOLENA-->
 
         <!--CORK DESIGN-->
@@ -497,7 +497,7 @@
     </div>
     <div class="col-xs-12">
       <div align="center">
-         
+
          <button type="button" class="btn btn-default more-products" style="display: none">CARGAR MÁS PRODUCTOS</button>
 
       </div>
@@ -511,5 +511,3 @@
 
 {% include '../home/footer.html' %}
 {% end %}
-
-
