@@ -67,5 +67,8 @@ function banners(tag)
 		case "amelie_lingerie":
 			$(".listado_productos_marca18").removeClass("hidden");
 		break;
+		case "ttanti":
+			$(".listado_productos_marca19").removeClass("hidden");
+		break;
 	}
 }
