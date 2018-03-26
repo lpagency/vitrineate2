@@ -27,6 +27,30 @@ a:visited{
 a:link{
       color: black;
 }
+.shape {
+    margin-top: -104px;
+    position: relative;
+    top: 46px;
+    left: 131px;
+    -webkit-clip-path: polygon(0 0, 100% 100%, 100% 50%, 50% 0);
+    clip-path: polygon(0 0, 100% 100%, 100% 50%, 50% 0);
+    width: 90px;
+    height: 90px;
+    background-color: #cecfd0;
+}
+.overlay-agotado{
+    top: 116px !important;
+}
+.aa{
+    position: relative;
+    left: 133px;
+    font-size: 11px;
+    top: 41px;
+    font-weight: bold;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
 .comprar-btn{
     position: relative;
     left: -10px;
