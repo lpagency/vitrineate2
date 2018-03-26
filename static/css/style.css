@@ -27,6 +27,14 @@ a:visited{
 a:link{
       color: black;
 }
+.logo-instagram-banner{
+    position: relative;
+    width: 10%;
+    left: 45.2%;
+}
+.siguenos{
+    font-weight: 100;
+}
 .shape {
     margin-top: -104px;
     position: relative;
