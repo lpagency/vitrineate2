@@ -104,7 +104,7 @@ a:link{
     width: 1193px;
 }
 .contacto-btn {
-    background: none;
+    background: #3d3e3e;
     color: white;
     border: solid 2px white;
     position: relative;
@@ -177,10 +177,10 @@ a:link{
     font-size: 11px;
     text-align: center;
     padding: 2px;
-    color: black;
-    background-color: #d4ff67;
+    color: white;
+    background-color: red;
     width: 60px;
-    border: solid 1px #d4ff67;
+    border: solid 1px red;
 }
 
 .letrero-new {
@@ -191,9 +191,9 @@ a:link{
     text-align: center;
     padding: 2px;
     color: black;
-    background-color: #3ae0bc;
+    background-color: #d4ff67;
     width: 60px;
-    border: solid 1px #3ae0bc;
+    border: solid 1px #d4ff67;
 }
 
 .overlay-sale{
