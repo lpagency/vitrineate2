@@ -16,6 +16,13 @@
     cursor: pointer;
 }
 
+.fix-position{
+    z-index: 9999999;
+    position: fixed;
+    background: white;
+    left: 78px;
+}
+
 .unidades{
     font-size: 10px;
     position: relative;

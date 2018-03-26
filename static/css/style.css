@@ -122,6 +122,9 @@ a:link{
     font-size: 20px;
     font-weight: 500;
 }
+.contenido-index{
+    margin-top: 11%;
+}
 .carousel-control.left{
     background-image: none !important;
 }
