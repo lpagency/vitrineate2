@@ -17,7 +17,7 @@
 }
 
 .fix-position{
-    z-index: 9999999;
+    z-index: 999;
     position: fixed;
     background: white;
     left: 78px;
