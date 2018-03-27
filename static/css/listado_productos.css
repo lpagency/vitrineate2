@@ -408,6 +408,7 @@ hr.detalle {
 }
 
 .btn-success.comprar {
+    float: right;
     margin-top: 11px;
     color: black;
     background-color: #00e0ba;

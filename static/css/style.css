@@ -36,6 +36,9 @@ a:link{
     font-weight: 100;
     margin-bottom: 15px;
 }
+.padding-r{
+    padding-right: 0px;
+}
 .shape {
     margin-top: -104px;
     position: relative;
