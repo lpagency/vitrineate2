@@ -703,6 +703,11 @@ input.busca.search {
     .fix-position{
         background: none;
     }
+
+    .cerrar-huincha {
+        top: -18px;
+    }
+
     .base-logo {
         width: 200px;
         height: 53px;
