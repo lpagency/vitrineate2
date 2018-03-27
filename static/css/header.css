@@ -748,8 +748,8 @@ input.busca.search {
 .img-lupa {
     width: 7%;
     position: relative;
-    top: 6px;
-    left: 4px;
+    top: 37px;
+    left: 29px;
     cursor: pointer;
     float: right;
 }

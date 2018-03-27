@@ -469,6 +469,10 @@
                     $(".unidades").removeClass("hidden");
                 }
                 $(".unidades").html($(".unidades-carrito").html());
+                if(window.width() <= 414)
+                {
+                    $(".img-lupa").css("top", "5px");
+                }
                 if($(".unidades").html() == 0)
                 {
                     $("unidades").addClass("hidden");
@@ -482,6 +486,10 @@
             if($(".unidades-carrito").html() > 0)
             {
                 $(".unidades").removeClass("hidden");
+                if(window.width() <= 414)
+                {
+                    $(".img-lupa").css("top", "5px");
+                }
             }
         });
     </script>
