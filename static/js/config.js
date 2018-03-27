@@ -6,7 +6,7 @@
 'use strict';
     
         var base_url = $.environmentVar(
-          /*'https://apibodegas.ondev.today/',*    <- para poder probar en ondev*/ 
+          /*'https://apibodegas.loadingplay.com/',*    <- para poder probar en ondev*/ 
           'http://localhost:8520/',
           'https://apibodegas.ondev.today',
           'https://apibodegas.loadingplay.com/');
