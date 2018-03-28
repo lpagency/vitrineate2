@@ -22,7 +22,7 @@ div.image-upload.part1 {
 }
 
 .bordes-desc{
-    border-bottom: solid 1px #686965;
+    border-bottom: solid 2px #686965;
     font-weight: bold !important;
 }
 
@@ -32,6 +32,27 @@ div.image-upload.part1 {
 
 .desc-font{
     font-size: 13px !important;
+}
+
+.textos-info{
+    width: 100% !important;
+    border: 1px solid rgb(167, 167, 167) !important;
+    padding: inherit !important;
+    margin-bottom: 0px !important;
+    height: inherit !important;
+    float: inherit !important;
+    left: inherit !important;
+    position: inherit !important;
+    margin-left: inherit !important;
+    font-size: inherit !important;
+    border-radius: inherit !important;
+    font-weight: inherit !important;
+}
+
+.info-producto{
+    float: right;
+    position: relative;
+    top: -10px;
 }
 
 .stock-product{
@@ -271,7 +292,7 @@ div.image-upload.part1 {
     color: black;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-weight: 400 !important;
+    font-weight: 400;
 }
 
 .fin{

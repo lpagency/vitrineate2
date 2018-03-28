@@ -86,6 +86,7 @@
             },
             onLoad: function(product)
             {
+              $(".sku-producto-hidden").html(product.sku);
 
               for(var x=0; x<product.tags.length; x++)
               {
@@ -350,12 +351,26 @@
       }
     },2000);
 
+    setTimeout(function()
+    {
+      if($(".add-to-cart").html() == "AGOTADO")
+      {
+        $(".info-producto").removeClass("hidden");
+      }
+    },2500);
+
     $(document).on("click", ".tallas", function()
     {
       if(!$(".tallas").hasClass("btn-disabled"))
       {
         $(".add-to-cart").attr("disabled",false);
       }
+    });
+
+    $(document).on("click", ".info-href", function()
+    {
+      $(".sku-prod").val($(".sku-producto-hidden").html());
+      $(".nombre-prod").val($(".name_prod_detail").html());
     });
   });
 </script>
@@ -419,6 +434,10 @@
                lp-cart-add
                > <img class="bolsa-agregar" src="https://cdn.loadingplay.com/static/images/a99be0bd09ebc9845d83e325177baa2d_bolsita_comprar.png">Comprar</button>
              </div>
+             <div class="info-producto hidden">
+                <div class="hidden sku-producto-hidden"></div>
+                <a class="info-href" href="#" data-toggle="modal" data-target="#myModalInfo">Solicitar este producto!</a>
+               </div>
               <div class="col-md-12 mover variants-container">
               </div>
           </div>
@@ -474,6 +493,48 @@
     <div class="container  product-page"></div>
 
     </div>
+
+    <!-- Modal -->
+  <div class="modal fade" id="myModalInfo" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header fondo-modal">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <div class="text-center modal-title {{editabletext}}" text-id="{{ site.name + '_info_producto' }}"> {{ read_text(site.name +  '_info_producto') }}</div>
+          <!-- <h4 class="modal-title"></h4> -->
+        </div>
+        <form action='https://forms.zohopublic.com/sytes/form/vitrineateinfodeproducto/formperma/Az7f-NCIZm4q_-UekpTQ_U1l8lbbpK3nx09dI7u0g-U/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data' onSubmit="zf_validateandsubmitdata();">
+          <div class="modal-body" style="height: 350px;">
+            <div class="col-md-6">SKU del producto:</div>
+            <div class="col-md-6">
+              <input class="textos-info sku-prod" type="text" required disabled>
+              <input class="textos-info sku-prod hidden" type="text" name="SingleLine" required>
+            </div>
+            <div class="col-md-6">Nombre del producto:</div>
+            <div class="col-md-6">
+              <input class="textos-info nombre-prod" type="text" required disabled>
+              <input class="textos-info nombre-prod hidden" type="text" name="SingleLine1" required>
+            </div>
+            <div class="col-md-6">Talla (Si es que aplica):</div>
+            <div class="col-md-6">
+              <input class="textos-info" type="text" name="SingleLine2">
+            </div>
+            <div class="col-md-6">Ingresa tu nombre:</div>
+            <div class="col-md-6"><input class="textos-info" type="text" name="Name_First" placeholder="Nombre" required></div>
+            <div class="col-md-6">Ingresa tu Email:</div>
+            <div class="col-md-6"><input class="textos-info" type="email" name="Email" placeholder="Email" required></div>
+            <div class="col-md-6">Ingresa algun comentario:</div>
+            <div class="col-md-6"><textarea rows="4" cols="33" name="MultiLine" placeholder="Comentario"></textarea></div>
+          </div>
+          <div class="modal-footer fondo-modal">
+            <button type="submit" class="btn btn-default enviar-info">Enviar</button>
+          </div>
+      </div>
+      </form>
+    </div>
+  </div>
 
 </div>
 
