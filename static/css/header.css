@@ -16,11 +16,15 @@
     cursor: pointer;
 }
 
+.cont-header{
+    left: -15px;
+    position: relative;
+}
+
 .fix-position{
     z-index: 999;
     position: fixed;
     background: white;
-    left: 78px;
 }
 
 .unidades{

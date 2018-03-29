@@ -56,15 +56,12 @@
             'column': random_seed,
             'onLoad':function(products){
 
-              console.log(products);
-
               for(x in products)
               {
                 var prod = products[x].sku;
 
                 $.get( config.base_url+"v1/variant/"+prod+"/combination?site_name=vitrineate&sku="+prod, function(data)
                 {
-                  console.log(data);
                   var aux = data.combinations[0].sku.split("-");
                   if(data.combinations.length == 1)
                   {

@@ -131,7 +131,7 @@ a:link{
     top: 30px;
 }
 .cont-prefooter{
-    background-color: #3eedff;
+    background-color: #00e2bb;
     width: 100% !important;
     height: 120px;
 }
@@ -191,9 +191,9 @@ a:link{
     text-align: center;
     padding: 2px;
     color: black;
-    background-color: #d4ff67;
+    background-color: red;
     width: 22%;
-    border: solid 1px #d4ff67;
+    border: solid 1px red;
     z-index: 1;
 }
 

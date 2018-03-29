@@ -17,7 +17,9 @@
               <div class="text">COMPRAR</div>
             </div>  
             <p class="inf ellipsis multiline">{{! name }}</p>
-            <p class="brand-color ellipsis multiline">{{! brand }}</p>
+            <a class="link-marca" href="{{ site_base }}/listado_productos?tag={{! brand }}">
+              <p class="brand-color ellipsis multiline">{{! brand }}</p>
+            </a>
             <div class="col-md-6 precios-div">
               <div class="product-price-3 producto {{! id }}">{{! main_price|money }} </div>
               <div class="product-price-3 sku-prod {{! sku }}">{{! promotion_price|money }} </div>
