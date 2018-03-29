@@ -61,8 +61,8 @@ $(document).ready(function()
     }
         var base_url = $.environmentVar(
           /*'https://apibodegas.loadingplay.com/',*    <- para poder probar en ondev*/
-          'https://apibodegas.loadingplay.com/',
-          'https://apibodegas.loadingplay.com/',
+          'https://apibodegas.ondev.today/',
+          'https://apibodegas.ondev.today/',
           'https://apibodegas.loadingplay.com/');
         var checkout_url = $.environmentVar(
           /*'https://lpcheckout.ondev.today/',    <- para poder probar en ondev*/
@@ -96,7 +96,7 @@ $(document).ready(function()
             {
                 var prod = products[x].sku;
 
-                $.get( config.base_url+"v1/variant/"+prod+"/combination?namespace=vitrineate_"+prod, function(data)
+                $.get( config.base_url+"v1/variant/"+prod+"/combination?site_name=vitrineate&sku="+prod, function(data)
                 {
                     var aux = data.combinations[0].sku.split("-");
                     if(data.combinations.length == 1)

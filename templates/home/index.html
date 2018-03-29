@@ -32,7 +32,7 @@
         var base_url = $.environmentVar(
           /*'https://apibodegas.loadingplay.com/',*    <- para poder probar en ondev*/ 
           'https://apibodegas.ondev.today/',
-          'https://apibodegas.loadingplay.com/',
+          'https://apibodegas.ondev.today/',
           'https://apibodegas.loadingplay.com/');
         var checkout_url = $.environmentVar(
           /*'https://lpcheckout.ondev.today/',    <- para poder probar en ondev*/ 
@@ -64,6 +64,7 @@
 
                 $.get( config.base_url+"v1/variant/"+prod+"/combination?site_name=vitrineate&sku="+prod, function(data)
                 {
+                  console.log(data);
                   var aux = data.combinations[0].sku.split("-");
                   if(data.combinations.length == 1)
                   {
