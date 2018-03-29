@@ -14,6 +14,10 @@
     font-weight: 500;
 }
 
+.insc-input{
+    color: black;
+}
+
 .logo-footer{
     position: relative;
     top: 20px;
@@ -216,6 +220,7 @@ img#vitrineate_img_logo_footer {
 
 .insc-input{
     border: solid 1px;
+    color: black;
 }
 
 .inscribete-btn{
