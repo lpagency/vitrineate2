@@ -213,11 +213,11 @@
             'variants_stock_loaded',
             function(e, d)
             {
-                var aux = 0;
+                window.aux = 0;
                 for (var p in d)
                 {
                     var stock;
-                    aux = aux + d[p];
+                    window.aux = window.aux + d[p];
 
                     if(d[p] == 0)
                     {
@@ -262,18 +262,6 @@
                       $(".add-to-cart").attr("disabled", true);
                       console.log(p+" = "+d[p]);
                     }
-                }
-
-                if(aux == 0)
-                {
-                  $(".add-to-cart").html("AGOTADO");
-                  $(".main-price").addClass("hidden");
-                  $(".promotion-price").addClass("hidden");
-                  $(".add-to-cart").attr("disabled", true);
-                }
-                else
-                {
-                  $(".add-to-cart").attr("disabled", false);
                 }
             });
 
@@ -348,6 +336,17 @@
       if($(".load-v").html() == undefined)
       {
         $(".add-to-cart").attr("disabled", false);
+        if(window.aux == 0)
+        {
+          $(".add-to-cart").html("AGOTADO");
+          $(".main-price").addClass("hidden");
+          $(".promotion-price").addClass("hidden");
+          $(".add-to-cart").attr("disabled", true);
+        }
+        else
+        {
+          $(".add-to-cart").attr("disabled", false);
+        }
       }
     },2000);
 
