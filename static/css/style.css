@@ -112,7 +112,7 @@ a:link{
     height: 49%;
 }
 .margen-titulo-logos{
-    margin-left: 22px !important;
+    margin-left: 7px !important;
 }
 .link-banner-main{
     position: absolute;
@@ -155,9 +155,11 @@ a:link{
     font-family: 'Pacifico', cursive;
     color: white;
     position: relative;
-    top: 43px;
+    top: 29px;
     font-size: 20px;
     font-weight: 500;
+    max-height: 58px;
+    overflow: hidden;
 }
 .contenido-index{
     margin-top: 11%;
@@ -753,13 +755,15 @@ div.upload input, div.image-upload input {
 
 .texto-hu{
     position: absolute;
-    bottom: 167px;
+    bottom: 0px;
     color: white;
     text-align: left;
     padding-left: 13px;
     padding-right: 13px;
     font-size: 22px;
     font-weight: 400;
+    max-height: 253px;
+    overflow: hidden;
 }
 
  .texto-hu-2{
@@ -975,7 +979,7 @@ hr.page-contact {
 @media screen and (min-width: 768px) {
   .logos-titulo {
     font-size: 1.875rem;
-    margin: 0px 290px 3.125rem 90px;
+    margin: 0px 290px 3.125rem 0px;
     width: 100%;
     text-align: left;
   }
