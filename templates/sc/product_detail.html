@@ -365,7 +365,8 @@
 
       <div class="container min contenido-index">
         <div align="center">
-          <div class="col-md-6 col-sm-6 col-xs-12 img-ppal-movil">
+          <div class="img-div col-md-6 col-sm-6 col-xs-12">
+            <div class="col-md-6 col-sm-6 col-xs-12 img-ppal-movil">
             <div id="mainDiv">
               <div class="main-img-container">
                 <div class="letreros-detalle">
@@ -376,6 +377,28 @@
               </div>
             </div>
            </div>
+
+           <div class="offset-md-1  offset-sm-1 col-xs-6 col-md-12 col-sm-6 image_little">
+            <div class="img-container">
+              <img class="{{! images[1]['thumb_500']|hide_if_empty}} col-xs-3 img_prod_little" src="{{! images[1]['thumb_500'] }}" onload="this.onload='';this.src={{! images[1]['thumb_500']}}" />
+            </div>
+            <div class="img-container">
+              <img class="{{! images[2]['thumb_500']|hide_if_empty }} col-xs-3 img_prod_little " src="{{! images[2]['thumb_500'] }}" onload="this.onload='';this.src={{! images[2]['thumb_500']}}" />
+            </div>
+            <div class="img-container">
+              <img class="{{! images[3]['thumb_500']|hide_if_empty }} col-xs-3  img_prod_little" src="{{! images[3]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[3]['thumb_500']}}" />
+            </div>
+            <div class="img-container">
+              <img class="{{! images[4]['thumb_500']|hide_if_empty }} col-xs-3  img_prod_little" src="{{! images[4]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[4]['thumb_500']}}" />
+            </div>
+            <div class="img-container">
+              <img class="{{! images[5]['thumb_500']|hide_if_empty }} col-xs-3  img_prod_little" src="{{! images[5]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[5]['thumb_500']}}" />
+            </div>
+            <div class="img-container">
+              <img class="{{! images[6]['thumb_500']|hide_if_empty }} col-xs-3  img_prod_little" src="{{! images[6]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[6]['thumb_500']}}" />
+            </div>
+          </div>
+          </div>
          </div>
 
           <div class="col-md-6 col-sm-6 col-xs-12 text-prod-desk">
@@ -421,10 +444,11 @@
              <div class="info-producto hidden">
                 <div class="hidden sku-producto-hidden"></div>
                 <a class="info-href" href="#" data-toggle="modal" data-target="#myModalInfo">Solicitar este producto!</a>
-               </div>
+             </div>
               <div class="col-md-12 mover variants-container">
               </div>
           </div>
+        </div>
 
     </section>
 
@@ -435,30 +459,11 @@
         </div>
     </div>
 
-    <div class="container min">
+    <!-- <div class="container min">
       <div class="clearfix" style="padding-bottom: 50px">
       </div>
-      <div class="offset-md-1  offset-sm-1 col-xs-12 col-md-6 col-sm-6 image_little">
-            <div class="img-container">
-              <img class="{{! images[1]['thumb_500']|hide_if_empty}} col-xs-3 img_prod_little" src="{{! images[1]['thumb_500'] }}" onload="this.onload='';this.src={{! images[1]['thumb_500']}}" />
-            </div>
-            <div class="img-container">
-              <img class="{{! images[2]['thumb_500']|hide_if_empty }} col-xs-3 img_prod_little " src="{{! images[2]['thumb_500'] }}" onload="this.onload='';this.src={{! images[2]['thumb_500']}}" />
-            </div>
-            <div class="img-container">
-              <img class="{{! images[3]['thumb_500']|hide_if_empty }} col-xs-3  img_prod_little" src="{{! images[3]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[3]['thumb_500']}}" />
-            </div>
-            <div class="img-container">
-              <img class="{{! images[4]['thumb_500']|hide_if_empty }} col-xs-3  img_prod_little" src="{{! images[4]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[4]['thumb_500']}}" />
-            </div>
-            <div class="img-container">
-              <img class="{{! images[5]['thumb_500']|hide_if_empty }} col-xs-3  img_prod_little" src="{{! images[5]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[5]['thumb_500']}}" />
-            </div>
-            <div class="img-container">
-              <img class="{{! images[6]['thumb_500']|hide_if_empty }} col-xs-3  img_prod_little" src="{{! images[6]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[6]['thumb_500']}}" />
-            </div>
-          </div>
-    </div>
+      
+    </div> -->
 
 </script>
 
