@@ -90,8 +90,6 @@
 
               for(var x=0; x<product.tags.length; x++)
               {
-                console.log(product.tags[x]);
-
                 if(product.tags[x].name.indexOf("oferta") > -1)
                 {
                   $("#mainImage").addClass("img-sale");
@@ -110,21 +108,6 @@
                     $(".letrero-sale-detail").removeClass("hidden");
                     $(".letrero-new-detail").removeClass("hidden");
                 }
-
-                // switch((product.tags[x].name))
-                // {
-                //   case "oferta":
-                //   case "nuevo":
-                //   console.log("!alksdjfhalkjd");
-                //     
-                //     break;
-                //   case "nuevo":
-                
-                //     break;
-                //   case "oferta":
-                
-                //     break;
-                // }
               }
 
               if(product.promotion_price != undefined)
@@ -142,13 +125,6 @@
                 }
               }
 
-              console.log(product);
-
-              // if(product.in_stock == false)
-              //   {
-              //   }
-
-              // check if variants were triggered
                 if (variants_loaded)
                 {
                     return;
@@ -260,7 +236,6 @@
                       $("[value="+ last +"]").children(".num-tal").css("color","#a7a7a7");
                       $("[value="+ last +"]").removeClass("size-item");
                       $(".add-to-cart").attr("disabled", true);
-                      console.log(p+" = "+d[p]);
                     }
                 }
             });
@@ -331,11 +306,21 @@
     setTimeout(function(){
       if($(".load-v").html() == "")
       {
-        $(".add-to-cart").attr("disabled", false);
+        if(window.aux == 0)
+        {
+          console.log("aaaa");
+          $(".add-to-cart").html("AGOTADO");
+          $(".main-price").addClass("hidden");
+          $(".promotion-price").addClass("hidden");
+          $(".add-to-cart").attr("disabled", true);
+        }
+        else
+        {
+          $(".add-to-cart").attr("disabled", false);
+        }
       }
       if($(".load-v").html() == undefined)
       {
-        $(".add-to-cart").attr("disabled", false);
         if(window.aux == 0)
         {
           $(".add-to-cart").html("AGOTADO");
@@ -348,7 +333,7 @@
           $(".add-to-cart").attr("disabled", false);
         }
       }
-    },2000);
+    },3000);
 
     setTimeout(function()
     {
@@ -356,7 +341,7 @@
       {
         $(".info-producto").removeClass("hidden");
       }
-    },2500);
+    },3000);
 
     $(document).on("click", ".tallas", function()
     {
