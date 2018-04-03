@@ -416,16 +416,17 @@
                     if($(".form-search").hasClass("hidden"))
                     {
                         $(".form-search").removeClass("hidden");
-                        $(".img-lupa").css("width","15%");
                         if($(window).width() == 1351)
                         {
                             $(".img-lupa").css("left","222px");
                             $(".img-lupa").css("top", "-25px");
+                            $(".img-lupa").css("width","12%");
                             $(".buscador-header").css("top", "-32px");
                             $(".buscador-header").css("margin-bottom", "-52px");
                         }
                         else
                         {
+                            $(".img-lupa").css("width","15%");
                             $(".img-lupa").css("left","177px");
                         }
                         $(".img-lupa").css("top","-25px");
