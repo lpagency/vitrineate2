@@ -126,7 +126,7 @@
             <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='https://vitrineate.cl/article/detail/quienes_somos/2110'">QUIENES SOMOS</button>
           </div>
           <div class="w3-dropdown-hover">
-            <button class="w3-btn w3-red" data-toggle="dropdown" onclick="window.location.href='{{ site_base }}/listado_productos?tag=ofertas'"><b>OFERTAS!</b></button>
+            <button class="w3-btn w3-red" data-toggle="dropdown" onclick="window.location.href='{{ site_base }}/listado_productos?tag=oferta'"><b>OFERTAS!</b></button>
           </div>
 
         </ul>
@@ -137,12 +137,6 @@
               <input type="text" id="s" name="search_query" placeholder="Buscar" class="busca search" value="{% try %}{{search_query}}{% except %}{% end %}">
             </form>
             <img class="img-lupa" src="https://7static.loadingplay.com/static/images/1da6ee373afe0e65ad1b94c0d7cd9e9d_Vector_search_iconclaro.png">
-            <!-- <form role="search" method="get" id="searchform" action="{{ site_base }}/search_results">
-                            <label class="up" for="s">
-                                <i class="fa fa-search uno" aria-hidden="true"></i>
-                            </label>
-                            <input type="text" value="" name="search_query" placeholder="Buscar..." class="" id="s" />
-                    </form> -->
           </li>
         </ul>
       </div>
@@ -254,7 +248,7 @@
                   </ul>
                 </li>
                 <li><a tabindex="-1" class="text-header dropdown-toggle"  href="https://vitrineate.cl/article/detail/quienes_somos/2110">QUIENES SOMOS</a></li>
-                <li><a tabindex="-1" class="text-header dropdown-toggle"  href="{{ site_base }}/listado_productos?tag=ofertas"><b>OFERTAS!</b></a></li>
+                <li><a tabindex="-1" class="text-header dropdown-toggle"  href="{{ site_base }}/listado_productos?tag=oferta"><b>OFERTAS!</b></a></li>
               </li>
             </ul>
             </div>
