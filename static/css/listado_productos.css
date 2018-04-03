@@ -41,6 +41,7 @@ div.image-upload.part1 {
 .textarea-info{
     padding-left: 10px;
     width: 100%;
+    border: solid 1px #a7a7a7;
 }
 
 .textos-info{
