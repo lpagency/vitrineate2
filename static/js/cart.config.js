@@ -134,10 +134,14 @@ $(document).ready(function()
 
                 if(products[x].promotion_price == 0)
                 {
-                    $("."+products[x].sku).addClass("hidden");
+                    $(".producto."+products[x].id).html("");
+                    $(".sku-prod."+products[x].sku).css("font-weight", "bold");
+                    $(".producto."+products[x].id).css("font-size","12px");
                 }
                 else
                 {
+                    $(".producto."+products[x].id).html(products[x].promotion_price);
+                    $(".sku-prod."+products[x].sku).css("font-weight", "bold");
                     $(".producto."+products[x].id).css("font-size","12px");
                     $(".producto."+products[x].id).css("text-decoration", "line-through");
                 }
