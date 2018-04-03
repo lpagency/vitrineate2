@@ -76,6 +76,7 @@ a:link{
 .boton-comprar{
     position: relative;
     top: -60px;
+    left: 25px;
 }
 .brand-color{
     color: #00e2bb !important;

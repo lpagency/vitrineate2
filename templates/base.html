@@ -426,8 +426,18 @@
                         }
                         else
                         {
-                            $(".img-lupa").css("width","15%");
-                            $(".img-lupa").css("left","177px");
+                            if($(window).width() == 1301)
+                            {
+                                $(".buscador-header").css("top", "-40px");
+                                $(".buscador-header").css("margin-bottom", "-49px");
+                                $(".img-lupa").css("left", "222px");
+                                $(".img-lupa").css("width","12%");
+                            }
+                            else
+                            {
+                                $(".img-lupa").css("width","15%");
+                                $(".img-lupa").css("left","177px");
+                            }
                         }
                         $(".img-lupa").css("top","-25px");
                         $(".buscador").css("right","60px");
@@ -440,6 +450,13 @@
                         if($(window).width() == 1351)
                         {
                             $(".buscador-header").css("top", "14px");
+                        }
+                        else
+                        {
+                            if($(window).width() == 1301)
+                            {
+                                $(".buscador-header").css("top", "14px");
+                            }
                         }
                         $(".form-search").addClass("hidden");
                         $(".img-lupa").css("width","18%");
