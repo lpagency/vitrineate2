@@ -25,23 +25,26 @@
 
         $(window).load(function()
         {
-            console.log($(".unidades-carrito").html());
-            $(".unidades").html($(".unidades-carrito").html());
-            if($(".unidades-carrito").html() > 0)
+            setTimeout(function()
             {
-                $(".unidades").removeClass("hidden");
-                if($(window).width() <= 420)
-                {
-                    $(".img-lupa-movil").css("top", "5px");
-                    $(".base-logo").css("top", "9px");
-                }
-            }
-            else{
-                if($(window).width() <= 420)
-                {
-                    $(".base-logo").css("top", "9px");
-                }
-            }
+              console.log($(".unidades-carrito").html());
+              $(".unidades").html($(".unidades-carrito").html());
+              if($(".unidades-carrito").html() > 0)
+              {
+                  $(".unidades").removeClass("hidden");
+                  if($(window).width() <= 420)
+                  {
+                      $(".img-lupa-movil").css("top", "5px");
+                      $(".base-logo").css("top", "9px");
+                  }
+              }
+              else{
+                  if($(window).width() <= 420)
+                  {
+                      $(".base-logo").css("top", "9px");
+                  }
+              }
+            },3000);
         });
     </script>
 
