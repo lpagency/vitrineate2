@@ -17,6 +17,10 @@ div.image-upload.part1 {
     background-color: rgba(0, 0, 0, 0.36);
 }
 
+.cuerpo-producto{
+    height: 350px;
+}
+
 .fufi:hover .overlay-rel {
   opacity: 1;
 }
@@ -606,6 +610,10 @@ hr.detalle {
 
 
 @media (max-width: 767px){
+
+    .cuerpo-producto{
+        height: inherit !important;
+    }
 
     .img-ppal-movil {
         margin-left: inherit;
