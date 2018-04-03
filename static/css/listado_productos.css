@@ -616,6 +616,10 @@ hr.detalle {
         height: inherit !important;
     }
 
+    .margin-movil{
+        margin-bottom: 3%;
+    }
+
     .img-ppal-movil {
         margin-left: inherit;
     }
