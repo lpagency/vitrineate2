@@ -113,6 +113,9 @@
                     $(".shape."+products[x].sku).removeClass("hidden");
                     $(".aa."+products[x].sku).removeClass("hidden");
                     $(".overlay."+products[x].id).addClass("overlay-agotado");
+                    $(".overlay."+products[x].id).html('<div class="text">AGOTADO</div>');
+                    $(".add-to-cart."+products[x].sku).html("AGOTADO");
+                    $(".add-to-cart."+products[x].sku).attr("disabled", true);
                   }
               }
              }
