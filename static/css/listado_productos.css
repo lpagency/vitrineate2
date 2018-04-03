@@ -612,6 +612,10 @@ hr.detalle {
 
 @media (max-width: 767px){
 
+    input.textos-info {
+        height: 30px !important;
+    }
+
     .cuerpo-producto{
         height: inherit !important;
     }
