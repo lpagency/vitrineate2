@@ -140,7 +140,8 @@ $(document).ready(function()
                 }
                 else
                 {
-                    $(".producto."+products[x].id).html(products[x].promotion_price);
+                    $(".producto."+products[x].id).html($(".escondido."+products[x].id).html());
+                    $(".sku-prod."+products[x].sku).html($(".promocion."+products[x].id).html());
                     $(".sku-prod."+products[x].sku).css("font-weight", "bold");
                     $(".producto."+products[x].id).css("font-size","12px");
                     $(".producto."+products[x].id).css("text-decoration", "line-through");
