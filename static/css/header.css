@@ -738,7 +738,7 @@ input.busca.search {
     z-index: 1;
     margin-left: 0;
     object-fit: scale-down;
-    margin-top: 5px;
+    margin-top: -6px;
 }
 
 .img-bolsa {
@@ -869,7 +869,7 @@ input.busca.search {
     z-index: 1;
     margin-left: 0;
     object-fit: scale-down;
-    margin-top: 8px;
+    margin-top: -1px;
 }
 .carousel-inner {
     height: 100px;
