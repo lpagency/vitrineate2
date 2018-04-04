@@ -437,17 +437,16 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
     }
 
     .unidades{
-        font-size: 10px;
-        position: relative;
-        left: 671px;
-        width: 11%;
-        height: 30px;
-        top: 31px;
-        padding-left: 63px;
-        padding-top: 7px;
-        background-size: 44%;
-        background-repeat: no-repeat;
-        background-position: right;
+        font-size: 9px;
+        left: 654px;
+        width: 148px;
+        top: 41px;
+        height: auto;
+        z-index: 1;
+        margin-top: auto;
+        padding-bottom: 7px;
+        background-size: 19%;
+        background-position: bottom;
     }
 
     .huincha-header{

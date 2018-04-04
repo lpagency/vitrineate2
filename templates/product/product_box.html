@@ -2,7 +2,7 @@
 <script type="text/template" id="product_template" class="hidden">
   <div class="grin">
     <div class="clearfix-dos"> </div>
-    <div class="col-md-3 col-sm-3 col-xs-6 art-hi">
+    <div class="col-md-3 col-sm-4 col-xs-6 art-hi">
       <div alig="center">
         <a href="{{ site_base }}/sc/product/detail/{{! name|friendly }}/{{! id }}">
           <div class="fufi {{! id }}">
@@ -20,13 +20,13 @@
             <a class="link-marca" href="{{ site_base }}/listado_productos?tag={{! brand }}">
               <p class="brand-color ellipsis multiline">{{! brand }}</p>
             </a>
-            <div class="col-md-6 precios-div">
+            <div class="col-md-6 col-sm-6 precios-div">
               <div class="product-price-3 producto {{! id }}">{{! main_price|money }} </div>
               <div class="hidden escondido {{! id }}">{{! main_price|money }} </div>
               <div class="hidden promocion {{! id }}">{{! promotion_price|money }} </div>
               <div class="product-price-3 sku-prod {{! sku }}">{{! main_price|money }} </div>
             </div>
-            <div class="col-md-6 boton-comprar">
+            <div class="col-md-6 col-sm-6 boton-comprar">
               <button
                type="button"
                class="btn add-to-cart {{! sku }} btn-success comprar comprar-btn hidden {{! sku }}"

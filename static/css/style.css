@@ -987,6 +987,10 @@ hr.page-contact {
     text-align: left;
   }
 
+  .contenido-index {
+        margin-top: 0px;
+    }
+
   .logos-titulo-2 {
     font-size: 1.875rem;
     margin-bottom: 30px;
@@ -1127,28 +1131,28 @@ hr.page-contact {
     }
 
     .box-gra-peq {
-    width: 100%;
-    position: relative;
-    height: 133px;
-    object-fit: cover;
-    filter: grayscale(0%) brightness(905%);
-    -webkit-filter: grayscale(0%) brightness(90%);
-    -moz-filter: grayscale(0%) brightness(90%);
-    -ms-filter: grayscale(0%) brightness(90%);
-    -o-filter: grayscale(0%) brightness(90%);
-    margin-bottom: 10px;
-}
-.box-gra {
-    width: 100%;
-    position: relative;
-    height: 276px;
-    object-fit: cover;
-    filter: grayscale(0%) brightness(90%);
-    -webkit-filter: grayscale(0%) brightness(90%);
-    -moz-filter: grayscale(0%) brightness(90%);
-    -ms-filter: grayscale(0%) brightness(90%);
-    -o-filter: grayscale(0%) brightness(90%);
-}
+        width: 100%;
+        position: relative;
+        height: 340px;
+        object-fit: contain;
+        filter: grayscale(0%) brightness(905%);
+        -webkit-filter: grayscale(0%) brightness(90%);
+        -moz-filter: grayscale(0%) brightness(90%);
+        -ms-filter: grayscale(0%) brightness(90%);
+        -o-filter: grayscale(0%) brightness(90%);
+        margin-bottom: 10px;
+    }
+    .box-gra {
+        width: 100%;
+        position: relative;
+        height: 276px;
+        object-fit: cover;
+        filter: grayscale(0%) brightness(90%);
+        -webkit-filter: grayscale(0%) brightness(90%);
+        -moz-filter: grayscale(0%) brightness(90%);
+        -ms-filter: grayscale(0%) brightness(90%);
+        -o-filter: grayscale(0%) brightness(90%);
+    }
 
 .align-form-contact {
     padding-left: 0px;
@@ -1181,19 +1185,19 @@ hr.page-contact {
 }
 
 @media (max-width: 800px){
-.contacto-btn {
-    left: -47px;
-}
-
+    .contacto-btn {
+        left: -30px;
+        padding: 20px 30px 20px;
+    }
 
     .carousel-inner {
-    height: 270px;
-    margin-top: 70px;
-}
-.d-o{
-    left: 50px;
+        height: 270px;
+        margin-top: 70px;
+    }
+    .d-o{
+        left: 50px;
 
-}
+    }
 }
 
 @media (max-width: 768px){
