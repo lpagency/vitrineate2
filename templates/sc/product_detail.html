@@ -11,6 +11,11 @@
 {% block css %}
 <link rel="stylesheet" type="text/css" href="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.css">
 <link rel="stylesheet" href="{{ site_base }}/static/css/ocul.css">
+<style type="text/css">
+  .contenido-index {
+      margin-top: 40%;
+  }
+</style>
 {% end %}
 
 {% block javascript %}
@@ -36,6 +41,12 @@
                   {
                       $(".img-lupa-movil").css("top", "5px");
                       $(".base-logo").css("top", "9px");
+                  }
+
+                  if($(window).width() == 320)
+                  {
+                      $(".img-lupa-movil").css("top", "5px");
+                      $(".base-logo").css("top", "-12px");
                   }
               }
               else{
@@ -402,7 +413,7 @@
             </div>
            </div>
 
-           <div class="offset-md-1  offset-sm-1 col-xs-6 col-md-12 col-sm-6 image_little">
+           <div class="offset-md-1  offset-sm-1 col-xs-6 col-md-12 col-sm-12 image_little">
             <div class="img-container">
               <img class="{{! images[1]['thumb_500']|hide_if_empty}} col-xs-3 img_prod_little" src="{{! images[1]['thumb_500'] }}" onload="this.onload='';this.src={{! images[1]['thumb_500']}}" />
             </div>

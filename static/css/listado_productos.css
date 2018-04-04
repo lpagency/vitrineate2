@@ -982,6 +982,10 @@ hr.detalle {
         top: 24px;
     }
 
+    .info-producto{
+        top: 25px;
+    }
+
     .art-hi{
         padding: 0px 0px;
     }
@@ -1088,6 +1092,8 @@ hr.detalle {
     .image_little {
         top: 30px;
         left: 0px;
+        margin-top: 45px;
+        margin-bottom: -8px;
     }
     .img_prod_little {
         top: 0px;
