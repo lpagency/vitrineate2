@@ -898,6 +898,11 @@ hr.detalle {
 
 
 @media (max-width: 400px){
+    .letrero-sale-detail {
+        width: 40%;
+        top: 30px;
+        left: 9px;
+    }
 
 .letreros-detalle {
     left: -95px;
