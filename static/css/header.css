@@ -865,13 +865,16 @@ input.busca.search {
     }
 
 .unidades {
-    font-size: 10px;
-    position: relative;
-    left: 239px;
-    width: 25%;
-    height: 30px;
-    margin-top: 42px;
-    padding-left: 58px;
+    font-size: 9px;
+    left: 229px;
+    width: 148px;
+    top: 41px;
+    height: auto;
+    z-index: 1;
+    margin-top: auto;
+    padding-bottom: 7px;
+    background-size: 19%;
+    background-position: bottom;
 }
 
 .textos-movil-menu{
