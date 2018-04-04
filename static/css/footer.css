@@ -356,6 +356,16 @@ img#vitrineate_img_logo_footer {
 
 }
 
+img#vitrineate2_img_logo_footer {
+    position: relative;
+    left: 38%;
+}
+
+a.a-footer {
+    position: relative;
+    left: 38%;
+}
+
 .ul-2{
         left: 0px;
     }
@@ -412,6 +422,14 @@ img#vitrineate_img_logo_footer {
     text-align: center;
 }
 
+img#vitrineate2_img_logo_footer {
+    left: 35%;
+}
+
+a.a-footer {
+    left: 35%;
+}
+
 .logo-footer{
     position: relative;
     top: 45px;
@@ -441,6 +459,10 @@ img#vitrineate_img_logo_footer {
 
 
 @media (max-width: 320px){
+
+img#vitrineate2_img_logo_footer {
+    left: 30%;
+}
 
 .caja-fo {
     margin-top: 55px;
