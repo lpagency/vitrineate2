@@ -831,20 +831,24 @@ input.busca.search {
 }
 
 @media (max-width: 320px){
-.base-logo {
-    width: 200px;
-    height: 53px;
-    border-radius: 0%;
-    position: relative;
-    z-index: 200;
-    left: -30%;
-    margin-right: 0;
-    top: -26px;
-}
 
-.img-bolsa {
-    top: 21px;
-}
+    .contenido-index {
+        margin-top: 15%;
+    }
+    .base-logo {
+        width: 200px;
+        height: 53px;
+        border-radius: 0%;
+        position: relative;
+        z-index: 200;
+        left: -30%;
+        margin-right: 0;
+        top: -26px;
+    }
+
+    .img-bolsa {
+        top: 21px;
+    }
 
 .unidades {
     font-size: 10px;
