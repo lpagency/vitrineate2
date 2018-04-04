@@ -794,14 +794,21 @@ input.busca.search {
         left: -11px;
     }
 
+    .contenido-index {
+        margin-top: 28%;
+    }
+
     .unidades{
-        font-size: 10px;
-        position: relative;
-        left: 289px;
-        width: 22%;
-        height: 30px;
-        top: 35px;
-        padding-left: 68px;
+        font-size: 9px;
+        left: 287px;
+        width: 145px;
+        top: 41px;
+        height: auto;
+        z-index: 1;
+        margin-top: auto;
+        padding-bottom: 8px;
+        background-size: 19%;
+        background-position: bottom;
     }
 
     .navbar-collapse.collapse.in{
