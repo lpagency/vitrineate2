@@ -1095,7 +1095,7 @@ hr.page-contact {
     width: 100%;
     position: relative;
     height: 380px;
-    object-fit: cover;
+    object-fit: contain;
     filter: grayscale(0%) brightness(90%);
     -webkit-filter: grayscale(0%) brightness(90%);
     -moz-filter: grayscale(0%) brightness(90%);

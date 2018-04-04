@@ -393,22 +393,32 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
         left: 0px;
     }
     li.bolsa {
-    float: right;
-    left: 9%;
-    position: relative;
-    color: black;
-    font-weight: 400;
-    padding-left: 6px;
-    top: 18px;
+        float: right;
+        left: -46px;
+        position: relative;
+        color: black;
+        font-weight: 400;
+        padding-left: 6px;
+        top: 18px;
+    }
+    .contenido-index {
+        margin-top: 19%;
+    }
+    .fondo-principal{
+        object-fit: contain !important;
     }
     .head-menu {
-    width: 102.7%;
-    border-top: 1px solid !important;
-    border-bottom: 1px solid !important;
-    left: -15px !important;
-    position: relative !important;
+        width: 102.7%;
+        border-top: 1px solid !important;
+        border-bottom: 1px solid !important;
+        left: -15px !important;
+        position: relative !important;
+    }
+    .w3-btn, .w3-btn-block {
+        font-size: 12px;
+    }
 }
-}
+
 
 @media (max-width: 991px) {
     ::-webkit-scrollbar {
