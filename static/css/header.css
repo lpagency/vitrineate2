@@ -485,6 +485,7 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
         position: relative;
         float: left;
         border: none;
+        margin-left: 7px;
     }
     .fa-bars{
         font-size: 30px !important;
@@ -495,7 +496,6 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
     }
     .navbar-header {
         float: none;
-        margin-left: 7px;
     }
     .navbar-toggle {
         display: block;
