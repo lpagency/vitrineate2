@@ -1243,7 +1243,7 @@ hr.page-contact {
     }
 
     .contacto-btn {
-        left: 76px;
+        left: 60px;
     }
     .mar{
         margin-top: 0px;
@@ -1479,18 +1479,18 @@ hr.page-contact {
 
 @media (max-width: 400px){
     .bot {
-    height: 80px;
-}
+        height: 80px;
+    }
 
-.rrss {
-    right: 40px;
-    /* left: 5px; */
-    top: 56px;
-}
+    .rrss {
+        right: 40px;
+        /* left: 5px; */
+        top: 56px;
+    }
 
-.contacto-btn{
-    left: 0px;
-}
+    .contacto-btn {
+        left: 40px;
+    }
 
 .image-somos-cir {
     display: block;
@@ -1526,38 +1526,38 @@ hr.page-contact {
 @media (max-width: 320px){
     .contacto-btn {
         left: 0px;
-        padding: 20px 87px 20px;
+        padding: 20px 54px 20px;
     }
     .logos-titulo-2 {
         margin-top: 41px;
     }
 
-.img-hed-3 {
-   
-    top: 13px;
-}
-.d-o, .do-not {
-    margin-bottom: 0;
-}
-.constr {
-    display: inline-block;
-    top: 93px;
-}
+    .img-hed-3 {
+       
+        top: 13px;
+    }
+    .d-o, .do-not {
+        margin-bottom: 0;
+    }
+    .constr {
+        display: inline-block;
+        top: 93px;
+    }
 
-.image-somos-cir {
-    display: block;
-    width: 100%;
-    height: 236px;
-    margin-top: 80px;
-    object-fit: cover;
-    border-radius: 180px;
-}
-.modal-body {
-    position: relative;
-    padding: 15px 0;
-}
-.modal-content {
-    font-size: 10px;
-}
+    .image-somos-cir {
+        display: block;
+        width: 100%;
+        height: 236px;
+        margin-top: 80px;
+        object-fit: cover;
+        border-radius: 180px;
+    }
+    .modal-body {
+        position: relative;
+        padding: 15px 0;
+    }
+    .modal-content {
+        font-size: 10px;
+    }
 
 }
