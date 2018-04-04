@@ -835,27 +835,31 @@ hr.detalle {
 
 @media (max-width: 414px){
 
-.letreros-detalle{
-    left: -106px;
-}
+    .letreros-detalle{
+        left: -106px;
+    }
 
-.img_prod_little {
-    width: 20%;
-    height: 66px;
-    margin-bottom: 2px;
-    position: relative;
-    object-fit: scale-down;
-    top: 0px;
-    border: 1px solid rgba(128, 128, 128, 0.25);
-    left: 0px;
-    padding: 0;
-}
+    .comprar-btn{
+        left: -31px;
+    }
+
+    .img_prod_little {
+        width: 20%;
+        height: 66px;
+        margin-bottom: 2px;
+        position: relative;
+        object-fit: scale-down;
+        top: 0px;
+        border: 1px solid rgba(128, 128, 128, 0.25);
+        left: 0px;
+        padding: 0;
+    }
 
 
 
-.overlay{
-    height: 72%;
-}
+    .overlay{
+        height: 72%;
+    }
 .overlay-rel{
     height: 70%;
 }
