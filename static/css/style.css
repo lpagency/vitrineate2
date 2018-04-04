@@ -1248,71 +1248,71 @@ hr.page-contact {
     .mar{
         margin-top: 0px;
     }
-    .cont-prefooter{
-        height: 180px;
+    .cont-prefooter {
+        height: auto;
     }
     .banner-movil{
-    height: 203px !important;
-    margin-top: 50px !important;
-}
+        height: 203px !important;
+        margin-top: 50px !important;
+    }
     .pad0 {
-    padding: 6px 6px;
-}
-.carousel-inner {
-    height: 270px;
-    margin-top: 70px;
-}
+        padding: 6px 6px;
+    }
+    .carousel-inner {
+        height: 270px;
+        margin-top: 70px;
+    }
 
-.box-gra-peq {
-    width: 100%;
-    position: relative;
-    height: 199px;
-    object-fit: cover;
-    filter: grayscale(0%) brightness(75%);
-    -webkit-filter: grayscale(0%) brightness(75%);
-    -moz-filter: grayscale(0%) brightness(75%);
-    -ms-filter: grayscale(0%) brightness(75%);
-    -o-filter: grayscale(0%) brightness(75%);
-    margin-bottom: 5px;
-    margin-top: 16px;
-}
+    .box-gra-peq {
+        width: 100%;
+        position: relative;
+        height: 199px;
+        object-fit: cover;
+        filter: grayscale(0%) brightness(75%);
+        -webkit-filter: grayscale(0%) brightness(75%);
+        -moz-filter: grayscale(0%) brightness(75%);
+        -ms-filter: grayscale(0%) brightness(75%);
+        -o-filter: grayscale(0%) brightness(75%);
+        margin-bottom: 5px;
+        margin-top: 16px;
+    }
 
-.align-form-contact {
-    padding-left: 14px;
-    padding-right: 13px;
-}
+    .align-form-contact {
+        padding-left: 14px;
+        padding-right: 13px;
+    }
 
-.image-somos-cir {
-    display: block;
-    width: 325px;
-    height: 314px;
-    margin-top: 80px;
-    object-fit: cover;
-    border-radius: 180px;
-}
+    .image-somos-cir {
+        display: block;
+        width: 325px;
+        height: 314px;
+        margin-top: 80px;
+        object-fit: cover;
+        border-radius: 180px;
+    }
 
-.map-mo {
-    border: 0;
-    height: 390px;
-    bottom: 0px;
-    position: relative;
-    right: 0px;
-    width: 100%;
-}
+    .map-mo {
+        border: 0;
+        height: 390px;
+        bottom: 0px;
+        position: relative;
+        right: 0px;
+        width: 100%;
+    }
 
-.texto-con {
-    margin-bottom: 100px;
-    position: relative;
-    bottom: 0px;
-    left: 0%;
-    height: 150px;
-    color: black;
-    font-weight: 400;
-    font-size: 15px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    width: 100%;
-}
+    .texto-con {
+        margin-bottom: 100px;
+        position: relative;
+        bottom: 0px;
+        left: 0%;
+        height: 150px;
+        color: black;
+        font-weight: 400;
+        font-size: 15px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        width: 100%;
+    }
 
 }
 
@@ -1332,11 +1332,17 @@ hr.page-contact {
 
 @media screen and (max-width: 700px){
     .bot {
-    height: 53px;
-}
-.texto-huincha-pre {
-    text-align: center;
-}
+        height: 53px;
+    }
+    .texto-huincha-pre {
+        text-align: center;
+        max-height: inherit;
+        overflow: inherit;
+    }
+
+    .btn-contacto-movil{
+        margin-bottom: 20px;
+    }
 
 }
 
