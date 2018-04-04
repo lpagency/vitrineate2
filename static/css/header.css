@@ -849,6 +849,12 @@ input.busca.search {
     .contenido-index {
         margin-top: 35%;
     }
+    .lupa-movil {
+        position: relative;
+        left: -60px;
+        top: 0px;
+        z-index: 9999999;
+    }
     .base-logo {
         width: 200px;
         height: 53px;
