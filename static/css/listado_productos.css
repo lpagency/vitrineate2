@@ -978,13 +978,17 @@ hr.detalle {
 
 @media (max-width: 320px){
     .letreros-detalle {
-    left: -56px;
-    top: 24px;
-}
+        left: -56px;
+        top: 24px;
+    }
 
-.art-hi{
-    padding: 0px 0px;
-}
+    .art-hi{
+        padding: 0px 0px;
+    }
+
+    .btn-success.comprar{
+        left: -22px;
+    }
 
     .overlay{
         height: 77% !important;
