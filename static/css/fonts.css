@@ -1,0 +1,20 @@
+/*doc
+
+---
+title: Fuentes
+name: fonts
+category: basics
+---
+
+esta es la fuente seleccionada:
+
+```html_example
+<p>'Montserrat', sans-serif</p>
+```
+
+*/
+
+*, body
+{
+    font-family: 'Montserrat', sans-serif;
+}

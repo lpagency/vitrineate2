@@ -1,0 +1,151 @@
+/*doc
+
+---
+title: Buttons
+name: buttons
+category: buttons
+---
+
+links:
+
+```html_example
+<a href="#!" >click!</a>
+```
+
+buy button:
+
+```html_example
+<button type="button" class="btn btn-success comprar" >Comprar</button>
+```
+
+variant buttons:
+
+```html_example
+<div class="col-md-12 mover load-v">
+    <div class="col-md-4 col-sm-4 col-xs-4 tallas variant-value btn-disabled" variant="TALLA" value="32B" in_stock="" disabled="disabled" >
+        <span class="size-buttons-size-strike-show"></span>
+        <div class="num-tal" style="color: rgb(167, 167, 167);">32B</div>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-4 size-item tallas variant-value active" variant="TALLA" value="34B" in_stock="">
+        <div class="num-tal">34B</div>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-4 size-item tallas variant-value" variant="TALLA" value="36B" in_stock="">
+        <div class="num-tal">36B</div>
+    </div>
+</div>
+<div class="clearfix"></div>
+```
+
+*/
+
+
+a
+{
+    color: #666;
+    font-size: 12px;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+
+.btn-success.comprar
+{
+    color: #fff;
+    background-color: gray;
+    border-color: gray;
+    border-radius: 0px;
+    font-size: 15px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.size-item
+{
+    padding: 15px 0px;
+    margin-bottom: 11px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    float: left;
+    left: 0px;
+    position: relative;
+    margin-left: 9px;
+    font-size: 13px;
+    border-radius: 48px!important;
+    border: 2px solid #282c3f;
+    font-weight: 600;
+}
+
+.size-item.active
+{
+    color: white;
+    left: 0px;
+    position: relative;
+    float: left;
+    border-radius: 48px;
+    padding: 15px 0px;
+    margin-bottom: 11px;
+    width: 50px;
+    height: 50px;
+    margin-left: 9px;
+    font-size: 13px;
+    border-radius: 48px!important;
+    border: 2px solid rgba(91, 81, 83, 0.37);
+    background-color: rgba(91, 81, 83, 0.37);
+    font-weight: 600;
+}
+
+.variant-value.active
+{
+    background: black;
+}
+
+.variant-value.btn-disabled
+{
+    border: 2px solid rgb(167, 167, 167);
+    padding: 15px 0px;
+    margin-bottom: 11px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    left: 0px;
+    position: relative;
+    margin-left: 9px;
+    font-size: 13px;
+    border-radius: 48px;
+    font-weight: 600;
+}
+
+.variant-value.active>div
+{
+    color: white;
+}
+
+.num-tal
+{
+    color: #282c3f;
+    left: 0;
+    width: 100%;
+    padding-top: 16px;
+    position: relative;
+    bottom: 17px;
+    margin-bottom: 11px;
+    width: 50px;
+    height: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.mover
+{
+    position: relative;
+    right: 20px;
+    margin-bottom: 15px;
+}
