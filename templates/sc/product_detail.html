@@ -15,6 +15,11 @@
   .contenido-index {
       margin-top: 40%;
   }
+  @media (max-width: 414px){
+    .contenido-index {
+      margin-top: 15%;
+  }
+  }
 </style>
 {% end %}
 
@@ -40,7 +45,7 @@
                   if($(window).width() <= 420)
                   {
                       $(".img-lupa-movil").css("top", "5px");
-                      $(".base-logo").css("top", "9px");
+                      $(".base-logo").css("top", "0px");
                   }
 
                   if($(window).width() == 320)

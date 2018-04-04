@@ -765,15 +765,16 @@ input.busca.search {
 }
 
 .unidades{
-    font-size: 10px;
-    position: relative;
-    left: 319px;
-    width: 22%;
-    height: 30px;
-    top: 35px;
-    padding-left: 75px;
-    padding-top: 7px;
-    background-size: 34%;
+    font-size: 9px;
+    left: 320px;
+    width: 158px;
+    top: 41px;
+    height: auto;
+    z-index: 1;
+    margin-top: auto;
+    padding-bottom: 8px;
+    background-size: 19%;
+    background-position: bottom;
 }
 
 .img-lupa {
