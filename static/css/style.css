@@ -1513,6 +1513,11 @@ hr.page-contact {
         border-radius: 180px;
     }
 
+    .box-gra {
+        object-fit: contain;
+        height: 144px;
+    }
+
     .logos-titulo-2{
         margin-top: 20px;
     }
@@ -1528,6 +1533,10 @@ hr.page-contact {
 }
 
 @media (max-width: 320px){
+    .box-gra {
+        object-fit: contain;
+        height: 115px;
+    }
     .contacto-btn {
         left: 0px;
         padding: 20px 54px 20px;
