@@ -1544,6 +1544,10 @@ hr.page-contact {
         object-fit: contain;
         height: 115px;
     }
+
+    .logos-mobile {
+        padding-left: 10px;
+    }
     .contacto-btn {
         left: 0px;
         padding: 20px 54px 20px;
