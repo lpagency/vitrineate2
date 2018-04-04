@@ -1442,7 +1442,8 @@ hr.page-contact {
 }
 
 .fondo-principal{
-    height: 260px !important;
+    height: 263px !important;
+    margin-top: 12px;
 }
 
 .logos-titulo{

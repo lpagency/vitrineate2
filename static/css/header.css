@@ -8,10 +8,10 @@
 .navbar-default {
     background-color: #fff;
 }
-.header-text-huincha {
+/*.header-text-huincha {
     max-height: 23px;
     overflow: hidden;
-}
+}*/
 .img-lupa{
     width: 18%;
     position: relative;
@@ -55,7 +55,7 @@
 
 .huincha-header{
     background-color: #d7ff3e;
-    height: 31px;
+    height: auto;
 }
 
 .texto-b {
@@ -850,8 +850,8 @@ input.busca.search {
 .unidades {
     font-size: 10px;
     position: relative;
-    left: 244px;
-    width: 23%;
+    left: 239px;
+    width: 25%;
     height: 30px;
     top: 32px;
     padding-left: 58px;
