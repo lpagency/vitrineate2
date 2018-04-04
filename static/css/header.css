@@ -455,6 +455,7 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
         z-index: 1;
         padding-left: 33px;
         width: 104%;
+        padding-left: 6px;
     }
 
     .categorias-movil{
@@ -494,6 +495,7 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
     }
     .navbar-header {
         float: none;
+        margin-left: 7px;
     }
     .navbar-toggle {
         display: block;
