@@ -810,6 +810,11 @@ input.busca.search {
         left: -7px;
     }
 
+    input.busca.search{
+        width: 111%;
+        left: 0px;
+    }
+
     .unidades{
         font-size: 9px;
         left: 287px;
