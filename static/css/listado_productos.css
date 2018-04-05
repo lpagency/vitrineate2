@@ -939,9 +939,14 @@ hr.detalle {
         left: -37px;
     }
 
-.letreros-detalle {
-    left: -95px;
-}
+    .art-hi{
+        left: -15px;
+        padding: 0px 22px;
+    }
+
+    .letreros-detalle {
+        left: -95px;
+    }
 
 }
 
