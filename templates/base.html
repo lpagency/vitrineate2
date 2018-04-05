@@ -564,8 +564,10 @@
         $(window).load(function()
         {
             $(".unidades").html($(".unidades-carrito").html());
+            console.log($(".unidades-carrito").html());
             if($(".unidades-carrito").html() > 0)
             {
+                console.log("kalsdjhflakjsdf");
                 $(".unidades").removeClass("hidden");
                 if($(window).width() <= 420)
                 {
