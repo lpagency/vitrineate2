@@ -839,6 +839,14 @@ hr.detalle {
         left: -106px;
     }
 
+    .info-producto {
+        float: left;
+    }
+
+    .letrero-sale-detail{
+        left: 9px;
+    }
+
     .variants-container {
         margin-bottom: 50px;
         margin-top: 50px;

@@ -726,6 +726,11 @@ input.busca.search {
       -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
     }
 
+    input.busca.search{
+        width: 111%;
+        left: 0px;
+    }
+
     .fix-position{
         background: none;
     }
