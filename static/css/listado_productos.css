@@ -1017,7 +1017,8 @@ hr.detalle {
     }
 
     .brand-color{
-        left: 11px;
+        left: -6px;
+        text-align: center;
         font-size: 12px;
     }
 
