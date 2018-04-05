@@ -599,8 +599,8 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
       width: 10px;
     }
 
-    .img-chica-1{
-        height: 48.5% !important;
+    .img-chica-1 {
+        height: 65.5% !important;
     }
 
     .fondo-grande-banner{
@@ -963,7 +963,7 @@ input.busca.search {
     z-index: 1;
     margin-left: 0;
     object-fit: scale-down;
-    margin-top: 9px;
+    margin-top: 22px;
 }
 
 .lupa-movil{
