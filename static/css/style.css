@@ -1402,6 +1402,29 @@ hr.page-contact {
     border-radius: 180px;
 }
 
+.aa {
+    position: relative;
+    left: 62px;
+    font-size: 11px;
+    top: 16px;
+    font-weight: bold;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(54deg);
+}
+
+.shape {
+    margin-top: -104px;
+    position: relative;
+    top: 50px;
+    left: 67px;
+    -webkit-clip-path: polygon(0 0, 100% 100%, 100% 50%, 50% 0);
+    clip-path: polygon(0 0, 100% 100%, 100% 50%, 50% 0);
+    width: 63px;
+    height: 90px;
+    background-color: #cecfd0;
+}
+
 .text-prod-desk {
     margin-top: 0px !important;
 }
