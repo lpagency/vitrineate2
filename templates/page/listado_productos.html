@@ -34,12 +34,19 @@
     $(document).ready(function()
     {
     //
-    $(document).on("click", ".subcateg", function(ev){
-        // ev.preventDefault();
-    $(".subcateg").removeClass('active');
-        $(this).addClass('active');
-    });
+        $(document).on("click", ".subcateg", function(ev){
+            // ev.preventDefault();
+            $(".subcateg").removeClass('active');
+            $(this).addClass('active');
+        });
 
+        if($(window).width() == 414)
+        {
+            if(!$(".banner-movil").hasClass("hidden"))
+            {
+                $(".contenido-index").css("margin-top", "35%");
+            }
+        }
     });
 </script>
 
