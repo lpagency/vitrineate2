@@ -14,6 +14,77 @@
 {% end %}
 
 {% block javascript %}
+<script type="text/javascript">
+  $(document).ready(function()
+  {
+    setTimeout(function(){
+      if($(".load-v").html() == "")
+      {
+        if(window.aux == 0)
+        {
+          console.log("aaaa");
+          $(".add-to-cart").html("AGOTADO");
+          $(".main-price").addClass("hidden");
+          $(".promotion-price").addClass("hidden");
+          $(".add-to-cart").attr("disabled", true);
+        }
+        else
+        {
+          $(".add-to-cart").attr("disabled", false);
+        }
+      }
+      if($(".load-v").html() == undefined)
+      {
+        if(window.aux == 0)
+        {
+          $(".add-to-cart").html("AGOTADO");
+          $(".main-price").addClass("hidden");
+          $(".promotion-price").addClass("hidden");
+          $(".add-to-cart").attr("disabled", true);
+        }
+        else
+        {
+          $(".add-to-cart").attr("disabled", false);
+        }
+      }
+      console.log(window.aux);
+      if(window.aux == 0 || window.aux == undefined)
+        {
+          if($(window).width() == 320)
+          {
+            $(".boton-movil-comprar").css("top", "20px");
+            $(".v-movil").addClass("hidden");
+          }
+          $(".add-to-cart").html("AGOTADO");
+          $(".main-price").addClass("hidden");
+          $(".promotion-price").addClass("hidden");
+          $(".add-to-cart").attr("disabled", true);
+        }
+    },3000);
+
+    setTimeout(function()
+    {
+      if($(".add-to-cart").html() == "AGOTADO")
+      {
+        $(".info-producto").removeClass("hidden");
+      }
+    },3000);
+
+    $(document).on("click", ".tallas", function()
+    {
+      if(!$(".tallas").hasClass("btn-disabled"))
+      {
+        $(".add-to-cart").attr("disabled",false);
+      }
+    });
+
+    $(document).on("click", ".info-href", function()
+    {
+      $(".sku-prod").val($(".sku-producto-hidden").html());
+      $(".nombre-prod").val($(".name_prod_detail").html());
+    });
+  });
+</script>
     <script>
         $(document).ready(function(){
           $('.dropdown-submenu a.test').on("click", function(e){
@@ -355,77 +426,7 @@
     });
 </script>
 
-<script type="text/javascript">
-  $(document).ready(function()
-  {
-    setTimeout(function(){
-      if($(".load-v").html() == "")
-      {
-        if(window.aux == 0)
-        {
-          console.log("aaaa");
-          $(".add-to-cart").html("AGOTADO");
-          $(".main-price").addClass("hidden");
-          $(".promotion-price").addClass("hidden");
-          $(".add-to-cart").attr("disabled", true);
-        }
-        else
-        {
-          $(".add-to-cart").attr("disabled", false);
-        }
-      }
-      if($(".load-v").html() == undefined)
-      {
-        if(window.aux == 0)
-        {
-          $(".add-to-cart").html("AGOTADO");
-          $(".main-price").addClass("hidden");
-          $(".promotion-price").addClass("hidden");
-          $(".add-to-cart").attr("disabled", true);
-        }
-        else
-        {
-          $(".add-to-cart").attr("disabled", false);
-        }
-      }
-      console.log(window.aux);
-      if(window.aux == 0 || window.aux == undefined)
-        {
-          if($(window).width() == 320)
-          {
-            $(".boton-movil-comprar").css("top", "20px");
-            $(".v-movil").addClass("hidden");
-          }
-          $(".add-to-cart").html("AGOTADO");
-          $(".main-price").addClass("hidden");
-          $(".promotion-price").addClass("hidden");
-          $(".add-to-cart").attr("disabled", true);
-        }
-    },3000);
 
-    setTimeout(function()
-    {
-      if($(".add-to-cart").html() == "AGOTADO")
-      {
-        $(".info-producto").removeClass("hidden");
-      }
-    },3000);
-
-    $(document).on("click", ".tallas", function()
-    {
-      if(!$(".tallas").hasClass("btn-disabled"))
-      {
-        $(".add-to-cart").attr("disabled",false);
-      }
-    });
-
-    $(document).on("click", ".info-href", function()
-    {
-      $(".sku-prod").val($(".sku-producto-hidden").html());
-      $(".nombre-prod").val($(".name_prod_detail").html());
-    });
-  });
-</script>
 
 <script type="text/template" id="product_detail">
 
