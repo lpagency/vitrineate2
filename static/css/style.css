@@ -1544,6 +1544,11 @@ hr.page-contact {
 }
 
 @media (max-width: 320px){
+
+    span {
+        font-size: 14px !important;
+    }
+
     .box-gra {
         object-fit: contain;
         height: 115px;
