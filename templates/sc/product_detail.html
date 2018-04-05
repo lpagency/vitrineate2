@@ -62,39 +62,6 @@
                     $("unidades").addClass("hidden");
                 }
             });
-
-        $(window).load(function()
-        {
-            $(".unidades").html($(".unidades-carrito").html());
-            if($(".unidades-carrito").html() > 0)
-            {
-                $(".unidades").removeClass("hidden");
-                if($(window).width() <= 420)
-                {
-                    $(".img-lupa-movil").css("top", "15px");
-                    $(".base-logo").css("top", "0px");
-                }
-                if($(window).width() == 768)
-                {
-                    $(".img-lupa-movil").css("top", "11px");
-                }
-                if($(window).width() == 375)
-                {
-                    $(".logo").css("top", "-31px");
-                }
-                if($(window).width() == 320)
-                {
-                    $(".img-lupa-movil").css("top", "-19px");
-                    $(".logo").css("top", "3px");
-                }
-            }
-            else{
-                if($(window).width() <= 420)
-                {
-                    $(".base-logo").css("top", "-19px");
-                }
-            }
-        });
     </script>
 
 <script type="text/javascript">
