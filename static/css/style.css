@@ -1078,11 +1078,6 @@ hr.page-contact {
     position: relative;
     height: 185px;
     object-fit: cover;
-    filter: grayscale(0%) brightness(905%);
-    -webkit-filter: grayscale(0%) brightness(90%);
-    -moz-filter: grayscale(0%) brightness(90%);
-    -ms-filter: grayscale(0%) brightness(90%);
-    -o-filter: grayscale(0%) brightness(90%);
     margin-bottom: 10px;
 }
 .box-gra {
@@ -1120,11 +1115,6 @@ hr.page-contact {
         position: relative;
         height: 340px;
         object-fit: contain;
-        filter: grayscale(0%) brightness(905%);
-        -webkit-filter: grayscale(0%) brightness(90%);
-        -moz-filter: grayscale(0%) brightness(90%);
-        -ms-filter: grayscale(0%) brightness(90%);
-        -o-filter: grayscale(0%) brightness(90%);
         margin-bottom: 10px;
     }
     .box-gra {
@@ -1132,11 +1122,6 @@ hr.page-contact {
         position: relative;
         height: 276px;
         object-fit: cover;
-        filter: grayscale(0%) brightness(90%);
-        -webkit-filter: grayscale(0%) brightness(90%);
-        -moz-filter: grayscale(0%) brightness(90%);
-        -ms-filter: grayscale(0%) brightness(90%);
-        -o-filter: grayscale(0%) brightness(90%);
     }
 
 .align-form-contact {
