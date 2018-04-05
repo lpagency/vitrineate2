@@ -436,6 +436,10 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
       -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
     }
 
+    .logo{
+        top: 19px;
+    }
+
     .unidades{
         font-size: 9px;
         left: 654px;
@@ -570,7 +574,7 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
 .img-lupa {
     width: 4%;
     position: relative;
-    top: 0;
+    top: 29px;
     left: 40px;
     cursor: pointer;
     float: right;
@@ -756,7 +760,7 @@ input.busca.search {
         z-index: 1;
         margin-left: 0;
         object-fit: scale-down;
-        margin-top: -6px;
+        margin-top: 20px;
     }
 
     .img-bolsa {
@@ -909,8 +913,13 @@ input.busca.search {
     z-index: 1;
     margin-left: 0;
     object-fit: scale-down;
-    margin-top: -1px;
+    margin-top: 19px;
 }
+
+.lupa-movil{
+    top: 24px;
+}
+
 .carousel-inner {
     height: 100px;
     top: 29px;
