@@ -403,11 +403,6 @@ div.image-upload.par1 {
     position: relative;
     height: 250px;
     object-fit: cover;
-    filter: grayscale(0%) brightness(90%);
-    -webkit-filter: grayscale(0%) brightness(90%);
-    -moz-filter: grayscale(0%) brightness(90%);
-    -ms-filter: grayscale(0%) brightness(90%);
-    -o-filter: grayscale(0%) brightness(90%);
 }
 
 .article-box-2 {
@@ -468,11 +463,6 @@ section#first-page-scroll {
     width: 100%;
     object-fit: cover !important;
     height: 400px;
-    filter: grayscale(0%) brightness(90%);
-    -webkit-filter: grayscale(0%) brightness(90%);
-    -moz-filter: grayscale(0%) brightness(90%);
-    -ms-filter: grayscale(0%) brightness(90%);
-    -o-filter: grayscale(0%) brightness(90%);
     top: -1px;
     position: relative;
 }
@@ -1100,11 +1090,6 @@ hr.page-contact {
     position: relative;
     height: 380px;
     object-fit: contain;
-    filter: grayscale(0%) brightness(90%);
-    -webkit-filter: grayscale(0%) brightness(90%);
-    -moz-filter: grayscale(0%) brightness(90%);
-    -ms-filter: grayscale(0%) brightness(90%);
-    -o-filter: grayscale(0%) brightness(90%);
 }
 }
 
