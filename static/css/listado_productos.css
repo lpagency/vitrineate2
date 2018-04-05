@@ -518,7 +518,7 @@ hr.detalle {
     }
 
     #mainImage{
-        height: 310px;
+        height: auto;
     }
 
     .info-producto {
@@ -565,6 +565,7 @@ hr.detalle {
     .image_little{
         margin-bottom: -30px;
         left: 19px;
+        margin-top: 45px;
     }
 
     .img-ppal-movil{
@@ -1110,10 +1111,6 @@ hr.detalle {
 
     .letrero-sale-detail{
         left: -5px;
-    }
-
-    .info-producto{
-        top: 25px;
     }
 
     .art-hi{
