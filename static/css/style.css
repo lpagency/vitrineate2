@@ -1393,6 +1393,24 @@ hr.page-contact {
 
 
 @media (max-width: 414px){
+
+    span {
+        font-size: 14px !important;
+    }
+
+    .logos-titulo{
+        font-size: 14px;
+    }
+
+    .brand-color{
+        text-align: center;
+        left: -7px;
+    }
+
+    .product-price-3{
+        text-align: center !important;
+    }
+
 .image-somos-cir {
     display: block;
     width: 317px;
@@ -1477,23 +1495,6 @@ hr.page-contact {
         right: 40px;
         /* left: 5px; */
         top: 69px;
-    }
-
-    span {
-        font-size: 14px !important;
-    }
-
-    .logos-titulo{
-        font-size: 14px;
-    }
-
-    .brand-color{
-        text-align: center;
-        left: -7px;
-    }
-
-    .product-price-3{
-        text-align: center !important;
     }
 
 }
