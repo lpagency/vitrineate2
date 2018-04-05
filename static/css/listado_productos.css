@@ -839,6 +839,10 @@ hr.detalle {
         left: -106px;
     }
 
+    .img-pro{
+        object-fit: contain;
+    }
+
     .marcas-movil{
         position: relative;
         top: 30px;
