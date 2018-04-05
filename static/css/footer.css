@@ -397,6 +397,14 @@ a.a-footer {
         margin-top: 18px;
     }
 
+    .facebook{
+        float: right;
+    }
+
+    .instagram{
+        float: left;
+    }
+
 }
 
 @media (max-width: 400px){

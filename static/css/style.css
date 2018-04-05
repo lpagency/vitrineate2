@@ -1466,18 +1466,35 @@ hr.page-contact {
 
 @media (max-width: 412px){
 
-.img-hed-3 {
+    .img-hed-3 {
 
-    left: 0;
-    top: 12px;
-}
+        left: 0;
+        top: 12px;
+    }
 
-.rrss {
+    .rrss {
 
-    right: 40px;
-    /* left: 5px; */
-    top: 69px;
-}
+        right: 40px;
+        /* left: 5px; */
+        top: 69px;
+    }
+
+    span {
+        font-size: 14px !important;
+    }
+
+    .logos-titulo{
+        font-size: 14px;
+    }
+
+    .brand-color{
+        text-align: center;
+        left: -7px;
+    }
+
+    .product-price-3{
+        text-align: center !important;
+    }
 
 }
 
