@@ -440,6 +440,10 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
         top: 19px;
     }
 
+    .img-chica{
+        height: 38.5%;
+    }
+
     .contenido-index {
         margin-top: 0%;
     }
