@@ -523,6 +523,7 @@ hr.detalle {
 
     .info-producto {
         float: left;
+        top: -70px;
     }
 
     .img_prod_little{
