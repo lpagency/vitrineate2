@@ -1553,6 +1553,11 @@ hr.page-contact {
         font-size: 14px;
     }
 
+    .logo-instagram-banner {
+        width: 34%;
+        left: 33.2%;
+    }
+
     .box-gra {
         object-fit: contain;
         height: 115px;
