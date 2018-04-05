@@ -839,6 +839,11 @@ hr.detalle {
         left: -106px;
     }
 
+    .variants-container {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
     .v-movil{
         top: 32px;
         height: 70px;
@@ -1032,6 +1037,7 @@ hr.detalle {
 
     .btn-success.comprar{
         left: -22px;
+        margin-bottom: 20px;
     }
 
     .overlay{
