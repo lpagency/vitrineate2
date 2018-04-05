@@ -803,7 +803,11 @@ input.busca.search {
     }
 
     .contenido-index {
-        margin-top: 42%;
+        margin-top: 25%;
+    }
+
+    .logo{
+        left: -7px;
     }
 
     .unidades{

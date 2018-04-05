@@ -416,6 +416,14 @@ a.a-footer {
 
 @media (max-width: 375px){
 
+    .facebook{
+        float: right;
+    }
+
+    .instagram{
+        float: left;
+    }
+
 .img-foot {
     left: -222px;
     position: relative;

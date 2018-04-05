@@ -1482,6 +1482,27 @@ hr.page-contact {
 }
 
 @media (max-width: 400px){
+
+    .product-price-3{
+        text-align: center;
+    }
+
+    span {
+        font-size: 14px !important;
+    }
+
+    .logos-titulo{
+        font-size: 14px;
+    }
+
+    .comprar-btn {
+        left: -37px;
+    }
+
+    .brand-color{
+        left: 35px;
+    }
+
     .bot {
         height: 80px;
     }
@@ -1537,6 +1558,10 @@ hr.page-contact {
 }
 
 @media (max-width: 320px){
+
+    .brand-color{
+        left: 0px;
+    }
 
     span {
         font-size: 14px !important;

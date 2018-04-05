@@ -537,6 +537,18 @@
                         $(".logo").css("top", "-2px");
                     }
                 }
+
+                if($(window).width() == 375)
+                {
+                    if($(".unidades-carrito").html() > 0)
+                    {
+                        $(".logo").css("top", "-31px");
+                    }
+                    else{
+                        $(".logo").css("top", "-2px");
+                    }
+                }
+
                 if($(".unidades").html() == 0)
                 {
                     $("unidades").addClass("hidden");
