@@ -991,6 +991,10 @@ hr.detalle {
         top: 24px;
     }
 
+    .letrero-sale-detail{
+        left: -5px;
+    }
+
     .info-producto{
         top: 25px;
     }

@@ -149,6 +149,16 @@ $(document).ready(function()
                     $(".producto."+products[x].id).css("font-size","12px");
                     $(".producto."+products[x].id).css("text-decoration", "line-through");
                 }
+
+                if(products[x].in_stock == false)
+                {
+                    $(".shape."+products[x].sku).removeClass("hidden");
+                    $(".aa."+products[x].sku).removeClass("hidden");
+                    $(".overlay."+products[x].id).addClass("overlay-agotado");
+                    $(".overlay."+products[x].id).html('<div class="text">AGOTADO</div>');
+                    $(".add-to-cart."+products[x].sku).html("AGOTADO");
+                    $(".add-to-cart."+products[x].sku).attr("disabled", true);
+                }
             }
         }
     };
