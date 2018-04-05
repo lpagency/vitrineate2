@@ -839,6 +839,16 @@ hr.detalle {
         left: -106px;
     }
 
+    .marcas-movil{
+        position: relative;
+        top: 30px;
+        margin-bottom: -30px;
+    }
+
+    .boton-cargar{
+        margin-top: 20px;
+    }
+
     .comprar-btn{
         left: -31px;
     }
