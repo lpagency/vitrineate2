@@ -948,6 +948,15 @@ hr.detalle {
         left: -95px;
     }
 
+    .shape {
+        left: 87px;
+    }
+
+    .aa{
+        left: 79px;
+        top: 23px;
+    }
+
 }
 
 @media (max-width: 360px){
