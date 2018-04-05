@@ -1120,6 +1120,16 @@ hr.detalle {
         padding: 0px 0px;
     }
 
+    .shape{
+        top: 60px;
+        left: 67px;
+    }
+
+    .aa{
+        left: 62px;
+        top: 27px;
+    }
+
     .btn-success.comprar{
         left: -22px;
         margin-bottom: 20px;
