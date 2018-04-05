@@ -1499,6 +1499,10 @@ hr.page-contact {
         font-size: 14px;
     }
 
+    .shape{
+        left: 76px;
+    }
+
     .brand-color{
         text-align: center;
         left: -7px;
@@ -1515,17 +1519,17 @@ hr.page-contact {
     }
 
     .contacto-btn {
-        left: 40px;
+        left: 56px;
     }
 
-.image-somos-cir {
-    display: block;
-    width: 303px;
-    height: 300px;
-    margin-top: 80px;
-    object-fit: cover;
-    border-radius: 180px;
-}
+    .image-somos-cir {
+        display: block;
+        width: 303px;
+        height: 300px;
+        margin-top: 80px;
+        object-fit: cover;
+        border-radius: 180px;
+    }
 
 }
 
@@ -1559,6 +1563,16 @@ hr.page-contact {
 }
 
 @media (max-width: 320px){
+
+    .shape{
+        top: 60px;
+        left: 67px;
+    }
+
+    .aa{
+        left: 62px;
+        top: 27px;
+    }
 
     .art-hi{
         left: 0px;
