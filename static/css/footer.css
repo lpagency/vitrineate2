@@ -464,6 +464,14 @@ img#vitrineate2_img_logo_footer {
     left: 30%;
 }
 
+.facebook{
+    float: right;
+}
+
+.instagram{
+    float: left;
+}
+
 .caja-fo {
     margin-top: 55px;
 }
