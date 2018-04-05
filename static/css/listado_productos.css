@@ -513,6 +513,10 @@ hr.detalle {
 }
 @media (max-width: 991px){
 
+    button.btn.btn-default.more-products {
+        margin-top: 30px;
+    }
+
     .art-hi {
         height: 350px;
     }
@@ -597,7 +601,7 @@ hr.detalle {
         position: relative;
         bottom: 11px;
         width: 97%;
-        text-align: center;
+        text-align: left;
         left: 0%;
         color: black;
         font-size: 18px;
@@ -605,7 +609,7 @@ hr.detalle {
         margin-bottom: 40px;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        height: 50px;
+        height: 30px;
     }
 }
 
