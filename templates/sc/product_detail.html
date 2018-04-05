@@ -15,48 +15,6 @@
 
 {% block javascript %}
 <script type="text/javascript">
-  $(window).load(function()
-        {
-            $(".unidades").html($(".unidades-carrito").html());
-            console.log($(".unidades-carrito").html());
-            if($(".unidades-carrito").html() > 0)
-            {
-                console.log("<dfasdf");
-                $(".unidades").removeClass("hidden");
-                if($(window).width() <= 420)
-                {
-                    $(".img-lupa-movil").css("top", "15px");
-                    $(".base-logo").css("top", "0px");
-                }
-                if($(window).width() == 768)
-                {
-                    $(".img-lupa-movil").css("top", "11px");
-                }
-                if($(window).width() == 414)
-                {
-                    $(".logo").css("top", "-33px");
-                }
-                if($(window).width() == 375)
-                {
-                    $(".logo").css("top", "-31px");
-                }
-                if($(window).width() == 360)
-                {
-                    $(".logo").css("top", "-14px");
-                }
-                if($(window).width() == 320)
-                {
-                    $(".img-lupa-movil").css("top", "-19px");
-                    $(".logo").css("top", "-30px");
-                }
-            }
-            else{
-                if($(window).width() <= 420)
-                {
-                    $(".base-logo").css("top", "-19px");
-                }
-            }
-        });
   $(document).ready(function()
   {
     setTimeout(function(){
@@ -474,6 +432,7 @@
 
 <section>
 
+<div class="shopping-cart hidden"></div>
       <div class="container min contenido-index">
         <div align="center">
           <div class="img-div col-md-6 col-sm-6 col-xs-12">
@@ -659,8 +618,6 @@
 
     </div>
 </div>
-
-<div class="shopping-cart hidden"></div>
 
 
 {% include '../home/footer.html' %}
