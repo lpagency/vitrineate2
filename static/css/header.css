@@ -411,6 +411,9 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
     .fondo-principal{
         background-size: contain !important;
     }
+    .img-chica{
+        height: 38.5% !important;
+    }
     .head-menu {
         width: 102.7%;
         border-top: 1px solid !important;
@@ -438,10 +441,6 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
 
     .logo{
         top: 19px;
-    }
-
-    .img-chica{
-        height: 38.5%;
     }
 
     .contenido-index {
@@ -593,6 +592,10 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
     ::-webkit-scrollbar {
       -webkit-appearance: none;
       width: 10px;
+    }
+
+    .img-chica{
+        height: 48.5% !important;
     }
 
     ::-webkit-scrollbar-thumb {
