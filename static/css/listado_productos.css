@@ -839,6 +839,12 @@ hr.detalle {
         left: -106px;
     }
 
+    .v-movil{
+        top: 32px;
+        height: 70px;
+        padding-top: 20px;
+    }
+
     .precio-movil{
         padding-left: 0px;
         position: relative;
