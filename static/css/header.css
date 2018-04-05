@@ -878,6 +878,16 @@ input.busca.search {
     .navbar-collapse.collapse.in{
         max-height: 328px;
     }
+
+    .unidades{
+        left: 273px;
+    }
+
+    .logo {
+        left: -45px;
+        top: 22px;
+    }
+
     .base-logo {
     width: 200px;
     height: 53px;
