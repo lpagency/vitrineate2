@@ -1185,7 +1185,19 @@ hr.page-contact {
         padding-right: inherit;
     }
 
+    .shape{
+        top: 48px;
+        left: 90px;
+    }
+
+    .aa{
+        left: 100px;
+        top: 28px;
+    }
+
     .logos-titulo{
+        top: -25px;
+        position: relative;
         text-align: center;
         margin: 0px 290px 3.125rem auto;
     }

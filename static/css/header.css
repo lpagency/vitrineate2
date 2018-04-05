@@ -443,7 +443,7 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
     }
 
     .logo{
-        top: 19px;
+        top: 4px;
     }
 
     .contenido-index {
@@ -582,6 +582,7 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
     left: 14px;
 }
 .img-lupa {
+    z-index: 1111;
     width: 4%;
     position: relative;
     top: 29px;
