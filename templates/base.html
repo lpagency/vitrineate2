@@ -522,7 +522,14 @@
                 }
                 if($(window).width() == 320)
                 {
-                    $(".logo").css("top", "-2px");
+                    if($(".unidades-carrito").html() > 0)
+                    {
+                        $(".logo").css("top", "-22px");
+                        $(".img-lupa-movil").css("top", "-19px");
+                    }
+                    else{
+                        $(".logo").css("top", "-2px");
+                    }
                 }
                 if($(".unidades").html() == 0)
                 {
@@ -548,8 +555,8 @@
                 }
                 if($(window).width() == 320)
                 {
-                    $(".img-lupa-movil").css("top", "-26px");
-                    $(".logo").css("top", "-30px");
+                    $(".img-lupa-movil").css("top", "-19px");
+                    $(".logo").css("top", "-22px");
                 }
             }
             else{
