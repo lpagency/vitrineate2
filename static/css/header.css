@@ -731,6 +731,10 @@ input.busca.search {
         left: 0px;
     }
 
+    .logo {
+        top: 4px;
+    }
+
     .fix-position{
         background: none;
     }
