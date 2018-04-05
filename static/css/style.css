@@ -1090,6 +1090,10 @@ hr.page-contact {
 
 @media (max-width: 991px){
 
+    .img-chica{
+        height: 38.5%;
+    }
+
     .div-index-1{
         top: 180px;
         padding-left: inherit;
@@ -1120,8 +1124,8 @@ hr.page-contact {
     .box-gra {
         width: 100%;
         position: relative;
-        height: 276px;
-        object-fit: cover;
+        height: 342px;
+        object-fit: contain;
     }
 
 .align-form-contact {
@@ -1242,11 +1246,6 @@ hr.page-contact {
         position: relative;
         height: 199px;
         object-fit: cover;
-        filter: grayscale(0%) brightness(75%);
-        -webkit-filter: grayscale(0%) brightness(75%);
-        -moz-filter: grayscale(0%) brightness(75%);
-        -ms-filter: grayscale(0%) brightness(75%);
-        -o-filter: grayscale(0%) brightness(75%);
         margin-bottom: 5px;
         margin-top: 16px;
     }
