@@ -1549,6 +1549,10 @@ hr.page-contact {
         font-size: 14px !important;
     }
 
+    .logos-titulo{
+        font-size: 14px;
+    }
+
     .box-gra {
         object-fit: contain;
         height: 115px;
