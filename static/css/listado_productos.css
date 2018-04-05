@@ -939,6 +939,10 @@ hr.detalle {
         left: -37px;
     }
 
+    .btn-success.comprar{
+        margin-bottom: 20px;
+    }
+
     .art-hi{
         left: -15px;
         padding: 0px 22px;
@@ -959,6 +963,11 @@ hr.detalle {
 
     .marcas-movil{
         margin-top: 12px;
+    }
+
+    .img-little{
+        margin-bottom: 20px;
+        margin-top: -25px;
     }
 
 }
