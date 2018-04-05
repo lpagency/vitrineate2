@@ -957,6 +957,10 @@ hr.detalle {
         top: 23px;
     }
 
+    .marcas-movil{
+        margin-top: 12px;
+    }
+
 }
 
 @media (max-width: 360px){
