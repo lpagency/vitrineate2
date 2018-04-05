@@ -517,6 +517,10 @@ hr.detalle {
         margin-top: 30px;
     }
 
+    .productos-ipad{
+        margin-top: -65px;
+    }
+
     .art-hi {
         height: 350px;
     }
@@ -618,6 +622,10 @@ hr.detalle {
 
     input.textos-info {
         height: 30px !important;
+    }
+
+    .productos-ipad{
+        margin-top: 0px;
     }
 
     .cuerpo-producto{
