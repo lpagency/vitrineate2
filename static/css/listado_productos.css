@@ -935,6 +935,9 @@ hr.detalle {
         top: 30px;
         left: 9px;
     }
+    .comprar-btn {
+        left: -37px;
+    }
 
 .letreros-detalle {
     left: -95px;
