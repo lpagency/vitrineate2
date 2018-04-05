@@ -891,6 +891,10 @@ hr.detalle {
         margin-top: 20px;
     }
 
+    .btn-success.comprar {
+        margin-bottom: 25px;
+    }
+
     .overlay{
         height: 72%;
     }
@@ -905,6 +909,7 @@ hr.detalle {
     .image_little {
         top: 30px;
         left: 0px;
+        margin-bottom: 20px;
     }
     .descr_prod_detail {
         position: relative;
