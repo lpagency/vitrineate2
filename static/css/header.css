@@ -868,6 +868,12 @@ input.busca.search {
         margin-top: 56%;
     }
 
+    input.busca.search {
+        width: 111%;
+        left: 0px;
+        position: relative;
+    }
+
     .img-lupa{
         top: 0px;
     }
