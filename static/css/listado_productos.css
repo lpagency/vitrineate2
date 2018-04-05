@@ -939,6 +939,10 @@ hr.detalle {
         left: -37px;
     }
 
+    .info-producto {
+        float: left;
+    }
+
     .btn-success.comprar{
         margin-bottom: 20px;
     }
