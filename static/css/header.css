@@ -867,6 +867,11 @@ input.busca.search {
     .contenido-index {
         margin-top: 56%;
     }
+
+    .img-lupa{
+        top: 0px;
+    }
+
     .lupa-movil {
         position: relative;
         left: -60px;
@@ -913,7 +918,7 @@ input.busca.search {
     z-index: 1;
     margin-left: 0;
     object-fit: scale-down;
-    margin-top: 19px;
+    margin-top: 9px;
 }
 
 .lupa-movil{
