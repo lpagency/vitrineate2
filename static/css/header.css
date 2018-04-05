@@ -726,6 +726,10 @@ input.busca.search {
         background: none;
     }
 
+    .contenido-index {
+        margin-top: 33%;
+    }
+
     .cerrar-huincha {
         top: 9px;
     }
@@ -795,7 +799,7 @@ input.busca.search {
     }
 
     .contenido-index {
-        margin-top: 28%;
+        margin-top: 42%;
     }
 
     .unidades{
@@ -857,7 +861,7 @@ input.busca.search {
 @media (max-width: 320px){
 
     .contenido-index {
-        margin-top: 35%;
+        margin-top: 56%;
     }
     .lupa-movil {
         position: relative;
