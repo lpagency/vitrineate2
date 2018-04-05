@@ -1426,9 +1426,9 @@ hr.page-contact {
 
 .aa {
     position: relative;
-    left: 62px;
+    left: 77px;
     font-size: 11px;
-    top: 16px;
+    top: 24px;
     font-weight: bold;
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -1439,7 +1439,7 @@ hr.page-contact {
     margin-top: -104px;
     position: relative;
     top: 50px;
-    left: 67px;
+    left: 86px;
     -webkit-clip-path: polygon(0 0, 100% 100%, 100% 50%, 50% 0);
     clip-path: polygon(0 0, 100% 100%, 100% 50%, 50% 0);
     width: 63px;
