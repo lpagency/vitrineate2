@@ -17,50 +17,6 @@
 <script type="text/javascript">
   $(document).ready(function()
   {
-    setTimeout(function(){
-      if($(".load-v").html() == "")
-      {
-        if(window.aux == 0)
-        {
-          console.log("aaaa");
-          $(".add-to-cart").html("AGOTADO");
-          $(".main-price").addClass("hidden");
-          $(".promotion-price").addClass("hidden");
-          $(".add-to-cart").attr("disabled", true);
-        }
-        else
-        {
-          $(".add-to-cart").attr("disabled", false);
-        }
-      }
-      if($(".load-v").html() == undefined)
-      {
-        if(window.aux == 0)
-        {
-          $(".add-to-cart").html("AGOTADO");
-          $(".main-price").addClass("hidden");
-          $(".promotion-price").addClass("hidden");
-          $(".add-to-cart").attr("disabled", true);
-        }
-        else
-        {
-          $(".add-to-cart").attr("disabled", false);
-        }
-      }
-      console.log(window.aux);
-      if(window.aux == 0 || window.aux == undefined)
-        {
-          if($(window).width() == 320)
-          {
-            $(".boton-movil-comprar").css("top", "20px");
-            $(".v-movil").addClass("hidden");
-          }
-          $(".add-to-cart").html("AGOTADO");
-          $(".main-price").addClass("hidden");
-          $(".promotion-price").addClass("hidden");
-          $(".add-to-cart").attr("disabled", true);
-        }
-    },3000);
 
     setTimeout(function()
     {
@@ -284,6 +240,7 @@
             function(e, d)
             {
                 window.aux = 0;
+                console.log("llega");
                 for (var p in d)
                 {
                     var stock;
@@ -331,6 +288,18 @@
                       $("[value="+ last +"]").removeClass("size-item");
                       $(".add-to-cart").attr("disabled", true);
                     }
+                }
+                if(window.aux == 0)
+                {
+                    $(".add-to-cart").html("AGOTADO");
+                    $(".info-producto").removeClass("hidden");
+                    $(".main-price").addClass("hidden");
+                    $(".promotion-price").addClass("hidden");
+                    $(".add-to-cart").attr("disabled", true);
+                }
+                else
+                {
+                    $(".add-to-cart").attr("disabled", false);
                 }
             });
 
@@ -481,9 +450,9 @@
                lp-cart-add
                > <img class="bolsa-agregar" src="https://cdn.loadingplay.com/static/images/a99be0bd09ebc9845d83e325177baa2d_bolsita_comprar.png">Comprar</button>
                <div class="info-producto hidden">
-                  <div class="hidden sku-producto-hidden"></div>
-                  <a class="info-href" href="#" data-toggle="modal" data-target="#myModalInfo">Solicitar este producto!</a>
-               </div>
+                    <div class="hidden sku-producto-hidden"></div>
+                    <a class="info-href" href="#" data-toggle="modal" data-target="#myModalInfo">Solicitar este producto!</a>
+                </div>
              </div>
           </div>
         </div>
@@ -500,7 +469,7 @@
     <!-- <div class="container min">
       <div class="clearfix" style="padding-bottom: 50px">
       </div>
-
+      
     </div> -->
 
 </script>
@@ -524,7 +493,7 @@
     <!-- Modal -->
   <div class="modal fade" id="myModalInfo" role="dialog">
     <div class="modal-dialog">
-
+    
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header fondo-modal">
