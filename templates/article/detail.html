@@ -34,52 +34,7 @@
 
 {% block javascript %}
 <script type="text/javascript" src="{{ site_base }}/static/js/dermatologia.js"></script>
-<script type="text/javascript">
-    $(document).ready(function()
-    {
-
-      $("#OpenAlert").click();
-
-        
-        var base_url = $.environmentVar(
-          /*'https://apibodegas.loadingplay.com/',*    <- para poder probar en ondev*/ 
-          'https://apibodegas.loadingplay.com/',
-          'https://apibodegas.loadingplay.com/',
-          'https://apibodegas.loadingplay.com/');
-        var checkout_url = $.environmentVar(
-          /*'https://lpcheckout.ondev.today/',    <- para poder probar en ondev*/ 
-          'https://pay.loadingplay.com',
-          'https://pay.loadingplay.com',
-          'https://pay.loadingplay.com');
-        var app_public = $.environmentVar(69,69,69);
-        var site_name = $.environmentVar('vitrineate', 'vitrineate', 'vitrineate');
-        var config = {
-            'app_public' : app_public,
-            'base_url' : base_url,
-            'maxProducts' : 10,
-            'templateOrigin' : '#product_template',
-            'tag' : '',
-            'ignore_stock' : true,
-            'onLoad':function(){
-               // $('.ellipsis').ellipsis();
-               // $(".ellipsis").dotdotdot();
-             }
-        };
-         $(document).ecommerce({
-       'app_public' :  app_public,
-       'animation' : 'simple',
-       'base_url' : base_url,
-       'checkout_url' :  checkout_url,
-       'products_per_page' : 9
-     });
-
-        $('.product-list').ecommerce('product_box', config);
-
-        // destacado categoria 2
-        // config.tag = 'destacado_categoria2';
-        // $('.product-list2').ecommerce('product_box', config);
-    });
-</script>
+<script type="text/javascript" src="{{ site_base }}/static/js/cart.config.js?16"></script>
 {% end %}
 
 {% block body %}

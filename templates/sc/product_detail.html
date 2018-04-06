@@ -15,48 +15,6 @@
 
 {% block javascript %}
 <script type="text/javascript">
-  $(window).load(function()
-        {
-            $(".unidades").html($(".unidades-carrito").html());
-            console.log($(".unidades-carrito").html());
-            if($(".unidades-carrito").html() > 0)
-            {
-                console.log("kalsdjhflakjsdf");
-                $(".unidades").removeClass("hidden");
-                if($(window).width() <= 420)
-                {
-                    $(".img-lupa-movil").css("top", "15px");
-                    $(".base-logo").css("top", "0px");
-                }
-                if($(window).width() == 768)
-                {
-                    $(".img-lupa-movil").css("top", "11px");
-                }
-                if($(window).width() == 414)
-                {
-                    $(".logo").css("top", "-33px");
-                }
-                if($(window).width() == 375)
-                {
-                    $(".logo").css("top", "-31px");
-                }
-                if($(window).width() == 360)
-                {
-                    $(".logo").css("top", "-14px");
-                }
-                if($(window).width() == 320)
-                {
-                    $(".img-lupa-movil").css("top", "-19px");
-                    $(".logo").css("top", "-30px");
-                }
-            }
-            else{
-                if($(window).width() <= 420)
-                {
-                    $(".base-logo").css("top", "-19px");
-                }
-            }
-        });
   $(document).ready(function()
   {
     setTimeout(function(){
@@ -136,45 +94,6 @@
           });
         });
 
-            $(document).on("click", ".add-to-cart, .remove-from-cart, .remove-one, .add-one", function()
-            {
-                if($(".unidades").hasClass("hidden"))
-                {
-                    $(".unidades").removeClass("hidden");
-                }
-                $(".unidades").html($(".unidades-carrito").html());
-                if($(window).width() <= 414)
-                {
-                    $(".img-lupa-movil").css("top", "5px");
-                }
-                if($(window).width() == 320)
-                {
-                    if($(".unidades-carrito").html() > 0)
-                    {
-                        $(".logo").css("top", "-22px");
-                        $(".img-lupa-movil").css("top", "-19px");
-                    }
-                    else{
-                        $(".logo").css("top", "-2px");
-                    }
-                }
-
-                if($(window).width() == 375)
-                {
-                    if($(".unidades-carrito").html() > 0)
-                    {
-                        $(".logo").css("top", "-31px");
-                    }
-                    else{
-                        $(".logo").css("top", "-2px");
-                    }
-                }
-
-                if($(".unidades").html() == 0)
-                {
-                    $("unidades").addClass("hidden");
-                }
-            });
     </script>
 
 <script type="text/javascript">
@@ -254,6 +173,12 @@
             },
             onLoad: function(product)
             {
+
+              $(document).on("click", ".add-to-cart, .remove-from-cart, .remove-one, .add-one", function()
+                {
+                    units(options);
+                });
+
               $(".sku-producto-hidden").html(product.sku);
 
               for(var x=0; x<product.tags.length; x++)
@@ -353,6 +278,7 @@
         };
 
         $('.product-detail').ecommerce('product_detail', options);
+        units(options);
         $('.product-detail').on(
             'variants_stock_loaded',
             function(e, d)

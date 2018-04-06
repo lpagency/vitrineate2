@@ -177,7 +177,7 @@
         <!-- <script type="text/javascript" src="{{ site_base }}/static/js/jquery.ellipsis.js"></script> -->
 
         <script type="text/javascript" src="{{ site_base }}/common/js/parallax.min.js"></script>
-        <script type="text/javascript" src="{{ site_base }}/static/js/marcas.js"></script>
+        <script type="text/javascript" src="{{ site_base }}/static/js/unidades.js"></script>
 
 
 
@@ -493,6 +493,22 @@
     </script>
 
     <script type="text/javascript">
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for(var i = 0; i <ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
         $(document).ready(function()
         {
             $(document).on("click", ".cerrar-huincha", function()
@@ -518,90 +534,6 @@
                     $(".contenido-index").css("margin-top","9%");
                 }
             });
-
-            $(document).on("click", ".add-to-cart, .remove-from-cart, .remove-one, .add-one", function()
-            {
-                if($(".unidades").hasClass("hidden"))
-                {
-                    $(".unidades").removeClass("hidden");
-                }
-                $(".unidades").html($(".unidades-carrito").html());
-                if($(window).width() <= 414)
-                {
-                    $(".img-lupa-movil").css("top", "5px");
-                    $(".logo").css("top", "-33px");
-                }
-                if($(window).width() == 320)
-                {
-                    if($(".unidades-carrito").html() > 0)
-                    {
-                        $(".logo").css("top", "-22px");
-                        $(".img-lupa-movil").css("top", "-19px");
-                    }
-                    else{
-                        $(".logo").css("top", "-2px");
-                    }
-                }
-
-                if($(window).width() == 375)
-                {
-                    if($(".unidades-carrito").html() > 0)
-                    {
-                        $(".logo").css("top", "-31px");
-                    }
-                    else{
-                        $(".logo").css("top", "-2px");
-                    }
-                }
-
-                if($(".unidades").html() == 0)
-                {
-                    $("unidades").addClass("hidden");
-                }
-            });
-        });
-
-        $(window).load(function()
-        {
-            $(".unidades").html($(".unidades-carrito").html());
-            console.log($(".unidades-carrito").html());
-            if($(".unidades-carrito").html() > 0)
-            {
-                console.log("kalsdjhflakjsdf");
-                $(".unidades").removeClass("hidden");
-                if($(window).width() <= 420)
-                {
-                    $(".img-lupa-movil").css("top", "15px");
-                    $(".base-logo").css("top", "0px");
-                }
-                if($(window).width() == 768)
-                {
-                    $(".img-lupa-movil").css("top", "11px");
-                }
-                if($(window).width() == 414)
-                {
-                    $(".logo").css("top", "-33px");
-                }
-                if($(window).width() == 375)
-                {
-                    $(".logo").css("top", "-31px");
-                }
-                if($(window).width() == 360)
-                {
-                    $(".logo").css("top", "-14px");
-                }
-                if($(window).width() == 320)
-                {
-                    $(".img-lupa-movil").css("top", "-19px");
-                    $(".logo").css("top", "-30px");
-                }
-            }
-            else{
-                if($(window).width() <= 420)
-                {
-                    $(".base-logo").css("top", "-19px");
-                }
-            }
         });
     </script>
 

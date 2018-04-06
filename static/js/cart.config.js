@@ -75,9 +75,6 @@ $(document).ready(function()
     var random_seed = 'random('+ Math.random() +')';
 
     var config = {
-
-
-
         'app_public': app_public,
         'base_url': base_url,
         'products_per_page' : 8,
@@ -92,6 +89,11 @@ $(document).ready(function()
         'direction' : 'asc',
         'onLoad': function(products)
         {
+            $(document).on("click", ".add-to-cart, .remove-from-cart, .remove-one, .add-one", function()
+            {
+                units(config);
+            });
+
             for(x in products)
             {
                 var prod = products[x].sku;
@@ -164,6 +166,8 @@ $(document).ready(function()
     };
 
     $(document).ecommerce(config);
+
+    units(config);
 
     $(document).on("click", ".subcateg", function(ev){
         ev.preventDefault();
