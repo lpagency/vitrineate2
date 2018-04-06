@@ -1,0 +1,269 @@
+/*doc
+
+---
+title: Product Box
+name: product box
+category: product box
+---
+
+Producto sin etiquetas:
+
+```html_example
+<div class="grin">
+    <div class="clearfix-dos"></div>
+    <div class="col-md-3 col-sm-4 col-xs-6 art-hi">
+        <div alig="center">
+            <a href="/sc/product/detail/aros_mandala_con_lapislazuli/8074"></a>
+            <div class="fufi 8074">
+                <a href="/sc/product/detail/aros_mandala_con_lapislazuli/8074">
+                    <div class="letreros">
+                        <div class="letrero-sale hidden 0">OFERTA</div>
+                        <div class="letrero-new hidden 8074">NUEVO</div>
+                        <div class="shape hidden PS04"></div>
+                        <div class="aa hidden PS04">AGOTADO</div>
+                    </div>
+                    <img src="https://84static.loadingplay.com/static/images/500_f005dd08eb75ff0fcbb5a696aac09987_azulpng.png" alt="" class="img-responsive img-pro">
+                    <div class="overlay 8074">
+                        <div class="text">COMPRAR</div>
+                    </div>
+                    <p class="inf ellipsis multiline">Aros mandala con Lapislazuli</p>
+                </a>
+                <a class="link-marca" marca="Pili Saenz Joyas" href="/listado_productos?tag=pili_saenz_joyas">
+                    <p class="brand-color ellipsis multiline">Pili Saenz Joyas</p>
+                </a>
+                <div class="col-md-6 col-sm-6 precios-div">
+                    <div class="product-price-3 producto 8074" style="font-size: 12px;"></div>
+                    <div class="hidden escondido 8074">$18.000 </div>
+                    <div class="hidden promocion 8074">$0 </div>
+                    <div class="product-price-3 sku-prod PS04" style="font-weight: bold;">$18.000 </div>
+                </div>
+                <button type="button" class="col-md-6 btn add-to-cart PS04 btn-success comprar comprar-btn PS04" id="open-cart" data-toggle="modal" data-target="#myModal" product-upp="1" product-name="Aros mandala con Lapislazuli" product-price="18000" product-sku="PS04" product-id="8074" product-img="https://84static.loadingplay.com/static/images/500_f005dd08eb75ff0fcbb5a696aac09987_azulpng.png" product-weight="0.3" lp-cart-add=""> <img class="bolsa-agregar" src="https://cdn.loadingplay.com/static/images/a99be0bd09ebc9845d83e325177baa2d_bolsita_comprar.png">Agregar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+
+```
+
+Producto en oferta:
+
+```html_example
+<div class="grin">
+    <div class="clearfix-dos"> </div>
+    <div class="col-md-3 col-sm-4 col-xs-6 art-hi">
+        <div alig="center">
+            <a href="/sc/product/detail/panuelo_de_seda/8354"></a>
+            <div class="fufi 8354 fufi-sale">
+                <a href="/sc/product/detail/panuelo_de_seda/8354">
+                    <div class="letreros">
+                        <div class="letrero-sale 11000">OFERTA</div>
+                        <div class="letrero-new hidden 8354">NUEVO</div>
+                        <div class="shape hidden PM09"></div>
+                        <div class="aa hidden PM09">AGOTADO</div>
+                    </div>
+                    <img src="https://84static.loadingplay.com/static/images/500_6732fe4391adb5ab61e91e035dbf996b_DSCNpng.png" alt="" class="img-responsive img-pro">
+                    <div class="overlay 8354 overlay-sale">
+                        <div class="text">COMPRAR</div>
+                    </div>
+                    <p class="inf ellipsis multiline">Pañuelo de Seda</p>
+                </a>
+                <a class="link-marca" marca="Paula Mar" href="/listado_productos?tag=paula_mar">
+                    <p class="brand-color ellipsis multiline">Paula Mar</p>
+                </a>
+                <div class="col-md-6 col-sm-6 precios-div">
+                    <div class="product-price-3 producto 8354" style="font-size: 12px; text-decoration: line-through;">$13.900 </div>
+                    <div class="hidden escondido 8354">$13.900 </div>
+                    <div class="hidden promocion 8354">$11.000 </div>
+                    <div class="product-price-3 sku-prod PM09" style="font-weight: bold;">$11.000 </div>
+                </div>
+                <button type="button" class="col-md-6 btn add-to-cart PM09 btn-success comprar comprar-btn PM09" id="open-cart" data-toggle="modal" data-target="#myModal" product-upp="1" product-name="Pañuelo de Seda" product-price="13900" product-sku="PM09" product-id="8354" product-img="https://84static.loadingplay.com/static/images/500_6732fe4391adb5ab61e91e035dbf996b_DSCNpng.png" product-weight="0.3" lp-cart-add=""> <img class="bolsa-agregar" src="https://cdn.loadingplay.com/static/images/a99be0bd09ebc9845d83e325177baa2d_bolsita_comprar.png">Agregar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+
+```
+
+Producto en oferta agotado:
+
+```html_example
+<div class="grin">
+    <div class="clearfix-dos"> </div>
+    <div class="col-md-3 col-sm-4 col-xs-6 art-hi">
+        <div alig="center">
+            <a href="/sc/product/detail/panuelo_de_seda/8354"></a>
+            <div class="fufi 8354 fufi-sale">
+                <a href="/sc/product/detail/panuelo_de_seda/8354">
+                    <div class="letreros">
+                        <div class="letrero-sale 11000">OFERTA</div>
+                        <div class="letrero-new hidden 8354">NUEVO</div>
+                        <div class="shape PM09"></div>
+                        <div class="aa PM09">AGOTADO</div>
+                    </div>
+                    <img src="https://84static.loadingplay.com/static/images/500_6732fe4391adb5ab61e91e035dbf996b_DSCNpng.png" alt="" class="img-responsive img-pro">
+                    <div class="overlay 8354 overlay-sale">
+                        <div class="text">COMPRAR</div>
+                    </div>
+                    <p class="inf ellipsis multiline">Pañuelo de Seda</p>
+                </a>
+                <a class="link-marca" marca="Paula Mar" href="/listado_productos?tag=paula_mar">
+                    <p class="brand-color ellipsis multiline">Paula Mar</p>
+                </a>
+                <div class="col-md-6 col-sm-6 precios-div">
+                    <div class="product-price-3 producto 8354" style="font-size: 12px; text-decoration: line-through;">$13.900 </div>
+                    <div class="hidden escondido 8354">$13.900 </div>
+                    <div class="hidden promocion 8354">$11.000 </div>
+                    <div class="product-price-3 sku-prod PM09" style="font-weight: bold;">$11.000 </div>
+                </div>
+                <button type="button" class="col-md-6 btn add-to-cart PM09 btn-success comprar comprar-btn PM09" id="open-cart" data-toggle="modal" data-target="#myModal" product-upp="1" product-name="Pañuelo de Seda" product-price="13900" product-sku="PM09" product-id="8354" product-img="https://84static.loadingplay.com/static/images/500_6732fe4391adb5ab61e91e035dbf996b_DSCNpng.png" product-weight="0.3" lp-cart-add=""> <img class="bolsa-agregar" src="https://cdn.loadingplay.com/static/images/a99be0bd09ebc9845d83e325177baa2d_bolsita_comprar.png">Agregar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+
+```
+
+*/
+
+.overlay 
+{
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 250px;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.36);
+}
+
+.fufi:hover .overlay
+{
+    opacity: 1;
+}
+
+.fufi
+{
+    position: relative;
+    margin: auto;
+    height: 351px;
+}
+
+.text
+{
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.text:hover
+{
+    background-color: rgba(128, 128, 128, 0.8);
+    color: white;
+    font-size: 14px;
+    padding: 10px 32px;
+    border: 2px solid white;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.inf
+{
+    position: relative;
+    bottom: 11px;
+    width: 100%;
+    margin-top: 25px;
+    text-align: left;
+    left: 0%;
+    color: black;
+    font-size: 15px;
+    display: inline-block;
+    white-space: nowrap !important;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    margin-bottom: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 26px;
+}
+
+.brand-color
+{
+    color: #00e2bb;
+    position: relative;
+}
+
+.precios-div
+{
+    padding-left: 0px;
+}
+
+.product-price-3
+{
+    position: relative;
+    font-size: 15px;
+    color: black;
+    text-align: left;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    min-height: 14px;
+}
+
+.letreros
+{
+    position: absolute;
+}
+
+.letrero-sale
+{
+    position: relative;
+    top: 30px;
+    font-size: 11px;
+    text-align: center;
+    padding: 2px;
+    color: white;
+    background-color: red;
+    width: 60px;
+    border: solid 1px red;
+}
+
+.shape
+{
+    margin-top: -104px;
+    position: relative;
+    top: 46px;
+    left: 131px;
+    -webkit-clip-path: polygon(0 0, 100% 100%, 100% 50%, 50% 0);
+    clip-path: polygon(0 0, 100% 100%, 100% 50%, 50% 0);
+    width: 90px;
+    height: 90px;
+    background-color: #cecfd0;
+}
+
+.aa
+{
+    position: relative;
+    left: 133px;
+    font-size: 11px;
+    top: 41px;
+    font-weight: bold;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

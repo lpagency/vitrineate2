@@ -9,6 +9,10 @@ category: basics
 esta es la paleta de colores:
 
 <div class="line txtC">
+<div class="col-md-12">
+        <div class="block col-md-1" style="background-color: #ff0000" ></div>
+        <code class="col-md-11" >#ff0000</code>
+    </div>
     <div class="col-md-12">
         <div class="block col-md-1" style="background-color: #e9ffc6" ></div>
         <code class="col-md-11" >#e9ffc6</code>
