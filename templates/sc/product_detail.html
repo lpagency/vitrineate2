@@ -47,23 +47,17 @@
 
 <script type="text/javascript">
     $(document).ready(function() {
-        $(document).on("click", ".signos-desc", function() {
-            $(this).parent().parent().children(".hide-info").toggle("slow");
-            if ($(this).hasClass("fa-plus")) {
-                $(this).removeClass("fa-plus");
-                $(this).addClass("fa-minus");
-            } else {
-                $(this).removeClass("fa-minus");
-                $(this).addClass("fa-plus");
-            }
-        });
 
-        $(document).on("touchstart", ".signos-desc", function() {
+        $(document).on("click touchstart", ".signos-desc", function(e) {
             $(this).parent().parent().children(".hide-info").toggle("slow");
-            if ($(this).hasClass("fa-plus")) {
+            console.log("llega!!!");
+            if ($(this).hasClass("fa-plus"))
+            {
                 $(this).removeClass("fa-plus");
                 $(this).addClass("fa-minus");
-            } else {
+            }
+             else
+             {
                 $(this).removeClass("fa-minus");
                 $(this).addClass("fa-plus");
             }
