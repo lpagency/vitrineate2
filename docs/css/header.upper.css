@@ -37,6 +37,7 @@ category: header
 {
     background-color: #d7ff3e;
     height: auto;
+    min-height: 30px;
 }
 
 .header-text-huincha
