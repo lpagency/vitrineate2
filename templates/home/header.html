@@ -33,7 +33,7 @@
         <!-- / MENU UPPER -->
 
         <!-- MENU BOTTOM -->
-        <div class="visible-lg visible-md hidden-sm hidden-xs menu-safari">
+        <div class="visible-lg visible-md menu-safari">
             <nav class="navbar">
                 <div>
                     <div class="navbar-header">
@@ -144,5 +144,29 @@
         </div>
         <!-- /MENU BOTTOM -->
     </div>
+
+
+    <!-- MENU BOTTOM MOVIL -->
+    <div class="col-xs-12 buscador-movil">
+        <div class="categorias-movil">
+            <div class="col-sm-3 col-xs-3 nombre-categorias-movil">
+                <a class="textos-movil-menu" tabindex="-1" href="/listado_productos?tag=cat1_mujer">Mujer</a>
+            </div>
+            <div class="col-sm-3 col-xs-3 nombre-categorias-movil">
+                <a class="textos-movil-menu" tabindex="-1" href="/listado_productos?tag=cat1_hombre">Hombre</a>
+            </div>
+            <div class="col-sm-3 col-xs-3 nombre-categorias-movil">
+                <a class="textos-movil-menu" tabindex="-1" href="/listado_productos?tag=cat1_ninos">Niños</a>
+            </div>
+            <div class="col-sm-3 col-xs-3 nombre-categorias-movil">
+                <a class="textos-movil-menu" tabindex="-1" href="/listado_productos?tag=cat1_accesorios">Accesorios</a>
+            </div>
+        </div>
+        <form id="searchform" class="form-search forma-movil hidden" role="search" action="/listado_productos" method="get">
+            <input type="text" name="search_query" placeholder="Buscar" class="busca search mobile-search" value="">
+        </form>
+    </div>
+    <!-- /MENU BOTTOM MOVIL -->
+
 
 </div>

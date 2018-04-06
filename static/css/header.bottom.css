@@ -1,10 +1,12 @@
 /*doc
 
 ---
-title: Header bottom
+title: Fin del header
 name: header
 category: header
 ---
+
+header bottom
 
 ```html_example
 <div class="visible-lg visible-md hidden-sm hidden-xs menu-safari">
@@ -117,6 +119,31 @@ category: header
 </div>
 ```
 
+header bottom movil
+
+```html_example
+<div class="col-xs-12 buscador-movil">
+    <div class="categorias-movil">
+        <div class="col-sm-3 col-xs-3 nombre-categorias-movil">
+            <a class="textos-movil-menu" tabindex="-1" href="/listado_productos?tag=cat1_mujer">Mujer</a>
+        </div>
+        <div class="col-sm-3 col-xs-3 nombre-categorias-movil">
+            <a class="textos-movil-menu" tabindex="-1" href="/listado_productos?tag=cat1_hombre">Hombre</a>
+        </div>
+        <div class="col-sm-3 col-xs-3 nombre-categorias-movil">
+            <a class="textos-movil-menu" tabindex="-1" href="/listado_productos?tag=cat1_ninos">Niños</a>
+        </div>
+        <div class="col-sm-3 col-xs-3 nombre-categorias-movil">
+            <a class="textos-movil-menu" tabindex="-1" href="/listado_productos?tag=cat1_accesorios">Accesorios</a>
+        </div>
+    </div>
+    <form id="searchform" class="form-search forma-movil hidden" role="search" action="/listado_productos" method="get">
+        <input type="text" name="search_query" placeholder="Buscar" class="busca search mobile-search" value="">
+    </form>
+</div>
+<div class="clearfix"></div>
+```
+
 */
 
 .w3-dropdown-click,
@@ -227,4 +254,35 @@ ul.nav.navbar-nav.navbar-right.buscador-header
 .w3-dropdown-content a:hover
 {
     background-color: #ccc;
+}
+
+.categorias-movil
+{
+    border-bottom: solid 1px #666;
+    border-top: solid 1px #666;
+    height: 38px;
+}
+
+.textos-movil-menu
+{
+    display: block;
+    width: 100%;
+    height: 36px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.buscador-movil
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+@media (max-width: 320px) {
+    a.textos-movil-menu {
+        font-weight: bold;
+        text-align: left;
+        font-size: 9px;
+        padding-top: 12px;
+    }
 }
