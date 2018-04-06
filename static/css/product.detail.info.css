@@ -200,6 +200,18 @@ producto agotado:
     background-color: #e9ffc6;
 }
 
+.product-price-2 {
+    position: relative;
+    top: 6px;
+    font-size: 18px;
+    color: black;
+    text-align: left;
+    height: 44px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: bold;
+}
+
 .name_prod_detail
 {
     position: relative;

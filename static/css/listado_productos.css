@@ -432,17 +432,6 @@ hr.detalle {
     margin-right: 11px;
 }
 
-.product-price-2{
-    position: relative;
-    top: 6px;
-    font-size: 18px;
-    color: black;
-    text-align: left;
-    height: 44px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-weight: 400;
-}
 .product-detail{
     margin-top: 50px;
 }
