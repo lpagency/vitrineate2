@@ -15,147 +15,123 @@
 
 {% block javascript %}
 <script type="text/javascript">
-  $(document).ready(function()
-  {
-    setTimeout(function(){
-      if($(".load-v").html() == "")
-      {
-        if(window.aux == 0)
-        {
-          console.log("aaaa");
-          $(".add-to-cart").html("AGOTADO");
-          $(".main-price").addClass("hidden");
-          $(".promotion-price").addClass("hidden");
-          $(".add-to-cart").attr("disabled", true);
-        }
-        else
-        {
-          $(".add-to-cart").attr("disabled", false);
-        }
-      }
-      if($(".load-v").html() == undefined)
-      {
-        if(window.aux == 0)
-        {
-          $(".add-to-cart").html("AGOTADO");
-          $(".main-price").addClass("hidden");
-          $(".promotion-price").addClass("hidden");
-          $(".add-to-cart").attr("disabled", true);
-        }
-        else
-        {
-          $(".add-to-cart").attr("disabled", false);
-        }
-      }
-      console.log(window.aux);
-      if(window.aux == 0 || window.aux == undefined)
-        {
-          if($(window).width() == 320)
-          {
-            $(".boton-movil-comprar").css("top", "20px");
-            $(".v-movil").addClass("hidden");
-          }
-          $(".add-to-cart").html("AGOTADO");
-          $(".main-price").addClass("hidden");
-          $(".promotion-price").addClass("hidden");
-          $(".add-to-cart").attr("disabled", true);
-        }
-    },3000);
+    $(document).ready(function() {
+        setTimeout(function() {
+            if ($(".load-v").html() == "") {
+                if (window.aux == 0) {
+                    console.log("aaaa");
+                    $(".add-to-cart").html("AGOTADO");
+                    $(".main-price").addClass("hidden");
+                    $(".promotion-price").addClass("hidden");
+                    $(".add-to-cart").attr("disabled", true);
+                } else {
+                    $(".add-to-cart").attr("disabled", false);
+                }
+            }
+            if ($(".load-v").html() == undefined) {
+                if (window.aux == 0) {
+                    $(".add-to-cart").html("AGOTADO");
+                    $(".main-price").addClass("hidden");
+                    $(".promotion-price").addClass("hidden");
+                    $(".add-to-cart").attr("disabled", true);
+                } else {
+                    $(".add-to-cart").attr("disabled", false);
+                }
+            }
+            console.log(window.aux);
+            if (window.aux == 0 || window.aux == undefined) {
+                if ($(window).width() == 320) {
+                    $(".boton-movil-comprar").css("top", "20px");
+                    $(".v-movil").addClass("hidden");
+                }
+                $(".add-to-cart").html("AGOTADO");
+                $(".main-price").addClass("hidden");
+                $(".promotion-price").addClass("hidden");
+                $(".add-to-cart").attr("disabled", true);
+            }
+        }, 3000);
 
-    setTimeout(function()
-    {
-      if($(".add-to-cart").html() == "AGOTADO")
-      {
-        $(".info-producto").removeClass("hidden");
-      }
-    },3000);
+        setTimeout(function() {
+            if ($(".add-to-cart").html() == "AGOTADO") {
+                $(".info-producto").removeClass("hidden");
+            }
+        }, 3000);
 
-    $(document).on("click", ".tallas", function()
-    {
-      if(!$(".tallas").hasClass("btn-disabled"))
-      {
-        $(".add-to-cart").attr("disabled",false);
-      }
+        $(document).on("click", ".tallas", function() {
+            if (!$(".tallas").hasClass("btn-disabled")) {
+                $(".add-to-cart").attr("disabled", false);
+            }
+        });
+
+        $(document).on("click", ".info-href", function() {
+            $(".sku-prod").val($(".sku-producto-hidden").html());
+            $(".nombre-prod").val($(".name_prod_detail").html());
+        });
     });
-
-    $(document).on("click", ".info-href", function()
-    {
-      $(".sku-prod").val($(".sku-producto-hidden").html());
-      $(".nombre-prod").val($(".name_prod_detail").html());
-    });
-  });
 </script>
-    <script>
-        $(document).ready(function(){
-          $('.dropdown-submenu a.test').on("click", function(e){
+<script>
+    $(document).ready(function() {
+        $('.dropdown-submenu a.test').on("click", function(e) {
             $(this).next('ul').toggle();
             e.stopPropagation();
             e.preventDefault();
-          });
         });
-
-    </script>
+    });
+</script>
 
 <script type="text/javascript">
-  $(document).ready(function()
-  {
-    $(document).on("click", ".signos-desc", function()
-    {
-      $(this).parent().parent().children(".hide-info").toggle("slow");
-      if($(this).hasClass("fa-plus"))
-      {
-        $(this).removeClass("fa-plus");
-        $(this).addClass("fa-minus");
-      }
-      else
-      {
-        $(this).removeClass("fa-minus");
-        $(this).addClass("fa-plus");
-      }
-    });
+    $(document).ready(function() {
+        $(document).on("click", ".signos-desc", function() {
+            $(this).parent().parent().children(".hide-info").toggle("slow");
+            if ($(this).hasClass("fa-plus")) {
+                $(this).removeClass("fa-plus");
+                $(this).addClass("fa-minus");
+            } else {
+                $(this).removeClass("fa-minus");
+                $(this).addClass("fa-plus");
+            }
+        });
 
-    $(document).on("touchstart", ".signos-desc", function()
-    {
-      $(this).parent().parent().children(".hide-info").toggle("slow");
-      if($(this).hasClass("fa-plus"))
-      {
-        $(this).removeClass("fa-plus");
-        $(this).addClass("fa-minus");
-      }
-      else
-      {
-        $(this).removeClass("fa-minus");
-        $(this).addClass("fa-plus");
-      }
+        $(document).on("touchstart", ".signos-desc", function() {
+            $(this).parent().parent().children(".hide-info").toggle("slow");
+            if ($(this).hasClass("fa-plus")) {
+                $(this).removeClass("fa-plus");
+                $(this).addClass("fa-minus");
+            } else {
+                $(this).removeClass("fa-minus");
+                $(this).addClass("fa-plus");
+            }
+        });
     });
-  });
 </script>
 
 <script type="text/javascript" src="{{ site_base }}/static/js/product_detail.ec5.js?12"></script>
 
 <script type="text/javascript">
-
-    $(document).ready(function()
-    {
+    $(document).ready(function() {
         var base_url = $.environmentVar(
-/*'https://apibodegas.loadingplay.com/',*    <- para poder probar en ondev*/
-          'https://apibodegas.ondev.today/',
-          'https://apibodegas.ondev.today/',
-          'https://apibodegas.loadingplay.com/');
+            /*'https://apibodegas.loadingplay.com/',*    <- para poder probar en ondev*/
+            'https://apibodegas.ondev.today/',
+            'https://apibodegas.ondev.today/',
+            'https://apibodegas.loadingplay.com/');
         var checkout_url = $.environmentVar(
-          /*'https://lpcheckout.ondev.today/',    <- para poder probar en ondev*/
-          'https://pay.loadingplay.com',
-          'https://lpcheckout.ondev.today',
-          'https://pay.loadingplay.com');
-        var app_public = $.environmentVar(69,69,69);
+            /*'https://lpcheckout.ondev.today/',    <- para poder probar en ondev*/
+            'https://pay.loadingplay.com',
+            'https://lpcheckout.ondev.today',
+            'https://pay.loadingplay.com');
+        var app_public = $.environmentVar(69, 69, 69);
         var site_name = $.environmentVar('vitrineate', 'vitrineate', 'vitrineate');
         var variants_loaded = false;
 
         var options = {
-            'app_public' : app_public,
-            'base_url' : base_url,
+            'app_public': app_public,
+            'base_url': base_url,
             'checkout_url': checkout_url,
-            'product_id' : {{ product_id }},
+            'product_id': {
+                {
+                    product_id
+                }
+            },
             'site_name': site_name,
             'variants': {
                 'product_sku': '',
@@ -171,55 +147,45 @@
                     </div>',
                 'active_class': 'active'
             },
-            onLoad: function(product)
-            {
+            onLoad: function(product) {
 
-              $(document).on("click", ".add-to-cart, .remove-from-cart, .remove-one, .add-one", function()
-                {
+                $(document).on("click", ".add-to-cart, .remove-from-cart, .remove-one, .add-one", function() {
                     units(options);
                 });
 
-              $(".sku-producto-hidden").html(product.sku);
+                $(".sku-producto-hidden").html(product.sku);
 
-              for(var x=0; x<product.tags.length; x++)
-              {
-                if(product.tags[x].name.indexOf("oferta") > -1)
-                {
-                  $("#mainImage").addClass("img-sale");
-                  $(".letrero-sale-detail").removeClass("hidden");
+                for (var x = 0; x < product.tags.length; x++) {
+                    if (product.tags[x].name.indexOf("oferta") > -1) {
+                        $("#mainImage").addClass("img-sale");
+                        $(".letrero-sale-detail").removeClass("hidden");
+                    }
+
+                    if (product.tags[x].name.indexOf("nuevo") > -1) {
+                        $("#mainImage").addClass("img-new");
+                        $(".letrero-new-detail").removeClass("hidden");
+                    }
+
+                    if (product.tags[x].name.indexOf("nuevo") > -1 && product.tags[x].name.indexOf("oferta") > -1) {
+                        $("#mainImage").addClass("img-ambos");
+                        $(".letrero-sale-detail").removeClass("hidden");
+                        $(".letrero-new-detail").removeClass("hidden");
+                    }
                 }
 
-                if(product.tags[x].name.indexOf("nuevo") > -1)
-                {
-                  $("#mainImage").addClass("img-new");
-                  $(".letrero-new-detail").removeClass("hidden");
+                if (product.promotion_price != undefined) {
+                    if (product.promotion_price != 0) {
+                        $(".main-price").css("text-decoration", "line-through");
+                        $(".main-price").css("font-size", "15px");
+                        $(".main-price").css("margin-bottom", "-23px");
+                        $(".promotion-price").css("font-weight", "bold");
+                        $(".add-to-cart").attr("product-price", product.promotion_price);
+                    } else {
+                        $(".promotion-price").addClass("hidden");
+                    }
                 }
 
-                if(product.tags[x].name.indexOf("nuevo") > -1 && product.tags[x].name.indexOf("oferta") > -1)
-                {
-                    $("#mainImage").addClass("img-ambos");
-                    $(".letrero-sale-detail").removeClass("hidden");
-                    $(".letrero-new-detail").removeClass("hidden");
-                }
-              }
-
-              if(product.promotion_price != undefined)
-              {
-                if(product.promotion_price != 0)
-                {
-                  $(".main-price").css("text-decoration", "line-through");
-                  $(".main-price").css("font-size", "15px");
-                  $(".main-price").css("margin-bottom", "-23px");
-                  $(".promotion-price").css("font-weight", "bold");
-                  $(".add-to-cart").attr("product-price", product.promotion_price);
-                }
-                else{
-                  $(".promotion-price").addClass("hidden");
-                }
-              }
-
-                if (variants_loaded)
-                {
+                if (variants_loaded) {
                     return;
                 }
 
@@ -229,49 +195,43 @@
                 // load variants
                 $('.product-detail').ecommerce('load_variants', options);
                 $('.variants-container').on(
-                    'combination:selected', function(e, d, in_stock)
-                    {
-                        if (in_stock)
-                        {
+                    'combination:selected',
+                    function(e, d, in_stock) {
+                        if (in_stock) {
                             $('.add-to-cart').attr('product-combination', d);
                             $('.add-to-cart').removeAttr('disabled');
 
-                        }
-                        else{
+                        } else {
                             $('.add-to-cart').removeAttr('product-combination');
                             $('.add-to-cart').attr('disabled', true);
                         }
                     });
 
-                variants_loaded = true;  // execute this onces
+                variants_loaded = true; // execute this onces
                 options.onLoad = $.noop;
 
-              if(product.length == undefined)
-              {
-                for(var i=0; i<product.tags.length; i++)
-                {
-                  if(product.tags[i].name.indexOf("Cat3_") != -1 || product.tags[i].name.indexOf("cat3_") != -1)
-                  {
-                    related(product.tags[i].name);
-                  }
-                }
+                if (product.length == undefined) {
+                    for (var i = 0; i < product.tags.length; i++) {
+                        if (product.tags[i].name.indexOf("Cat3_") != -1 || product.tags[i].name.indexOf("cat3_") != -1) {
+                            related(product.tags[i].name);
+                        }
+                    }
 
-              }
-                if (product.bullet_1 != "" ){
-                    $.get(site_base + "/article/tag?tag="+product.bullet_1, function(data)
-                    {
+                }
+                if (product.bullet_1 != "") {
+                    $.get(site_base + "/article/tag?tag=" + product.bullet_1, function(data) {
                         $("#article-reladed").html(data);
                     });
                 }
-            var mainImage = $("#mainImage");
-            $(".img-container img").hover(function(){
-             var src = $(this).attr("src");
-             $("#mainImage").attr("src",src);
-           });
+                var mainImage = $("#mainImage");
+                $(".img-container img").hover(function() {
+                    var src = $(this).attr("src");
+                    $("#mainImage").attr("src", src);
+                });
 
-            mainImage.on("click",function(){
-              $(this).css("transform","scale(1.1)");
-            });
+                mainImage.on("click", function() {
+                    $(this).css("transform", "scale(1.1)");
+                });
 
             }
 
@@ -281,115 +241,96 @@
         units(options);
         $('.product-detail').on(
             'variants_stock_loaded',
-            function(e, d)
-            {
+            function(e, d) {
                 window.aux = 0;
-                for (var p in d)
-                {
+                for (var p in d) {
                     var stock;
                     window.aux = window.aux + d[p];
 
-                    if(d[p] == 0)
-                    {
-                      stock = "<b>AGOTADO</b>";
-                    }
-                    else
-                    {
-                      stock = d[p].toString() + " Unidades";
+                    if (d[p] == 0) {
+                        stock = "<b>AGOTADO</b>";
+                    } else {
+                        stock = d[p].toString() + " Unidades";
                     }
 
                     $(".stock-product").html($(".stock-product").html() + p + " : " + stock + "<br>");
-                    if(d[p] !== 0)
-                    {
+                    if (d[p] !== 0) {
                         var l = p.split("-");
-                        var last = l[l.length-1];
+                        var last = l[l.length - 1];
 
-                        $("[value="+ last +"]").removeClass("btn-disabled");
-                        $("[value="+ last +"]").children("span").remove();
+                        $("[value=" + last + "]").removeClass("btn-disabled");
+                        $("[value=" + last + "]").children("span").remove();
 
                         //$(".stock-product").html("stock: "+d[p]);
-                    }
-                    else{
-                      var l = p.split("-");
-                      var last = l[l.length-1];
+                    } else {
+                        var l = p.split("-");
+                        var last = l[l.length - 1];
 
-                      $("[value="+ last +"]").css("border","2px solid #a7a7a7");
-                      $("[value="+ last +"]").attr("disabled", true);
-                      $("[value="+ last +"]").css("padding","15px 0px");
-                      $("[value="+ last +"]").css("margin-bottom","11px");
-                      $("[value="+ last +"]").css("width","50px");
-                      $("[value="+ last +"]").css("height","50px");
-                      $("[value="+ last +"]").css("float","left");
-                      $("[value="+ last +"]").css("left","0px");
-                      $("[value="+ last +"]").css("position","relative");
-                      $("[value="+ last +"]").css("margin-left","9px");
-                      $("[value="+ last +"]").css("font-size","13px");
-                      $("[value="+ last +"]").css("border-radius","48px");
-                      $("[value="+ last +"]").css("font-weight","600");
+                        $("[value=" + last + "]").css("border", "2px solid #a7a7a7");
+                        $("[value=" + last + "]").attr("disabled", true);
+                        $("[value=" + last + "]").css("padding", "15px 0px");
+                        $("[value=" + last + "]").css("margin-bottom", "11px");
+                        $("[value=" + last + "]").css("width", "50px");
+                        $("[value=" + last + "]").css("height", "50px");
+                        $("[value=" + last + "]").css("float", "left");
+                        $("[value=" + last + "]").css("left", "0px");
+                        $("[value=" + last + "]").css("position", "relative");
+                        $("[value=" + last + "]").css("margin-left", "9px");
+                        $("[value=" + last + "]").css("font-size", "13px");
+                        $("[value=" + last + "]").css("border-radius", "48px");
+                        $("[value=" + last + "]").css("font-weight", "600");
 
-                      $("[value="+ last +"]").children(".num-tal").css("color","#a7a7a7");
-                      $("[value="+ last +"]").removeClass("size-item");
-                      $(".add-to-cart").attr("disabled", true);
+                        $("[value=" + last + "]").children(".num-tal").css("color", "#a7a7a7");
+                        $("[value=" + last + "]").removeClass("size-item");
+                        $(".add-to-cart").attr("disabled", true);
                     }
                 }
             });
 
         // productos relacionados
-        var related = function(tag)
-        {
+        var related = function(tag) {
 
-            var random_seed = 'random('+ Math.random() +')';
+            var random_seed = 'random(' + Math.random() + ')';
 
             var config = {
-                'app_public' : app_public,
-                'base_url' : base_url,
-                'maxProducts' : 4,
-                'templateOrigin' : '#product_template_home',
-                'tag' : tag,
-                'ignore_stock' : true,
+                'app_public': app_public,
+                'base_url': base_url,
+                'maxProducts': 4,
+                'templateOrigin': '#product_template_home',
+                'tag': tag,
+                'ignore_stock': true,
                 'column': random_seed
             };
 
             $('.product-related').ecommerce('product_box', config);
         };
     });
-
 </script>
 
 <script type="text/javascript">
-    $(document).ready(function()
-    {
-        $(document).on("click", "#open-cart", function()
-        {
-          setTimeout(function()
-          {
-            if($(".total-carro").val() > 0)
-            {
-              $(".pagar-carro").attr("disabled", false);
-            }
-          },100);
+    $(document).ready(function() {
+        $(document).on("click", "#open-cart", function() {
+            setTimeout(function() {
+                if ($(".total-carro").val() > 0) {
+                    $(".pagar-carro").attr("disabled", false);
+                }
+            }, 100);
         });
 
-        $(document).on("click", ".add-one", function()
-        {
-          setTimeout(function()
-          {
-            if($(".total-carro").val() > 0)
-            {
-              $(".pagar-carro").attr("disabled", false);
-            }
-          },1);
+        $(document).on("click", ".add-one", function() {
+            setTimeout(function() {
+                if ($(".total-carro").val() > 0) {
+                    $(".pagar-carro").attr("disabled", false);
+                }
+            }, 1);
         });
 
-        $(document).on("click", ".remove-one", function()
-        {
-          setTimeout(function()
-          {
-            if($(".total-carro").val() > 0)
-            {
-              $(".pagar-carro").attr("disabled", false);
-            }
-          },1);
+        $(document).on("click", ".remove-one", function() {
+            setTimeout(function() {
+                if ($(".total-carro").val() > 0) {
+                    $(".pagar-carro").attr("disabled", false);
+                }
+            }, 1);
         });
     });
 </script>
@@ -399,105 +340,91 @@
 <section>
 
 <div class="shopping-cart"></div>
-      <div class="container min contenido-index">
-        <div align="center">
-          <div class="img-div col-md-6 col-sm-6 col-xs-12">
+<div class="container min contenido-index">
+    <div align="center">
+        <div class="img-div col-md-6 col-sm-6 col-xs-12">
             <div class="col-md-12 col-sm-12 col-xs-12 img-ppal-movil">
-            <div id="mainDiv">
-              <div class="main-img-container">
-                <div class="letreros-detalle">
-                  <div class="letrero-sale-detail hidden {{! sku }}">OFERTA</div>
-                  <div class="letrero-new-detail hidden {{! sku }}">NUEVO</div>
+                <div id="mainDiv">
+                    <div class="main-img-container">
+                        <div class="letreros-detalle">
+                            <div class="letrero-sale-detail hidden {{! sku }}">OFERTA</div>
+                            <div class="letrero-new-detail hidden {{! sku }}">NUEVO</div>
+                        </div>
+                        <img id='mainImage' class="fondo-detalle" src="{{! images[1]['thumb_500'] }}" />
+                    </div>
                 </div>
-                <img id='mainImage' class="fondo-detalle" src="{{! images[1]['thumb_500'] }}"/>
-              </div>
             </div>
-           </div>
 
-           <div class="offset-md-1  offset-sm-1 col-xs-12 col-md-12 col-sm-12 image_little">
-            <div class="img-container">
-              <img class="{{! images[1]['thumb_500']|hide_if_empty}} col-xs-3 img_prod_little" src="{{! images[1]['thumb_500'] }}" onload="this.onload='';this.src={{! images[1]['thumb_500']}}" />
+            <div class="offset-md-1  offset-sm-1 col-xs-12 col-md-12 col-sm-12 image_little">
+                <div class="img-container">
+                    <img class="{{! images[1]['thumb_500']|hide_if_empty}} col-xs-3 img_prod_little" src="{{! images[1]['thumb_500'] }}" onload="this.onload='';this.src={{! images[1]['thumb_500']}}" />
+                </div>
+                <div class="img-container">
+                    <img class="{{! images[2]['thumb_500']|hide_if_empty }} col-xs-3 img_prod_little " src="{{! images[2]['thumb_500'] }}" onload="this.onload='';this.src={{! images[2]['thumb_500']}}" />
+                </div>
+                <div class="img-container">
+                    <img class="{{! images[3]['thumb_500']|hide_if_empty }} col-xs-3  img_prod_little" src="{{! images[3]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[3]['thumb_500']}}" />
+                </div>
+                <div class="img-container">
+                    <img class="{{! images[4]['thumb_500']|hide_if_empty }} col-xs-3  img_prod_little" src="{{! images[4]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[4]['thumb_500']}}" />
+                </div>
+                <div class="img-container">
+                    <img class="{{! images[5]['thumb_500']|hide_if_empty }} col-xs-3  img_prod_little" src="{{! images[5]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[5]['thumb_500']}}" />
+                </div>
+                <div class="img-container">
+                    <img class="{{! images[6]['thumb_500']|hide_if_empty }} col-xs-3  img_prod_little" src="{{! images[6]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[6]['thumb_500']}}" />
+                </div>
             </div>
-            <div class="img-container">
-              <img class="{{! images[2]['thumb_500']|hide_if_empty }} col-xs-3 img_prod_little " src="{{! images[2]['thumb_500'] }}" onload="this.onload='';this.src={{! images[2]['thumb_500']}}" />
-            </div>
-            <div class="img-container">
-              <img class="{{! images[3]['thumb_500']|hide_if_empty }} col-xs-3  img_prod_little" src="{{! images[3]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[3]['thumb_500']}}" />
-            </div>
-            <div class="img-container">
-              <img class="{{! images[4]['thumb_500']|hide_if_empty }} col-xs-3  img_prod_little" src="{{! images[4]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[4]['thumb_500']}}" />
-            </div>
-            <div class="img-container">
-              <img class="{{! images[5]['thumb_500']|hide_if_empty }} col-xs-3  img_prod_little" src="{{! images[5]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[5]['thumb_500']}}" />
-            </div>
-            <div class="img-container">
-              <img class="{{! images[6]['thumb_500']|hide_if_empty }} col-xs-3  img_prod_little" src="{{! images[6]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[6]['thumb_500']}}" />
-            </div>
-          </div>
-          </div>
-         </div>
-
-          <div class="col-md-6 col-sm-6 col-xs-12 text-prod-desk">
-             <h1 class="name name_prod_detail ellipsis multiline" class="line" href="#">{{! name }}</h1>
-              <div class="descripcion-producto">
-                <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Descripción<i class="fa fa-plus signos-desc" aria-hidden="true"></i></h3>
-                <h3 class="descr_prod_detail desc-font ellipsis multiline hide-info" style="display: none">{{! bullet_3 }}</h3>
-              </div>
-              <div class="descripcion-producto">
-                <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Descripción extendida<i class="fa fa-plus signos-desc" aria-hidden="true"></i></h3>
-                <h3 class="descr_prod_detail desc-font ellipsis multiline hide-info" style="display: none">{{! description }}</h3>
-              </div>
-              <div class="descripcion-producto">
-                <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Información de despacho<i class="fa fa-plus signos-desc" aria-hidden="true"></i></h3>
-                <h3 class="descr_prod_detail desc-font ellipsis multiline hide-info" style="display: none">{{! bullet_2 }}</h3>
-              </div>
-              <div class="descripcion-producto">
-                <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Stock disponible<i class="fa fa-plus signos-desc" aria-hidden="true"></i></h3>
-                <div class="stock-product hide-info" style="display: none"></div>
-              </div>
-             <div class="col-md-6 precio-movil">
-                <div class="product-price-2 main-price">{{! main_price|money }} </div>
-                <div class="product-price-2 promotion-price">{{! promotion_price|money }} </div>
-             </div>
-             <div class="col-md-12 mover variants-container visible-xs">
-              </div>
-              <div class="col-md-12 mover variants-container hidden-xs">
-              </div>
-             <div class="col-md-6 padding-r boton-movil-comprar">
-              <button
-               type="button"
-               class="btn add-to-cart btn-success comprar"
-               id="open-cart"
-               data-toggle="modal"
-               data-target="#myModal"
-               product-upp="{{! upp }}"
-               product-name="{{! name }}"
-               product-price="{{! main_price }}"
-               product-sku="{{! sku }}"
-               product-id="{{! id }}"
-               product-img="{{! images[0]['thumb_500'] }}"
-               product-weight="{{! weight }}"
-               disabled
-               lp-cart-add
-               > <img class="bolsa-agregar" src="https://cdn.loadingplay.com/static/images/a99be0bd09ebc9845d83e325177baa2d_bolsita_comprar.png">Comprar</button>
-               <div class="info-producto hidden">
-                  <div class="hidden sku-producto-hidden"></div>
-                  <a class="info-href" href="#" data-toggle="modal" data-target="#myModalInfo">Solicitar este producto!</a>
-               </div>
-             </div>
-          </div>
-        </div>
-
-    </section>
-
-
-        <div class="clearfix-fun-2"></div>
-        <div class="container">
-
         </div>
     </div>
 
-    <!-- <div class="container min">
+    <div class="col-md-6 col-sm-6 col-xs-12 text-prod-desk">
+        <h1 class="name name_prod_detail ellipsis multiline" class="line" href="#">{{! name }}</h1>
+        <div class="descripcion-producto">
+            <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Descripción<i class="fa fa-plus signos-desc" aria-hidden="true"></i></h3>
+            <h3 class="descr_prod_detail desc-font ellipsis multiline hide-info" style="display: none">{{! bullet_3 }}</h3>
+        </div>
+        <div class="descripcion-producto">
+            <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Descripción extendida<i class="fa fa-plus signos-desc" aria-hidden="true"></i></h3>
+            <h3 class="descr_prod_detail desc-font ellipsis multiline hide-info" style="display: none">{{! description }}</h3>
+        </div>
+        <div class="descripcion-producto">
+            <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Información de despacho<i class="fa fa-plus signos-desc" aria-hidden="true"></i></h3>
+            <h3 class="descr_prod_detail desc-font ellipsis multiline hide-info" style="display: none">{{! bullet_2 }}</h3>
+        </div>
+        <div class="descripcion-producto">
+            <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Stock disponible<i class="fa fa-plus signos-desc" aria-hidden="true"></i></h3>
+            <div class="stock-product hide-info" style="display: none"></div>
+        </div>
+        <div class="col-md-6 precio-movil">
+            <div class="product-price-2 main-price">{{! main_price|money }} </div>
+            <div class="product-price-2 promotion-price">{{! promotion_price|money }} </div>
+        </div>
+        <div class="col-md-12 mover variants-container visible-xs">
+        </div>
+        <div class="col-md-12 mover variants-container hidden-xs">
+        </div>
+        <div class="col-md-6 padding-r boton-movil-comprar">
+            <button type="button" class="btn add-to-cart btn-success comprar" id="open-cart" data-toggle="modal" data-target="#myModal" product-upp="{{! upp }}" product-name="{{! name }}" product-price="{{! main_price }}" product-sku="{{! sku }}" product-id="{{! id }}"
+            product-img="{{! images[0]['thumb_500'] }}" product-weight="{{! weight }}" disabled lp-cart-add> <img class="bolsa-agregar" src="https://cdn.loadingplay.com/static/images/a99be0bd09ebc9845d83e325177baa2d_bolsita_comprar.png">Comprar</button>
+            <div class="info-producto hidden">
+                <div class="hidden sku-producto-hidden"></div>
+                <a class="info-href" href="#" data-toggle="modal" data-target="#myModalInfo">Solicitar este producto!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+<div class="clearfix-fun-2"></div>
+<div class="container">
+
+</div>
+</div>
+
+<!-- <div class="container min">
       <div class="clearfix" style="padding-bottom: 50px">
       </div>
 
@@ -519,68 +446,74 @@
 
     <div class="container  product-page"></div>
 
-    </div>
+</div>
 
-    <!-- Modal -->
-  <div class="modal fade" id="myModalInfo" role="dialog">
+<!-- Modal -->
+<div class="modal fade" id="myModalInfo" role="dialog">
     <div class="modal-dialog">
 
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header fondo-modal">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <div class="text-center modal-title {{editabletext}}" text-id="{{ site.name + '_info_producto' }}"> {{ read_text(site.name +  '_info_producto') }}</div>
-          <!-- <h4 class="modal-title"></h4> -->
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header fondo-modal">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="text-center modal-title {{editabletext}}" text-id="{{ site.name + '_info_producto' }}"> {{ read_text(site.name + '_info_producto') }}</div>
+                <!-- <h4 class="modal-title"></h4> -->
+            </div>
+            <form action='https://forms.zohopublic.com/sytes/form/vitrineateinfodeproducto/formperma/Az7f-NCIZm4q_-UekpTQ_U1l8lbbpK3nx09dI7u0g-U/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data' onSubmit="zf_validateandsubmitdata();">
+                <div class="modal-body cuerpo-producto">
+                    <div class="col-md-6 margin-movil">SKU del producto:</div>
+                    <div class="col-md-6">
+                        <input class="textos-info sku-prod" type="text" required disabled>
+                        <input class="textos-info sku-prod hidden" type="text" name="SingleLine" required>
+                    </div>
+                    <div class="col-md-6 margin-movil">Nombre del producto:</div>
+                    <div class="col-md-6">
+                        <input class="textos-info nombre-prod" type="text" required disabled>
+                        <input class="textos-info nombre-prod hidden" type="text" name="SingleLine1" required>
+                    </div>
+                    <div class="col-md-6 margin-movil">Talla (Si es que aplica):</div>
+                    <div class="col-md-6">
+                        <input class="textos-info" type="text" name="SingleLine2">
+                    </div>
+                    <div class="col-md-6 margin-movil">Ingresa tu nombre:</div>
+                    <div class="col-md-6">
+                        <input class="textos-info" type="text" name="Name_First" placeholder="Nombre" required>
+                    </div>
+                    <div class="col-md-6 margin-movil">Ingresa tu Email:</div>
+                    <div class="col-md-6">
+                        <input class="textos-info" type="email" name="Email" placeholder="Email" required>
+                    </div>
+                    <div class="col-md-6 margin-movil">Ingresa algun comentario:</div>
+                    <div class="col-md-6">
+                        <textarea class="textarea-info" rows="4" cols="33" name="MultiLine" placeholder="Comentario"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer fondo-modal">
+                    <button type="submit" class="btn btn-default enviar-info">Enviar</button>
+                </div>
         </div>
-        <form action='https://forms.zohopublic.com/sytes/form/vitrineateinfodeproducto/formperma/Az7f-NCIZm4q_-UekpTQ_U1l8lbbpK3nx09dI7u0g-U/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data' onSubmit="zf_validateandsubmitdata();">
-          <div class="modal-body cuerpo-producto">
-            <div class="col-md-6 margin-movil">SKU del producto:</div>
-            <div class="col-md-6">
-              <input class="textos-info sku-prod" type="text" required disabled>
-              <input class="textos-info sku-prod hidden" type="text" name="SingleLine" required>
-            </div>
-            <div class="col-md-6 margin-movil">Nombre del producto:</div>
-            <div class="col-md-6">
-              <input class="textos-info nombre-prod" type="text" required disabled>
-              <input class="textos-info nombre-prod hidden" type="text" name="SingleLine1" required>
-            </div>
-            <div class="col-md-6 margin-movil">Talla (Si es que aplica):</div>
-            <div class="col-md-6">
-              <input class="textos-info" type="text" name="SingleLine2">
-            </div>
-            <div class="col-md-6 margin-movil">Ingresa tu nombre:</div>
-            <div class="col-md-6"><input class="textos-info" type="text" name="Name_First" placeholder="Nombre" required></div>
-            <div class="col-md-6 margin-movil">Ingresa tu Email:</div>
-            <div class="col-md-6"><input class="textos-info" type="email" name="Email" placeholder="Email" required></div>
-            <div class="col-md-6 margin-movil">Ingresa algun comentario:</div>
-            <div class="col-md-6"><textarea class="textarea-info" rows="4" cols="33" name="MultiLine" placeholder="Comentario"></textarea></div>
-          </div>
-          <div class="modal-footer fondo-modal">
-            <button type="submit" class="btn btn-default enviar-info">Enviar</button>
-          </div>
-      </div>
-      </form>
+        </form>
     </div>
-  </div>
+</div>
 
 </div>
 
 
 <div class="product-detail" style="margin-bottom: 50px;"></div>
 <div class="container min">
-   <div align="center">
-    <div class="col-md-12 col-sm-12 col-xs-12">
-       <!-- <hr class="detalle"> -->
-   </div>
-   </div>
+    <div align="center">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <!-- <hr class="detalle"> -->
+        </div>
+    </div>
 </div>
 
 
 <div class="container min">
-  <div class="col-md-12 col-sm-12 col-xs-12">
-     <div class="reli {{editabletext}}" text-id="{{ site.name + '_reli' }}"> {{ read_text(site.name +  '_reli') }}</div>
-  </div>
- <div class="product-related">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="reli {{editabletext}}" text-id="{{ site.name + '_reli' }}"> {{ read_text(site.name + '_reli') }}</div>
+    </div>
+    <div class="product-related">
 
     </div>
 </div>
