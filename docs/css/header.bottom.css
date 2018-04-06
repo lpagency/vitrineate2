@@ -278,6 +278,13 @@ ul.nav.navbar-nav.navbar-right.buscador-header
     padding-right: 0px;
 }
 
+@media (max-width: 1199px)
+{
+    .container.min
+    {
+        width: 100%;
+    }
+}
 @media (max-width: 320px) {
     a.textos-movil-menu {
         font-weight: bold;
