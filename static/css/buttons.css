@@ -18,6 +18,15 @@ buy button:
 <button type="button" class="btn btn-success comprar" >Comprar</button>
 ```
 
+boton comprar detalle:
+
+```html_example
+<button class="btn add-to-cart btn-success comprar" >
+    <img class="bolsa-agregar" src="https://cdn.loadingplay.com/static/images/a99be0bd09ebc9845d83e325177baa2d_bolsita_comprar.png">
+    Comprar
+</button>
+```
+
 variant buttons:
 
 ```html_example
@@ -135,7 +144,6 @@ a:hover
     position: relative;
     bottom: 17px;
     margin-bottom: 11px;
-    width: 50px;
     height: 50px;
     font-size: 13px;
     font-weight: 600;
@@ -148,4 +156,45 @@ a:hover
     position: relative;
     right: 20px;
     margin-bottom: 15px;
+}
+
+.btn.add-to-cart
+{
+    background-color: #3be1bc;
+    border-color: #3be1bc;
+    color: #666;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bolsa-agregar
+{
+    top: -2px;
+    position: relative;
+    margin-right: 5px;
+}
+
+.btn-success.comprar:hover
+{
+    color: gray;
+    background-color:  #fff;
+    border-color: gray;
+    border-radius: 0px;
+    font-size: 15px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border-radius: 0px;
+    font-size: 15px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.btn-disabled.active
+{
+    background: transparent;
 }

@@ -1,3 +1,24 @@
 .grin{
 	display: none;
 }
+
+@media (max-width: 768px){
+    .contenido-index {
+        margin-top: 20% !important;
+    }
+}
+
+@media (max-width: 414px){
+    .contenido-index {
+        margin-top: 15% !important;
+    }
+}
+
+@media (max-width: 320px){
+    .contenido-index {
+        margin-top: 40% !important;
+    }
+    .logo{
+        margin-top: -19px !important;
+    }
+  }

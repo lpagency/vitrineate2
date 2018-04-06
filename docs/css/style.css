@@ -403,11 +403,6 @@ div.image-upload.par1 {
     position: relative;
     height: 250px;
     object-fit: cover;
-    filter: grayscale(0%) brightness(90%);
-    -webkit-filter: grayscale(0%) brightness(90%);
-    -moz-filter: grayscale(0%) brightness(90%);
-    -ms-filter: grayscale(0%) brightness(90%);
-    -o-filter: grayscale(0%) brightness(90%);
 }
 
 .article-box-2 {
@@ -468,11 +463,6 @@ section#first-page-scroll {
     width: 100%;
     object-fit: cover !important;
     height: 400px;
-    filter: grayscale(0%) brightness(90%);
-    -webkit-filter: grayscale(0%) brightness(90%);
-    -moz-filter: grayscale(0%) brightness(90%);
-    -ms-filter: grayscale(0%) brightness(90%);
-    -o-filter: grayscale(0%) brightness(90%);
     top: -1px;
     position: relative;
 }
@@ -987,8 +977,8 @@ hr.page-contact {
     text-align: left;
   }
 
-  .contenido-index {
-        margin-top: 0px;
+    .contenido-index {
+        margin-top: 140px;
     }
 
   .logos-titulo-2 {
@@ -1088,11 +1078,6 @@ hr.page-contact {
     position: relative;
     height: 185px;
     object-fit: cover;
-    filter: grayscale(0%) brightness(905%);
-    -webkit-filter: grayscale(0%) brightness(90%);
-    -moz-filter: grayscale(0%) brightness(90%);
-    -ms-filter: grayscale(0%) brightness(90%);
-    -o-filter: grayscale(0%) brightness(90%);
     margin-bottom: 10px;
 }
 .box-gra {
@@ -1100,11 +1085,6 @@ hr.page-contact {
     position: relative;
     height: 380px;
     object-fit: contain;
-    filter: grayscale(0%) brightness(90%);
-    -webkit-filter: grayscale(0%) brightness(90%);
-    -moz-filter: grayscale(0%) brightness(90%);
-    -ms-filter: grayscale(0%) brightness(90%);
-    -o-filter: grayscale(0%) brightness(90%);
 }
 }
 
@@ -1135,23 +1115,13 @@ hr.page-contact {
         position: relative;
         height: 340px;
         object-fit: contain;
-        filter: grayscale(0%) brightness(905%);
-        -webkit-filter: grayscale(0%) brightness(90%);
-        -moz-filter: grayscale(0%) brightness(90%);
-        -ms-filter: grayscale(0%) brightness(90%);
-        -o-filter: grayscale(0%) brightness(90%);
         margin-bottom: 10px;
     }
     .box-gra {
         width: 100%;
         position: relative;
-        height: 276px;
-        object-fit: cover;
-        filter: grayscale(0%) brightness(90%);
-        -webkit-filter: grayscale(0%) brightness(90%);
-        -moz-filter: grayscale(0%) brightness(90%);
-        -ms-filter: grayscale(0%) brightness(90%);
-        -o-filter: grayscale(0%) brightness(90%);
+        height: 342px;
+        object-fit: contain;
     }
 
 .align-form-contact {
@@ -1215,7 +1185,19 @@ hr.page-contact {
         padding-right: inherit;
     }
 
+    .shape{
+        top: 48px;
+        left: 90px;
+    }
+
+    .aa{
+        left: 100px;
+        top: 28px;
+    }
+
     .logos-titulo{
+        top: -25px;
+        position: relative;
         text-align: center;
         margin: 0px 290px 3.125rem auto;
     }
@@ -1272,11 +1254,6 @@ hr.page-contact {
         position: relative;
         height: 199px;
         object-fit: cover;
-        filter: grayscale(0%) brightness(75%);
-        -webkit-filter: grayscale(0%) brightness(75%);
-        -moz-filter: grayscale(0%) brightness(75%);
-        -ms-filter: grayscale(0%) brightness(75%);
-        -o-filter: grayscale(0%) brightness(75%);
         margin-bottom: 5px;
         margin-top: 16px;
     }
@@ -1423,6 +1400,28 @@ hr.page-contact {
 
 
 @media (max-width: 414px){
+
+    span {
+        font-size: 14px !important;
+    }
+
+    .logos-titulo{
+        font-size: 14px;
+    }
+
+    .brand-color{
+        text-align: center;
+        left: -7px;
+    }
+
+    .primero {
+        margin-top: 20% !important;
+    }
+
+    .product-price-3{
+        text-align: center !important;
+    }
+
 .image-somos-cir {
     display: block;
     width: 317px;
@@ -1430,6 +1429,29 @@ hr.page-contact {
     margin-top: 80px;
     object-fit: cover;
     border-radius: 180px;
+}
+
+.aa {
+    position: relative;
+    left: 77px;
+    font-size: 11px;
+    top: 24px;
+    font-weight: bold;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(54deg);
+}
+
+.shape {
+    margin-top: -104px;
+    position: relative;
+    top: 50px;
+    left: 86px;
+    -webkit-clip-path: polygon(0 0, 100% 100%, 100% 50%, 50% 0);
+    clip-path: polygon(0 0, 100% 100%, 100% 50%, 50% 0);
+    width: 63px;
+    height: 90px;
+    background-color: #cecfd0;
 }
 
 .text-prod-desk {
@@ -1473,22 +1495,48 @@ hr.page-contact {
 
 @media (max-width: 412px){
 
-.img-hed-3 {
+    .img-hed-3 {
 
-    left: 0;
-    top: 12px;
-}
+        left: 0;
+        top: 12px;
+    }
 
-.rrss {
+    .rrss {
 
-    right: 40px;
-    /* left: 5px; */
-    top: 69px;
-}
+        right: 40px;
+        /* left: 5px; */
+        top: 69px;
+    }
 
 }
 
 @media (max-width: 400px){
+
+    .product-price-3{
+        text-align: center !important;
+    }
+
+    span {
+        font-size: 14px !important;
+    }
+
+    .art-hi{
+        left: -15px;
+    }
+
+    .logos-titulo{
+        font-size: 14px;
+    }
+
+    .shape{
+        left: 76px;
+    }
+
+    .brand-color{
+        text-align: center;
+        left: -7px;
+    }
+
     .bot {
         height: 80px;
     }
@@ -1500,17 +1548,17 @@ hr.page-contact {
     }
 
     .contacto-btn {
-        left: 40px;
+        left: 56px;
     }
 
-.image-somos-cir {
-    display: block;
-    width: 303px;
-    height: 300px;
-    margin-top: 80px;
-    object-fit: cover;
-    border-radius: 180px;
-}
+    .image-somos-cir {
+        display: block;
+        width: 303px;
+        height: 300px;
+        margin-top: 80px;
+        object-fit: cover;
+        border-radius: 180px;
+    }
 
 }
 
@@ -1544,6 +1592,28 @@ hr.page-contact {
 }
 
 @media (max-width: 320px){
+
+    .art-hi{
+        left: 0px;
+    }
+
+    .brand-color{
+        left: 0px;
+    }
+
+    span {
+        font-size: 14px !important;
+    }
+
+    .logos-titulo{
+        font-size: 14px;
+    }
+
+    .logo-instagram-banner {
+        width: 34%;
+        left: 33.2%;
+    }
+
     .box-gra {
         object-fit: contain;
         height: 115px;

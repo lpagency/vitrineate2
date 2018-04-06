@@ -351,28 +351,36 @@ img#vitrineate_img_logo_footer {
 }
 
 @media (max-width: 414px){
-.caja-fo {
-    margin-top: 33px;
+    .caja-fo {
+        margin-top: 33px;
 
-}
-
-img#vitrineate2_img_logo_footer {
-    position: relative;
-    left: 38%;
-}
-
-a.a-footer {
-    position: relative;
-    left: 38%;
-}
-
-.ul-2{
-        left: 0px;
     }
 
-.ul-{
-    left: inherit;
-}
+    img#vitrineate2_img_logo_footer {
+        position: relative;
+        left: 38%;
+    }
+
+    a.a-footer {
+        position: relative;
+        left: 38%;
+    }
+
+    .ul-2{
+            left: 0px;
+        }
+
+    .ul-{
+        left: inherit;
+    }
+
+    .facebook{
+        float: right;
+    }
+
+    .instagram{
+        float: left;
+    }
 
 .img-foot {
     left: -183px;
@@ -415,6 +423,14 @@ a.a-footer {
 }
 
 @media (max-width: 375px){
+
+    .facebook{
+        float: right;
+    }
+
+    .instagram{
+        float: left;
+    }
 
 .img-foot {
     left: -222px;
@@ -462,6 +478,14 @@ a.a-footer {
 
 img#vitrineate2_img_logo_footer {
     left: 30%;
+}
+
+.facebook{
+    float: right;
+}
+
+.instagram{
+    float: left;
 }
 
 .caja-fo {

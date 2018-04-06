@@ -10,12 +10,16 @@ esta es la paleta de colores:
 
 <div class="line txtC">
     <div class="col-md-12">
+        <div class="block col-md-1" style="background-color: #e9ffc6" ></div>
+        <code class="col-md-11" >#e9ffc6</code>
+    </div>
+    <div class="col-md-12">
         <div class="block col-md-1" style="background-color: #d6ff3e" ></div>
         <code class="col-md-11" >#d6ff3</code>
     </div>
     <div class="col-md-12">
         <div class="block col-md-1" style="background-color: #3be1bc" ></div>
-        <code class="col-md-11" >#3be1b</code>
+        <code class="col-md-11" >#3be1bc</code>
     </div>
     <div class="col-md-12">
         <div class="block col-md-1" style="background-color: #999" ></div>

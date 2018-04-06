@@ -1,0 +1,278 @@
+/*doc
+
+---
+title: Product detail info
+name: detail.info
+category: detail.info
+---
+
+producto con stock
+
+```html_example
+<div class="col-md-6 col-sm-6 col-xs-12 text-prod-desk">
+    <h1 class="name name_prod_detail ellipsis multiline" href="#">Strapless Maida Fucsia Amelie</h1>
+    <div class="descripcion-producto">
+        <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Descripción<i class="fa fa-plus pull-right" aria-hidden="true"></i></h3>
+        <h3 class="descr_prod_detail desc-font ellipsis multiline hide-info" style="display: none"></h3>
+    </div>
+    <div class="descripcion-producto">
+        <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Descripción extendida<i class="fa fa-plus pull-right" aria-hidden="true"></i></h3>
+        <h3 class="descr_prod_detail desc-font ellipsis multiline hide-info" style="display: none">Confeccionado en encaje, forro de algodón y esponjas push up removibles.<br></h3>
+    </div>
+    <div class="descripcion-producto">
+        <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Información de despacho<i class="fa fa-plus pull-right" aria-hidden="true"></i></h3>
+        <h3 class="descr_prod_detail desc-font ellipsis multiline hide-info" style="display: none"></h3>
+    </div>
+    <div class="descripcion-producto">
+        <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Stock disponible<i class="fa fa-plus pull-right" aria-hidden="true"></i></h3>
+        <div class="stock-product hide-info" style="display: none">STRMAISAN-32B : <b>AGOTADO</b>
+            <br>STRMAISAN-34B : 3 Unidades
+            <br>STRMAISAN-36B : 3 Unidades
+            <br>STRMAISAN-38B : <b>AGOTADO</b>
+            <br>
+        </div>
+    </div>
+    <div class="col-md-6 precio-movil">
+        <div class="product-price-2 main-price">$14.990 </div>
+        <div class="product-price-2 promotion-price hidden">$0 </div>
+    </div>
+    <div class="col-md-12 mover variants-container visible-xs">
+        <div class="col-md-12 mover load-v v-movil">
+            <div class="col-md-4 col-sm-4 col-xs-4 tallas variant-value btn-disabled" variant="TALLA" value="32B" in_stock="" disabled="disabled" style="border: 2px solid rgb(167, 167, 167); padding: 15px 0px; margin-bottom: 11px; width: 50px; height: 50px; float: left; left: 0px; position: relative; margin-left: 9px; font-size: 13px; border-radius: 48px; font-weight: 600;"><span class="size-buttons-size-strike-show"></span>
+                <div class="num-tal" style="color: rgb(167, 167, 167);">32B</div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4 size-item tallas variant-value" variant="TALLA" value="34B" in_stock="">
+                <div class="num-tal">34B</div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4 size-item tallas variant-value" variant="TALLA" value="36B" in_stock="">
+                <div class="num-tal">36B</div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4 tallas variant-value btn-disabled" variant="TALLA" value="38B" in_stock="" disabled="disabled" style="border: 2px solid rgb(167, 167, 167); padding: 15px 0px; margin-bottom: 11px; width: 50px; height: 50px; float: left; left: 0px; position: relative; margin-left: 9px; font-size: 13px; border-radius: 48px; font-weight: 600;"><span class="size-buttons-size-strike-show"></span>
+                <div class="num-tal" style="color: rgb(167, 167, 167);">38B</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 mover variants-container hidden-xs">
+        <div class="col-md-12 mover load-v v-movil">
+            <div class="col-md-4 col-sm-4 col-xs-4 tallas variant-value btn-disabled" variant="TALLA" value="32B" in_stock="" disabled="disabled" style="border: 2px solid rgb(167, 167, 167); padding: 15px 0px; margin-bottom: 11px; width: 50px; height: 50px; float: left; left: 0px; position: relative; margin-left: 9px; font-size: 13px; border-radius: 48px; font-weight: 600;"><span class="size-buttons-size-strike-show"></span>
+                <div class="num-tal" style="color: rgb(167, 167, 167);">32B</div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4 size-item tallas variant-value" variant="TALLA" value="34B" in_stock="">
+                <div class="num-tal">34B</div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4 size-item tallas variant-value" variant="TALLA" value="36B" in_stock="">
+                <div class="num-tal">36B</div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4 tallas variant-value btn-disabled" variant="TALLA" value="38B" in_stock="" disabled="disabled" style="border: 2px solid rgb(167, 167, 167); padding: 15px 0px; margin-bottom: 11px; width: 50px; height: 50px; float: left; left: 0px; position: relative; margin-left: 9px; font-size: 13px; border-radius: 48px; font-weight: 600;"><span class="size-buttons-size-strike-show"></span>
+                <div class="num-tal" style="color: rgb(167, 167, 167);">38B</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 padding-r boton-movil-comprar">
+        <button type="button" class="btn add-to-cart btn-success comprar" id="open-cart" data-toggle="modal" data-target="#myModal" product-upp="1" product-name="Strapless Maida Fucsia Amelie" product-price="14990" product-sku="STRMAISAN" product-id="9028" product-img="https://cdn.loadingplay.com/static/images/500_9a7dc21ea3842455fc143b4a7cec7dfd_STRMAISANpng.png"
+        product-weight="0.3" disabled="disabled" lp-cart-add=""> <img class="bolsa-agregar" src="https://cdn.loadingplay.com/static/images/a99be0bd09ebc9845d83e325177baa2d_bolsita_comprar.png">Comprar</button>
+    </div>
+    <div class="info-producto hidden">
+        <div class="hidden sku-producto-hidden">STRMAISAN</div>
+        <a class="info-href" href="#" data-toggle="modal" data-target="#myModalInfo">Solicitar este producto!</a>
+    </div>
+</div>
+<div class="clearfix" ></div>
+```
+
+producto con stock y oferta:
+
+```html_example
+<div class="col-md-6 col-sm-6 col-xs-12 text-prod-desk">
+    <h1 class="name name_prod_detail ellipsis multiline" href="#">Camisa Manga Corta Palmeras</h1>
+    <div class="descripcion-producto">
+        <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Descripción<i class="fa fa-plus signos-desc" aria-hidden="true"></i></h3>
+        <h3 class="descr_prod_detail desc-font ellipsis multiline hide-info" style="display: none"></h3>
+    </div>
+    <div class="descripcion-producto">
+        <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Descripción extendida<i class="fa fa-plus signos-desc" aria-hidden="true"></i></h3>
+        <h3 class="descr_prod_detail desc-font ellipsis multiline hide-info" style="display: none">Exclusivas desde Brasil, Santa Catarina <br><br>DETALLES <br>- Celeste con Palmeras Azules <br>- Slim Fit <br>- Tejido liviano <br>- Botones blancos<br>- Manga corta <br><br>MEDIDAS Y TALLA <br><br>*Talla M mide aproximadamente: <br>Cuello: 45 cms. <br>Pecho: 52 cms. <br>Cintura: 52 cms. <br>Largo: 78 cms. <br>Manga: 23 cms. <br><br>*Talla G mide aproximadamente: <br>Cuello: 45 cms. <br>Pecho: 54 cms. <br>Cintura: 54 cms. <br>Largo: 79 cms. <br>Manga: 25 cms. <br><br>COMPOSICIÓN Y CUIDADO <br>- 100% algodón.<br>- No clorar.<br></h3>
+    </div>
+    <div class="descripcion-producto">
+        <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Información de despacho<i class="fa fa-plus signos-desc" aria-hidden="true"></i></h3>
+        <h3 class="descr_prod_detail desc-font ellipsis multiline hide-info" style="display: none">camisas de hombre en vitrineate.cl</h3>
+    </div>
+    <div class="descripcion-producto">
+        <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Stock disponible<i class="fa fa-plus signos-desc" aria-hidden="true"></i></h3>
+        <div class="stock-product hide-info" style="display: none">ST02-G : 1 Unidades
+            <br>ST02-M : 1 Unidades
+            <br>ST02-P : <b>AGOTADO</b>
+            <br>
+        </div>
+    </div>
+    <div class="col-md-6 precio-movil">
+        <div class="product-price-2 main-price" style="text-decoration: line-through; font-size: 15px;">$46.600 </div>
+        <div class="product-price-2 promotion-price" style="font-weight: bold;">$35.000 </div>
+    </div>
+    <div class="col-md-12 mover variants-container visible-xs">
+        <div class="col-md-12 mover load-v v-movil">
+            <div class="col-md-4 col-sm-4 col-xs-4 tallas variant-value btn-disabled" variant="Talla" value="P" in_stock="" disabled="disabled" style="border: 2px solid rgb(167, 167, 167); padding: 15px 0px; margin-bottom: 11px; width: 50px; height: 50px; float: left; left: 0px; position: relative; margin-left: 9px; font-size: 13px; border-radius: 48px; font-weight: 600;"><span class="size-buttons-size-strike-show"></span>
+                <div class="num-tal" style="color: rgb(167, 167, 167);">P</div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4 size-item tallas variant-value" variant="Talla" value="M" in_stock="">
+                <div class="num-tal">M</div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4 size-item tallas variant-value" variant="Talla" value="G" in_stock="">
+                <div class="num-tal">G</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 mover variants-container hidden-xs">
+        <div class="col-md-12 mover load-v v-movil">
+            <div class="col-md-4 col-sm-4 col-xs-4 tallas variant-value btn-disabled" variant="Talla" value="P" in_stock="" disabled="disabled" style="border: 2px solid rgb(167, 167, 167); padding: 15px 0px; margin-bottom: 11px; width: 50px; height: 50px; float: left; left: 0px; position: relative; margin-left: 9px; font-size: 13px; border-radius: 48px; font-weight: 600;"><span class="size-buttons-size-strike-show"></span>
+                <div class="num-tal" style="color: rgb(167, 167, 167);">P</div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4 size-item tallas variant-value active" variant="Talla" value="M" in_stock="">
+                <div class="num-tal">M</div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4 size-item tallas variant-value" variant="Talla" value="G" in_stock="">
+                <div class="num-tal">G</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 padding-r boton-movil-comprar">
+        <button type="button" class="btn add-to-cart btn-success comprar" id="open-cart" data-toggle="modal" data-target="#myModal" product-upp="1" product-name="Camisa Manga Corta Palmeras" product-price="35000" product-sku="ST02" product-id="8206" product-img="https://7static.loadingplay.com/static/images/500_bdb68d4ef373b025d3f3b97099d4c50a_DSCNpng.png"
+        product-weight="0.5" lp-cart-add="" product-combination="M"> <img class="bolsa-agregar" src="https://cdn.loadingplay.com/static/images/a99be0bd09ebc9845d83e325177baa2d_bolsita_comprar.png">Comprar</button>
+    </div>
+    <div class="info-producto hidden">
+        <div class="hidden sku-producto-hidden">ST02</div>
+        <a class="info-href" href="#" data-toggle="modal" data-target="#myModalInfo">Solicitar este producto!</a>
+    </div>
+</div>
+<div class="clearfix"></div>
+```
+
+producto agotado:
+
+```html_example
+<div class="col-md-6 col-sm-6 col-xs-12 text-prod-desk">
+    <h1 class="name name_prod_detail ellipsis multiline" href="#">Kimono Maxi Beige Flores</h1>
+    <div class="descripcion-producto">
+        <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Descripción<i class="fa pull-right fa-plus" aria-hidden="true"></i></h3>
+        <h3 class="descr_prod_detail desc-font ellipsis multiline hide-info" style="overflow: hidden; display: none;"></h3>
+    </div>
+    <div class="descripcion-producto">
+        <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Descripción extendida<i class="fa pull-right fa-plus" aria-hidden="true"></i></h3>
+        <h3 class="descr_prod_detail desc-font ellipsis multiline hide-info" style="overflow: hidden; display: none;">Hecho a partir de material reutilizado <br> Moldería Cero Residuos <br> Diseñado y confeccionado en Chile <br><br>♦ 60 cm ancho espalda <br> ♦ 132 cm largo <br> ♦ Tela: 100% seda <br> ♦ Pieza única<br></h3>
+    </div>
+    <div class="descripcion-producto">
+        <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Información de despacho<i class="fa pull-right fa-plus" aria-hidden="true"></i></h3>
+        <h3 class="descr_prod_detail desc-font ellipsis multiline hide-info" style="overflow: hidden; display: none;"></h3>
+    </div>
+    <div class="descripcion-producto">
+        <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Stock disponible<i class="fa pull-right fa-plus" aria-hidden="true"></i></h3>
+        <div class="stock-product hide-info" style="overflow: hidden; display: none;">KI37 : <b>AGOTADO</b>
+            <br>
+        </div>
+    </div>
+    <div class="col-md-6 precio-movil">
+        <div class="product-price-2 main-price hidden" style="text-decoration: line-through; font-size: 15px; margin-bottom: -23px;">$59.900 </div>
+        <div class="product-price-2 promotion-price hidden" style="font-weight: bold;">$47.920 </div>
+    </div>
+    <div class="col-md-12 mover variants-container visible-xs">
+        <div class="col-md-12 mover load-v v-movil"></div>
+    </div>
+    <div class="col-md-12 mover variants-container hidden-xs">
+        <div class="col-md-12 mover load-v v-movil"></div>
+    </div>
+    <div class="col-md-6 padding-r boton-movil-comprar pull-right text-right">
+        <button type="button" class="btn add-to-cart btn-success comprar" id="open-cart" data-toggle="modal" data-target="#myModal" product-upp="1" product-name="Kimono Maxi Beige Flores" product-price="47920" product-sku="KI37" product-id="8276" product-img="https://84static.loadingplay.com/static/images/500_27408844d29e3c962fb3e68ef8026c43_DSCNpng.png"
+        product-weight="0.3" disabled="disabled" lp-cart-add="">AGOTADO</button>
+        <div class="info-producto">
+            <div class="hidden sku-producto-hidden">KI37</div>
+            <a class="info-href" href="#" data-toggle="modal" data-target="#myModalInfo">Solicitar este producto!</a>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+```
+
+*/
+
+
+.text-prod-desk
+{
+    background-color: #e9ffc6;
+}
+
+.name_prod_detail
+{
+    position: relative;
+    top: 6px;
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    height: 54px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-weight: bold;
+}
+
+.descr_prod_detail
+{
+    position: relative;
+    font-size: 15px;
+    width: 100%;
+    text-align: left;
+    height: 100%;
+    top: -16px;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+}
+
+.bordes-desc
+{
+    border-bottom: solid 2px #686965;
+    font-weight: bold !important;
+}
+
+.boton-movil-comprar
+{
+    float: right;
+    text-align: right;
+    padding-right: 0px;
+}
+
+.info-producto
+{
+    margin-top: 10px;
+}
+
+.text-prod-desk
+{
+    padding-bottom: 15px;
+}
+
+.variants-container
+{
+    margin-top: 10px;
+}
+
+.precio-movil
+{
+    font-size: 18px;
+    padding-left: 0px;
+}
+
+.signos-desc
+{
+    float: right;
+}
+
+
+@media (max-width: 991px)
+{
+    .mover
+    {
+        float: left;
+        width: 270px;
+    }
+}

@@ -59,12 +59,6 @@ div.image-upload.part1 {
     font-weight: inherit !important;
 }
 
-.info-producto{
-    float: right;
-    position: relative;
-    top: -10px;
-}
-
 .stock-product{
     margin-bottom: 30px;
     font-size: 12px;
@@ -177,7 +171,7 @@ div.image-upload.part1 {
     color: black;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    
+
 }
 
 .img-pro-rel {
@@ -438,39 +432,6 @@ hr.detalle {
     margin-right: 11px;
 }
 
-.btn-success.comprar {
-    float: right;
-    margin-top: 11px;
-    color: black;
-    background-color: #00e0ba;
-    border-color: #00e0ba;
-    border-radius: 0px;
-    font-size: 15px;
-    font-weight: bold;
-    padding-left: 20px;
-    padding-right: 20px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.btn-success.comprar:hover {
-    color: gray;
-    background-color:  #fff;
-    border-color: gray;
-    border-radius: 0px;
-    font-size: 15px;
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    border-radius: 0px;
-    font-size: 15px;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
 .product-price-2{
     position: relative;
     top: 6px;
@@ -519,11 +480,6 @@ hr.detalle {
 
     #mainImage{
         height: auto;
-    }
-
-    .info-producto {
-        float: left;
-        top: -70px;
     }
 
     .img_prod_little{
@@ -584,9 +540,6 @@ hr.detalle {
     }
     .product-detail{
         margin-top: 70px;
-    }
-    .boton-movil-comprar{
-        top: -60px;
     }
     .variants-container{
         margin-bottom: 150px;
@@ -807,7 +760,7 @@ hr.detalle {
 }
 }
 @media (max-width: 436px){
-    
+
     .fufi{
     height: 210px;
     margin-bottom: 50px;
@@ -834,7 +787,7 @@ hr.detalle {
     font-size: 17px;
     font-weight: 400;
 }
-.inf{    
+.inf{
     position: relative;
     width: 91%;
     text-align: center;
@@ -876,10 +829,6 @@ hr.detalle {
         left: -106px;
     }
 
-    .info-producto {
-        float: left;
-    }
-
     .letrero-sale-detail{
         left: 9px;
         top: 0px;
@@ -893,7 +842,6 @@ hr.detalle {
     .v-movil{
         top: 32px;
         height: 70px;
-        padding-top: 20px;
     }
 
     .precio-movil{
@@ -935,10 +883,6 @@ hr.detalle {
 
     .marcas-movil{
         margin-top: 20px;
-    }
-
-    .btn-success.comprar {
-        margin-bottom: 25px;
     }
 
     .overlay{
@@ -992,14 +936,6 @@ hr.detalle {
         left: -37px;
     }
 
-    .info-producto {
-        float: left;
-    }
-
-    .btn-success.comprar{
-        margin-bottom: 20px;
-    }
-
     .art-hi{
         left: -15px;
         padding: 0px 22px;
@@ -1045,7 +981,7 @@ hr.detalle {
         height: 260px;
         top: -670px;
     }
-    
+
     .descr_prod_detail {
         font-size: 12px;
         width: 100%;
@@ -1126,11 +1062,6 @@ hr.detalle {
     .aa{
         left: 62px;
         top: 27px;
-    }
-
-    .btn-success.comprar{
-        left: -22px;
-        margin-bottom: 20px;
     }
 
     .overlay{
