@@ -228,3 +228,10 @@ ul.nav.navbar-nav.navbar-right.buscador-header
 {
     background-color: #ccc;
 }
+
+@media (max-width: 1199px)
+{
+    .container.min {
+        width: 100%;
+    }
+}

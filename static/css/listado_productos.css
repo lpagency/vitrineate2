@@ -828,18 +828,6 @@ hr.detalle {
         margin-top: 50px;
     }
 
-    .v-movil{
-        top: 32px;
-        height: 70px;
-    }
-
-    .precio-movil{
-        padding-left: 0px;
-        position: relative;
-        top: 92px;
-        margin-top: -44px;
-    }
-
     .img-pro{
         object-fit: contain;
     }
