@@ -63,11 +63,16 @@
             'ignore_stock' : true,
             'column': random_seed,
             'onLoad':function(products){
+
+              $(document).on("click", ".add-to-cart, .remove-from-cart, .remove-one, .add-one", function()
+                {
+                    units(config);
+                });
+
               $(".link-marca").each(function()
               {
                 var link = $(this).attr("href");
                 var aux = $(this).attr("marca");
-                console.log(link + " " + aux);
                 switch(aux)
                 {
                   case "Paula Mar":
@@ -196,6 +201,8 @@
              }
         };
         $('.products').ecommerce(config);
+        units(config);
+
         
         //  $(document).ecommerce({
         //     'app_public' : app_public,
@@ -213,7 +220,6 @@
   
     });
 </script>
-
 
 {% end %}
 
