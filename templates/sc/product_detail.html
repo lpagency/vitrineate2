@@ -47,23 +47,17 @@
 
 <script type="text/javascript">
     $(document).ready(function() {
-        $(document).on("click", ".signos-desc", function() {
-            $(this).parent().parent().children(".hide-info").toggle("slow");
-            if ($(this).hasClass("fa-plus")) {
-                $(this).removeClass("fa-plus");
-                $(this).addClass("fa-minus");
-            } else {
-                $(this).removeClass("fa-minus");
-                $(this).addClass("fa-plus");
-            }
-        });
 
-        $(document).on("touchstart", ".signos-desc", function() {
+        $(document).on("click touchstart", ".signos-desc", function(e) {
             $(this).parent().parent().children(".hide-info").toggle("slow");
-            if ($(this).hasClass("fa-plus")) {
+            console.log("llega!!!");
+            if ($(this).hasClass("fa-plus"))
+            {
                 $(this).removeClass("fa-plus");
                 $(this).addClass("fa-minus");
-            } else {
+            }
+             else
+             {
                 $(this).removeClass("fa-minus");
                 $(this).addClass("fa-plus");
             }
@@ -140,6 +134,7 @@
                         $(".main-price").css("text-decoration", "line-through");
                         $(".main-price").css("font-size", "15px");
                         $(".main-price").css("margin-bottom", "-23px");
+                        $(".main-price").css("font-weight", "400");
                         $(".promotion-price").css("font-weight", "bold");
                         $(".add-to-cart").attr("product-price", product.promotion_price);
                     } else {
@@ -310,8 +305,6 @@
 <script type="text/template" id="product_detail">
 
     <section>
-
-        <div class="shopping-cart"></div>
         <div class="container min contenido-index">
             <div align="center">
                 <div class="img-div col-md-6 col-sm-6 col-xs-12">
