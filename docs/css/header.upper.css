@@ -1,0 +1,106 @@
+/*doc
+
+---
+title: Principio del header
+name: header
+category: header
+---
+
+```html_example 
+<div>
+	<div class="col-md-12 col-sm-12 col-xs-12 huincha-header">
+		<div class="editabletext col-md-10 col-md-10 col-xs-10 header-text-huincha" text-id="vitrineate2_head_1">
+			<p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras<br></p>
+		</div>
+		<button class="cerrar-huincha">X</button>
+	</div>
+    <div class="col-md-8 col-md-offset-2 text-center logo_wrapper navbar-brand">
+        <a id="vitrineate2_logo" href="#">
+            <div class="base-logo logo-desk">
+                <img class="logo" id="vitrineate2_img_logo" src="https://cdn.loadingplay.com/static/images/500_a794344c7e7b2caf93993aff9f78e5aa__adbaafaeabd_logoextwebjpgpng.png" onload="this.onload='';this.src='https://cdn.loadingplay.com/static/images/500_a794344c7e7b2caf93993aff9f78e5aa__adbaafaeabd_logoextwebjpgpng.png'" alt="item" style="margin-right: 10px; padding: 0;">
+            </div>
+        </a>
+    </div>
+	<div class="col-md-2 head-logo">
+		<li class="bolsa" id="open-cart" data-toggle="modal" data-target="#myModal">
+			<span class="hidden-xs">CARRITO</span>
+			<img class="img-bolsa" src="https://cdn.loadingplay.com/static/images/34b9602179fdac2bb493e006a8eac7a1_carrito.png">
+			<div class="unidades hidden hidden-xs"></div>
+		</li>
+	</div>
+	<div class="clearfix"></div>
+</div>
+```
+*/
+
+.huincha-header
+{
+    background-color: #d7ff3e;
+    height: auto;
+}
+
+.header-text-huincha
+{
+    position: relative;
+    top: 4px;
+}
+
+.cerrar-huincha
+{
+    float: right;
+    background: none;
+    border: solid 1px;
+    top: 2px;
+    position: relative;
+}
+
+.head-logo
+{
+    height: 40px;
+}
+
+li.bolsa
+{
+    float: right;
+    position: relative;
+    color: black;
+    font-weight: 400;
+    padding-left: 5px;
+    padding-top: 15px;
+}
+
+.logo
+{
+    width: 124px;
+}
+
+.img-bolsa
+{
+    width: 21%;
+    position: relative;
+    left: 15%;
+    cursor: pointer;
+}
+
+.unidades 
+{
+    font-size: 10px;
+    position: relative;
+    left: 88px;
+    width: 30%;
+    height: 30px;
+    top: -21px;
+    padding-left: 13px;
+    padding-top: 7px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(https://cdn.loadingplay.com/static/images/1a51b1d…_carrito_lleno.png);
+}
+
+@media (max-width: 768px)
+{
+    .img-bolsa
+    {
+        width: 60%;
+    }
+}

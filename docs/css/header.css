@@ -72,16 +72,6 @@
     left: 0px;
 }
 
-li.bolsa{
-    float: right;
-    left: -3%;
-    position: relative;
-    color: black;
-    font-weight: 400;
-    padding-left: 6px;
-    top: 18px;
-}
-
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
 color: black;
 background-color: transparent;
