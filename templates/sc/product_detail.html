@@ -468,40 +468,6 @@
     });
 </script>
 
-<script type="text/x-template" id="shopping-cart-product">
-    <tr>
-        <td class="vert-align text-left">{{! name }}</td>
-        <td class="vert-align">{{! combination }}</td>
-        <td class="text-center2 vert-align">{{! price|money }}</td>
-        <td class="vert-align fri" style="border-bottom: 1px solid #ddd;">
-            <a href="#!" class="remove-one" lp-cart-remove-one="{{! id }}">-</a>
-            {{! quantity }}
-            <a href="#!" class="add-one" lp-cart-add-one="{{! id }}" >+</a>
-        </td>
-        <td class="remove-from-cart fri" lp-cart-remove="{{! id }}" aria-hidden="true"> X  </td>
-        <td class="vert-align fri">
-            <a class="borrarproducto" cart-id="">
-                <i class="icon-close"></i>
-            </a>
-        </td>
-    </tr>
-</script>
-
-<script type="text/x-template" id="shopping-cart-total" >
-    <tr>
-    </tr>
-    <tr>
-        <td>Total:</td>
-        <td id="total" colspan="3" class="text-left total-modal lib">{{! total|money }}</td>
-        <td class="unidades-carrito hidden">{{! units_total }}</td>
-        <td></td>
-    </tr>
-</script>
-
-<script type="text/x-template" id="shopping-cart-units-total" >
-    <span> {{! units_total }}</span>
-</script>
-
 <script type="text/template" id="product_detail">
 
 <section>
