@@ -1,0 +1,230 @@
+/*doc
+
+---
+title: Header bottom
+name: header
+category: header
+---
+
+```html_example
+<div class="visible-lg visible-md hidden-sm hidden-xs menu-safari">
+    <nav class="navbar">
+        <div class="">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar9">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar9" class="navbar-collapse head-menu collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <!-- CATEGORIA MUJER -->
+                    <div class="w3-dropdown-hover">
+                        <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='/listado_productos?tag=cat1_mujer'">MUJER</button>
+                        <div class="w3-dropdown-content w3-border">
+                            <li class="dropdown-submenu">
+                            </li>
+                            <li><a tabindex="-1" >ROPA</a></li>
+                            <li><a tabindex="-1" >ZAPATOS</a></li>
+                            <li><a tabindex="-1" >ROPA INTERIOR</a></li>
+                            <li><a tabindex="-1" >ROPA DEPORTIVA</a></li>
+                            <!-- <li><a tabindex="-1" >TRAJE DE BAÑO</a></li> -->
+
+                        </div>
+                    </div>
+                    <!-- CATEGORIA HOMBRE -->
+                    <div class="w3-dropdown-hover">
+                        <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='/listado_productos?tag=cat1_hombre'">HOMBRE</button>
+                        <div class="w3-dropdown-content w3-border">
+                            <li class="dropdown-submenu">
+                            </li>
+                            <li><a tabindex="-1" href="/listado_productos?tag=cat2_camisa_h">CAMISAS</a></li>
+                            <li><a tabindex="-1" href="/listado_productos?tag=cat2_trajes_de_bano_h">TRAJE DE BAÑO</a></li>
+                            <li><a tabindex="-1" href="/listado_productos?tag=cat2_polera_h">POLERAS</a></li>
+
+                        </div>
+                    </div>
+                    <!-- CATEGORIA NIÑOS -->
+                    <div class="w3-dropdown-hover">
+                        <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='/listado_productos?tag=cat1_ninos'">BEBE / NIÑOS</button>
+                        <div class="w3-dropdown-content w3-border">
+                            <li class="dropdown-submenu">
+                            </li>
+                            <li><a tabindex="-1" href="/listado_productos?tag=cat2_ropa_n">ROPA</a></li>
+                            <li><a tabindex="-1" href="/listado_productos?tag=cat2_accesorios_n">ACCESORIOS</a></li>
+                        </div>
+                    </div>
+                    <!-- CATEGORIA ACCESORIOS -->
+                    <div class="w3-dropdown-hover">
+                        <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='/listado_productos?tag=cat1_accesorios'">ACCESORIOS</button>
+                        <div class="w3-dropdown-content w3-border">
+                            <li class="dropdown-submenu">
+                            </li>
+                            <li><a tabindex="-1" href="/listado_productos?tag=cat2_aros">AROS</a></li>
+                            <li><a tabindex="-1" href="/listado_productos?tag=cat2_collares">COLLARES</a></li>
+                            <li><a tabindex="-1" href="/listado_productos?tag=cat2_cinturon">CINTURONES</a></li>
+                            <li><a tabindex="-1" href="/listado_productos?tag=cat2_mochilas">MOCHILAS</a></li>
+                            <li><a tabindex="-1" href="/listado_productos?tag=cat2_panuelos">PAÑUELOS</a></li>
+                            <li><a tabindex="-1" href="/listado_productos?tag=cat2_relojes">RELOJES</a></li>
+
+                        </div>
+                    </div>
+                    <!-- CATEGORIA MARCAS -->
+                    <div class="w3-dropdown-hover">
+                        <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones">MARCAS</button>
+                        <div class="w3-dropdown-content w3-border">
+                            <li class="dropdown-submenu">
+                            </li>
+                            <li><a tabindex="-1" href="/listado_productos?tag=rosaria_scarinci">ROSARIA SCARINCI</a></li>
+                            <li><a tabindex="-1" href="/listado_productos?tag=pili_saenz_joyas">PILI SAENZ JOYAS</a></li>
+                            <!-- <li><a tabindex="-1" href="/listado_productos?tag=aloha_sw">ALOHA SW</a></li> -->
+                            <li><a tabindex="-1" href="/listado_productos?tag=lisantino">LISANTINO</a></li>
+                            <li><a tabindex="-1" href="/listado_productos?tag=kuyen">KUYEN</a></li>
+                            <li><a tabindex="-1" href="/listado_productos?tag=a_mi_me_viste_mi_mami">A MI ME VISTE MI MAMI</a></li>
+                            <li><a tabindex="-1" href="/listado_productos?tag=stoff">STOFF</a></li>
+                            <li><a tabindex="-1" href="/listado_productos?tag=yambo">YAMBO</a></li>
+                            <li><a tabindex="-1" href="/listado_productos?tag=mora">MORA</a></li>
+                            <li><a tabindex="-1" href="/listado_productos?tag=paula_mar">PAULA MAR</a></li>
+                            <li><a tabindex="-1" href="/listado_productos?tag=villagran_villagran">VILLAGRAN VILLAGRAN</a></li>
+                            <li><a tabindex="-1" href="/listado_productos?tag=dionea">DIONEA</a></li>
+                            <li><a tabindex="-1" href="/listado_productos?tag=amelie_lingerie">AMELIE LINGERIE</a></li>
+                            <li><a tabindex="-1" href="/listado_productos?tag=ttanti">TTANTI</a></li>
+
+                        </div>
+                    </div>
+                    <!-- CATEGORIA OFERTAS -->
+                    <div class="w3-dropdown-hover">
+                        <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='https://vitrineate.cl/article/detail/quienes_somos/2110'">QUIENES SOMOS</button>
+                    </div>
+                    <div class="w3-dropdown-hover">
+                        <button class="w3-btn w3-red" data-toggle="dropdown" onclick="window.location.href='/listado_productos?tag=oferta'"><b>OFERTAS!</b></button>
+                    </div>
+                </ul>
+                <ul class="nav navbar-nav navbar-right buscador-header">
+                    <li class="buscador">
+                        <div class="texto-b">BUSCAR</div>
+                        <form id="searchform" class="form-search hidden" role="search" action="/listado_productos" method="get">
+                            <input type="text" id="s" name="search_query" placeholder="Buscar" class="busca search" value="">
+                        </form>
+                        <img class="img-lupa" src="https://7static.loadingplay.com/static/images/1da6ee373afe0e65ad1b94c0d7cd9e9d_Vector_search_iconclaro.png">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+```
+
+*/
+
+.w3-dropdown-click,
+.w3-dropdown-hover
+{
+    float: left;
+    right: 0px;
+    margin-top: 0px;
+}
+
+.w3-btn,
+.w3-btn-block
+{
+    padding: 14px 17px;
+}
+
+.container.min
+{
+    width: 1124px;
+}
+
+.menu-safari
+{
+    margin-top: 10px;
+}
+
+.w3-dropdown-content
+{
+    display: none;
+}
+
+button.w3-btn.w3-red
+{
+    background: transparent;
+    border: none;
+}
+
+button.w3-btn.w3-red:hover
+{
+    background: #999;
+    color: #fff;
+}
+
+.head-menu
+{
+    border-top: #666 solid 1px;
+    border-bottom: #666 solid 1px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px!important;
+}
+
+
+ul.nav.navbar-nav.navbar-right.buscador-header
+{
+    margin-right: 0px;
+    padding-top: 14px;
+}
+
+.buscador-header .img-lupa
+{
+    width: 20px;
+}
+
+.form-search
+{
+    top: -3px;
+    position: relative;
+    margin-right: 10px;
+    float: left;
+}
+
+.texto-b
+{
+    float: left;
+    margin-right: 40px;
+}
+
+.w3-dropdown-hover:hover .w3-dropdown-content
+{
+    display: block;
+    z-index: 1;
+}
+
+.w3-dropdown-content
+{
+    cursor: auto;
+    color: #000;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    min-width: 189px;
+    margin: 0;
+    padding: 0;
+    top: 46px;
+}
+
+.w3-dropdown-content a
+{
+    padding: 6px 16px;
+    display: block;
+    font-weight: 400;
+    color: #666;
+    font-size: 13px;
+}
+
+.w3-dropdown-content a:hover
+{
+    background-color: #ccc;
+}

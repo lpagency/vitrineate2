@@ -29,6 +29,7 @@
         <link rel="stylesheet" href="{{ site_base }}/static/css/listado_productos.css?5">
 
         <!-- new css -->
+        <link rel="stylesheet" href="{{ site_base }}/static/css/header.bottom.css">
         <link rel="stylesheet" href="{{ site_base }}/static/css/product.detail.info.css">
         <link rel="stylesheet" href="{{ site_base }}/static/css/buttons.css">
 
@@ -416,80 +417,17 @@
             }
             else
             {
-                $(document).on("click", ".img-lupa", function()
+                $(document).on("click", ".img-lupa, .texto-b", function()
                 {
                     if($(".form-search").hasClass("hidden"))
                     {
-                        console.log($(window).width());
                         $(".form-search").removeClass("hidden");
-
-                        switch($(window).width())
-                        {
-                            case 1351:
-                                $(".img-lupa").css("left","222px");
-                                $(".img-lupa").css("top", "-25px");
-                                $(".img-lupa").css("width","12%");
-                                $(".buscador-header").css("top", "-32px");
-                                $(".buscador-header").css("margin-bottom", "-52px");
-                            break;
-
-                            case 1289:
-                                $(".buscador-header").css("top", "-35px");
-                                $(".buscador-header").css("margin-bottom", "-49px");
-                                $(".img-lupa").css("left", "222px");
-                                $(".img-lupa").css("width","12%");
-                            break;
-
-                            case 1286:
-                                $(".buscador-header").css("top", "-35px");
-                                $(".buscador-header").css("margin-bottom", "-49px");
-                                $(".img-lupa").css("left", "222px");
-                                $(".img-lupa").css("width","12%");
-                            break;
-
-                            case 1276:
-                                $(".buscador-header").css("top", "-35px");
-                                $(".buscador-header").css("margin-bottom", "-49px");
-                                $(".img-lupa").css("left", "222px");
-                                $(".img-lupa").css("width","12%");
-                            break;
-
-                            default:
-                                $(".img-lupa").css("width","15%");
-                                $(".img-lupa").css("left","177px");
-                            break;
-                        }
-
-                        $(".img-lupa").css("top","-25px");
-                        $(".buscador").css("right","60px");
-                        $(".buscador").css("top","-2px");
-                        $(".buscador").css("left","-105px");
                         $(".texto-b").addClass("hidden");
+                        $(".busca search").focus();
                     }
                     else
                     {
-                        if($(window).width() == 1351)
-                        {
-                            $(".buscador-header").css("top", "14px");
-                        }
-                        if($(window).width() == 1289)
-                        {
-                            $(".buscador-header").css("top", "14px");
-                        }
-                        if($(window).width() == 1286)
-                        {
-                            $(".buscador-header").css("top", "14px");
-                        }
-                        if($(window).width() == 1276)
-                        {
-                            $(".buscador-header").css("top", "14px");
-                        }
                         $(".form-search").addClass("hidden");
-                        $(".img-lupa").css("width","18%");
-                        $(".img-lupa").css("left","40px");
-                        $(".img-lupa").css("top","-20px");
-                        $(".buscador").css("left","0px");
-                        $(".buscador").css("top","0px");
                         $(".texto-b").removeClass("hidden");
                     }
                 });
