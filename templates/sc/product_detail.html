@@ -15,41 +15,24 @@
 
 {% block javascript %}
 <script type="text/javascript">
-    $(document).ready(function() {
-        setTimeout(function() {
-            if ($(".load-v").html() == "") {
-                if (window.aux == 0) {
-                    console.log("aaaa");
-                    $(".add-to-cart").html("AGOTADO");
-                    $(".main-price").addClass("hidden");
-                    $(".promotion-price").addClass("hidden");
-                    $(".add-to-cart").attr("disabled", true);
-                } else {
-                    $(".add-to-cart").attr("disabled", false);
-                }
+    $(document).ready(function()
+    {
+
+        setTimeout(function()
+        {
+            if($(".add-to-cart").html() == "AGOTADO")
+            {
+                $(".info-producto").removeClass("hidden");
             }
-            if ($(".load-v").html() == undefined) {
-                if (window.aux == 0) {
-                    $(".add-to-cart").html("AGOTADO");
-                    $(".main-price").addClass("hidden");
-                    $(".promotion-price").addClass("hidden");
-                    $(".add-to-cart").attr("disabled", true);
-                } else {
-                    $(".add-to-cart").attr("disabled", false);
-                }
+        },3000);
+
+        $(document).on("click", ".tallas", function()
+        {
+            if(!$(".tallas").hasClass("btn-disabled"))
+            {
+                $(".add-to-cart").attr("disabled",false);
             }
-            console.log(window.aux);
-            if (window.aux == 0 || window.aux == undefined) {
-                if ($(window).width() == 320) {
-                    $(".boton-movil-comprar").css("top", "20px");
-                    $(".v-movil").addClass("hidden");
-                }
-                $(".add-to-cart").html("AGOTADO");
-                $(".main-price").addClass("hidden");
-                $(".promotion-price").addClass("hidden");
-                $(".add-to-cart").attr("disabled", true);
-            }
-        }, 3000);
+        });
 
         setTimeout(function() {
             if ($(".add-to-cart").html() == "AGOTADO") {
@@ -285,6 +268,18 @@
                         $(".add-to-cart").attr("disabled", true);
                     }
                 }
+                if(window.aux == 0)
+                {
+                    $(".add-to-cart").html("AGOTADO");
+                    $(".info-producto").removeClass("hidden");
+                    $(".main-price").addClass("hidden");
+                    $(".promotion-price").addClass("hidden");
+                    $(".add-to-cart").attr("disabled", true);
+                }
+                else
+                {
+                    $(".add-to-cart").attr("disabled", false);
+                }
             });
 
         // productos relacionados
@@ -413,6 +408,45 @@
             </div>
         </div>
     </div>
+</div>
+
+<div class="col-md-6 col-sm-6 col-xs-12 text-prod-desk">
+    <h1 class="name name_prod_detail ellipsis multiline" class="line" href="#">{{! name }}</h1>
+    <div class="descripcion-producto">
+        <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Descripción<i class="fa fa-plus signos-desc" aria-hidden="true"></i></h3>
+        <h3 class="descr_prod_detail desc-font ellipsis multiline hide-info" style="display: none">{{! bullet_3 }}</h3>
+    </div>
+    <div class="descripcion-producto">
+        <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Descripción extendida<i class="fa fa-plus signos-desc" aria-hidden="true"></i></h3>
+        <h3 class="descr_prod_detail desc-font ellipsis multiline hide-info" style="display: none">{{! description }}</h3>
+    </div>
+    <div class="descripcion-producto">
+        <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Información de despacho<i class="fa fa-plus signos-desc" aria-hidden="true"></i></h3>
+        <h3 class="descr_prod_detail desc-font ellipsis multiline hide-info" style="display: none">{{! bullet_2 }}</h3>
+    </div>
+    <div class="descripcion-producto">
+        <h3 class="descr_prod_detail ellipsis multiline bordes-desc">Stock disponible<i class="fa fa-plus signos-desc" aria-hidden="true"></i></h3>
+        <div class="stock-product hide-info" style="display: none"></div>
+    </div>
+    <div class="col-md-6 precio-movil">
+        <div class="product-price-2 main-price">{{! main_price|money }} </div>
+        <div class="product-price-2 promotion-price">{{! promotion_price|money }} </div>
+    </div>
+    <div class="col-md-12 mover variants-container visible-xs">
+    </div>
+    <div class="col-md-12 mover variants-container hidden-xs">
+    </div>
+    <div class="col-md-6 padding-r boton-movil-comprar">
+        <button type="button" class="btn add-to-cart btn-success comprar" id="open-cart" data-toggle="modal" data-target="#myModal" product-upp="{{! upp }}" product-name="{{! name }}" product-price="{{! main_price }}" product-sku="{{! sku }}" product-id="{{! id }}"
+        product-img="{{! images[0]['thumb_500'] }}" product-weight="{{! weight }}" disabled lp-cart-add> <img class="bolsa-agregar" src="https://cdn.loadingplay.com/static/images/a99be0bd09ebc9845d83e325177baa2d_bolsita_comprar.png">Comprar</button>
+        <div class="info-producto hidden">
+            <div class="hidden sku-producto-hidden"></div>
+            <a class="info-href" href="#" data-toggle="modal" data-target="#myModalInfo">Solicitar este producto!</a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
 </div>
 
 </section>
