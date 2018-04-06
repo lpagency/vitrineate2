@@ -1,5 +1,6 @@
 <div class="container min cont-header">
     <div class="fix-position">
+<<<<<<< HEAD
         <div class="container min hidden-sm">
             <div class="col-md-12 huincha-header hidden-xs">
                 <div class="{{editabletext}} col-md-10 header-text-huincha" text-id="{{ site.name + '_head_1' }}"> {{ read_text(site.name + '_head_1') }} </div>
@@ -10,13 +11,46 @@
                     <img class="img-bolsa" src="https://cdn.loadingplay.com/static/images/34b9602179fdac2bb493e006a8eac7a1_carrito.png">
                     <span class="hidden-xs">CARRITO</span>
                     <div class="unidades hidden hidden-xs"></div>
+=======
+        <div class="container min">
+            <div class="col-md-12 col-sm-12 col-xs-12 huincha-header">
+                <div class="{{editabletext}} col-md-10 col-sm-10 col-xs-10 header-text-huincha" text-id="{{ site.name + '_head_1' }}"> {{ read_text(site.name +  '_head_1') }} </div>
+                <button class="cerrar-huincha">X</button>
+            </div>
+            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 text-center logo_wrapper navbar-brand">
+                {% if is_admin %}
+                    <div class="image-upload visible-movil" style="left: 600px;">
+                        <label for="img_logo">
+                            <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+                        </label>
+                        <input type="file" class="editableimage" image-id="{{ site.name }}_img_logo" name="image" id="img_logo" >
+                    </div>
+                {% end %}
+                <a id="{{ site.name + '_logo' }}" href="#">
+                    <div class="base-logo logo-desk">
+                        <img class="logo" id="{{ site.name }}_img_logo" src="{{ read_image(site.name + '_img_logo', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_img_logo',500) }}'" alt="item">
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2 head-logo">
+                <li class="bolsa" id="open-cart" data-toggle="modal" data-target="#myModal">
+                    <span class="hidden-sm hidden-xs">CARRITO</span>
+                    <img class="img-bolsa" src="https://cdn.loadingplay.com/static/images/34b9602179fdac2bb493e006a8eac7a1_carrito.png">
+                    <div class="unidades hidden"></div>
+>>>>>>> 8ec85b584a43d8df74366fbcbe235e797cbd6764
                 </li>
             </div>
         </div>
 
+<<<<<<< HEAD
         <div class="visible-lg visible-md hidden-sm hidden-xs menu-safari">
             <nav class="navbar">
                 <div>
+=======
+        <div class="container min visible-lg visible-md hidden-sm hidden-xs menu-safari">
+            <nav class="navbar">
+                <div class="container min">
+>>>>>>> 8ec85b584a43d8df74366fbcbe235e797cbd6764
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar9">
                             <span class="sr-only">Toggle navigation</span>
@@ -25,6 +59,7 @@
                             <span class="icon-bar"></span>
                         </button>
                     </div>
+<<<<<<< HEAD
 
                     <div id="navbar9" class="navbar-collapse head-menu collapse">
                         <ul class="nav navbar-nav navbar-left">
@@ -122,12 +157,113 @@
                     </div>
 
                 </div>
+=======
+                    <div class="brand-centered">
+                        <a class="navbar-brand" href="">
+                        </a>
+                    </div>
+
+                    <div id="navbar9" class="navbar-collapse head-menu collapse">
+                        <ul class="nav navbar-nav navbar-left">
+
+                            <!-- CATEGORIA MUJER -->
+                                <div class="w3-dropdown-hover">
+                                    <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}/listado_productos?tag=cat1_mujer'">MUJER</button>
+                                    <div class="w3-dropdown-content w3-border">
+                                        <li class="dropdown-submenu">
+                                            <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_ropa_m">ROPA</a></li>
+                                            <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_zapatos_m">ZAPATOS</a></li>
+                                            <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_ropa_interior_m">ROPA INTERIOR</a></li>
+                                            <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_ropa_deportiva_m">ROPA DEPORTIVA</a></li>
+                                            <!-- <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_trajes_de_bano_m">TRAJE DE BAÑO</a></li> -->
+                                        </li>
+                                    </div>
+                                </div>
+                                <!-- CATEGORIA HOMBRE -->
+                                <div class="w3-dropdown-hover">
+                                    <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}/listado_productos?tag=cat1_hombre'">HOMBRE</button>
+                                    <div class="w3-dropdown-content w3-border">
+                                        <li class="dropdown-submenu">
+                                            <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_camisa_h">CAMISAS</a></li>
+                                            <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_trajes_de_bano_h">TRAJE DE BAÑO</a></li>
+                                            <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_polera_h">POLERAS</a></li>
+                                        </li>
+                                    </div>
+                                </div>
+                                <!-- CATEGORIA NIÑOS -->
+                                <div class="w3-dropdown-hover">
+                                    <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}/listado_productos?tag=cat1_ninos'">BEBE / NIÑOS</button>
+                                    <div class="w3-dropdown-content w3-border">
+                                        <li class="dropdown-submenu">
+                                            <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_ropa_n">ROPA</a></li>
+                                            <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_accesorios_n">ACCESORIOS</a></li>
+                                        </li>
+                                    </div>
+                                </div>
+                                <!-- CATEGORIA ACCESORIOS -->
+                                    <div class="w3-dropdown-hover">
+                                        <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}/listado_productos?tag=cat1_accesorios'">ACCESORIOS</button>
+                                        <div class="w3-dropdown-content w3-border">
+                                     <li class="dropdown-submenu">
+                                        <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_aros">AROS</a></li>
+                                        <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_collares">COLLARES</a></li>
+                                        <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_cinturon">CINTURONES</a></li>
+                                          
+                                        <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_mochilas">MOCHILAS</a></li>
+                                        <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_panuelos">PAÑUELOS</a></li>
+                                        <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_relojes">RELOJES</a></li>
+                                      </li>
+                                    </div>
+                                  </div>
+                                  <!-- CATEGORIA MARCAS -->
+                                  <div class="w3-dropdown-hover">
+                                    <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones">MARCAS</button>
+                                    <div class="w3-dropdown-content w3-border">
+                                     <li class="dropdown-submenu">
+                                        <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=rosaria_scarinci">ROSARIA SCARINCI</a></li>
+                                        <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=pili_saenz_joyas">PILI SAENZ JOYAS</a></li>
+                                        <!-- <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=aloha_sw">ALOHA SW</a></li> -->
+                                        <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=lisantino">LISANTINO</a></li>
+                                        <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=kuyen">KUYEN</a></li>
+                                        <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=a_mi_me_viste_mi_mami">A MI ME VISTE MI MAMI</a></li>
+                                        <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=stoff">STOFF</a></li>
+                                        <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=yambo">YAMBO</a></li>
+                                        <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=mora">MORA</a></li>
+                                        <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=paula_mar">PAULA MAR</a></li>
+                                        <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=villagran_villagran">VILLAGRAN VILLAGRAN</a></li>
+                                        <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=dionea">DIONEA</a></li>
+                                        <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=amelie_lingerie">AMELIE LINGERIE</a></li>
+                                        <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=ttanti">TTANTI</a></li>
+                                      </li>
+                                    </div>
+                                  </div>
+                                  <!-- CATEGORIA OFERTAS -->
+                                  <div class="w3-dropdown-hover">
+                                    <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='https://vitrineate.cl/article/detail/quienes_somos/2110'">QUIENES SOMOS</button>
+                                  </div>
+                                  <div class="w3-dropdown-hover">
+                                    <button class="w3-btn w3-red" data-toggle="dropdown" onclick="window.location.href='{{ site_base }}/listado_productos?tag=oferta'"><b>OFERTAS!</b></button>
+                                  </div>
+
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right buscador-header">
+                                  <li class="buscador">
+                                    <div class="texto-b">BUSCAR</div>
+                                    <form id="searchform" class="form-search hidden" role="search" action="{{ site_base }}/listado_productos" method="get">
+                                      <input type="text" id="s" name="search_query" placeholder="Buscar" class="busca search" value="{% try %}{{search_query}}{% except %}{% end %}">
+                                    </form>
+                                    <img class="img-lupa" src="https://7static.loadingplay.com/static/images/1da6ee373afe0e65ad1b94c0d7cd9e9d_Vector_search_iconclaro.png">
+                                  </li>
+                                </ul>
+      </div>
+>>>>>>> 8ec85b584a43d8df74366fbcbe235e797cbd6764
 
             </nav>
         </div>
     </div>
 
 </div>
+<<<<<<< HEAD
 
 
 <!-- ******************MENU MOVIL*********************** -->
@@ -257,3 +393,5 @@
         <!-- /.container -->
     </nav>
 </div>
+=======
+>>>>>>> 8ec85b584a43d8df74366fbcbe235e797cbd6764
