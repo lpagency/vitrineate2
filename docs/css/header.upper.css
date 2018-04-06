@@ -2,11 +2,11 @@
 
 ---
 title: Principio del header
-name: header
+name: header upper
 category: header
 ---
 
-```html_example 
+```html_example
 <div>
 	<div class="col-md-12 col-sm-12 col-xs-12 huincha-header">
 		<div class="editabletext col-md-10 col-md-10 col-xs-10 header-text-huincha" text-id="vitrineate2_head_1">
@@ -83,7 +83,16 @@ li.bolsa
     cursor: pointer;
 }
 
-.unidades 
+.fix-position
+{
+    position: fixed;
+    width: 100%;
+    height: 147px;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+.unidades
 {
     font-size: 10px;
     position: relative;
