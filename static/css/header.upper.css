@@ -220,6 +220,13 @@ a.navbar-brand.movil-logo
     width: 100%;
 }
 
+i.fa.fa-angle-down
+{
+    font-size: 15px !important;
+    float: right;
+    display: none;
+}
+
 /**  this code center in ipad with safari */
 img#vitrineate2_img_logo.img-responsive.logo
 {
@@ -230,6 +237,15 @@ img#vitrineate2_img_logo.img-responsive.logo
 
 @media (max-width: 991px)
 {
+    i.fa.fa-angle-down
+    {
+        display: inline-block;
+    }
+
+    .open a.w3-btn.w3-red {
+        text-decoration: underline;
+    }
+
     .img-bolsa {
         width: 100%;
         left: 0px;
