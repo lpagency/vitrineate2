@@ -109,7 +109,7 @@ li.bolsa
 
 .img-bolsa
 {
-    width: 21%;
+    height: 25px;
     position: relative;
     left: 15%;
     cursor: pointer;
@@ -205,6 +205,7 @@ a.navbar-brand.movil-logo
     .img-bolsa {
         width: 100%;
         left: 0px;
+        width: auto;
     }
 
     .unidades
@@ -218,7 +219,6 @@ a.navbar-brand.movil-logo
 @media (max-width: 768px)
 {
     .img-bolsa {
-        width: 33px;
         z-index: 9;
     }
 
@@ -267,7 +267,6 @@ a.navbar-brand.movil-logo
     .navbar-header-movil .img-bolsa
     {
         height: 19px;
-        width: auto;
     }
 
     .navbar-header-movil li.lupa-movil
