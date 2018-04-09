@@ -294,6 +294,11 @@ Producto en oferta agotado:
     {
         font-size: 11px;
     }
+
+    .img-pro
+    {
+        min-height: 216px;
+    }
 }
 
 @media (max-width: 767px)
@@ -307,6 +312,7 @@ Producto en oferta agotado:
     .img-pro
     {
         width: 100%;
+        min-height: auto;
     }
 
     .precios-div
