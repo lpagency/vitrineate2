@@ -251,7 +251,7 @@ div.image-upload.par1 {
     position: relative;
     top: -27px;
     font-family: 'Montserrat', sans-serif;
-    font-weight:400; 
+    font-weight:400;
     color: rgba(84, 84, 84, 0.79);
 }
 
@@ -279,13 +279,6 @@ div.image-upload.par1 {
     bottom: -2px;
 }
 */
-
-.fa-angle-down {
-    font-size: 15px !important;
-    position: relative;
-    left: 0%;
-    float: right;
-}
 
 
 .texto-one{
@@ -538,8 +531,8 @@ div.image-upload.con {
     padding-left: 3%;
     }
 
- /*para borrar despues*/ 
-.temporal{ 
+ /*para borrar despues*/
+.temporal{
     position: relative;
     display: block;
     padding: 14px 4%;
@@ -1037,7 +1030,7 @@ hr.page-contact {
     width: 0;
 }
 .opc-menu{
-    padding-left: 0; 
+    padding-left: 0;
 }
 .rrss {
     position: absolute;
@@ -1197,7 +1190,7 @@ hr.page-contact {
     width: 0;
 }
 .opc-menu{
-    padding-left: 0; 
+    padding-left: 0;
 }
 
 }
@@ -1473,7 +1466,7 @@ hr.page-contact {
     }
 
     .img-hed-3 {
-       
+
         top: 13px;
     }
     .d-o, .do-not {
