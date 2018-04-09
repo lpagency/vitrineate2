@@ -235,11 +235,11 @@
 
 <!-- *contenido* -->
 
-
 <!-- ***SLIDER** -->
-<div class="container min contenido-index">
+<div class="cont" style="padding-top: 200px"></div>
+<div class="container min contenido-index hidden-xs">
   <div class="col-md-3 col-sm-3 col-xs-12 div-index-1">
-    <div class="item active fondo-principal img-chica-1" style="background:url('{{ read_image(site.name + '_img_slider_1') }}'); height:48.5%; width:100%; background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
+    <div class="item active fondo-principal img-chica-1 fondo-img" style="background:url('{{ read_image(site.name + '_img_slider_1') }}'); background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
       <a class="link-banner" id="{{ site.name + '_img_slider_1' }}" href="{{ read_link(site.name + '_img_slider_1') }}">
         {% if is_admin %}
           <div class="image-upload visible-movil" style="right: 140px;">
@@ -255,7 +255,7 @@
       {% end %}
     </div>
 
-    <div class="item active fondo-principal img-chica-1" style="background:url('{{ read_image(site.name + '_img_slider_2') }}'); margin-top: 5%;height:48.5%; width:100%; background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
+    <div class="item active fondo-principal img-chica-1 fondo-img-2" style="background:url('{{ read_image(site.name + '_img_slider_2') }}'); background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
       <a class="link-banner" id="{{ site.name + '_img_slider_2' }}" href="{{ read_link(site.name + '_img_slider_2') }}">
         {% if is_admin %}
           <div class="image-upload visible-movil" style="right: 140px;">
@@ -272,7 +272,7 @@
     </div>
   </div>
   <div class="col-md-6 col-sm-6 col-xs-12 div-index-2">
-    <div class="item active fondo-principal" style="background:url('{{ read_image(site.name + '_img_slider_3') }}'); height:99.5%; width:100%; background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
+    <div class="item active fondo-principal" style="background:url('{{ read_image(site.name + '_img_slider_3') }}'); background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
       <a class="link-banner-main" id="{{ site.name + '_img_slider_3' }}" href="{{ read_link(site.name + '_img_slider_3') }}">
         {% if is_admin %}
           <div class="image-upload visible-movil" style="right: 140px;">
@@ -289,7 +289,7 @@
     </div>
   </div>
   <div class="col-md-3 col-sm-3 col-xs-12 div-index-3">
-    <div class="item active fondo-principal img-chica-1" style="background:url('{{ read_image(site.name + '_img_slider_4') }}'); height:48.5%; width:100%; background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
+    <div class="item active fondo-principal img-chica-1 fondo-img" style="background:url('{{ read_image(site.name + '_img_slider_4') }}'); background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
       <a class="link-banner" id="{{ site.name + '_img_slider_4' }}" href="{{ read_link(site.name + '_img_slider_4') }}">
         {% if is_admin %}
           <div class="image-upload visible-movil" style="right: 140px;">
@@ -305,7 +305,7 @@
       {% end %}
     </div>
 
-    <div class="item active fondo-principal img-chica-1" style="background:url('{{ read_image(site.name + '_img_slider_5') }}'); margin-top: 5%;height:48.5%; width:100%; background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
+    <div class="item active fondo-principal img-chica-1 fondo-img-2" style="background:url('{{ read_image(site.name + '_img_slider_5') }}'); background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
       <a class="link-banner" id="{{ site.name + '_img_slider_5' }}" href="{{ read_link(site.name + '_img_slider_5') }}">
         {% if is_admin %}
           <div class="image-upload visible-movil" style="right: 140px;">
@@ -321,6 +321,39 @@
       {% end %}
     </div>
   </div>
+</div>
+<div class="container min contenido-index visible-xs">
+    <div class="col-md-3 col-sm-3 col-xs-12 div-index-1">
+        <div class="item active fondo-principal img-chica-1 fondo-img">
+            <a class="link-banner" id="{{ site.name + '_img_slider_1' }}" href="{{ read_link(site.name + '_img_slider_1') }}">
+                <img class="img-banner-movil" src="{{ read_image(site.name + '_img_slider_1') }}">
+            </a>
+        </div>
+        <div class="item active fondo-principal img-chica-1 fondo-img-2">
+            <a class="link-banner" id="{{ site.name + '_img_slider_2' }}" href="{{ read_link(site.name + '_img_slider_2') }}">
+                <img class="img-banner-movil" src="{{ read_image(site.name + '_img_slider_2') }}">
+            </a>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-12 div-index-2">
+        <div class="item active fondo-principal">
+            <a class="link-banner-main" id="{{ site.name + '_img_slider_2' }}" href="{{ read_link(site.name + '_img_slider_2') }}">
+                <img class="img-banner-movil" src="{{ read_image(site.name + '_img_slider_3') }}">
+            </a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-12 div-index-3">
+        <div class="item active fondo-principal img-chica-1 fondo-img">
+            <a class="link-banner" id="{{ site.name + '_img_slider_4' }}" href="{{ read_link(site.name + '_img_slider_4') }}">
+                <img class="img-banner-movil" src="{{ read_image(site.name + '_img_slider_4') }}">
+            </a>
+        </div>
+        <div class="item active fondo-principal img-chica-1 fondo-img-2">
+            <a class="link-banner" id="{{ site.name + '_img_slider_5' }}" href="{{ read_link(site.name + '_img_slider_5') }}">
+                <img class="img-banner-movil" src="{{ read_image(site.name + '_img_slider_5') }}">
+            </a>
+        </div>
+    </div>
 </div>
 <!--***FIN DE SLIDER*** -->
 

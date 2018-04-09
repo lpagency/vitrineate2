@@ -1,0 +1,256 @@
+/*doc
+
+---
+title: Index.new
+name: Index.new
+category: Index.new
+---
+
+Primer bloque del index:
+
+```html_example
+<div class="container min contenido-index hidden-xs">
+    <div class="col-md-3 col-sm-3 col-xs-12 div-index-1">
+        <div class="item active fondo-principal img-chica-1 fondo-img" style="background:url('https://cdn.loadingplay.com/static/images/118d9002406642664f4a49e580ef783e_ofertaveranopng.png'); background-repeat: no-repeat; background-size: contain; background-position: center;">
+            <a class="link-banner" id="vitrineate2_img_slider_1" href=""></a>
+        </div>
+        <div class="item active fondo-principal img-chica-1 fondo-img-2" style="background:url('https://cdn.loadingplay.com/static/images/3a21f8b15a4b104d85429e4fef41ce1e_afbabdefefcee__pmarpngpng.png'); background-repeat: no-repeat; background-size: contain; background-position: center;" data-img-width="1600" data-img-height="890" data-diff="100">
+            <a class="link-banner" id="vitrineate2_img_slider_2" href=""></a>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-12 div-index-2">
+        <div class="item active fondo-principal" style="background:url('https://cdn.loadingplay.com/static/images/ed87e3ae72af62fe111b2a089e44595b_quienessomopng.png'); width:100%; background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
+            <a class="link-banner-main" id="vitrineate2_img_slider_3" href=""></a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-12 div-index-3">
+        <div class="item active fondo-principal img-chica-1 fondo-img" style="background:url('https://cdn.loadingplay.com/static/images/423923035709c2ed26c248d84997b121_yamboPNG.png'); background-repeat: no-repeat; background-size: contain; background-position: center;">
+            <a class="link-banner" id="vitrineate2_img_slider_4" href=""></a>
+        </div>
+        <div class="item active fondo-principal img-chica-1 fondo-img-2" style="background:url('https://cdn.loadingplay.com/static/images/7527537e19c8a5a0c2cb152ffb4950c1_zapatospng.png'); background-repeat: no-repeat; background-size: contain; background-position: center;" data-img-width="1600" data-img-height="890" data-diff="100">
+            <a class="link-banner" id="vitrineate2_img_slider_5" href=""></a>
+        </div>
+    </div>
+</div>
+
+<div class="container min contenido-index visible-xs">
+    <div class="col-md-3 col-sm-3 col-xs-12 div-index-1">
+        <div class="item active fondo-principal img-chica-1 fondo-img">
+            <a class="link-banner" id="vitrineate2_img_slider_1" href="">
+                <img class="img-banner-movil" src="https://cdn.loadingplay.com/static/images/118d9002406642664f4a49e580ef783e_ofertaveranopng.png">
+            </a>
+        </div>
+        <div class="item active fondo-principal img-chica-1 fondo-img-2">
+            <a class="link-banner" id="vitrineate2_img_slider_2" href="">
+                <img class="img-banner-movil" src="https://cdn.loadingplay.com/static/images/3a21f8b15a4b104d85429e4fef41ce1e_afbabdefefcee__pmarpngpng.png">
+            </a>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-12 div-index-2">
+        <div class="item active fondo-principal">
+            <a class="link-banner-main" id="vitrineate2_img_slider_3" href="">
+                <img class="img-banner-movil" src="https://cdn.loadingplay.com/static/images/ed87e3ae72af62fe111b2a089e44595b_quienessomopng.png">
+            </a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-12 div-index-3">
+        <div class="item active fondo-principal img-chica-1 fondo-img">
+            <a class="link-banner" id="vitrineate2_img_slider_4" href="">
+                <img class="img-banner-movil" src="https://cdn.loadingplay.com/static/images/423923035709c2ed26c248d84997b121_yamboPNG.png">
+            </a>
+        </div>
+        <div class="item active fondo-principal img-chica-1 fondo-img-2">
+            <a class="link-banner" id="vitrineate2_img_slider_5" href="">
+                <img class="img-banner-movil" src="https://cdn.loadingplay.com/static/images/7527537e19c8a5a0c2cb152ffb4950c1_zapatospng.png">
+            </a>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+
+````
+
+*/
+
+.div-index-1
+{
+    height: 600px;
+    padding-left: 0px;
+}
+
+.div-index-2
+{
+    height: 600px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.div-index-3
+{
+    height: 600px;
+    padding-right: 0px;
+}
+
+.fondo-principal
+{
+    height:88%;
+}
+
+.item.active.fondo-principal.img-chica-1.fondo-img
+{
+    height: 43.5%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.item.active.fondo-principal.img-chica-1.fondo-img-2
+{
+    margin-top: 5%;
+    height: 43.5%;
+    width: 100%;
+}
+
+@media (max-width: 1199px)
+{
+    .div-index-1
+    {
+        height: 600px;
+    }
+
+    .div-index-2
+    {
+        height: 600px;
+    }
+
+    .div-index-3
+    {
+        height: 600px;
+    }
+
+    .item.active.fondo-principal.img-chica-1.fondo-img
+    {
+        height: 46.5%;
+    }
+
+    .item.active.fondo-principal.img-chica-1.fondo-img-2
+    {
+        height: 46.5%;
+    }
+
+    .fondo-principal
+    {
+        height: 95.5%;
+    }
+}
+
+@media (max-width: 991px)
+{
+    .div-index-1
+    {
+        height: 450px;
+    }
+
+    .div-index-2
+    {
+        height: 450px;
+    }
+
+    .div-index-3
+    {
+        height: 450px;
+    }
+
+    .item.active.fondo-principal.img-chica-1.fondo-img
+    {
+        height: 50.5%;
+    }
+
+    .item.active.fondo-principal.img-chica-1.fondo-img-2
+    {
+        height: 50.5%;
+    }
+
+    .fondo-principal 
+    {
+        height: 104%;
+    }
+
+}
+
+@media (max-width: 768px)
+{
+    .div-index-1
+    {
+        height: 400px;
+    }
+
+    .div-index-2 
+    {
+        height: 400px;
+    }
+
+    .div-index-3
+    {
+        height: 400px;
+    }
+
+    .item.active.fondo-principal.img-chica-1.fondo-img
+    {
+        height: 42.5%;
+    }
+
+    .item.active.fondo-principal.img-chica-1.fondo-img-2
+    {
+        height: 42.5%;
+    }
+
+    .fondo-principal
+    {
+        height: 87%;
+    }
+}
+
+@media (max-width: 767px)
+{
+    .div-index-1
+    {
+        height: auto;
+        padding-left: inherit;
+    }
+
+    .div-index-2
+    {
+        margin-top: 30px;
+        height: auto;
+        margin-bottom: 30px;
+        padding-right: inherit;
+        padding-left: inherit;
+    }
+
+    .div-index-3
+    {
+        height: auto;
+        padding-right: inherit;
+    }
+
+    .fondo-principal
+    {
+        height: auto;
+    }
+
+    .item.active.fondo-principal.img-chica-1.fondo-img
+    {
+        height: 100%;
+    }
+
+    .item.active.fondo-principal.img-chica-1.fondo-img-2
+    {
+        height: 100%;
+    }
+
+    .img-banner-movil
+    {
+        width: 100%;
+    }
+}
+
