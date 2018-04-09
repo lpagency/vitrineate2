@@ -1,97 +1,89 @@
 <!doctype html>
 <html class="no-js" lang="en">
-    <head>
-        <!-- head bt inicio -->
-        <title>Vitrineate</title>
-        <base href="{{ site_base }}/">
-        <meta charset="utf-8">
-        <meta name="description" content="">
-        <meta name="author" content="loadingplay.com">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="jquery, vertical, scrolling, scroll, smooth"/>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300,400,600,600,700,700,800,800' rel='stylesheet' type='text/css'> -->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400" rel="stylesheet"> -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-        <!-- <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'> -->
-<!--         <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,100' rel='stylesheet' type='text/css'> -->
-        <link rel="stylesheet" type="text/css" href="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.css?1">
-        <link rel="stylesheet" href="{{ site_base }}/common/css/editableimage.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="{{ site_base }}/static/css/style.css?5">
-        <link rel="stylesheet" href="{{ site_base }}/static/css/header.css?5">
-        <link rel="stylesheet" href="{{ site_base }}/static/css/footer.css?5">
-        <link rel="stylesheet" href="{{ site_base }}/static/css/gallery.ho.css?5">
-        <link rel="stylesheet" href="{{ site_base }}/static/css/listado_articulos.css?5">
-        <link rel="stylesheet" href="{{ site_base }}/static/css/listado_productos.css?5">
+<head>
+    <!-- head bt inicio -->
+    <title>Vitrineate</title>
+    <base href="{{ site_base }}/">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="loadingplay.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="jquery, vertical, scrolling, scroll, smooth" />
 
-        <!-- new css -->
-        <link rel="stylesheet" href="{{ site_base }}/static/css/header.bottom.css">
-        <link rel="stylesheet" href="{{ site_base }}/static/css/product.detail.info.css">
-        <link rel="stylesheet" href="{{ site_base }}/static/css/buttons.css">
-        <link rel="stylesheet" href="{{ site_base }}/static/css/header.upper.css">
-        <link rel="stylesheet" href="{{ site_base }}/static/css/product.box.css">
-        <link rel="stylesheet" href="{{ site_base }}/static/css/product.detail.css">
-        <link rel="stylesheet" href="{{ site_base }}/static/css/footer.new.css">
-        <link rel="stylesheet" href="{{ site_base }}/static/css/index.new.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300,400,600,600,700,700,800,800' rel='stylesheet' type='text/css'> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <!-- <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'> -->
+    <!--         <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,100' rel='stylesheet' type='text/css'> -->
+    <link rel="stylesheet" type="text/css" href="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.css?1">
+    <link rel="stylesheet" href="{{ site_base }}/common/css/editableimage.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ site_base }}/static/css/style.css?5">
+    <link rel="stylesheet" href="{{ site_base }}/static/css/header.css?5">
+    <link rel="stylesheet" href="{{ site_base }}/static/css/footer.css?5">
+    <link rel="stylesheet" href="{{ site_base }}/static/css/gallery.ho.css?5">
+    <link rel="stylesheet" href="{{ site_base }}/static/css/listado_articulos.css?5">
+    <link rel="stylesheet" href="{{ site_base }}/static/css/listado_productos.css?5">
 
-        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ site_base }}/static2:/imgbt/apple-icon-57x57.png">
-        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ site_base }}/static2:/imgbt/apple-icon-60x60.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site_base }}/static2:/imgbt/apple-icon-72x72.png">
-        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ site_base }}/static2:/imgbt/apple-icon-76x76.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site_base }}/static2:/imgbt/apple-icon-114x114.png">
-        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site_base }}/static2:/imgbt/apple-icon-120x120.png">
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site_base }}/static2:/imgbt/apple-icon-144x144.png">
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site_base }}/static2:/imgbt/apple-icon-152x152.png">
-        <link rel="apple-touch-icon-precomposed" sizes="180x180" href="{{ site_base }}/static2:/imgbt/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" href="{{ site_base }}/static2:/imgbt/android-icon-192x192.png" sizes="192x192" />
-        <link rel="icon" type="image/png" href="{{ site_base }}/static2:/imgbt/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="{{ site_base }}/static2:/imgbt/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/png" href="{{ site_base }}/static2:/imgbt/favicon-16x16.png" sizes="16x16" />
+    <!-- new css -->
+    <link rel="stylesheet" href="{{ site_base }}/static/css/header.bottom.css">
+    <link rel="stylesheet" href="{{ site_base }}/static/css/product.detail.info.css">
+    <link rel="stylesheet" href="{{ site_base }}/static/css/buttons.css">
+    <link rel="stylesheet" href="{{ site_base }}/static/css/header.upper.css">
+    <link rel="stylesheet" href="{{ site_base }}/static/css/product.box.css">
+    <link rel="stylesheet" href="{{ site_base }}/static/css/product.detail.css">
+    <link rel="stylesheet" href="{{ site_base }}/static/css/footer.new.css">
+    <link rel="stylesheet" href="{{ site_base }}/static/css/index.new.css">
 
-        <link rel="stylesheet" type="text/css" href="{{ site_base }}/static/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ site_base }}/static2:/imgbt/apple-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ site_base }}/static2:/imgbt/apple-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site_base }}/static2:/imgbt/apple-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ site_base }}/static2:/imgbt/apple-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site_base }}/static2:/imgbt/apple-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site_base }}/static2:/imgbt/apple-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site_base }}/static2:/imgbt/apple-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site_base }}/static2:/imgbt/apple-icon-152x152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="{{ site_base }}/static2:/imgbt/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" href="{{ site_base }}/static2:/imgbt/android-icon-192x192.png" sizes="192x192" />
+    <link rel="icon" type="image/png" href="{{ site_base }}/static2:/imgbt/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{ site_base }}/static2:/imgbt/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="{{ site_base }}/static2:/imgbt/favicon-16x16.png" sizes="16x16" />
 
-        <!-- aqui se ponen los demas css -de las paginas -->
-        <link rel="stylesheet" href="{{ site_base }}/common/css/editableimage.css">
+    <link rel="stylesheet" type="text/css" href="{{ site_base }}/static/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
 
-
-        <!-- autocomplete -->
-        <link rel="stylesheet" href="{{ site_base }}/common/js/bower/file_uploader/dist/fileuploader.css?1">
-
-        <link rel="stylesheet" href="{{ site_base }}/static/css/ligthbox-d.css">
-        <!-- <link rel="stylesheet" href="{{ site_base }}/static/js/fancybox/source/jquery.fancybox.css?v=2.1.5"> -->
-
-        <link rel="stylesheet" href="{{ site_base }}/common/css/ellipsis.css">
+    <!-- aqui se ponen los demas css -de las paginas -->
+    <link rel="stylesheet" href="{{ site_base }}/common/css/editableimage.css">
 
 
-        <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/s/dt/dt-1.10.10/datatables.min.css"/> -->
+    <!-- autocomplete -->
+    <link rel="stylesheet" href="{{ site_base }}/common/js/bower/file_uploader/dist/fileuploader.css?1">
+
+    <link rel="stylesheet" href="{{ site_base }}/static/css/ligthbox-d.css">
+    <!-- <link rel="stylesheet" href="{{ site_base }}/static/js/fancybox/source/jquery.fancybox.css?v=2.1.5"> -->
+
+    <link rel="stylesheet" href="{{ site_base }}/common/css/ellipsis.css">
 
 
-        {% block css %}{% end %}
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/s/dt/dt-1.10.10/datatables.min.css"/> -->
 
-        {% include 'product/product_box.html' %}
-        {% include 'product/product_home.html' %}
 
-        {% if is_admin %}
-        {% set editabletext = 'editabletext' %}
-        {% else %}
-        {% set editabletext = '' %}
-        {% end %}
+    {% block css %}{% end %} {% include 'product/product_box.html' %} {% include 'product/product_home.html' %} {% if is_admin %} {% set editabletext = 'editabletext' %} {% else %} {% set editabletext = '' %} {% end %}
 
-    </head>
+</head>
 
 
 
-    <body style="overflow: hidden;">
-        {% block header %}{% end %}
-        <div class="content-body" >
-            {% block body %}{% end %}
-        </div>
+<body style="overflow: hidden;">
+    {% block header %}{% end %}
+    <div class="content-body">
+        {% block body %}{% end %}
+    </div>
 
-         <!-- Modal -->
+    <!-- Modal -->
     <div align="center">
         <div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog">
@@ -130,121 +122,123 @@
 
     <!-- **modal categorias productos** -->
 
-        <!-- gif loading editableimage -->
-        <img id="imgLOAD" width="50" height="50" src="{{ site_base }}/common/css/loading.gif" />
+    <!-- gif loading editableimage -->
+    <img id="imgLOAD" width="50" height="50" src="{{ site_base }}/common/css/loading.gif" />
 
-        <script type="text/javascript">
+    <script type="text/javascript">
         var site_base = "{{ site_base }}"
-        </script>
+    </script>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114876620-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114876620-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-          gtag('config', 'UA-114876620-1');
-        </script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="{{ site_base }}/static/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+        gtag('config', 'UA-114876620-1');
+    </script>
 
-        <script type="text/javascript" src="{{ site_base }}/common/js/jquery.editable.js" ></script>
-        <script type="text/javascript" src="{{ site_base }}/common/js/editabletext.js"></script>
-        <script type="text/javascript" src="{{ site_base }}/common/js/editablelink.js"></script>
-        <!-- {%!  end %} -->
-        <script type="text/javascript" src="{{ site_base }}/common/js/page_editable.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ site_base }}/static/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
 
-        <script type="text/javascript" src="{{ site_base }}/common/js/editableimage.js"></script>
-        <script type="text/javascript" src="{{ site_base }}/common/js/bower/file_uploader/dist/fileuploader.min.js?1"></script>
+    <script type="text/javascript" src="{{ site_base }}/common/js/jquery.editable.js"></script>
+    <script type="text/javascript" src="{{ site_base }}/common/js/editabletext.js"></script>
+    <script type="text/javascript" src="{{ site_base }}/common/js/editablelink.js"></script>
+    <!-- {%!  end %} -->
+    <script type="text/javascript" src="{{ site_base }}/common/js/page_editable.js"></script>
 
-        <!-- carga de productos -->
+    <script type="text/javascript" src="{{ site_base }}/common/js/editableimage.js"></script>
+    <script type="text/javascript" src="{{ site_base }}/common/js/bower/file_uploader/dist/fileuploader.min.js?1"></script>
 
-        <script type="text/javascript" src="{{ site_base }}/common/js/jquery.cookie.js"></script>
-        <script type="text/javascript" src="{{ site_base }}/common/js/environment.detection.js"></script>
-        <script type="text/javascript" src="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.es5.js?13"></script>
+    <!-- carga de productos -->
 
-        <script type="text/javascript" src="{{ site_base }}/common/js/parallax.min.js"></script>
-        <script type="text/javascript" src="{{ site_base }}/static/js/unidades.js"></script>
+    <script type="text/javascript" src="{{ site_base }}/common/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="{{ site_base }}/common/js/environment.detection.js"></script>
+    <script type="text/javascript" src="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.es5.js?13"></script>
 
-        <div type="template" style="display: none">
-            <div class="shopping-cart">
-            </div>
+    <script type="text/javascript" src="{{ site_base }}/common/js/parallax.min.js"></script>
+    <script type="text/javascript" src="{{ site_base }}/static/js/unidades.js"></script>
+
+    <div type="template" style="display: none">
+        <div class="shopping-cart">
         </div>
+    </div>
 
-        <script type="text/javascript">
-            $(document).ready(function () {
+    <script type="text/javascript">
+        $(document).ready(function() {
 
-                $(".fancybox").fancybox({
-                    'width':800,
-                    'height':630,
-                    'autoSize' : false,
-                    'autoScale': false,
-                    'padding': 0,
-                    'helpers': {
-                            overlay: {
-                                locked: false
-                            }
-                        }
-                });
+            $(".fancybox").fancybox({
+                'width': 800,
+                'height': 630,
+                'autoSize': false,
+                'autoScale': false,
+                'padding': 0,
+                'helpers': {
+                    overlay: {
+                        locked: false
+                    }
+                }
             });
-        </script>
+        });
+    </script>
 
-        <script type="text/x-template" id="shopping-cart-product">
-            <tr>
-                <td class="vert-align text-left">{{! name }}</td>
-                <td class="vert-align">{{! combination }}</td>
-                <td class="text-center2 vert-align">{{! price|money }}</td>
-                <td class="vert-align fri" style="border-bottom: 1px solid #ddd;">
-                    <a href="#!" class="remove-one" lp-cart-remove-one="{{! id }}">-</a>
-                    {{! quantity }}
-                    <a href="#!" class="add-one" lp-cart-add-one="{{! id }}" >+</a>
-                </td>
-                <td class="remove-from-cart fri" lp-cart-remove="{{! id }}" aria-hidden="true"> X  </td>
-            </tr>
-        </script>
+    <script type="text/x-template" id="shopping-cart-product">
+        <tr>
+            <td class="vert-align text-left">{{! name }}</td>
+            <td class="vert-align">{{! combination }}</td>
+            <td class="text-center2 vert-align">{{! price|money }}</td>
+            <td class="vert-align fri" style="border-bottom: 1px solid #ddd;">
+                <a href="#!" class="remove-one" lp-cart-remove-one="{{! id }}">-</a> {{! quantity }}
+                <a href="#!" class="add-one" lp-cart-add-one="{{! id }}">+</a>
+            </td>
+            <td class="remove-from-cart fri" lp-cart-remove="{{! id }}" aria-hidden="true"> X </td>
+        </tr>
+    </script>
 
-        <script type="text/x-template" id="shopping-cart-total" >
-            <tr>
-                <td colspan="4" class="text-right" >Total:</td>
-                <td id="total" class="text-left total-modal lib">{{! total|money }}</td>
-            </tr>
+    <script type="text/x-template" id="shopping-cart-total">
+        <tr>
+            <td colspan="4" class="text-right">Total:</td>
+            <td id="total" class="text-left total-modal lib">{{! total|money }}</td>
+        </tr>
 
-            <div class="unidades-carrito hidden">{{! units_total }}</div>
-        </script>
+        <div class="unidades-carrito hidden">{{! units_total }}</div>
+    </script>
 
-        <script type="text/x-template" id="shopping-cart-units-total" >
-            <span> {{! units_total }}</span>
-        </script>
+    <script type="text/x-template" id="shopping-cart-units-total">
+        <span> {{! units_total }}</span>
+    </script>
 
-        <script type="text/x-template" id="shopping-cart-checkout-form" >
-            <form action="{{! checkout_url}}" method="get" novalidate id="shipping-form" class="myform" onclick="return Validate()">
-                <input name="site_id" class="form-control required" type="hidden" value="69">
-                <input name="cart_id" class="form-control required" type="hidden" value="{{! cart_id}}">
-                <input name="origin" class="form-control required" type="hidden" value="{{ site.name }}">
-                <input name="total" class="total-carro" type="hidden" value="{{! total }}">
-                <div class="form-group text-center">
-                     <button type="submit" class="btn btn-modal pagar-carro pull-right" disabled>
-                        PAGAR
-                    </button>
-                </div>
-                <div class="">
-                    <a class="btn btn-modal modal-close volver pull-left" data-dismiss="modal" aria-hidden="true">VOLVER</a>
-                </div>
-            </form>
-        </script>
+    <script type="text/x-template" id="shopping-cart-checkout-form">
+        <form action="{{! checkout_url}}" method="get" novalidate id="shipping-form" class="myform" onclick="return Validate()">
+            <input name="site_id" class="form-control required" type="hidden" value="69">
+            <input name="cart_id" class="form-control required" type="hidden" value="{{! cart_id}}">
+            <input name="origin" class="form-control required" type="hidden" value="{{ site.name }}">
+            <input name="total" class="total-carro" type="hidden" value="{{! total }}">
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-modal pagar-carro pull-right" disabled>
+                    PAGAR
+                </button>
+            </div>
+            <div class="">
+                <a class="btn btn-modal modal-close volver pull-left" data-dismiss="modal" aria-hidden="true">VOLVER</a>
+            </div>
+        </form>
+    </script>
 
-        <!-- termino carrito de compra -->
-
+    <!-- termino carrito de compra -->
 
 
-        <!-- termino carrito de compra -->
-        {% block javascript %}{% end %}
-        <script>
+
+    <!-- termino carrito de compra -->
+    {% block javascript %}{% end %}
+    <script>
         window.fbAsyncInit = function() {
             FB.init({
                 appId: '348231912006000',
@@ -262,145 +256,120 @@
             js.src = "//connect.facebook.net/en_US/sdk.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-        </script>
+    </script>
 
-        {% if is_admin %}
-        <script type="text/javascript">
-        var site_name="{{site.name}}";
-        </script>
-        <script type="text/javascript" src="{{ site_base }}/static/js/header.js" ></script>
-        <script type="text/javascript" src="{{ site_base }}/common/js/contentmanager.js" ></script>
+    {% if is_admin %}
+    <script type="text/javascript">
+        var site_name = "{{site.name}}";
+    </script>
+    <script type="text/javascript" src="{{ site_base }}/static/js/header.js"></script>
+    <script type="text/javascript" src="{{ site_base }}/common/js/contentmanager.js"></script>
 
-        {% end %}
+    {% end %}
 
-        <script type="text/javascript" src"https://clouddelivery.textbox.io/1/getEditor?apiKey=1wugguwjiatkm69xmt7w1den1mpvqkxi75mwfmb49lz89o4r">
-        </script>
-
-
-        <script>
-/*            $(document).ajaxComplete(function()
-            {
-                var hash = window.location.hash;
-                // window.location.href= hash;
-
-                if (hash !== "")
-                {
-                    $('html,body').animate({
-                        scrollTop: $(hash).offset().top
-                    });
-                }
-            });
-*/        </script>
+    <script type="text/javascript" src "https://clouddelivery.textbox.io/1/getEditor?apiKey=1wugguwjiatkm69xmt7w1den1mpvqkxi75mwfmb49lz89o4r">
+    </script>
 
 
     <script type="text/javascript">
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', '{{ get_config("analytics") }}', 'auto');
         ga('send', 'pageview');
     </script>
 
     <!-- Facebook Pixel Code -->
-        <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window,document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-         fbq('init', '156362471752324');
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '156362471752324');
         fbq('track', 'PageView');
-        </script>
-        <noscript>
-         <img height="1" width="1"
-        src="https://www.facebook.com/tr?id=156362471752324&ev=PageView
-        &noscript=1"/>
-        </noscript>
+    </script>
+    <noscript>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=156362471752324&ev=PageView
+        &noscript=1" />
+    </noscript>
     <!-- End Facebook Pixel Code -->
 
-
     <script type="text/javascript">
-        $(document).ready(function()
-        {
-            $(document).on("click", "#open-cart", function()
-            {
-                if($(".total-carro").val() > 0)
-                {
+        $(document).ready(function() {
+            $(document).on("click", "#open-cart", function() {
+                if ($(".total-carro").val() > 0) {
                     $(".pagar-carro").attr("disabled", false);
                 }
             });
 
-            $(document).on("click", ".add-one", function()
-            {
-              setTimeout(function()
-              {
-                if($(".total-carro").val() > 0)
-                {
-                  $(".pagar-carro").attr("disabled", false);
-                }
-              },1);
+            $(document).on("click", ".add-one", function() {
+                setTimeout(function() {
+                    if ($(".total-carro").val() > 0) {
+                        $(".pagar-carro").attr("disabled", false);
+                    }
+                }, 1);
             });
 
-            $(document).on("click", ".remove-one", function()
-            {
-              setTimeout(function()
-              {
-                if($(".total-carro").val() > 0)
-                {
-                  $(".pagar-carro").attr("disabled", false);
-                }
-              },1);
+            $(document).on("click", ".remove-one", function() {
+                setTimeout(function() {
+                    if ($(".total-carro").val() > 0) {
+                        $(".pagar-carro").attr("disabled", false);
+                    }
+                }, 1);
             });
 
-            $(document).on("click", ".remove-from-cart", function()
-            {
-              setTimeout(function()
-              {
-                if($(".total-carro").val() > 0)
-                {
-                  $(".pagar-carro").attr("disabled", false);
-                }
-              },1);
+            $(document).on("click", ".remove-from-cart", function() {
+                setTimeout(function() {
+                    if ($(".total-carro").val() > 0) {
+                        $(".pagar-carro").attr("disabled", false);
+                    }
+                }, 1);
             });
         });
     </script>
 
     <script type="text/javascript">
-        $(document).ready(function()
-        {
-            if($(window).width() <= 770)
-            {
-                $(document).on("click", ".img-lupa-movil", function()
-                {
-                    if($(".forma-movil").hasClass("hidden"))
-                    {
+        $(document).ready(function() {
+            if ($(window).width() <= 770) {
+                $(document).on("click", ".img-lupa-movil", function() {
+                    if ($(".forma-movil").hasClass("hidden")) {
                         $(".categorias-movil").addClass("hidden");
                         $(".forma-movil").removeClass("hidden");
-                    }
-                    else
-                    {
+                    } else {
                         $(".forma-movil").addClass("hidden");
                         $(".categorias-movil").removeClass("hidden");
                     }
                 });
-            }
-            else
-            {
-                $(document).on("click", ".img-lupa, .texto-b", function()
-                {
-                    if($(".form-search").hasClass("hidden"))
-                    {
+            } else {
+                $(document).on("click", ".img-lupa, .texto-b", function() {
+                    if ($(".form-search").hasClass("hidden")) {
                         $(".form-search").removeClass("hidden");
                         $(".texto-b").addClass("hidden");
                         $(".busca search").focus();
-                    }
-                    else
-                    {
+                    } else {
                         $(".form-search").addClass("hidden");
                         $(".texto-b").removeClass("hidden");
                     }
@@ -414,7 +383,7 @@
             var name = cname + "=";
             var decodedCookie = decodeURIComponent(document.cookie);
             var ca = decodedCookie.split(';');
-            for(var i = 0; i <ca.length; i++) {
+            for (var i = 0; i < ca.length; i++) {
                 var c = ca[i];
                 while (c.charAt(0) == ' ') {
                     c = c.substring(1);
@@ -426,19 +395,16 @@
             return "";
         }
 
-        $(document).ready(function()
-        {
+        $(document).ready(function() {
             // controll padding top for body
-            var recalcPadding = function()
-            {
+            var recalcPadding = function() {
                 var menu_height = $(".fix-position").outerHeight();
                 $(".content-body").css('margin-top', (menu_height + 5) + 'px');
             }
             recalcPadding();
 
 
-            $(document).on("click", ".cerrar-huincha", function()
-            {
+            $(document).on("click", ".cerrar-huincha", function() {
                 $(".huincha-header").slideToggle({
                     step: recalcPadding,
                     complete: recalcPadding
@@ -447,5 +413,6 @@
         });
     </script>
 
-    </body>
+</body>
+
 </html>

@@ -30,7 +30,7 @@
           });
         });
     </script>
-    
+
 <script type="text/javascript">
     $(document).ready(function()
     {
@@ -38,12 +38,12 @@
       $("#OpenAlert").click();
 
         var base_url = $.environmentVar(
-          /*'https://apibodegas.loadingplay.com/',*    <- para poder probar en ondev*/ 
+          /*'https://apibodegas.loadingplay.com/',*    <- para poder probar en ondev*/
           'https://apibodegas.ondev.today/',
           'https://apibodegas.ondev.today/',
           'https://apibodegas.loadingplay.com/');
         var checkout_url = $.environmentVar(
-          /*'https://lpcheckout.ondev.today/',    <- para poder probar en ondev*/ 
+          /*'https://lpcheckout.ondev.today/',    <- para poder probar en ondev*/
           'https://lpcheckout.ondev.today',
           'https://lpcheckout.ondev.today',
           'https://pay.loadingplay.com');
@@ -203,7 +203,7 @@
         $('.products').ecommerce(config);
         units(config);
 
-        
+
         //  $(document).ecommerce({
         //     'app_public' : app_public,
         //     'animation' : 'simple',
@@ -212,12 +212,12 @@
         //     'products_per_page' : 9
         // });
 
-        
+
 
         // destacado categoria 2
         // config.tag = 'destacado_categoria2';
         // $('.product-list2').ecommerce('product_box', config);
-  
+
     });
 </script>
 
@@ -236,7 +236,7 @@
 <!-- *contenido* -->
 
 <!-- ***SLIDER** -->
-<div class="cont" style="padding-top: 200px"></div>
+<div class="cont"></div>
 <div class="container min contenido-index hidden-xs">
   <div class="col-md-3 col-sm-3 col-xs-12 div-index-1">
     <div class="item active fondo-principal img-chica-1 fondo-img" style="background:url('{{ read_image(site.name + '_img_slider_1') }}'); background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
@@ -421,7 +421,7 @@
           <img class="change-image editablelink" link-id="{{ site.name + '_box_home_3' }}" content="{{ read_link(site.name + '_box_home_3') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
         {% end %}
 
-        <div class="texto-hu {{editabletext}}" text-id="{{ site.name + '_ti_3' }}"> {{ read_text(site.name +  '_ti_3') }}</div> 
+        <div class="texto-hu {{editabletext}}" text-id="{{ site.name + '_ti_3' }}"> {{ read_text(site.name +  '_ti_3') }}</div>
       </div>
     </div>
     <div class="col-md-3 col-sm-6 col-xs-6 col-sec">
@@ -511,7 +511,7 @@
           <img class="change-image editablelink" link-id="{{ site.name + '_box_home_7' }}" content="{{ read_link(site.name + '_box_home_7') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
         {% end %}
 
-        <div class="texto-hu {{editabletext}}" text-id="{{ site.name + '_ti_c' }}"> {{ read_text(site.name +  '_ti_c') }}</div> 
+        <div class="texto-hu {{editabletext}}" text-id="{{ site.name + '_ti_c' }}"> {{ read_text(site.name +  '_ti_c') }}</div>
       </div>
     </div>
     <div class="col-md-3 col-sm-6 col-xs-6 col-sec">
@@ -601,7 +601,7 @@
           <img class="change-image editablelink" link-id="{{ site.name + '_box_home_11' }}" content="{{ read_link(site.name + '_box_home_11') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
         {% end %}
 
-        <div class="texto-hu {{editabletext}}" text-id="{{ site.name + '_ti_g' }}"> {{ read_text(site.name +  '_ti_g') }}</div> 
+        <div class="texto-hu {{editabletext}}" text-id="{{ site.name + '_ti_g' }}"> {{ read_text(site.name +  '_ti_g') }}</div>
       </div>
     </div>
     <div class="col-md-3 col-sm-6 col-xs-6 col-sec">
@@ -986,5 +986,3 @@
 
 {% include '../home/footer.html' %}
 {% end %}
-
-
