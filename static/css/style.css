@@ -43,34 +43,18 @@ a:link{
 .precios-div{
     padding-left: 0;
 }
-.div-index-1{
-    height: 537px;
-    padding-left: 0px;
-}
-.div-index-2{
-    height: 537px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
+
 .col-first{
     padding-left: 0px;
 }
 .col-sec{
     padding-right: 0px;
 }
-.link-banner{
-    position: absolute;
-    width: 95%;
-    height: 49%;
-}
+
 .margen-titulo-logos{
     margin-left: 7px !important;
 }
-.link-banner-main{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
+
 .div-index-3{
     height: 537px;
     padding-right: 0px;
@@ -1331,11 +1315,6 @@ hr.page-contact {
 .logos-titulo-2{
     text-align: center;
     margin-bottom: 15px;
-}
-
-.fondo-principal{
-    height: 263px !important;
-    margin-top: 12px;
 }
 
 .logos-titulo{
