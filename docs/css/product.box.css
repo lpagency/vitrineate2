@@ -294,6 +294,11 @@ Producto en oferta agotado:
     {
         font-size: 11px;
     }
+
+    .img-pro
+    {
+        min-height: 216px;
+    }
 }
 
 @media (max-width: 767px)
@@ -307,6 +312,7 @@ Producto en oferta agotado:
     .img-pro
     {
         width: 100%;
+        min-height: auto;
     }
 
     .precios-div
@@ -363,6 +369,14 @@ Producto en oferta agotado:
 
 @media (max-width: 400px)
 {
+
+    .shape
+    {
+        -webkit-clip-path: polygon(0 0, 100% 85%, 100% 42%, 50% 0);
+        clip-path: polygon(0 0, 100% 85%, 100% 42%, 50% 0);
+        width: 70px;
+    }
+
     .art-hi
     {
         min-height: 365px;
@@ -370,9 +384,12 @@ Producto en oferta agotado:
     .aa 
     {
         position: absolute;
-        left: 82px;
+        left: 87px;
         font-size: 11px;
-        top: 27px;
+        top: 21px;
+        -ms-transform: rotate(46deg);
+        -webkit-transform: rotate(46deg);
+        transform: rotate(46deg);
     }
 }
 
