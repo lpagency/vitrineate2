@@ -35,25 +35,31 @@ category: header
 principio del header en movil
 
 ```html_example
-<div class="navbar-header page-scroll">
-    <button type="button" class="navbar-toggle movil-menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
-    </button>
-    <li class="bolsa-movil" id="open-cart" data-toggle="modal" data-target="#myModal">
-        <!-- <a href="" class="com"> Comprar </a> -->
-        <img class="img-bolsa" src="https://cdn.loadingplay.com/static/images/34b9602179fdac2bb493e006a8eac7a1_carrito.png">
-        <div class="unidades hidden"></div>
-    </li>
-    <li class="lupa-movil">
-        <input class="img-lupa img-lupa-movil" type="image" src="https://7static.loadingplay.com/static/images/1da6ee373afe0e65ad1b94c0d7cd9e9d_Vector_search_iconclaro.png" border="0" />
-    </li>
-    <a class="navbar-brand movil-logo" href="">
-        <div style="position:relative">
-            <div class="base-logo">
-                <img id="vitrineate2_img_logo" src="https://cdn.loadingplay.com/static/images/500_a794344c7e7b2caf93993aff9f78e5aa__adbaafaeabd_logoextwebjpgpng.png" class="img-responsive logo" alt="item">
+<div class="navbar-header navbar-header-movil page-scroll col-xs-12">
+    <div class="col-md-4 text-left" >
+        <button type="button" class="navbar-toggle movil-menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
+        </button>
+    </div>
+    <div class="col-md-4 text-center" >
+        <a class="navbar-brand movil-logo" href="">
+            <div>
+                <div class="base-logo">
+                    <img id="vitrineate2_img_logo" src="https://cdn.loadingplay.com/static/images/500_a794344c7e7b2caf93993aff9f78e5aa__adbaafaeabd_logoextwebjpgpng.png" class="img-responsive logo" alt="item">
+                </div>
             </div>
-        </div>
-    </a>
+        </a>
+    </div>
+    <div class="col-md-4 text-left" >
+        <li class="bolsa-movil" id="open-cart" data-toggle="modal" data-target="#myModal">
+            <!-- <a href="" class="com"> Comprar </a> -->
+            <img class="img-bolsa" src="https://cdn.loadingplay.com/static/images/34b9602179fdac2bb493e006a8eac7a1_carrito.png">
+            <div class="unidades hidden"></div>
+        </li>
+        <li class="lupa-movil">
+            <input class="img-lupa img-lupa-movil" type="image" src="https://7static.loadingplay.com/static/images/1da6ee373afe0e65ad1b94c0d7cd9e9d_Vector_search_iconclaro.png" border="0" />
+        </li>
+    </div>
 </div>
 <div class="clearfix"></div>
 ```
@@ -133,6 +139,67 @@ li.bolsa
     background-image: url('https://cdn.loadingplay.com/static/images/1a51b1de0846e985df21f34664d3d326_carrito_lleno.png');
 }
 
+.navbar-header li
+{
+    list-style: none;
+}
+
+input.img-lupa.img-lupa-movil
+{
+    height: 25px;
+}
+
+button.navbar-toggle.movil-menu
+{
+    float: left;
+    margin: 0px;
+}
+
+.navbar-header-movil .navbar-brand
+{
+    float: none;
+}
+
+a.navbar-brand.movil-logo
+{
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+
+.navbar-header-movil .img-bolsa
+{
+    height: 25px;
+}
+
+.navbar-header-movil .bolsa-movil,
+.navbar-header-movil li.lupa-movil
+{
+    float: right;
+    padding-top: 11px;
+}
+
+.bolsa-movil
+{
+    padding-top: 8px;
+}
+
+.navbar-header-movil li.lupa-movil
+{
+    margin-right: 15px;
+}
+
+.navbar-header.navbar-header-movil.page-scroll.col-xs-12,
+.navbar-header.navbar-header-movil.page-scroll.col-xs-12 .col-xs-4,
+.navbar-header.navbar-header-movil.page-scroll.col-xs-12 .col-xs-4,
+.navbar-header.navbar-header-movil.page-scroll.col-xs-12 .col-xs-4
+{
+    padding: 0px;
+}
+
 @media (max-width: 991px)
 {
     .img-bolsa {
@@ -145,6 +212,7 @@ li.bolsa
         left: 15px;
         width: 100%;
     }
+
 }
 
 @media (max-width: 768px)
@@ -190,5 +258,20 @@ li.bolsa
 {
     .unidades {
         top: 40px;
+    }
+}
+
+@media (max-width: 320px)
+{
+    input.img-lupa.img-lupa-movil,
+    .navbar-header-movil .img-bolsa
+    {
+        height: 12px;
+        width: auto;
+    }
+
+    .navbar-header-movil li.lupa-movil
+    {
+        margin-right: 5px;
     }
 }
