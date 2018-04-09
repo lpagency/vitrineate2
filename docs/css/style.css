@@ -1414,11 +1414,6 @@ hr.page-contact {
         font-size: 14px;
     }
 
-    .brand-color{
-        text-align: center;
-        left: -7px;
-    }
-
     .bot {
         height: 80px;
     }
@@ -1474,10 +1469,6 @@ hr.page-contact {
 }
 
 @media (max-width: 320px){
-
-    .brand-color{
-        left: 0px;
-    }
 
     span {
         font-size: 14px !important;
