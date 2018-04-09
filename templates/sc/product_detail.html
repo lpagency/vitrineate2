@@ -48,9 +48,24 @@
 <script type="text/javascript">
     $(document).ready(function() {
 
-        $(document).on("click touchstart", ".signos-desc", function(e) {
-            $(this).parent().parent().children(".hide-info").toggle("slow");
-            console.log("llega!!!");
+        var is_animation_triggered = false;
+        $(document).on("click touchstart", ".signos-desc", function(e)
+        {
+            // flag logic
+            if (is_animation_triggered)
+            {
+                return
+            }
+
+            is_animation_triggered = true;
+
+            $(this).parent().parent().children(".hide-info")
+            .slideToggle("fast", function()
+            {
+                // reset animation flag
+                is_animation_triggered = false;
+            });
+
             if ($(this).hasClass("fa-plus"))
             {
                 $(this).removeClass("fa-plus");
@@ -65,7 +80,6 @@
     });
 </script>
 
-<script type="text/javascript" src="{{ site_base }}/static/js/product_detail.ec5.js?12"></script>
 
 <script type="text/javascript">
     $(document).ready(function() {
@@ -111,21 +125,24 @@
 
                 $(".sku-producto-hidden").html(product.sku);
 
-                for (var x = 0; x < product.tags.length; x++) {
-                    if (product.tags[x].name.indexOf("oferta") > -1) {
-                        $("#mainImage").addClass("img-sale");
-                        $(".letrero-sale-detail").removeClass("hidden");
-                    }
+                if (product.hasOwnProperty("tags"))
+                {
+                    for (var x = 0; x < product.tags.length; x++) {
+                        if (product.tags[x].name.indexOf("oferta") > -1) {
+                            $("#mainImage").addClass("img-sale");
+                            $(".letrero-sale-detail").removeClass("hidden");
+                        }
 
-                    if (product.tags[x].name.indexOf("nuevo") > -1) {
-                        $("#mainImage").addClass("img-new");
-                        $(".letrero-new-detail").removeClass("hidden");
-                    }
+                        if (product.tags[x].name.indexOf("nuevo") > -1) {
+                            $("#mainImage").addClass("img-new");
+                            $(".letrero-new-detail").removeClass("hidden");
+                        }
 
-                    if (product.tags[x].name.indexOf("nuevo") > -1 && product.tags[x].name.indexOf("oferta") > -1) {
-                        $("#mainImage").addClass("img-ambos");
-                        $(".letrero-sale-detail").removeClass("hidden");
-                        $(".letrero-new-detail").removeClass("hidden");
+                        if (product.tags[x].name.indexOf("nuevo") > -1 && product.tags[x].name.indexOf("oferta") > -1) {
+                            $("#mainImage").addClass("img-ambos");
+                            $(".letrero-sale-detail").removeClass("hidden");
+                            $(".letrero-new-detail").removeClass("hidden");
+                        }
                     }
                 }
 
@@ -167,10 +184,14 @@
                 variants_loaded = true; // execute this onces
                 options.onLoad = $.noop;
 
-                if (product.length == undefined) {
-                    for (var i = 0; i < product.tags.length; i++) {
-                        if (product.tags[i].name.indexOf("Cat3_") != -1 || product.tags[i].name.indexOf("cat3_") != -1) {
-                            related(product.tags[i].name);
+                if (product.length == undefined)
+                {
+                    if (product.hasOwnProperty("tags"))
+                    {
+                        for (var i = 0; i < product.tags.length; i++) {
+                            if (product.tags[i].name.indexOf("Cat3_") != -1 || product.tags[i].name.indexOf("cat3_") != -1) {
+                                related(product.tags[i].name);
+                            }
                         }
                     }
 
