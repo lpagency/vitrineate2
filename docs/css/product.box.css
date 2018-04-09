@@ -129,6 +129,17 @@ Producto en oferta agotado:
 
 */
 
+.img-pro 
+{
+    min-height: 243px;
+    object-fit: contain;
+}
+
+.art-hi
+{
+    min-height: 391px;
+}
+
 .overlay 
 {
     position: absolute;
