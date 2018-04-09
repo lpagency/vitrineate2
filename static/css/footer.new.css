@@ -16,114 +16,113 @@ Este es el estilo de footer:
             <hr>
         </div>
     </div>
-    <div class="container min">
-        <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="inform-comerc text-left">
-                <div class="clearfix"></div>
-                <ul class="no-dot">
-                <li class="ul-1 editabletext" text-id="vitrineate2_foot_0"><h3><b> SIGUENOS!</b></h3>
-</li>
-<li class="ul-1">
-<div class="col-md-2 col-sm-3 col-xs-6">
-<a href="https://www.facebook.com/vitrineate/" target="_blank">
-<img class="facebook" src="https://cdn.loadingplay.com/static/images/dce52a1f2876e2da500e60af5266625a_facebook_hover.png">
-</a>
+    <div class="col-md-3 col-sm-3 col-xs-12">
+        <div class="editabletext" text-id="vitrineate2_foot_0">
+            <h3><b> SIGUENOS!</b></h3>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6">
+            <a href="https://www.facebook.com/vitrineate/" target="_blank">
+                <img class="facebook" src="https://cdn.loadingplay.com/static/images/dce52a1f2876e2da500e60af5266625a_facebook_hover.png">
+            </a>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6">
+            <a href="https://www.instagram.com/vitrineate/" target="_blank">
+                <img class="instagram" src="https://cdn.loadingplay.com/static/images/de8700995496fb357a1350644634aea5_instagram_hover.png">
+            </a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-12">
+        <div class="ul-1 editabletext" text-id="vitrineate2_foot_10">
+            <h3><b>VITRINEATE</b></h3>
+        </div>
+        <div class="gun editabletext" text-id="vitrineate2_foot_11"> 
+            <p>Quienes somos</p>
+        </div>
+        <div class="gun editabletext" text-id="vitrineate2_foot_12"> 
+            <p>Como comprar</p>
+            <p>Tiempos de entrega</p>
+        </div>
+        <div class="gun editabletext" text-id="vitrineate2_foot_12_asd"> 
+            <p> Contacto@vitrineate.cl<br></p>
+            <p>Politicas de devolucion</p>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-12">
+        <div class="ul-1 editabletext" text-id="vitrineate2_foot_20"> 
+            <h3>
+                <span style="background-color: transparent;">Newsletter</span>
+                <br>
+            </h3>
+            <span style="background-color: transparent;">
+                Mantente al día con nuestras novedades
+            </span>
+        </div>
+        <div class="no-dot inscribete-div">
+            <form action="https://forms.zohopublic.com/sytes/form/vitrineatenewsletter/formperma/mvXItmWPYmSuWvOm_HMbcsualMFBbyLBmr7aK6p6kI8/htmlRecords/submit" name="form" id="form" method="POST" accept-charset="UTF-8" enctype="multipart/form-data" onsubmit="zf_validateandsubmitdata();">
+                <input type="email" name="Email" class="insc-input" placeholder="Tu Mail" required="">
+                <br>
+                <input type="submit" value="Inscribete" class="inscribete-btn">
+            </form>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-12">
+        <div class="ul-2 editabletext" text-id="vitrineate2_foot_2323"> 
+            <h3>
+                <b> FORMAS DE PAGO</b>
+            </h3>
+        </div>
+        <div class="de">
+            <img class="webpay" id="vitrineate2_img_foot_webpay" src="https://cdn.loadingplay.com/static/images/500_c24ef61bc15ac04e4115d7b8495931e4__cefbcacedbe__cefbcacedbe__cefbcacedbe__fceceedbb_webpayplpngpngpngpngpng.png" onload="this.onload='';this.src='https://cdn.loadingplay.com/static/images/500_c24ef61bc15ac04e4115d7b8495931e4__cefbcacedbe__cefbcacedbe__cefbcacedbe__fceceedbb_webpayplpngpngpngpngpng.png'" alt="item">
+        </div>
+        <div class="de">
+            <img class="webpay" id="vitrineate2_img_foot_img_2" src="https://cdn.loadingplay.com/static/images/500_ea5468cbed9592d05e1837ae8551605a__eacbeddeaea__fcdacccdfcaee_transfer_bancariapngpngpng.png" onload="this.onload='';this.src='https://cdn.loadingplay.com/static/images/500_ea5468cbed9592d05e1837ae8551605a__eacbeddeaea__fcdacccdfcaee_transfer_bancariapngpngpng.png'" alt="item">
+        </div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 logo-footer">
+        <div class="col-md-12">
+            <a id="vitrineate2_logo" href="#">
+                <div class="col-md-2 base-logo-footer">
+                    <img class="l-footer-footer" id="vitrineate2_img_logo_footer" src="https://cdn.loadingplay.com/static/images/500_cbd61920b50c138eb31ca26f0cb6ae2b__cbdbcebcafcbaeb__acbcebfeeedefcab_logowebpngpngpng.png" onload="this.onload='';this.src='https://cdn.loadingplay.com/static/images/500_cbd61920b50c138eb31ca26f0cb6ae2b__cbdbcebcafcbaeb__acbcebfeeedefcab_logowebpngpngpng.png'" alt="item">
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2 log_sytes">
+            <a href="/auth/logout" class="a-footer">Logout</a>
+        </div>
+    </div>
+    <div class="col-md-12 col-xs-12 firma">
+        <a href="https://www.loadingplay.com">Sytes tech. Developed by LoadingPlay.</a>
+    </div>
 </div>
-<div class="col-md-2 col-sm-3 col-xs-6">
-<a href="https://www.instagram.com/vitrineate/" target="_blank">
-<img class="instagram" src="https://cdn.loadingplay.com/static/images/de8700995496fb357a1350644634aea5_instagram_hover.png">
-</a>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="col-md-3 col-sm-3 col-xs-12">
-<div class="inform text-left">
 <div class="clearfix"></div>
-<ul class="no-dot ">
-<li class="ul-1 editabletext" text-id="vitrineate2_foot_10"> <h3><b>VITRINEATE</b></h3>
-</li>
-<div class="gun editabletext" text-id="vitrineate2_foot_11"> <p>Quienes somos</p>
-</div>
-<div class="gun editabletext" text-id="vitrineate2_foot_12"> <p>Como comprar</p><p>Tiempos de entrega</p>
-</div>
-<div class="gun editabletext" text-id="vitrineate2_foot_12_asd"> <p> Contacto@vitrineate.cl<br></p><p>Politicas de devolucion</p>
-</div>
-</ul>
-</div>
-</div>
-<div class="col-md-3 col-sm-3 col-xs-12">
-<div class="inform-2 text-left">
-<div class="clearfix"></div>
-<ul class="no-dot">
-<li class="ul-1 editabletext" text-id="vitrineate2_foot_20"> <h3><span style="background-color: transparent;">Newsletter</span><br></h3><span style="background-color: transparent;">Mantente al día con nuestras novedades</span>
-</li>
-</ul>
-<ul class="no-dot inscribete-div">
-<form action="https://forms.zohopublic.com/sytes/form/vitrineatenewsletter/formperma/mvXItmWPYmSuWvOm_HMbcsualMFBbyLBmr7aK6p6kI8/htmlRecords/submit" name="form" id="form" method="POST" accept-charset="UTF-8" enctype="multipart/form-data" onsubmit="zf_validateandsubmitdata();">
-<input type="email" name="Email" class="insc-input" placeholder="Tu Mail" required="">
-<br>
-<input type="submit" value="Inscribete" class="inscribete-btn">
-</form>
-</ul>
-</div>
-</div>
-<div class="col-md-3 col-sm-3 col-xs-12">
-<div class="inform-comerc text-left">
-<div class="clearfix"></div>
-<ul class="no-dot d-o">
-<li class="ul-2 editabletext" text-id="vitrineate2_foot_2323"> <h3><b> FORMAS DE PAGO</b></h3>
-</li>
-
-<div class="image-upload visible-movil" style="left: 25px;top:50px;">
-<label for="img_foot_webpay">
-<img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
-</label>
-<input type="file" class="editableimage" image-id="vitrineate2_img_foot_webpay" name="image" id="img_foot_webpay">
-</div>
-
-<div class="de">
-<img class="webpay" id="vitrineate2_img_foot_webpay" src="https://cdn.loadingplay.com/static/images/500_c24ef61bc15ac04e4115d7b8495931e4__cefbcacedbe__cefbcacedbe__cefbcacedbe__fceceedbb_webpayplpngpngpngpngpng.png" onload="this.onload='';this.src='https://cdn.loadingplay.com/static/images/500_c24ef61bc15ac04e4115d7b8495931e4__cefbcacedbe__cefbcacedbe__cefbcacedbe__fceceedbb_webpayplpngpngpngpngpng.png'" alt="item">
-</div>
-
-<div class="image-upload visible-movil" style="left: 25px;top: 130px;">
-<label for="img_foot_img_2">
-<img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
-</label>
-<input type="file" class="editableimage" image-id="vitrineate2_img_foot_img_2" name="image" id="img_foot_img_2">
-</div>
-
-<div class="de">
-<img class="webpay" id="vitrineate2_img_foot_img_2" src="https://cdn.loadingplay.com/static/images/500_ea5468cbed9592d05e1837ae8551605a__eacbeddeaea__fcdacccdfcaee_transfer_bancariapngpngpng.png" onload="this.onload='';this.src='https://cdn.loadingplay.com/static/images/500_ea5468cbed9592d05e1837ae8551605a__eacbeddeaea__fcdacccdfcaee_transfer_bancariapngpngpng.png'" alt="item">
-</div>
-</ul>
-</div>
-</div>
-<div class="col-md-12 col-sm-12 col-xs-12 logo-footer">
-
-<div class="image-upload visible-movil" style="left: 25px;">
-<label for="img_logo_footer">
-<img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
-</label>
-<input type="file" class="editableimage" image-id="vitrineate2_img_logo_footer" name="image" id="img_logo_footer">
-</div>
-
-<a id="vitrineate2_logo" href="#">
-<div class="base-logo-footer">
-<img class="l-footer-footer" id="vitrineate2_img_logo_footer" src="https://cdn.loadingplay.com/static/images/500_cbd61920b50c138eb31ca26f0cb6ae2b__cbdbcebcafcbaeb__acbcebfeeedefcab_logowebpngpngpng.png" onload="this.onload='';this.src='https://cdn.loadingplay.com/static/images/500_cbd61920b50c138eb31ca26f0cb6ae2b__cbdbcebcafcbaeb__acbcebfeeedefcab_logowebpngpngpng.png'" alt="item">
-</div>
-</a>
-<div class="col-md-3">
-
-<a href="/auth/logout" class="a-footer">Logout</a>
-
-</div>
-</div>
-<div class="col-md-12 col-xs-12 firma"><a href="https://www.loadingplay.com">Sytes tech. Developed by LoadingPlay.</a></div>
-</div>
-</div>
 
 ````
 
 */
+
+.webpay
+{
+    width: 100%;
+}
+
+.l-footer-footer
+{
+    width: 100%;
+    object-fit: scale-down;
+}
+
+.base-logo-footer
+{
+    padding-left: 0px;
+}
+
+.log_sytes
+{
+    text-align: center;
+}
+
+.firma
+{
+    text-align: center;
+}
+
