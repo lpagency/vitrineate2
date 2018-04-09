@@ -7,7 +7,7 @@
                 <div class="{{editabletext}} col-md-10 col-sm-10 col-xs-10 header-text-huincha" text-id="{{ site.name + '_head_1' }}"> {{ read_text(site.name + '_head_1') }} </div>
                 <button class="cerrar-huincha">X</button>
             </div>
-            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 text-center logo_wrapper navbar-brand visible-md visible-lg">
+            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 text-center logo_wrapper navbar-brand visible-lg">
                 {% if is_admin %}
                 <div class="image-upload visible-movil" style="left: 600px;">
                     <label for="img_logo">
@@ -22,7 +22,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-2 col-sm-2 col-xs-2 head-logo visible-md visible-lg">
+            <div class="col-md-2 col-sm-2 col-xs-2 head-logo visible-lg">
                 <li class="bolsa" id="open-cart" data-toggle="modal" data-target="#myModal">
                     <span class="hidden-sm hidden-xs">CARRITO</span>
                     <img class="img-bolsa" src="https://cdn.loadingplay.com/static/images/34b9602179fdac2bb493e006a8eac7a1_carrito.png">
@@ -63,7 +63,7 @@
         <!-- / MENU UPPER -->
 
         <!-- MENU BOTTOM -->
-        <div class="visible-lg visible-md menu-safari">
+        <div class="visible-lg menu-safari">
             <nav class="navbar">
                 <div>
                     <div class="navbar-header">
@@ -177,19 +177,19 @@
 
 
     <!-- MENU BOTTOM MOVIL -->
-    <div class="col-xs-12 buscador-movil visible-md visible-xs visible-sm visible-md">
+    <div class="col-xs-12 buscador-movil visible-md visible-xs visible-sm">
         <div class="categorias-movil">
             <div class="col-sm-3 col-xs-3 nombre-categorias-movil">
-                <a class="textos-movil-menu" tabindex="-1" href="/listado_productos?tag=cat1_mujer">Mujer</a>
+                <a class="textos-movil-menu" tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat1_mujer">Mujer</a>
             </div>
             <div class="col-sm-3 col-xs-3 nombre-categorias-movil">
-                <a class="textos-movil-menu" tabindex="-1" href="/listado_productos?tag=cat1_hombre">Hombre</a>
+                <a class="textos-movil-menu" tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat1_hombre">Hombre</a>
             </div>
             <div class="col-sm-3 col-xs-3 nombre-categorias-movil">
-                <a class="textos-movil-menu" tabindex="-1" href="/listado_productos?tag=cat1_ninos">Niños</a>
+                <a class="textos-movil-menu" tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat1_ninos">Niños</a>
             </div>
             <div class="col-sm-3 col-xs-3 nombre-categorias-movil">
-                <a class="textos-movil-menu" tabindex="-1" href="/listado_productos?tag=cat1_accesorios">Accesorios</a>
+                <a class="textos-movil-menu" tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat1_accesorios">Accesorios</a>
             </div>
         </div>
         <form id="searchform" class="form-search forma-movil hidden" role="search" action="/listado_productos" method="get">
