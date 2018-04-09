@@ -205,6 +205,14 @@ a.navbar-brand.movil-logo
 }
 
 
+/**  this code center in ipad with safari */
+img#vitrineate2_img_logo.img-responsive.logo
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 @media (max-width: 991px)
 {
     .img-bolsa {
