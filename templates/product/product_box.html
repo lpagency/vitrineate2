@@ -1,5 +1,40 @@
 
 <script type="text/template" id="product_template" class="hidden">
+
+<!--   <div class="grin">
+    <div class="clearfix-dos"></div>
+    <div class="col-md-3 col-sm-4 col-xs-6 art-hi">
+        <div alig="center">
+            <a href="/sc/product/detail/aros_mandala_con_lapislazuli/8074"></a>
+            <div class="fufi 8354 fufi-sale">
+                <a href="/sc/product/detail/aros_mandala_con_lapislazuli/8074">
+                    <div class="letreros">
+                        <div class="letrero-sale 11000">OFERTA</div>
+                        <div class="letrero-new hidden 8354">NUEVO</div>
+                        <div class="shape PM09 hidden"></div>
+                        <div class="aa PM09 hidden">AGOTADO</div>
+                    </div>
+                    <img src="https://84static.loadingplay.com/static/images/500_f005dd08eb75ff0fcbb5a696aac09987_azulpng.png" alt="" class="img-responsive img-pro">
+                    <div class="overlay 8354 overlay-sale">
+                        <div class="text">COMPRAR</div>
+                    </div>
+                </a>
+            </div>
+            <p class="inf ellipsis multiline">Aros mandala con Lapislazuli</p>
+            <a class="link-marca" marca="Pili Saenz Joyas" href="/listado_productos?tag=pili_saenz_joyas">
+                <p class="brand-color ellipsis multiline">Pili Saenz Joyas</p>
+            </a>
+            <div class="col-md-6 col-sm-6 precios-div">
+                <div class="product-price-3 producto 8074" style="font-size: 12px;"></div>
+                <div class="hidden escondido 8074">$18.000 </div>
+                <div class="hidden promocion 8074">$0 </div>
+                <div class="product-price-3 sku-prod PS04" style="font-weight: bold;">$18.000 </div>
+            </div>
+            <button type="button" class="col-md-6 col-sm-6 col-xs-12 btn add-to-cart PS04 btn-success comprar comprar-btn PS04" id="open-cart" data-toggle="modal" data-target="#myModal" product-upp="1" product-name="Aros mandala con Lapislazuli" product-price="18000" product-sku="PS04" product-id="8074" product-img="https://84static.loadingplay.com/static/images/500_f005dd08eb75ff0fcbb5a696aac09987_azulpng.png" product-weight="0.3" lp-cart-add=""> <img class="bolsa-agregar" src="https://cdn.loadingplay.com/static/images/a99be0bd09ebc9845d83e325177baa2d_bolsita_comprar.png">Agregar</button>
+        </div>
+    </div>
+</div> -->
+
   <div class="grin">
     <div class="clearfix-dos"> </div>
     <div class="col-md-3 col-sm-4 col-xs-6 art-hi">
@@ -15,37 +50,35 @@
             <img src="{{! images[0]['thumb_500'] }}" alt="" class="img-responsive img-pro" >
             <div class="overlay {{! id }}">
               <div class="text">COMPRAR</div>
-            </div>  
-            <p class="inf ellipsis multiline">{{! name }}</p>
-            <a class="link-marca" marca="{{! brand }}" href="#">
-              <p class="brand-color ellipsis multiline">{{! brand }}</p>
-            </a>
-            <div class="col-md-6 col-sm-6 precios-div">
-              <div class="product-price-3 producto {{! id }}">{{! main_price|money }} </div>
-              <div class="hidden escondido {{! id }}">{{! main_price|money }} </div>
-              <div class="hidden promocion {{! id }}">{{! promotion_price|money }} </div>
-              <div class="product-price-3 sku-prod {{! sku }}">{{! main_price|money }} </div>
-            </div>
-            <div class="col-md-6 col-sm-6 boton-comprar">
-              <button
-               type="button"
-               class="btn add-to-cart {{! sku }} btn-success comprar comprar-btn hidden {{! sku }}"
-               id="open-cart"
-               data-toggle="modal"
-               data-target="#myModal"
-               product-upp="{{! upp }}"
-               product-name="{{! name }}"
-               product-price="{{! main_price }}"
-               product-sku="{{! sku }}"
-               product-id="{{! id }}"
-               product-img="{{! images[0]['thumb_500'] }}"
-               product-weight="{{! weight }}"
-               lp-cart-add
-               > <img class="bolsa-agregar" src="https://cdn.loadingplay.com/static/images/a99be0bd09ebc9845d83e325177baa2d_bolsita_comprar.png">Agregar</button>
             </div>
           </div>
+          <p class="inf ellipsis multiline">{{! name }}</p>
+          <a class="link-marca" marca="{{! brand }}" href="#">
+            <p class="brand-color ellipsis multiline">{{! brand }}</p>
+          </a>
+          <div class="col-md-6 col-sm-6 col-xs-12 precios-div">
+            <div class="product-price-3 producto {{! id }}">{{! main_price|money }} </div>
+            <div class="hidden escondido {{! id }}">{{! main_price|money }} </div>
+            <div class="hidden promocion {{! id }}">{{! promotion_price|money }} </div>
+            <div class="product-price-3 sku-prod {{! sku }}">{{! main_price|money }} </div>
+          </div>
+          <button
+            type="button"
+            class="col-md-6 col-sm-6 col-xs-12 btn add-to-cart {{! sku }} btn-success comprar comprar-btn hidden {{! sku }}"
+            id="open-cart"
+            data-toggle="modal"
+            data-target="#myModal"
+            product-upp="{{! upp }}"
+            product-name="{{! name }}"
+            product-price="{{! main_price }}"
+            product-sku="{{! sku }}"
+            product-id="{{! id }}"
+            product-img="{{! images[0]['thumb_500'] }}"
+            product-weight="{{! weight }}"
+            lp-cart-add
+            > <img class="bolsa-agregar" src="https://cdn.loadingplay.com/static/images/a99be0bd09ebc9845d83e325177baa2d_bolsita_comprar.png">Agregar</button>
         </a>
       </div>
     </div> 
-  </div>          
+  </div>
 </script>
