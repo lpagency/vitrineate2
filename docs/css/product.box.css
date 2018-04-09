@@ -33,12 +33,12 @@ Producto sin etiquetas:
                 <p class="brand-color ellipsis multiline">Pili Saenz Joyas</p>
             </a>
             <div class="col-md-6 col-sm-6 precios-div">
-                    <div class="product-price-3 producto 8074" style="font-size: 12px;"></div>
-                    <div class="hidden escondido 8074">$18.000 </div>
-                    <div class="hidden promocion 8074">$0 </div>
-                    <div class="product-price-3 sku-prod PS04" style="font-weight: bold;">$18.000 </div>
-                </div>
-                <button type="button" class="col-md-6 col-sm-6 col-xs-12 btn add-to-cart PS04 btn-success comprar comprar-btn PS04" id="open-cart" data-toggle="modal" data-target="#myModal" product-upp="1" product-name="Aros mandala con Lapislazuli" product-price="18000" product-sku="PS04" product-id="8074" product-img="https://84static.loadingplay.com/static/images/500_f005dd08eb75ff0fcbb5a696aac09987_azulpng.png" product-weight="0.3" lp-cart-add=""> <img class="bolsa-agregar" src="https://cdn.loadingplay.com/static/images/a99be0bd09ebc9845d83e325177baa2d_bolsita_comprar.png">Agregar</button>
+                <div class="product-price-3 producto 8074" style="font-size: 12px;"></div>
+                <div class="hidden escondido 8074">$18.000 </div>
+                <div class="hidden promocion 8074">$0 </div>
+                <div class="product-price-3 sku-prod PS04" style="font-weight: bold;">$18.000 </div>
+            </div>
+            <button type="button" class="col-md-6 col-sm-6 col-xs-12 btn add-to-cart PS04 btn-success comprar comprar-btn PS04" id="open-cart" data-toggle="modal" data-target="#myModal" product-upp="1" product-name="Aros mandala con Lapislazuli" product-price="18000" product-sku="PS04" product-id="8074" product-img="https://84static.loadingplay.com/static/images/500_f005dd08eb75ff0fcbb5a696aac09987_azulpng.png" product-weight="0.3" lp-cart-add=""> <img class="bolsa-agregar" src="https://cdn.loadingplay.com/static/images/a99be0bd09ebc9845d83e325177baa2d_bolsita_comprar.png">Agregar</button>
         </div>
     </div>
 </div>
@@ -287,6 +287,12 @@ Producto en oferta agotado:
 
 @media (max-width: 767px)
 {
+
+    .art-hi
+    {
+        min-height: 546px;
+    }
+
     .img-pro
     {
         width: 100%;
@@ -319,13 +325,50 @@ Producto en oferta agotado:
     }
 }
 
+@media (max-width: 630px)
+{
+    .art-hi 
+    {
+        min-height: 480px;
+    }
+}
+
+@media (max-width: 540px)
+{
+    .art-hi 
+    {
+        min-height: 435px;
+    }
+}
+
+@media (max-width: 450px)
+{
+    .art-hi 
+    {
+        min-height: 400px;
+    }
+}
+
+
 @media (max-width: 400px)
 {
+    .art-hi
+    {
+        min-height: 365px;
+    }
     .aa 
     {
         position: absolute;
         left: 82px;
         font-size: 11px;
         top: 27px;
+    }
+}
+
+@media (max-width: 320px)
+{
+    .aa
+    {
+        left: 52px;
     }
 }

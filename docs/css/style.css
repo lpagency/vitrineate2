@@ -39,50 +39,7 @@ a:link{
 .padding-r{
     padding-right: 0px;
 }
-.shape {
-    margin-top: -104px;
-    position: relative;
-    top: 46px;
-    left: 131px;
-    -webkit-clip-path: polygon(0 0, 100% 100%, 100% 50%, 50% 0);
-    clip-path: polygon(0 0, 100% 100%, 100% 50%, 50% 0);
-    width: 90px;
-    height: 90px;
-    background-color: #cecfd0;
-}
-.overlay-agotado{
-    top: 116px !important;
-}
-.aa{
-    position: relative;
-    left: 133px;
-    font-size: 11px;
-    top: 41px;
-    font-weight: bold;
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-.comprar-btn{
-    position: relative;
-    left: -10px;
-    margin-top: 17px !important;
-    margin-left: -4px !important;
-    font-size: 10px !important;
-}
-.comprar-btn:hover{
-    font-size: 10px !important;
-}
-.boton-comprar{
-    position: relative;
-    top: -60px;
-    left: 25px;
-}
-.brand-color{
-    color: #00e2bb !important;
-    position: relative;
-    top: -42px;
-}
+
 .precios-div{
     padding-left: 0;
 }
@@ -216,18 +173,6 @@ a:link{
     border: solid 1px #3ae0bc;
 }
 
-.letrero-sale {
-    position: relative;
-    left: 0px;
-    font-size: 11px;
-    text-align: center;
-    padding: 2px;
-    color: white;
-    background-color: red;
-    width: 60px;
-    border: solid 1px red;
-}
-
 .letrero-new {
     position: relative;
     left: 0px;
@@ -241,14 +186,6 @@ a:link{
     border: solid 1px #d4ff67;
 }
 
-.overlay-sale{
-    top: 32px !important;
-}
-
-.overlay-new{
-    top: 32px !important;
-}
-
 .fufi-new{
     top: -20px;
 }
@@ -257,17 +194,8 @@ a:link{
     top: 53px !important;
 }
 
-.fufi-sale{
-    top: -22px;
-}
-
 .fufi-ambos {
     top: -41px;
-}
-
-.letreros {
-    position: relative;
-    top: 70px;
 }
 
 .carousel-control.right{
@@ -1185,16 +1113,6 @@ hr.page-contact {
         padding-right: inherit;
     }
 
-    .shape{
-        top: 48px;
-        left: 90px;
-    }
-
-    .aa{
-        left: 100px;
-        top: 28px;
-    }
-
     .logos-titulo{
         top: -25px;
         position: relative;
@@ -1409,11 +1327,6 @@ hr.page-contact {
         font-size: 14px;
     }
 
-    .brand-color{
-        text-align: center;
-        left: -7px;
-    }
-
     .primero {
         margin-top: 20% !important;
     }
@@ -1429,29 +1342,6 @@ hr.page-contact {
     margin-top: 80px;
     object-fit: cover;
     border-radius: 180px;
-}
-
-.aa {
-    position: relative;
-    left: 77px;
-    font-size: 11px;
-    top: 24px;
-    font-weight: bold;
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(54deg);
-}
-
-.shape {
-    margin-top: -104px;
-    position: relative;
-    top: 50px;
-    left: 86px;
-    -webkit-clip-path: polygon(0 0, 100% 100%, 100% 50%, 50% 0);
-    clip-path: polygon(0 0, 100% 100%, 100% 50%, 50% 0);
-    width: 63px;
-    height: 90px;
-    background-color: #cecfd0;
 }
 
 .text-prod-desk {
@@ -1520,16 +1410,8 @@ hr.page-contact {
         font-size: 14px !important;
     }
 
-    .art-hi{
-        left: -15px;
-    }
-
     .logos-titulo{
         font-size: 14px;
-    }
-
-    .shape{
-        left: 76px;
     }
 
     .brand-color{
@@ -1592,10 +1474,6 @@ hr.page-contact {
 }
 
 @media (max-width: 320px){
-
-    .art-hi{
-        left: 0px;
-    }
 
     .brand-color{
         left: 0px;

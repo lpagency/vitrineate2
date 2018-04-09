@@ -186,18 +186,6 @@ div.image-upload.part1 {
     backface-visibility: hidden;
 }
 
-.product-price-3 {
-    position: relative;
-    top: -48px;
-    font-size: 15px;
-    color: black;
-    text-align: left;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-weight: 400;
-    min-height: 16px;
-}
-
 .titulo-prou {
     position: absolute;
     text-align: center;
@@ -210,25 +198,6 @@ div.image-upload.part1 {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-.inf {
-    position: relative;
-    bottom: 11px;
-    width: 100%;
-    margin-top: 25px;
-    text-align: left;
-    left: 0%;
-    color: black;
-    font-size: 15px;
-    display: inline-block;
-    white-space: nowrap !important;
-    text-overflow: ellipsis;
-    font-weight: bold;
-    margin-bottom: 28px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    height: 26px;
 }
 
 .clearfix-dos{
@@ -331,12 +300,6 @@ hr.len {
     width: 72%;
 }
 
-.art-hi {
-    overflow: hidden;
-    padding: 0px 34px;
-    max-height: 420px;
-}
-
 #mainImage{
     width: 100%;
     height: 400px;
@@ -346,44 +309,6 @@ hr.len {
     position: relative;
     -webkit-transition: all 0.5s linear;
     transition: all 0.5s linear;
-}
-
-/*.img-container img {
-    width:100px;
-    height:100px;
-}*/
-
-
-.img-pro {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    margin-bottom: 22px;
-    padding-left: 0px;
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    margin: 11px auto;
-}
-
-.fufi {
-    position: relative;
-    margin: auto;
-    height: 351px;
-}
-
-.overlay {
-    position: absolute;
-    top: 0px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 63%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(0, 0, 0, 0.36);
 }
 
 .fufi:hover .overlay {
@@ -479,10 +404,6 @@ hr.detalle {
         margin-top: -65px;
     }
 
-    .art-hi {
-        height: 350px;
-    }
-
     .img-ambos {
         top: -59px !important;
     }
@@ -497,10 +418,6 @@ hr.detalle {
         width: 40%;
         left: 9px;
         top: -68px;
-    }
-
-    .art-hi{
-        padding: 0px 5px;
     }
 
     .letrero-new-detail{
@@ -533,23 +450,7 @@ hr.detalle {
     .variants-container{
         margin-bottom: 150px;
     }
-    .img-pro {
-        width: 180px;
-        height: 180px;
-        object-fit: cover;
-        margin-bottom: 25px;
-        padding-left: 0px;
-        opacity: 1;
-        display: block;
-        transition: .5s ease;
-        backface-visibility: hidden;
-        margin: 13px auto;
-    }
-    .fufi {
-        position: relative;
-        width: 180px;
-        margin: auto;
-    }
+
     .overlay {
         position: absolute;
         top: 0px;
@@ -670,59 +571,36 @@ hr.detalle {
 
 @media (max-width: 575px){
 
-    .art-hi{
-        max-height: 315px;
+    .product-detail{
+        margin-top: 0px;
+    }
+    .titulo-prou {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        bottom: 0px;
+        margin-bottom: 50px;
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .margin-movil-prod{
+        position: relative;
+        bottom: 60px;
+    }
+    .texto-hu-2 {
+        position: absolute;
+        bottom: 70px;
+        color: white;
+        text-align: left;
+        padding-left: 13px;
+        padding-right: 13px;
+        font-size: 22px;
+        font-weight: 400;
+        width: 80%;
+        left: 20px;
     }
 
-.product-detail{
-    margin-top: 0px;
-}
-    .titulo-prou {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    bottom: 0px;
-    margin-bottom: 50px;
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
-}
-.margin-movil-prod{
-    position: relative;
-    bottom: 60px;
-}
-.texto-hu-2 {
-    position: absolute;
-    bottom: 70px;
-    color: white;
-    text-align: left;
-    padding-left: 13px;
-    padding-right: 13px;
-    font-size: 22px;
-    font-weight: 400;
-    width: 80%;
-    left: 20px;
-}
-.img-pro {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 25px;
-    padding-left: 0px;
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    margin: 15px auto;
-}
-.overlay {
-    height: 73% !important;
-}
-.fufi {
-    position: relative;
-    width: 150px;
-    margin: auto;
-}
 .text {
     color: white;
     font-size: 13px;
@@ -800,9 +678,6 @@ hr.detalle {
     font-weight: 400;
     min-height: 16px;
 }
-.col-md-6.precios-div {
-    top: -26px;
-}
 .col-md-6.boton-comprar {
     top: -80px;
 }
@@ -842,10 +717,6 @@ hr.detalle {
         margin-top: 20px;
     }
 
-    .comprar-btn {
-        left: -36px;
-    }
-
     .img_prod_little {
         width: 20%;
         height: 66px;
@@ -860,10 +731,6 @@ hr.detalle {
 
     .marcas-movil{
         margin-top: 20px;
-    }
-
-    .overlay{
-        height: 72%;
     }
     .overlay-rel{
         height: 70%;
@@ -909,26 +776,9 @@ hr.detalle {
         top: 30px;
         left: 9px;
     }
-    .comprar-btn {
-        left: -37px;
-    }
-
-    .art-hi{
-        left: -15px;
-        padding: 0px 22px;
-    }
 
     .letreros-detalle {
         left: -95px;
-    }
-
-    .shape {
-        left: 87px;
-    }
-
-    .aa{
-        left: 79px;
-        top: 23px;
     }
 
     .marcas-movil{
@@ -1027,29 +877,6 @@ hr.detalle {
         left: -5px;
     }
 
-    .art-hi{
-        padding: 0px 0px;
-    }
-
-    .shape{
-        top: 60px;
-        left: 67px;
-    }
-
-    .aa{
-        left: 62px;
-        top: 27px;
-    }
-
-    .overlay{
-        height: 77% !important;
-        width: 100%;
-    }
-
-    .art-hi{
-        height: 310px;
-    }
-
     .brand-color{
         left: -6px;
         text-align: center;
@@ -1066,10 +893,6 @@ hr.detalle {
         top: -134px;
         width: 80%;
         margin-top: 96px;
-    }
-    .fufi{
-        height: 375px;
-        margin-bottom: 40px;
     }
     .inf{
         position: relative;
@@ -1094,13 +917,6 @@ hr.detalle {
         font-weight: 400;
     }
 
-    .fufi {
-        position: relative;
-        width: 130px;
-        margin: auto;
-        height: 200px;
-        margin-bottom: 40px;
-    }
     .inf {
         position: relative;
         width: 96%;

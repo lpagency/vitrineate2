@@ -27,3 +27,9 @@ td, th
     background: #666;
     padding: 10px;
 }
+
+/* show mobile elements when you are in docs */
+.navbar-toggle
+{
+    display: block;
+}
