@@ -2,8 +2,8 @@
 
 ---
 title: Product Box
-name: product box
-category: product box
+name: product.box
+category: product.box
 ---
 
 Producto sin etiquetas:
@@ -129,7 +129,7 @@ Producto en oferta agotado:
 
 */
 
-.img-pro 
+.img-pro
 {
     min-height: 243px;
     object-fit: contain;
@@ -140,7 +140,7 @@ Producto en oferta agotado:
     min-height: 391px;
 }
 
-.overlay 
+.overlay
 {
     position: absolute;
     top: 0px;
@@ -302,7 +302,7 @@ Producto en oferta agotado:
         height: 35px;
     }
 
-    .btn.add-to-cart:hover 
+    .btn.add-to-cart:hover
     {
         font-size: 11px;
     }
@@ -359,7 +359,7 @@ Producto en oferta agotado:
         padding-right: 0px;
     }
 
-    .brand-color 
+    .brand-color
     {
         text-align: center;
     }
@@ -369,13 +369,13 @@ Producto en oferta agotado:
         text-align: center;
     }
 
-    .btn.add-to-cart 
+    .btn.add-to-cart
     {
         font-size: inherit;
         height: inherit;
     }
 
-    .btn.add-to-cart:hover 
+    .btn.add-to-cart:hover
     {
         font-size: inherit;
     }
@@ -383,7 +383,7 @@ Producto en oferta agotado:
 
 @media (max-width: 630px)
 {
-    .art-hi 
+    .art-hi
     {
         min-height: 480px;
     }
@@ -391,7 +391,7 @@ Producto en oferta agotado:
 
 @media (max-width: 540px)
 {
-    .art-hi 
+    .art-hi
     {
         min-height: 435px;
     }
@@ -399,7 +399,7 @@ Producto en oferta agotado:
 
 @media (max-width: 450px)
 {
-    .art-hi 
+    .art-hi
     {
         min-height: 400px;
     }
@@ -430,7 +430,7 @@ Producto en oferta agotado:
     {
         min-height: 365px;
     }
-    .aa 
+    .aa
     {
         position: absolute;
         left: 100px;

@@ -52,6 +52,12 @@ Inscribete button:
 <div class="clearfix"></div>
 ```
 
+Modal button:
+
+```html_example
+<button type="submit" value="Inscribete" class="btn btn-modal">MODAL</button>
+```
+
 */
 
 
@@ -216,4 +222,14 @@ a:hover
 .btn-disabled.active
 {
     background: transparent;
+}
+
+.btn-modal
+{
+    background-color: rgba(0, 0, 0, 0.24);
+    color: white;
+    width: 31%;
+    border-radius: 0px;
+    height: 51px;
+    font-weight: 100;
 }

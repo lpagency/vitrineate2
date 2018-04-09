@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Guía de estilos: shopping.cart</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+
+    <!-- JavaScript -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- documentation css -->
+    <link rel="stylesheet" href="./docs-css/github.css">
+    <link rel="stylesheet" href="./docs-css/style.css">
+
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/buttons.css">
+    <link rel="stylesheet" href="./css/product.detail.info.css">
+    <link rel="stylesheet" href="./css/header.bottom.css">
+    <link rel="stylesheet" href="./css/header.upper.css">
+    <link rel="stylesheet" href="./css/product.box.css">
+    <link rel="stylesheet" href="./css/footer.new.css">
+    <link rel="stylesheet" href="./css/product.detail.css">
+    <link rel="stylesheet" href="./css/shoppingcart.css">
+  </head>
+  <body>
+    <div class="container" >
+      <nav>
+        <ul>
+        
+          <li><a href="buttons.html">buttons</a></li>
+        
+          <li><a href="index.html">basics</a></li>
+        
+          <li><a href="detail.info.html">detail.info</a></li>
+        
+          <li><a href="footer.html">footer</a></li>
+        
+          <li><a href="header.html">header</a></li>
+        
+          <li><a href="product.box.html">product.box</a></li>
+        
+          <li><a href="product.detail.html">product.detail</a></li>
+        
+          <li><a href="shopping.cart.html">shopping.cart</a></li>
+        
+        </ul>
+      </nav>
+
+      <h1>Guía de estilos vitrineate</h1>
+      <section class="content">
+        <ul>
+        
+          <li><a href="#shopping.cart">Shopping cart</a></li>
+        
+        </ul>
+<h1 id="shopping.cart" class="styleguide">Shopping cart</h1>
+<div class="codeExample">
+  <div class="exampleOutput">
+    <div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title ">Resumen de tu compra</h4>
+    </div>
+    <div class="modal-body mlb-btn">
+        <div class="container-fluid cart-list" ng-controller="">
+            <div class="row">
+                <div class="col-sm-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Talla</th>
+                                <th>Precio</th>
+                                <th class="">Cant</th>
+                                <th class="">Eliminar</th>
+                            </tr>
+                        </thead>
+                        <tbody class="shopping-cart">
+                            <tr>
+                                <td class="vert-align text-left">Camisa Manga Corta Calaveras</td>
+                                <td class="vert-align"></td>
+                                <td class="text-center2 vert-align">$35.000</td>
+                                <td class="vert-align fri" style="border-bottom: 1px solid #ddd;">
+                                    <a href="#!" class="remove-one" lp-cart-remove-one="ed3c1295-e8fc-4978-967d-15d1a5596f8e">-</a> 2
+                                    <a href="#!" class="add-one" lp-cart-add-one="ed3c1295-e8fc-4978-967d-15d1a5596f8e">+</a>
+                                </td>
+                                <td class="remove-from-cart fri" lp-cart-remove="ed3c1295-e8fc-4978-967d-15d1a5596f8e" aria-hidden="true"> X </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="4" class="text-right" >Total:</td>
+                                <td id="total" class=" total-modal lib">$70.000</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <div class="checkout-form">
+                        <form action="https://pay.loadingplay.com" method="get" novalidate="" id="shipping-form" class="myform" onclick="return Validate()">
+                            <input name="site_id" class="form-control required" type="hidden" value="69">
+                            <input name="cart_id" class="form-control required" type="hidden" value="b60a988f-a3b3-4b2a-89ee-09cdfb27f97e">
+                            <input name="origin" class="form-control required" type="hidden" value="vitrineate2">
+                            <input name="total" class="total-carro" type="hidden" value="70000">
+                            <div class="form-group text-center">
+                                <button type="submit" class="btn btn-modal pagar-carro pull-right" >
+                                    PAGAR
+                                </button>
+                            </div>
+                            <div class="">
+                                <button class="btn btn-modal modal-close volver pull-left" data-dismiss="modal" aria-hidden="true">VOLVER</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>×<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"modal-title "</span><span class="nt">&gt;</span>Resumen de tu compra<span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body mlb-btn"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid cart-list"</span> <span class="na">ng-controller=</span><span class="s">""</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-12"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;thead&gt;</span>
+                            <span class="nt">&lt;tr&gt;</span>
+                                <span class="nt">&lt;th&gt;</span>Nombre<span class="nt">&lt;/th&gt;</span>
+                                <span class="nt">&lt;th&gt;</span>Talla<span class="nt">&lt;/th&gt;</span>
+                                <span class="nt">&lt;th&gt;</span>Precio<span class="nt">&lt;/th&gt;</span>
+                                <span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Cant<span class="nt">&lt;/th&gt;</span>
+                                <span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Eliminar<span class="nt">&lt;/th&gt;</span>
+                            <span class="nt">&lt;/tr&gt;</span>
+                        <span class="nt">&lt;/thead&gt;</span>
+                        <span class="nt">&lt;tbody</span> <span class="na">class=</span><span class="s">"shopping-cart"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;tr&gt;</span>
+                                <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"vert-align text-left"</span><span class="nt">&gt;</span>Camisa Manga Corta Calaveras<span class="nt">&lt;/td&gt;</span>
+                                <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"vert-align"</span><span class="nt">&gt;&lt;/td&gt;</span>
+                                <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"text-center2 vert-align"</span><span class="nt">&gt;</span>$35.000<span class="nt">&lt;/td&gt;</span>
+                                <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"vert-align fri"</span> <span class="na">style=</span><span class="s">"border-bottom: 1px solid #ddd;"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#!"</span> <span class="na">class=</span><span class="s">"remove-one"</span> <span class="na">lp-cart-remove-one=</span><span class="s">"ed3c1295-e8fc-4978-967d-15d1a5596f8e"</span><span class="nt">&gt;</span>-<span class="nt">&lt;/a&gt;</span> 2
+                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#!"</span> <span class="na">class=</span><span class="s">"add-one"</span> <span class="na">lp-cart-add-one=</span><span class="s">"ed3c1295-e8fc-4978-967d-15d1a5596f8e"</span><span class="nt">&gt;</span>+<span class="nt">&lt;/a&gt;</span>
+                                <span class="nt">&lt;/td&gt;</span>
+                                <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"remove-from-cart fri"</span> <span class="na">lp-cart-remove=</span><span class="s">"ed3c1295-e8fc-4978-967d-15d1a5596f8e"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span> X <span class="nt">&lt;/td&gt;</span>
+                            <span class="nt">&lt;/tr&gt;</span>
+
+                            <span class="nt">&lt;tr&gt;</span>
+                                <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"4"</span> <span class="na">class=</span><span class="s">"text-right"</span> <span class="nt">&gt;</span>Total:<span class="nt">&lt;/td&gt;</span>
+                                <span class="nt">&lt;td</span> <span class="na">id=</span><span class="s">"total"</span> <span class="na">class=</span><span class="s">" total-modal lib"</span><span class="nt">&gt;</span>$70.000<span class="nt">&lt;/td&gt;</span>
+                            <span class="nt">&lt;/tr&gt;</span>
+
+                        <span class="nt">&lt;/tbody&gt;</span>
+                    <span class="nt">&lt;/table&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkout-form"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"https://pay.loadingplay.com"</span> <span class="na">method=</span><span class="s">"get"</span> <span class="na">novalidate=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"shipping-form"</span> <span class="na">class=</span><span class="s">"myform"</span> <span class="na">onclick=</span><span class="s">"return Validate()"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">"site_id"</span> <span class="na">class=</span><span class="s">"form-control required"</span> <span class="na">type=</span><span class="s">"hidden"</span> <span class="na">value=</span><span class="s">"69"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">"cart_id"</span> <span class="na">class=</span><span class="s">"form-control required"</span> <span class="na">type=</span><span class="s">"hidden"</span> <span class="na">value=</span><span class="s">"b60a988f-a3b3-4b2a-89ee-09cdfb27f97e"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">"origin"</span> <span class="na">class=</span><span class="s">"form-control required"</span> <span class="na">type=</span><span class="s">"hidden"</span> <span class="na">value=</span><span class="s">"vitrineate2"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">"total"</span> <span class="na">class=</span><span class="s">"total-carro"</span> <span class="na">type=</span><span class="s">"hidden"</span> <span class="na">value=</span><span class="s">"70000"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group text-center"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-modal pagar-carro pull-right"</span> <span class="nt">&gt;</span>
+                                    PAGAR
+                                <span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-modal modal-close volver pull-left"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>VOLVER<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/form&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></pre>
+    </div>
+  </div>
+</div>
+      </section>
+      <footer>
+        <p>This documentation generated using <a href="http://github.com/trulia/hologram">Hologram</a>
+      </footer>
+    </div>
+  </body>
+</html>

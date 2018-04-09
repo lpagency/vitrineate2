@@ -1,0 +1,85 @@
+/*doc
+---
+title: Shopping cart
+name: shopping.cart
+category: shopping.cart
+---
+
+
+```html_example
+<div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title ">Resumen de tu compra</h4>
+    </div>
+    <div class="modal-body mlb-btn">
+        <div class="container-fluid cart-list" ng-controller="">
+            <div class="row">
+                <div class="col-sm-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Talla</th>
+                                <th>Precio</th>
+                                <th class="">Cant</th>
+                                <th class="">Eliminar</th>
+                            </tr>
+                        </thead>
+                        <tbody class="shopping-cart">
+                            <tr>
+                                <td class="vert-align text-left">Camisa Manga Corta Calaveras</td>
+                                <td class="vert-align"></td>
+                                <td class="text-center2 vert-align">$35.000</td>
+                                <td class="vert-align fri" style="border-bottom: 1px solid #ddd;">
+                                    <a href="#!" class="remove-one" lp-cart-remove-one="ed3c1295-e8fc-4978-967d-15d1a5596f8e">-</a> 2
+                                    <a href="#!" class="add-one" lp-cart-add-one="ed3c1295-e8fc-4978-967d-15d1a5596f8e">+</a>
+                                </td>
+                                <td class="remove-from-cart fri" lp-cart-remove="ed3c1295-e8fc-4978-967d-15d1a5596f8e" aria-hidden="true"> X </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="4" class="text-right" >Total:</td>
+                                <td id="total" class=" total-modal lib">$70.000</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <div class="checkout-form">
+                        <form action="https://pay.loadingplay.com" method="get" novalidate="" id="shipping-form" class="myform" onclick="return Validate()">
+                            <input name="site_id" class="form-control required" type="hidden" value="69">
+                            <input name="cart_id" class="form-control required" type="hidden" value="b60a988f-a3b3-4b2a-89ee-09cdfb27f97e">
+                            <input name="origin" class="form-control required" type="hidden" value="vitrineate2">
+                            <input name="total" class="total-carro" type="hidden" value="70000">
+                            <div class="form-group text-center">
+                                <button type="submit" class="btn btn-modal pagar-carro pull-right" >
+                                    PAGAR
+                                </button>
+                            </div>
+                            <div class="">
+                                <button class="btn btn-modal modal-close volver pull-left" data-dismiss="modal" aria-hidden="true">VOLVER</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+```
+*/
+
+.modal-content
+{
+    text-align: center;
+}
+
+.modal-body td, .modal-body th
+{
+    border: none;
+}
+
+.modal-body .table>thead>tr>th
+{
+    border-bottom: none;
+}
