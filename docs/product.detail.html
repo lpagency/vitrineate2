@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Guía de estilos: product.detail</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+
+    <!-- JavaScript -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- documentation css -->
+    <link rel="stylesheet" href="./docs-css/github.css">
+    <link rel="stylesheet" href="./docs-css/style.css">
+
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/buttons.css">
+    <link rel="stylesheet" href="./css/product.detail.info.css">
+    <link rel="stylesheet" href="./css/header.bottom.css">
+    <link rel="stylesheet" href="./css/header.upper.css">
+    <link rel="stylesheet" href="./css/product.box.css">
+    <link rel="stylesheet" href="./css/footer.new.css">
+    <link rel="stylesheet" href="./css/product.detail.css">
+  </head>
+  <body>
+    <div class="container" >
+      <nav>
+        <ul>
+        
+          <li><a href="buttons.html">buttons</a></li>
+        
+          <li><a href="index.html">basics</a></li>
+        
+          <li><a href="detail.info.html">detail.info</a></li>
+        
+          <li><a href="footer.html">footer</a></li>
+        
+          <li><a href="header.html">header</a></li>
+        
+          <li><a href="product_box.html">product box</a></li>
+        
+          <li><a href="product.detail.html">product.detail</a></li>
+        
+        </ul>
+      </nav>
+
+      <h1>Guía de estilos vitrineate</h1>
+      <section class="content">
+        <ul>
+        
+          <li><a href="#product.detail">Product Detail</a></li>
+        
+        </ul>
+<p class="styleguide">[header upper]: header.html#header upper
+[product box]: product_box.html#product box</p>
+<h1 id="product.detail" class="styleguide">Product Detail</h1>
+<p class="styleguide">Imagenes de detalle de producto:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="img-div col-md-6 col-sm-6 col-xs-12">
+    <div class="col-md-12 col-sm-12 col-xs-12 img-ppal-movil">
+        <div id="mainDiv">
+            <div class="main-img-container">
+                <div class="letreros-detalle">
+                    <div class="letrero-sale-detail hidden RS706">OFERTA</div>
+                    <div class="letrero-new-detail hidden RS706">NUEVO</div>
+                </div>
+                <img id="mainImage" class="fondo-detalle" src="https://84static.loadingplay.com/static/images/500_db5e66a67785f593c5fba6bface2bc73_DSCNpng.png">
+            </div>
+        </div>
+    </div>
+    <div class="offset-md-1 offset-sm-1 col-xs-12 col-md-12 col-sm-12 image_little">
+        <div class="col-md-2 col-sm-2 col-xs-2 img-container">
+            <img class=" img_prod_little" src="https://84static.loadingplay.com/static/images/500_3ab4e32dda8258b763d8ad6a2e8e02b3_DSCNpng.png" onload="this.onload='';this.src=https://84static.loadingplay.com/static/images/500_3ab4e32dda8258b763d8ad6a2e8e02b3_DSCNpng.png">
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2 img-container">
+            <img class=" img_prod_little " src="https://7static.loadingplay.com/static/images/500_5b06814be72684f2b26b1ac4cc7a5087_DSCNpng.png" onload="this.onload='';this.src=https://7static.loadingplay.com/static/images/500_5b06814be72684f2b26b1ac4cc7a5087_DSCNpng.png">
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2 img-container">
+            <img class=" img_prod_little" src="https://84static.loadingplay.com/static/images/500_db5e66a67785f593c5fba6bface2bc73_DSCNpng.png" title="" alt="" onload="this.onload='';this.src=https://84static.loadingplay.com/static/images/500_db5e66a67785f593c5fba6bface2bc73_DSCNpng.png">
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2 img-container">
+            <img class="hidden img_prod_little" src="" title="" alt="" onload="this.onload='';this.src=">
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2 img-container">
+            <img class="hidden img_prod_little" src="" title="" alt="" onload="this.onload='';this.src=">
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2 img-container">
+            <img class="hidden img_prod_little" src="" title="" alt="" onload="this.onload='';this.src=">
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+
+<!--AQUI ESTA EL JAVASCRIPT DEL MOVIMIENTO DE LAS IMAGENES-->
+
+<script>
+    $(document).ready(function()
+    {
+        var mainImage = $("#mainImage");
+        $(".img-container img").hover(function()
+        {
+            var src = $(this).attr("src");
+            $("#mainImage").attr("src", src);
+        });
+
+        mainImage.on("click", function()
+        {
+            $(this).css("transform", "scale(1.1)");
+         });
+    });
+</script>
+
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"img-div col-md-6 col-sm-6 col-xs-12"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-12 col-sm-12 col-xs-12 img-ppal-movil"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"mainDiv"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"main-img-container"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"letreros-detalle"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"letrero-sale-detail hidden RS706"</span><span class="nt">&gt;</span>OFERTA<span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"letrero-new-detail hidden RS706"</span><span class="nt">&gt;</span>NUEVO<span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">id=</span><span class="s">"mainImage"</span> <span class="na">class=</span><span class="s">"fondo-detalle"</span> <span class="na">src=</span><span class="s">"https://84static.loadingplay.com/static/images/500_db5e66a67785f593c5fba6bface2bc73_DSCNpng.png"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"offset-md-1 offset-sm-1 col-xs-12 col-md-12 col-sm-12 image_little"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-2 col-sm-2 col-xs-2 img-container"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">" img_prod_little"</span> <span class="na">src=</span><span class="s">"https://84static.loadingplay.com/static/images/500_3ab4e32dda8258b763d8ad6a2e8e02b3_DSCNpng.png"</span> <span class="na">onload=</span><span class="s">"this.onload='';this.src=https://84static.loadingplay.com/static/images/500_3ab4e32dda8258b763d8ad6a2e8e02b3_DSCNpng.png"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-2 col-sm-2 col-xs-2 img-container"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">" img_prod_little "</span> <span class="na">src=</span><span class="s">"https://7static.loadingplay.com/static/images/500_5b06814be72684f2b26b1ac4cc7a5087_DSCNpng.png"</span> <span class="na">onload=</span><span class="s">"this.onload='';this.src=https://7static.loadingplay.com/static/images/500_5b06814be72684f2b26b1ac4cc7a5087_DSCNpng.png"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-2 col-sm-2 col-xs-2 img-container"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">" img_prod_little"</span> <span class="na">src=</span><span class="s">"https://84static.loadingplay.com/static/images/500_db5e66a67785f593c5fba6bface2bc73_DSCNpng.png"</span> <span class="na">title=</span><span class="s">""</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">onload=</span><span class="s">"this.onload='';this.src=https://84static.loadingplay.com/static/images/500_db5e66a67785f593c5fba6bface2bc73_DSCNpng.png"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-2 col-sm-2 col-xs-2 img-container"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"hidden img_prod_little"</span> <span class="na">src=</span><span class="s">""</span> <span class="na">title=</span><span class="s">""</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">onload=</span><span class="s">"this.onload='';this.src="</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-2 col-sm-2 col-xs-2 img-container"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"hidden img_prod_little"</span> <span class="na">src=</span><span class="s">""</span> <span class="na">title=</span><span class="s">""</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">onload=</span><span class="s">"this.onload='';this.src="</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-2 col-sm-2 col-xs-2 img-container"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"hidden img_prod_little"</span> <span class="na">src=</span><span class="s">""</span> <span class="na">title=</span><span class="s">""</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">onload=</span><span class="s">"this.onload='';this.src="</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"clearfix"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="c">&lt;!--AQUI ESTA EL JAVASCRIPT DEL MOVIMIENTO DE LAS IMAGENES--&gt;</span>
+
+<span class="nt">&lt;script&gt;</span>
+    <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">mainImage</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">"#mainImage"</span><span class="p">);</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s2">".img-container img"</span><span class="p">).</span><span class="nx">hover</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">src</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"src"</span><span class="p">);</span>
+            <span class="nx">$</span><span class="p">(</span><span class="s2">"#mainImage"</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"src"</span><span class="p">,</span> <span class="nx">src</span><span class="p">);</span>
+        <span class="p">});</span>
+
+        <span class="nx">mainImage</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s2">"transform"</span><span class="p">,</span> <span class="s2">"scale(1.1)"</span><span class="p">);</span>
+         <span class="p">});</span>
+    <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span></pre>
+    </div>
+  </div>
+</div>
+      </section>
+      <footer>
+        <p>This documentation generated using <a href="http://github.com/trulia/hologram">Hologram</a>
+      </footer>
+    </div>
+  </body>
+</html>
