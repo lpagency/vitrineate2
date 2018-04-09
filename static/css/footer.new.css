@@ -17,7 +17,7 @@ Este es el estilo de footer:
         </div>
     </div>
     <div class="col-md-3 col-sm-3 col-xs-12">
-        <div class="editabletext" text-id="vitrineate2_foot_0">
+        <div class="editabletext titulos-footer" text-id="vitrineate2_foot_0">
             <h3><b> SIGUENOS!</b></h3>
         </div>
         <div class="col-md-2 col-sm-3 col-xs-6">
@@ -32,23 +32,23 @@ Este es el estilo de footer:
         </div>
     </div>
     <div class="col-md-3 col-sm-3 col-xs-12">
-        <div class="ul-1 editabletext" text-id="vitrineate2_foot_10">
+        <div class="ul-1 editabletext titulos-footer" text-id="vitrineate2_foot_10">
             <h3><b>VITRINEATE</b></h3>
         </div>
-        <div class="gun editabletext" text-id="vitrineate2_foot_11"> 
+        <div class="gun editabletext titulos-footer" text-id="vitrineate2_foot_11"> 
             <p>Quienes somos</p>
         </div>
-        <div class="gun editabletext" text-id="vitrineate2_foot_12"> 
+        <div class="gun editabletext titulos-footer" text-id="vitrineate2_foot_12"> 
             <p>Como comprar</p>
             <p>Tiempos de entrega</p>
         </div>
-        <div class="gun editabletext" text-id="vitrineate2_foot_12_asd"> 
+        <div class="gun editabletext titulos-footer" text-id="vitrineate2_foot_12_asd"> 
             <p> Contacto@vitrineate.cl<br></p>
             <p>Politicas de devolucion</p>
         </div>
     </div>
     <div class="col-md-3 col-sm-3 col-xs-12">
-        <div class="ul-1 editabletext" text-id="vitrineate2_foot_20"> 
+        <div class="ul-1 editabletext titulos-footer" text-id="vitrineate2_foot_20"> 
             <h3>
                 <span style="background-color: transparent;">Newsletter</span>
                 <br>
@@ -57,7 +57,7 @@ Este es el estilo de footer:
                 Mantente al día con nuestras novedades
             </span>
         </div>
-        <div class="no-dot inscribete-div">
+        <div class="col-md-12 col-sm-12 col-xs-6 col-md-offset-0 col-xs-offset-3 no-dot inscribete-div">
             <form action="https://forms.zohopublic.com/sytes/form/vitrineatenewsletter/formperma/mvXItmWPYmSuWvOm_HMbcsualMFBbyLBmr7aK6p6kI8/htmlRecords/submit" name="form" id="form" method="POST" accept-charset="UTF-8" enctype="multipart/form-data" onsubmit="zf_validateandsubmitdata();">
                 <input type="email" name="Email" class="insc-input" placeholder="Tu Mail" required="">
                 <br>
@@ -66,7 +66,7 @@ Este es el estilo de footer:
         </div>
     </div>
     <div class="col-md-3 col-sm-3 col-xs-12">
-        <div class="ul-2 editabletext" text-id="vitrineate2_foot_2323"> 
+        <div class="ul-2 editabletext titulos-footer" text-id="vitrineate2_foot_2323"> 
             <h3>
                 <b> FORMAS DE PAGO</b>
             </h3>
@@ -100,9 +100,19 @@ Este es el estilo de footer:
 
 */
 
+#footer
+{
+    height: auto;
+}
+
 .webpay
 {
     width: 100%;
+}
+
+.inscribete-div
+{
+    padding-left: 0px;
 }
 
 .l-footer-footer
@@ -124,5 +134,83 @@ Este es el estilo de footer:
 .firma
 {
     text-align: center;
+}
+
+.no-dot
+{
+    color: #ccc;
+    font-weight: 100;
+    font-size: 16px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.instagram:hover
+{
+    content: url(https://cdn.loadingplay.com/static/images/e36294fb4924bedd1fd5463095bafb49_instagram_original.png);
+}
+.facebook:hover
+{
+    content: url(https://cdn.loadingplay.com/static/images/cdb5924390e10c5f179c4a33e928a95c_facebook_original.png);
+}
+
+@media (max-width: 768px)
+{
+    .titulos-footer
+    {
+        text-align: center;
+    }
+
+    img.facebook
+    {
+        float: right;
+    }
+
+    input.insc-input
+    {
+        width: 100%;
+    }
+
+    input.inscribete-btn
+    {
+        margin-left: 100px;
+    }
+
+    .de
+    {
+        height: 100px;
+    }
+
+    .webpay
+    {
+        object-fit: scale-down;
+        height: 100px;
+    }
+
+    .l-footer-footer
+    {
+        object-fit: scale-down;
+        height: 200px;
+    }
+}
+
+@media (max-width: 414px)
+{
+    input.inscribete-btn
+    {
+        margin-left: 125px;
+    }
+    .inscribete-div
+    {
+        width: inherit;
+    }
+}
+
+@media (max-width: 400px)
+{
+    input.inscribete-btn
+    {
+        margin-left: 0px;
+    }
 }
 

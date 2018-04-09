@@ -43,12 +43,6 @@ a:link{
 .precios-div{
     padding-left: 0;
 }
-.instagram:hover{
-    content: url(https://cdn.loadingplay.com/static/images/e36294fb4924bedd1fd5463095bafb49_instagram_original.png);
-}
-.facebook:hover{
-    content: url(https://cdn.loadingplay.com/static/images/cdb5924390e10c5f179c4a33e928a95c_facebook_original.png);
-}
 .div-index-1{
     height: 537px;
     padding-left: 0px;
