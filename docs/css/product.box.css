@@ -338,6 +338,11 @@ Producto en oferta agotado:
     {
         left: 150px;
     }
+
+    .inf
+    {
+        text-align: center;
+    }
 }
 
 @media (max-width: 767px)

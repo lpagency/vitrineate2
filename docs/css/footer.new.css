@@ -136,6 +136,24 @@ Este es el estilo de footer:
     text-align: center;
 }
 
+.no-dot
+{
+    color: #ccc;
+    font-weight: 100;
+    font-size: 16px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.instagram:hover
+{
+    content: url(https://cdn.loadingplay.com/static/images/e36294fb4924bedd1fd5463095bafb49_instagram_original.png);
+}
+.facebook:hover
+{
+    content: url(https://cdn.loadingplay.com/static/images/cdb5924390e10c5f179c4a33e928a95c_facebook_original.png);
+}
+
 @media (max-width: 768px)
 {
     .titulos-footer
@@ -160,19 +178,31 @@ Este es el estilo de footer:
 
     .de
     {
-        height: auto;
+        height: 100px;
     }
 
     .webpay
     {
         object-fit: scale-down;
-        height: 200px;
+        height: 100px;
     }
 
     .l-footer-footer
     {
         object-fit: scale-down;
         height: 200px;
+    }
+}
+
+@media (max-width: 414px)
+{
+    input.inscribete-btn
+    {
+        margin-left: 125px;
+    }
+    .inscribete-div
+    {
+        width: inherit;
     }
 }
 

@@ -1,18 +1,6 @@
-.ul-1{
-    color:black;
-    margin-top: 0px;
-    font-size: 15px;
-    font-weight: 500;
-}
-
 .insc-input{
     color: black;
     width: 100%;
-}
-
-.logo-footer{
-    position: relative;
-    top: 20px;
 }
 
 .inscribete-div{
@@ -47,28 +35,10 @@
     margin-bottom:  10px;
 }
 
-.ul-2{
-    color:black;
-    margin-top: 0px;
-    font-size: 15px;
-    font-weight: 500;
-    left: -44px;
-    position: relative;
-}
-
 .firma {
     position: relative;
     text-align: center;
     font-size: 12px;
-}
-
-
-.no-dot{
-    color: #ccc;
-    font-weight: 100;
-    font-size: 16px;
-    margin-bottom: 0px;
-    padding: 0px;
 }
 
 img#vitrineate_img_logo_footer {
@@ -108,36 +78,8 @@ img#vitrineate_img_logo_footer {
     position: relative;
 }
 
-.de{
-   left: -44px;
-   position: relative;
-   color:black;
-}
-
-.a-footer{
-    position: relative;
-    left: 13px;
-    top: 11px;
-    font-size: 12px;
-    color:black;
-}
-
 .gun{
     color:black;
-}
-.base-logo-footer{
-    width: 170px;
-    height: 97px;
-    background: transparent;
-    -moz-border-radius: 100px / 50px;
-    -webkit-border-radius: 100px / 50px;
-    border-radius: 0% 0%;
-    position: relative;
-    left: -1%;
-    bottom: 21px;
-    margin-top: 7px;
-    margin-right: 40px;
-}
 }
 
 /*----------------Responsive---------------------*/
@@ -222,17 +164,6 @@ img#vitrineate_img_logo_footer {
     position: relative;
     text-align: center;
 }
-.base-logo-footer {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    -moz-border-radius: 100px / 50px;
-    -webkit-border-radius: 100px / 50px;
-    border-radius: 0% 0%;
-    position: relative;
-    z-index: 200;
-    margin: auto;
-}
 
 .inform-comerc{
     text-align: center;
@@ -259,11 +190,6 @@ img#vitrineate_img_logo_footer {
 .de{
    left: 0px;
    position: relative;
-}
-
-.a-footer{
-    position: relative;
-    right: 0px;
 }
 
 .d-o {
@@ -319,11 +245,6 @@ img#vitrineate_img_logo_footer {
     position: relative;
     text-align: center;
 }
-.webpay {
-    position: relative;
-    max-width: 150px;
-    right: 0px;
-}
 img#vitrineate_img_logo_footer {
     width: 100px;
     height: 100px;
@@ -339,16 +260,6 @@ img#vitrineate_img_logo_footer {
     .caja-fo {
         margin-top: 33px;
 
-    }
-
-    img#vitrineate2_img_logo_footer {
-        position: relative;
-        left: 38%;
-    }
-
-    a.a-footer {
-        position: relative;
-        left: 38%;
     }
 
     .ul-2{
@@ -423,23 +334,12 @@ img#vitrineate_img_logo_footer {
     text-align: center;
 }
 
-img#vitrineate2_img_logo_footer {
-    left: 35%;
-}
-
-a.a-footer {
-    left: 35%;
-}
 
 .logo-footer{
     position: relative;
     top: 45px;
     left: 0px;
 }
-}
-
-.firma{
-    top: 8px;
 }
 
 .l-footer{
