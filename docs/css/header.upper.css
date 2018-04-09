@@ -119,7 +119,6 @@ li.bolsa
 {
     position: fixed;
     width: 100%;
-    height: 147px;
     background-color: #fff;
     z-index: 9999;
 }
@@ -200,6 +199,33 @@ a.navbar-brand.movil-logo
     padding: 0px;
 }
 
+.navbar
+{
+    margin-bottom: 0px;
+}
+
+.forma-movil
+{
+    top: 0px;
+    padding: 5px;
+    width: 100%;
+    display: block;
+    float: none;
+}
+
+.forma-movil input
+{
+    width: 100%;
+}
+
+/**  this code center in ipad with safari */
+img#vitrineate2_img_logo.img-responsive.logo
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 @media (max-width: 991px)
 {
     .img-bolsa {
@@ -212,6 +238,16 @@ a.navbar-brand.movil-logo
     {
         left: 15px;
         width: 100%;
+    }
+
+    .navbar
+    {
+        min-height: 0px;
+    }
+
+    .menu-safari
+    {
+        margin: 0px;
     }
 
 }

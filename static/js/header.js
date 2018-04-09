@@ -4,7 +4,7 @@ var HeaderView = function(controller)
     this.is_running_animation = false;
 };
 
-HeaderView.prototype.animationInit = function() 
+HeaderView.prototype.animationInit = function()
 {
     var self = this;
     $(window).scroll(function()
@@ -12,7 +12,7 @@ HeaderView.prototype.animationInit = function()
         var scroll = $(window).scrollTop();
         if (!self.is_running_animation)
         {
-            if (scroll >= 60) 
+            if (scroll >= 60)
             {
                 if ($("#main-nav-fixed-navigation").css("margin-top") != "0px")
                 {
@@ -26,8 +26,8 @@ HeaderView.prototype.animationInit = function()
                             self.is_running_animation = false;
                         });
                 }
-            } 
-            else 
+            }
+            else
             {
                 self.is_running_animation = true;
                 $("#main-nav-fixed-navigation").animate(
@@ -55,4 +55,17 @@ var HeaderController = function()
 $(document).ready(function()
 {
     header_controller = new HeaderController();
+
+    $(document).on('click', '.w3-btn', function(e)
+    {
+        if (!$(this).hasClass('allow-default'))
+        {
+            e.stopPropagation();
+            e.preventDefault();
+            return;
+        }
+
+        // go to link
+        window.location.href = $(this).attr("href");
+    });
 });

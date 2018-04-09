@@ -33,7 +33,7 @@
             <!-- mobile version -->
             <div class="navbar-header navbar-header-movil page-scroll col-xs-12 visible-md visible-xs visible-sm">
                 <div class="col-xs-4 text-left" >
-                    <button type="button" class="navbar-toggle movil-menu visible-sm visible-md visible-xs" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <button type="button" class="navbar-toggle movil-menu visible-sm visible-md visible-xs" data-toggle="collapse" data-target=".navbar9">
                         <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
                     </button>
                 </div>
@@ -63,36 +63,27 @@
         <!-- / MENU UPPER -->
 
         <!-- MENU BOTTOM -->
-        <div class="visible-lg menu-safari">
+        <div class="menu-safari">
             <nav class="navbar">
                 <div>
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar9">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div id="navbar9" class="navbar-collapse head-menu collapse">
+                    <div class="navbar9 navbar-collapse head-menu collapse">
                         <ul class="nav navbar-nav navbar-left">
 
                             <!-- CATEGORIA MUJER -->
                             <div class="w3-dropdown-hover">
-                                <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}/listado_productos?tag=cat1_mujer'">MUJER</button>
+                                <a class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" href="{{ site_base }}/listado_productos?tag=cat1_mujer">MUJER</a>
                                 <div class="w3-dropdown-content w3-border">
                                     <li class="dropdown-submenu">
                                         <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_ropa_m">ROPA</a></li>
                                         <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_zapatos_m">ZAPATOS</a></li>
                                         <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_ropa_interior_m">ROPA INTERIOR</a></li>
                                         <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_ropa_deportiva_m">ROPA DEPORTIVA</a></li>
-                                        <!-- <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_trajes_de_bano_m">TRAJE DE BAÑO</a></li> -->
                                     </li>
                                 </div>
                             </div>
                             <!-- CATEGORIA HOMBRE -->
                             <div class="w3-dropdown-hover">
-                                <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}/listado_productos?tag=cat1_hombre'">HOMBRE</button>
+                                <a class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" href="{{ site_base }}/listado_productos?tag=cat1_hombre">HOMBRE</a>
                                 <div class="w3-dropdown-content w3-border">
                                     <li class="dropdown-submenu">
                                         <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_camisa_h">CAMISAS</a></li>
@@ -103,7 +94,7 @@
                             </div>
                             <!-- CATEGORIA NIÑOS -->
                             <div class="w3-dropdown-hover">
-                                <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}/listado_productos?tag=cat1_ninos'">BEBE / NIÑOS</button>
+                                <a class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" href="{{ site_base }}/listado_productos?tag=cat1_ninos">BEBE / NIÑOS</a>
                                 <div class="w3-dropdown-content w3-border">
                                     <li class="dropdown-submenu">
                                         <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_ropa_n">ROPA</a></li>
@@ -113,7 +104,7 @@
                             </div>
                             <!-- CATEGORIA ACCESORIOS -->
                             <div class="w3-dropdown-hover">
-                                <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}/listado_productos?tag=cat1_accesorios'">ACCESORIOS</button>
+                                <a class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" href="{{ site_base }}/listado_productos?tag=cat1_accesorios">ACCESORIOS</a>
                                 <div class="w3-dropdown-content w3-border">
                                     <li class="dropdown-submenu">
                                         <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_aros">AROS</a></li>
@@ -128,7 +119,7 @@
                             </div>
                             <!-- CATEGORIA MARCAS -->
                             <div class="w3-dropdown-hover">
-                                <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones">MARCAS</button>
+                                <a class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones">MARCAS</a>
                                 <div class="w3-dropdown-content w3-border">
                                     <li class="dropdown-submenu">
                                         <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=rosaria_scarinci">ROSARIA SCARINCI</a></li>
@@ -150,10 +141,10 @@
                             </div>
                             <!-- CATEGORIA OFERTAS -->
                             <div class="w3-dropdown-hover">
-                                <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='https://vitrineate.cl/article/detail/quienes_somos/2110'">QUIENES SOMOS</button>
+                                <a class="w3-btn w3-red allow-default" data-toggle="dropdown" tag="colecciones" href="https://vitrineate.cl/article/detail/quienes_somos/2110">QUIENES SOMOS</a>
                             </div>
                             <div class="w3-dropdown-hover">
-                                <button class="w3-btn w3-red" data-toggle="dropdown" onclick="window.location.href='{{ site_base }}/listado_productos?tag=oferta'"><b>OFERTAS!</b></button>
+                                <a class="w3-btn w3-red allow-default" data-toggle="dropdown" href="{{ site_base }}/listado_productos?tag=oferta"><b>OFERTAS!</b></a>
                             </div>
 
                         </ul>
@@ -192,7 +183,7 @@
                 <a class="textos-movil-menu" tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat1_accesorios">Accesorios</a>
             </div>
         </div>
-        <form id="searchform" class="form-search forma-movil hidden" role="search" action="/listado_productos" method="get">
+        <form id="searchform" class="form-search forma-movil hidden" role="search" action="{{ site_base }}/listado_productos" method="get">
             <input type="text" name="search_query" placeholder="Buscar" class="busca search mobile-search" value="">
         </form>
     </div>
