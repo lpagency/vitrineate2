@@ -204,6 +204,19 @@ a.navbar-brand.movil-logo
     margin-bottom: 0px;
 }
 
+.forma-movil
+{
+    top: 0px;
+    padding: 5px;
+    width: 100%;
+    display: block;
+    float: none;
+}
+
+.forma-movil input
+{
+    width: 100%;
+}
 
 /**  this code center in ipad with safari */
 img#vitrineate2_img_logo.img-responsive.logo
@@ -225,6 +238,16 @@ img#vitrineate2_img_logo.img-responsive.logo
     {
         left: 15px;
         width: 100%;
+    }
+
+    .navbar
+    {
+        min-height: 0px;
+    }
+
+    .menu-safari
+    {
+        margin: 0px;
     }
 
 }

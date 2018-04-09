@@ -9,103 +9,104 @@ category: header
 header bottom
 
 ```html_example
-<div class="visible-lg visible-md hidden-sm hidden-xs menu-safari">
+<div class="menu-safari">
     <nav class="navbar">
-        <div class="">
-            <div id="navbar9" class="navbar-collapse head-menu collapse">
+        <div>
+            <div class="navbar9 navbar-collapse head-menu collapse">
                 <ul class="nav navbar-nav navbar-left">
+
                     <!-- CATEGORIA MUJER -->
                     <div class="w3-dropdown-hover">
-                        <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='/listado_productos?tag=cat1_mujer'">MUJER</button>
+                        <a class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" href="{{ site_base }}/listado_productos?tag=cat1_mujer">MUJER</a>
                         <div class="w3-dropdown-content w3-border">
                             <li class="dropdown-submenu">
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_ropa_m">ROPA</a></li>
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_zapatos_m">ZAPATOS</a></li>
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_ropa_interior_m">ROPA INTERIOR</a></li>
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_ropa_deportiva_m">ROPA DEPORTIVA</a></li>
                             </li>
-                            <li><a tabindex="-1" >ROPA</a></li>
-                            <li><a tabindex="-1" >ZAPATOS</a></li>
-                            <li><a tabindex="-1" >ROPA INTERIOR</a></li>
-                            <li><a tabindex="-1" >ROPA DEPORTIVA</a></li>
-
                         </div>
                     </div>
                     <!-- CATEGORIA HOMBRE -->
                     <div class="w3-dropdown-hover">
-                        <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='/listado_productos?tag=cat1_hombre'">HOMBRE</button>
+                        <a class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" href="{{ site_base }}/listado_productos?tag=cat1_hombre">HOMBRE</a>
                         <div class="w3-dropdown-content w3-border">
                             <li class="dropdown-submenu">
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_camisa_h">CAMISAS</a></li>
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_trajes_de_bano_h">TRAJE DE BAÑO</a></li>
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_polera_h">POLERAS</a></li>
                             </li>
-                            <li><a tabindex="-1" href="/listado_productos?tag=cat2_camisa_h">CAMISAS</a></li>
-                            <li><a tabindex="-1" href="/listado_productos?tag=cat2_trajes_de_bano_h">TRAJE DE BAÑO</a></li>
-                            <li><a tabindex="-1" href="/listado_productos?tag=cat2_polera_h">POLERAS</a></li>
-
                         </div>
                     </div>
                     <!-- CATEGORIA NIÑOS -->
                     <div class="w3-dropdown-hover">
-                        <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='/listado_productos?tag=cat1_ninos'">BEBE / NIÑOS</button>
+                        <a class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" href="{{ site_base }}/listado_productos?tag=cat1_ninos">BEBE / NIÑOS</a>
                         <div class="w3-dropdown-content w3-border">
                             <li class="dropdown-submenu">
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_ropa_n">ROPA</a></li>
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_accesorios_n">ACCESORIOS</a></li>
                             </li>
-                            <li><a tabindex="-1" href="/listado_productos?tag=cat2_ropa_n">ROPA</a></li>
-                            <li><a tabindex="-1" href="/listado_productos?tag=cat2_accesorios_n">ACCESORIOS</a></li>
                         </div>
                     </div>
                     <!-- CATEGORIA ACCESORIOS -->
                     <div class="w3-dropdown-hover">
-                        <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='/listado_productos?tag=cat1_accesorios'">ACCESORIOS</button>
+                        <a class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" href="{{ site_base }}/listado_productos?tag=cat1_accesorios">ACCESORIOS</a>
                         <div class="w3-dropdown-content w3-border">
                             <li class="dropdown-submenu">
-                            </li>
-                            <li><a tabindex="-1" href="/listado_productos?tag=cat2_aros">AROS</a></li>
-                            <li><a tabindex="-1" href="/listado_productos?tag=cat2_collares">COLLARES</a></li>
-                            <li><a tabindex="-1" href="/listado_productos?tag=cat2_cinturon">CINTURONES</a></li>
-                            <li><a tabindex="-1" href="/listado_productos?tag=cat2_mochilas">MOCHILAS</a></li>
-                            <li><a tabindex="-1" href="/listado_productos?tag=cat2_panuelos">PAÑUELOS</a></li>
-                            <li><a tabindex="-1" href="/listado_productos?tag=cat2_relojes">RELOJES</a></li>
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_aros">AROS</a></li>
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_collares">COLLARES</a></li>
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_cinturon">CINTURONES</a></li>
 
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_mochilas">MOCHILAS</a></li>
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_panuelos">PAÑUELOS</a></li>
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_relojes">RELOJES</a></li>
+                            </li>
                         </div>
                     </div>
                     <!-- CATEGORIA MARCAS -->
                     <div class="w3-dropdown-hover">
-                        <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones">MARCAS</button>
+                        <a class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones">MARCAS</a>
                         <div class="w3-dropdown-content w3-border">
                             <li class="dropdown-submenu">
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=rosaria_scarinci">ROSARIA SCARINCI</a></li>
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=pili_saenz_joyas">PILI SAENZ JOYAS</a></li>
+                                <!-- <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=aloha_sw">ALOHA SW</a></li> -->
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=lisantino">LISANTINO</a></li>
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=kuyen">KUYEN</a></li>
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=a_mi_me_viste_mi_mami">A MI ME VISTE MI MAMI</a></li>
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=stoff">STOFF</a></li>
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=yambo">YAMBO</a></li>
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=mora">MORA</a></li>
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=paula_mar">PAULA MAR</a></li>
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=villagran_villagran">VILLAGRAN VILLAGRAN</a></li>
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=dionea">DIONEA</a></li>
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=amelie_lingerie">AMELIE LINGERIE</a></li>
+                                <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=ttanti">TTANTI</a></li>
                             </li>
-                            <li><a tabindex="-1" href="/listado_productos?tag=rosaria_scarinci">ROSARIA SCARINCI</a></li>
-                            <li><a tabindex="-1" href="/listado_productos?tag=pili_saenz_joyas">PILI SAENZ JOYAS</a></li>
-                            <!-- <li><a tabindex="-1" href="/listado_productos?tag=aloha_sw">ALOHA SW</a></li> -->
-                            <li><a tabindex="-1" href="/listado_productos?tag=lisantino">LISANTINO</a></li>
-                            <li><a tabindex="-1" href="/listado_productos?tag=kuyen">KUYEN</a></li>
-                            <li><a tabindex="-1" href="/listado_productos?tag=a_mi_me_viste_mi_mami">A MI ME VISTE MI MAMI</a></li>
-                            <li><a tabindex="-1" href="/listado_productos?tag=stoff">STOFF</a></li>
-                            <li><a tabindex="-1" href="/listado_productos?tag=yambo">YAMBO</a></li>
-                            <li><a tabindex="-1" href="/listado_productos?tag=mora">MORA</a></li>
-                            <li><a tabindex="-1" href="/listado_productos?tag=paula_mar">PAULA MAR</a></li>
-                            <li><a tabindex="-1" href="/listado_productos?tag=villagran_villagran">VILLAGRAN VILLAGRAN</a></li>
-                            <li><a tabindex="-1" href="/listado_productos?tag=dionea">DIONEA</a></li>
-                            <li><a tabindex="-1" href="/listado_productos?tag=amelie_lingerie">AMELIE LINGERIE</a></li>
-                            <li><a tabindex="-1" href="/listado_productos?tag=ttanti">TTANTI</a></li>
-
                         </div>
                     </div>
                     <!-- CATEGORIA OFERTAS -->
                     <div class="w3-dropdown-hover">
-                        <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='https://vitrineate.cl/article/detail/quienes_somos/2110'">QUIENES SOMOS</button>
+                        <a class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" href="https://vitrineate.cl/article/detail/quienes_somos/2110">QUIENES SOMOS</a>
                     </div>
                     <div class="w3-dropdown-hover">
-                        <button class="w3-btn w3-red" data-toggle="dropdown" onclick="window.location.href='/listado_productos?tag=oferta'"><b>OFERTAS!</b></button>
+                        <a class="w3-btn w3-red" data-toggle="dropdown" href="{{ site_base }}/listado_productos?tag=oferta"><b>OFERTAS!</b></a>
                     </div>
+
                 </ul>
                 <ul class="nav navbar-nav navbar-right buscador-header">
                     <li class="buscador">
                         <div class="texto-b">BUSCAR</div>
-                        <form id="searchform" class="form-search hidden" role="search" action="/listado_productos" method="get">
-                            <input type="text" id="s" name="search_query" placeholder="Buscar" class="busca search" value="">
+                        <form id="searchform" class="form-search hidden" role="search" action="{{ site_base }}/listado_productos" method="get">
+                            <input type="text" id="s" name="search_query" placeholder="Buscar" class="busca search" value="{% try %}{{search_query}}{% except %}{% end %}">
                         </form>
                         <img class="img-lupa" src="https://7static.loadingplay.com/static/images/1da6ee373afe0e65ad1b94c0d7cd9e9d_Vector_search_iconclaro.png">
                     </li>
                 </ul>
             </div>
+
         </div>
+
     </nav>
 </div>
 ```
@@ -135,6 +136,15 @@ header bottom movil
 <div class="clearfix"></div>
 ```
 
+buscador movil
+
+```html_example
+<form id="searchform" class="form-search forma-movil" role="search" method="get">
+    <input type="text" name="search_query" placeholder="Buscar" class="busca search mobile-search" value="">
+</form>
+<div class="clearfix"></div>
+```
+
 */
 
 .w3-dropdown-click,
@@ -149,6 +159,7 @@ header bottom movil
 .w3-btn-block
 {
     padding: 14px 17px;
+    display: block;
 }
 
 .container.min
@@ -166,13 +177,13 @@ header bottom movil
     display: none;
 }
 
-button.w3-btn.w3-red
+a.w3-btn.w3-red
 {
     background: transparent;
     border: none;
 }
 
-button.w3-btn.w3-red:hover
+a.w3-btn.w3-red:hover
 {
     background: #999;
     color: #fff;
@@ -230,7 +241,7 @@ ul.nav.navbar-nav.navbar-right.buscador-header
     min-width: 189px;
     margin: 0;
     padding: 0;
-    top: 52px;
+    top: 47px;
 }
 
 .w3-dropdown-content a
@@ -267,6 +278,71 @@ ul.nav.navbar-nav.navbar-right.buscador-header
 {
     padding-left: 0px;
     padding-right: 0px;
+}
+
+@media (max-width: 991px)
+{
+    div.navbar-collapse.collapse
+    {
+        display: none!important;
+    }
+
+    div.navbar-collapse.collapse.in
+    {
+        display: block!important;
+    }
+
+    .navbar-nav
+    {
+        max-height: 300px;
+        overflow: scroll;
+    }
+
+    .w3-dropdown-content
+    {
+        position: initial;
+    }
+
+    .w3-dropdown-hover
+    {
+        width: 100%;
+    }
+
+    .navbar9
+    {
+        border-bottom: 0px;
+        border-top: 1px solid #999;
+    }
+
+    .w3-dropdown-hover:hover .w3-dropdown-content
+    {
+        padding-left: 10px;
+    }
+
+    .w3-dropdown-hover:hover .w3-dropdown-content
+    {
+        display: none;
+    }
+
+    .open .w3-border
+    {
+        display: block!important;
+    }
+
+    .buscador-header
+    {
+        display: none;
+    }
+
+    .w3-btn, .w3-btn-block
+    {
+        padding: 10px 17px;
+    }
+
+    a.w3-btn.w3-red
+    {
+        text-align: left;
+    }
 }
 
 @media (max-width: 1199px)
