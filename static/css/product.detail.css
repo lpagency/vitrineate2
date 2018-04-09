@@ -1,0 +1,180 @@
+/*doc
+
+---
+title: Product Detail
+name: product.detail
+category: product.detail
+---
+
+Imagenes de detalle de producto:
+
+```html_example
+<div class="img-div col-md-6 col-sm-6 col-xs-12">
+    <div class="col-md-12 col-sm-12 col-xs-12 img-ppal-movil">
+        <div id="mainDiv">
+            <div class="main-img-container">
+                <div class="letreros-detalle">
+                    <div class="letrero-sale-detail hidden RS706">OFERTA</div>
+                    <div class="letrero-new-detail hidden RS706">NUEVO</div>
+                </div>
+                <img id="mainImage" class="fondo-detalle" src="https://84static.loadingplay.com/static/images/500_db5e66a67785f593c5fba6bface2bc73_DSCNpng.png">
+            </div>
+        </div>
+    </div>
+    <div class="offset-md-1 offset-sm-1 col-xs-12 col-md-12 col-sm-12 image_little">
+        <div class="col-md-2 col-sm-2 col-xs-2 img-container">
+            <img class=" img_prod_little" src="https://84static.loadingplay.com/static/images/500_3ab4e32dda8258b763d8ad6a2e8e02b3_DSCNpng.png" onload="this.onload='';this.src=https://84static.loadingplay.com/static/images/500_3ab4e32dda8258b763d8ad6a2e8e02b3_DSCNpng.png">
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2 img-container">
+            <img class=" img_prod_little " src="https://7static.loadingplay.com/static/images/500_5b06814be72684f2b26b1ac4cc7a5087_DSCNpng.png" onload="this.onload='';this.src=https://7static.loadingplay.com/static/images/500_5b06814be72684f2b26b1ac4cc7a5087_DSCNpng.png">
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2 img-container">
+            <img class=" img_prod_little" src="https://84static.loadingplay.com/static/images/500_db5e66a67785f593c5fba6bface2bc73_DSCNpng.png" title="" alt="" onload="this.onload='';this.src=https://84static.loadingplay.com/static/images/500_db5e66a67785f593c5fba6bface2bc73_DSCNpng.png">
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2 img-container">
+            <img class="hidden img_prod_little" src="" title="" alt="" onload="this.onload='';this.src=">
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2 img-container">
+            <img class="hidden img_prod_little" src="" title="" alt="" onload="this.onload='';this.src=">
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2 img-container">
+            <img class="hidden img_prod_little" src="" title="" alt="" onload="this.onload='';this.src=">
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+
+<!--AQUI ESTA EL JAVASCRIPT DEL MOVIMIENTO DE LAS IMAGENES-->
+
+<script>
+    $(document).ready(function()
+    {
+        var mainImage = $("#mainImage");
+        $(".img-container img").hover(function()
+        {
+            var src = $(this).attr("src");
+            $("#mainImage").attr("src", src);
+        });
+
+        mainImage.on("click", function()
+        {
+            $(this).css("transform", "scale(1.1)");
+         });
+    });
+</script>
+
+```
+
+*/
+
+.img-div
+{
+    top: 30px;
+}
+
+.image_little
+{
+    padding-left: 0;
+    left: -15px;
+}
+
+.img_prod_little
+{
+    width: 100%;
+    height: 65px;
+    margin-bottom: 2px;
+    position: relative;
+    object-fit: scale-down;
+    top: 0px;
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    left: 0px;
+    margin-left: 0px;
+}
+
+.img-container
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.img-ppal-movil
+{
+    margin-bottom: 15px;
+}
+
+.main-img-container
+{
+    position: relative;
+}
+
+.fondo-detalle
+{
+    width: 100%;
+    right: 63px;
+    height: 420px;
+    object-fit: scale-down;
+    position: relative;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+@media (max-width: 1024px)
+{
+    .fondo-detalle
+    {
+        right: 24px;
+        height: auto;
+    }
+
+    .image_little
+    {
+        left: -8px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .img-div
+    {
+        top: 30px;
+    }
+
+    .image_little
+    {
+        left: -12px;
+    }
+}
+
+@media (max-width: 414px)
+{
+
+    .fondo-detalle
+    {
+        right: 0px;
+        height: auto;
+    }
+
+    .img-ppal-movil
+    {
+        margin-bottom: 20px;
+    }
+
+    .img-div
+    {
+        margin-top: 110px;
+    }
+
+    .image_little
+    {
+        padding-left: inherit;
+        left: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 320px)
+{
+    .img-div {
+        margin-top: 80px;
+    }
+}

@@ -289,9 +289,9 @@ ul.nav.navbar-nav.navbar-right.buscador-header
 
     div.navbar-collapse.collapse.in
     {
-        display: block;
+        display: block!important;
     }
-    
+
     .navbar-nav
     {
         max-height: 300px;

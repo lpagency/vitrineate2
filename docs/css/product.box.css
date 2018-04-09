@@ -246,7 +246,7 @@ Producto en oferta agotado:
 
 .letrero-sale
 {
-    position: relative;
+    position: absolute;
     top: 30px;
     font-size: 11px;
     text-align: center;
@@ -260,8 +260,8 @@ Producto en oferta agotado:
 .shape
 {
     float: right;
-    position: relative;
-    top: -21px;
+    position: absolute;
+    left: 154px;
     -webkit-clip-path: polygon(0 0, 100% 100%, 100% 50%, 50% 0);
     clip-path: polygon(0 0, 100% 100%, 100% 50%, 50% 0);
     width: 90px;
@@ -271,10 +271,10 @@ Producto en oferta agotado:
 
 .aa
 {
-    position: relative;
-    left: 86px;
+    position: absolute;
+    left: 183px;
     font-size: 11px;
-    top: 7px;
+    top: 30px;
     float: right;
     font-weight: bold;
     -ms-transform: rotate(45deg);
@@ -284,6 +284,18 @@ Producto en oferta agotado:
 
 @media (max-width: 1199px)
 {
+
+    .shape
+    {
+        left: 172px;
+    }
+
+    .aa
+    {
+        left: 198px;
+        top: 27px;
+    }
+
     .btn.add-to-cart
     {
         font-size: 10px;
@@ -298,6 +310,33 @@ Producto en oferta agotado:
     .img-pro
     {
         min-height: 216px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px)
+{
+    .shape
+    {
+        left: 130px;
+    }
+
+    .aa
+    {
+        left: 158px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .shape
+    {
+        left: 126px;
+    }
+
+    .aa
+    {
+        left: 150px;
     }
 }
 
@@ -364,6 +403,16 @@ Producto en oferta agotado:
     {
         min-height: 400px;
     }
+
+    .shape
+    {
+        left: 72px;
+    }
+
+    .aa
+    {
+        left: 100px;
+    }
 }
 
 
@@ -407,10 +456,19 @@ Producto en oferta agotado:
     {
         left: 80px;
     }
+
+    .shape
+    {
+        left: 65px;
+    }
 }
 
 @media (max-width: 320px)
 {
+    .shape
+    {
+        left: 45px;
+    }
     .aa
     {
         left: 60px;

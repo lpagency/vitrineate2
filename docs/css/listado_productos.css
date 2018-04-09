@@ -204,10 +204,6 @@ div.image-upload.part1 {
     margin-top: 78px;
     margin-bottom: 0px;
 }
-.main-img-container{
-    position: relative;
-    top: 30px;
-}
 
 .fondo-detalle {
     width: 100%;
@@ -300,17 +296,6 @@ hr.len {
     width: 72%;
 }
 
-#mainImage{
-    width: 100%;
-    height: 400px;
-    object-fit: scale-down;
-    top: 0px;
-    right: 73px;
-    position: relative;
-    -webkit-transition: all 0.5s linear;
-    transition: all 0.5s linear;
-}
-
 .fufi:hover .overlay {
   opacity: 1;
 }
@@ -362,20 +347,6 @@ hr.detalle {
 }
 /*----------------------------------------------------Responsive----------------------------------------------*/
 @media (max-width: 1024px){
-    #mainImage {
-        width: 100%;
-        height: 500px;
-        object-fit: scale-down;
-        top: 0px;
-        right: 27px;
-        position: relative;
-        -webkit-transition: all 0.5s linear;
-        transition: all 0.5s linear;
-    }
-
-    .img-ppal-movil{
-        margin-left: 45px;
-    }
 
     .img-ambos{
         top: -77px !important;
@@ -390,10 +361,6 @@ hr.detalle {
 
     button.btn.btn-default.more-products {
         margin-top: 30px;
-    }
-
-    #mainImage{
-        height: auto;
     }
 
     .img_prod_little{
@@ -422,16 +389,6 @@ hr.detalle {
 
     .letrero-new-detail{
         width: 40%;
-    }
-
-    .image_little{
-        margin-bottom: -30px;
-        left: 19px;
-        margin-top: 45px;
-    }
-
-    .img-ppal-movil{
-        margin-left: 30px;
     }
 
     .fin {
@@ -502,10 +459,6 @@ hr.detalle {
         margin-bottom: 3%;
     }
 
-    .img-ppal-movil {
-        margin-left: inherit;
-    }
-
     .img_prod_little {
         width: 16%;
         height: 88px;
@@ -527,11 +480,6 @@ hr.detalle {
         width: 50%;
         margin-top: 58px;
     }
-    #mainImage {
-        right: 0px;
-        height: 500px;
-    }
-
     .name_prod_detail {
         position: relative;
         top: 33px;
@@ -681,10 +629,7 @@ hr.detalle {
 .col-md-6.boton-comprar {
     top: -80px;
 }
-.img-ppal-movil{
-    position: relative;
-    top: 35px;
-}
+
 }
 
 @media (max-width: 414px){
@@ -740,11 +685,7 @@ hr.detalle {
         margin-top: 40px !important;
         margin-bottom: -5px !important;
     }
-    .image_little {
-        top: 30px;
-        left: 0px;
-        margin-bottom: 20px;
-    }
+
     .descr_prod_detail {
         position: relative;
         font-size: 19px;
@@ -785,11 +726,6 @@ hr.detalle {
         margin-top: 12px;
     }
 
-    .image_little{
-        margin-bottom: 20px;
-        margin-top: -25px;
-    }
-
 }
 
 @media (max-width: 360px){
@@ -817,10 +753,7 @@ hr.detalle {
         top: 30px;
         margin-bottom: 13%;
     }
-    .image_little {
-        top: 30px;
-        left: 0px;
-    }
+
     .img_prod_little {
         top: 0px;
         left: 0px;
@@ -830,28 +763,9 @@ hr.detalle {
         position: relative;
         top: 0px;
     }
-        #mainImage {
-        width: 100%;
-        height: 200px;
-        object-fit: scale-down;
-        top: 0;
-        margin-top: 15px;
-        right: 7px;
-        position: relative;
-        -webkit-transition: all 0.5s linear;
-        transition: all 0.5s linear;
-    }
-    .img-ppal-movil{
-        position: relative;
-        top: 35px;
-    }
 }
 
 @media only screen and (max-width: 370px){
-    .img-ppal-movil {
-        position: relative;
-        top: 53px;
-    }
 
     .descr_prod_detail{
         font-size: 13px;
@@ -953,34 +867,9 @@ hr.detalle {
         top: 30px;
         margin-bottom: 13%;
     }
-    .image_little {
-        top: 30px;
-        left: 0px;
-        margin-top: 73px;
-        margin-bottom: -8px;
-    }
-    .img_prod_little {
-        top: 0px;
-        left: 0px;
-        padding: 0px;
-    }
+
     .main-img-container {
         position: relative;
         top: 0px;
-    }
-        #mainImage {
-        width: 100%;
-        height: 200px;
-        object-fit: scale-down;
-        top: 0;
-        margin-top: 15px;
-        right: 7px;
-        position: relative;
-        -webkit-transition: all 0.5s linear;
-        transition: all 0.5s linear;
-    }
-    .img-ppal-movil{
-        position: relative;
-        top: 86px;
     }
 }
