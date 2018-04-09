@@ -128,14 +128,16 @@ li.bolsa
     font-size: 10px;
     position: relative;
     left: 88px;
-    width: 30%;
-    height: 30px;
-    top: -21px;
-    padding-left: 13px;
-    padding-top: 7px;
+    width: 22px;
+    height: 22px;
+    top: -7px;
+    padding-left: 10px;
+    padding-top: 5px;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url('https://cdn.loadingplay.com/static/images/1a51b1de0846e985df21f34664d3d326_carrito_lleno.png');
+    border-radius: 15px;
+    background-color: #d6ff3e;
+    box-shadow: -2px 0px #88888866;
 }
 
 .navbar-header li
@@ -234,12 +236,6 @@ img#vitrineate2_img_logo.img-responsive.logo
         width: auto;
     }
 
-    .unidades
-    {
-        left: 15px;
-        width: 100%;
-    }
-
     .navbar
     {
         min-height: 0px;
@@ -250,18 +246,27 @@ img#vitrineate2_img_logo.img-responsive.logo
         margin: 0px;
     }
 
+    .unidades
+    {
+        width: 18px;
+        border-radius: 10px;
+        height: 18px;
+        font-size: 8px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 4px;
+        top: -10px;
+        left: 8px;
+        z-index: 11;
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 768px)
 {
     .img-bolsa {
         z-index: 9;
-    }
-
-    .unidades {
-        z-index: 11;
-        left: 28px;
-        width: 90%;
     }
 
     .logo {
@@ -275,26 +280,10 @@ img#vitrineate2_img_logo.img-responsive.logo
         width: 104%;
         padding-left: 6px;
     }
-
-    .unidades {
-        z-index: 11;
-        text-align: center;
-        position: absolute;
-        left: 20px;
-        width: 100%;
-        height: 39px;
-        top: 31px;
-        padding-left: 0px;
-        padding-top: 10px;
-        background-position-x: -3px;
-    }
 }
 
 @media (max-width: 767px)
 {
-    .unidades {
-        top: 40px;
-    }
 }
 
 @media (max-width: 320px)
