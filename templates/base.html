@@ -57,9 +57,7 @@
         <link rel="stylesheet" href="{{ site_base }}/common/css/editableimage.css">
 
 
-        <!-- autocomplete
-        <link rel="stylesheet" type="text/css" href="{{ site_base }}/static/js/plugins/selectize/selectize.css" />
-        <!-autocomplete -->
+        <!-- autocomplete -->
         <link rel="stylesheet" href="{{ site_base }}/common/js/bower/file_uploader/dist/fileuploader.css?1">
 
         <link rel="stylesheet" href="{{ site_base }}/static/css/ligthbox-d.css">
@@ -88,7 +86,9 @@
 
     <body style="overflow: hidden;">
         {% block header %}{% end %}
-        {% block body %}{% end %}
+        <div class="content-body" >
+            {% block body %}{% end %}
+        </div>
 
          <!-- Modal -->
     <div align="center">
@@ -139,14 +139,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 
-
-<!--         <script src="/path/to/parallax.js"></script> -->
-
-<!--         <script type="text/javascript" src="{{ site_base }}/static/js/mlb.js"></script>
-
-        <script type="text/javascript" src="{{ site_base }}/static/js/me.js" ></script> -->
-
-        <!-- <script type="text/javascript" src="{{ site_base }}/static/js/main.js"></script> -->
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114876620-1"></script>
         <script>
@@ -158,9 +150,7 @@
         </script>
 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-         <script type="text/javascript" src="{{ site_base }}/static/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
-
-        <!-- <script src="/node_modules/readmore-js/readmore.min.js"></script> -->
+        <script type="text/javascript" src="{{ site_base }}/static/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
 
         <script type="text/javascript" src="{{ site_base }}/common/js/jquery.editable.js" ></script>
         <script type="text/javascript" src="{{ site_base }}/common/js/editabletext.js"></script>
@@ -171,30 +161,19 @@
         <script type="text/javascript" src="{{ site_base }}/common/js/editableimage.js"></script>
         <script type="text/javascript" src="{{ site_base }}/common/js/bower/file_uploader/dist/fileuploader.min.js?1"></script>
 
-                <!-- carga de productos -->
-<!--          <script type="text/javascript" src="{{ site_base }}/static/js/plugins/jquery.lazyload.js"></script> -->
-        <!-- <script type="text/javascript" src="{{ site_base }}/static/js/imageloader.js" ></script> -->
+        <!-- carga de productos -->
 
         <script type="text/javascript" src="{{ site_base }}/common/js/jquery.cookie.js"></script>
         <script type="text/javascript" src="{{ site_base }}/common/js/environment.detection.js"></script>
-       <script type="text/javascript" src="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.es5.js?13"></script>
-
-<!--         // <script type="text/javascript" src="{{ site_base }}/static/js/fancybox/jquery.fancybox.pack.js"></script> -->
-<!--         <script type="text/javascript" src="{{ site_base }}/static/js/fancybox/source/jquery.fancybox.js?v=2.1.5"></script> -->
-<!--         <script type="text/javascript" src="https://cdn.datatables.net/s/dt/dt-1.10.10/datatables.min.js"></script>
-        <script type="text/javascript" src="https://cdn.datatables.net/1.10.11/js/dataTables.bootstrap.min.js"></script> -->
-
-        <!-- <script type="text/javascript" src="{{ site_base }}/static/js/jquery.ellipsis.js"></script> -->
+        <script type="text/javascript" src="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.es5.js?13"></script>
 
         <script type="text/javascript" src="{{ site_base }}/common/js/parallax.min.js"></script>
         <script type="text/javascript" src="{{ site_base }}/static/js/unidades.js"></script>
 
-
-
-<div type="template" style="display: none">
-    <div class="shopping-cart">
-    </div>
-</div>
+        <div type="template" style="display: none">
+            <div class="shopping-cart">
+            </div>
+        </div>
 
         <script type="text/javascript">
             $(document).ready(function () {
@@ -214,58 +193,55 @@
             });
         </script>
 
-<script type="text/x-template" id="shopping-cart-product">
-    <tr>
-        <td class="vert-align text-left">{{! name }}</td>
-        <td class="vert-align">{{! combination }}</td>
-        <td class="text-center2 vert-align">{{! price|money }}</td>
-        <td class="vert-align fri" style="border-bottom: 1px solid #ddd;">
-            <a href="#!" class="remove-one" lp-cart-remove-one="{{! id }}">-</a>
-            {{! quantity }}
-            <a href="#!" class="add-one" lp-cart-add-one="{{! id }}" >+</a>
-        </td>
-        <td class="remove-from-cart fri" lp-cart-remove="{{! id }}" aria-hidden="true"> X  </td>
-    </tr>
-</script>
+        <script type="text/x-template" id="shopping-cart-product">
+            <tr>
+                <td class="vert-align text-left">{{! name }}</td>
+                <td class="vert-align">{{! combination }}</td>
+                <td class="text-center2 vert-align">{{! price|money }}</td>
+                <td class="vert-align fri" style="border-bottom: 1px solid #ddd;">
+                    <a href="#!" class="remove-one" lp-cart-remove-one="{{! id }}">-</a>
+                    {{! quantity }}
+                    <a href="#!" class="add-one" lp-cart-add-one="{{! id }}" >+</a>
+                </td>
+                <td class="remove-from-cart fri" lp-cart-remove="{{! id }}" aria-hidden="true"> X  </td>
+            </tr>
+        </script>
 
-<script type="text/x-template" id="shopping-cart-total" >
-    <tr>
-        <td colspan="4" class="text-right" >Total:</td>
-        <td id="total" class="text-left total-modal lib">{{! total|money }}</td>
-    </tr>
+        <script type="text/x-template" id="shopping-cart-total" >
+            <tr>
+                <td colspan="4" class="text-right" >Total:</td>
+                <td id="total" class="text-left total-modal lib">{{! total|money }}</td>
+            </tr>
 
-    <div class="unidades-carrito hidden">{{! units_total }}</div>
-</script>
+            <div class="unidades-carrito hidden">{{! units_total }}</div>
+        </script>
 
-<script type="text/x-template" id="shopping-cart-units-total" >
-    <span> {{! units_total }}</span>
-</script>
+        <script type="text/x-template" id="shopping-cart-units-total" >
+            <span> {{! units_total }}</span>
+        </script>
 
-<script type="text/x-template" id="shopping-cart-checkout-form" >
-    <form action="{{! checkout_url}}" method="get" novalidate id="shipping-form" class="myform" onclick="return Validate()">
-        <input name="site_id" class="form-control required" type="hidden" value="69">
-        <input name="cart_id" class="form-control required" type="hidden" value="{{! cart_id}}">
-        <input name="origin" class="form-control required" type="hidden" value="{{ site.name }}">
-        <input name="total" class="total-carro" type="hidden" value="{{! total }}">
-        <div class="form-group text-center">
-             <button type="submit" class="btn btn-modal pagar-carro pull-right" disabled>
-                PAGAR
-            </button>
-        </div>
-        <div class="">
-            <a class="btn btn-modal modal-close volver pull-left" data-dismiss="modal" aria-hidden="true">VOLVER</a>
-        </div>
-    </form>
-</script>
+        <script type="text/x-template" id="shopping-cart-checkout-form" >
+            <form action="{{! checkout_url}}" method="get" novalidate id="shipping-form" class="myform" onclick="return Validate()">
+                <input name="site_id" class="form-control required" type="hidden" value="69">
+                <input name="cart_id" class="form-control required" type="hidden" value="{{! cart_id}}">
+                <input name="origin" class="form-control required" type="hidden" value="{{ site.name }}">
+                <input name="total" class="total-carro" type="hidden" value="{{! total }}">
+                <div class="form-group text-center">
+                     <button type="submit" class="btn btn-modal pagar-carro pull-right" disabled>
+                        PAGAR
+                    </button>
+                </div>
+                <div class="">
+                    <a class="btn btn-modal modal-close volver pull-left" data-dismiss="modal" aria-hidden="true">VOLVER</a>
+                </div>
+            </form>
+        </script>
 
-
-
-    <!-- termino carrito de compra -->
+        <!-- termino carrito de compra -->
 
 
 
-<!-- termino carrito de compra -->
-
+        <!-- termino carrito de compra -->
         {% block javascript %}{% end %}
         <script>
         window.fbAsyncInit = function() {
@@ -451,28 +427,21 @@
 
         $(document).ready(function()
         {
+            // controll padding top for body
+            var recalcPadding = function()
+            {
+                var menu_height = $(".fix-position").outerHeight();
+                $(".content-body").css('margin-top', (menu_height + 5) + 'px');
+            }
+            recalcPadding();
+
+
             $(document).on("click", ".cerrar-huincha", function()
             {
-
-                if($(window).width() == 320)
-                {
-                    $(".contenido-index").css("margin-top", "0%");
-                    $(".img-lupa").css("left", "7px");
-                }
-                if($(window).width() >= 375)
-                {
-                    $(".contenido-index").css("margin-top", "0%");
-                }
-                if($(window).width() <= 770)
-                {
-                    $(".huincha-header").toggle("slow");
-                    $(".navbar-fixed-top").css("margin-top", "0px");
-                }
-                else
-                {
-                    $(".huincha-header").toggle("slow");
-                    $(".contenido-index").css("margin-top","9%");
-                }
+                $(".huincha-header").slideToggle({
+                    step: recalcPadding,
+                    complete: recalcPadding
+                });
             });
         });
     </script>

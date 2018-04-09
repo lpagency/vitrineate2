@@ -111,9 +111,6 @@ a:link{
     max-height: 58px;
     overflow: hidden;
 }
-.contenido-index{
-    margin-top: 11%;
-}
 .carousel-control.left{
     background-image: none !important;
 }
@@ -887,10 +884,6 @@ hr.page-contact {
     width: 100%;
     text-align: left;
   }
-
-    .contenido-index {
-        margin-top: 140px;
-    }
 
   .logos-titulo-2 {
     font-size: 1.875rem;
