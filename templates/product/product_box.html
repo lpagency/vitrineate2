@@ -1,48 +1,34 @@
-
 <script type="text/template" id="product_template" class="hidden">
-  <div class="grin">
-    <div class="col-md-3 col-sm-4 col-xs-6 art-hi">
-      <div alig="center">
-        <a href="{{ site_base }}/sc/product/detail/{{! name|friendly }}/{{! id }}">
-          <div class="fufi {{! id }}">
-            <div class="letreros">
-              <div class="letrero-sale hidden {{! promotion_price }}">OFERTA</div>
-              <div class="letrero-new hidden {{! id }}">NUEVO</div>
-              <div class="shape hidden {{! sku }}"></div>
-              <div class="aa hidden {{! sku }}">AGOTADO</div>
+    <div class="grin">
+        <div class="col-md-3 col-sm-4 col-xs-6 art-hi">
+            <div alig="center">
+                <a href="{{ site_base }}/sc/product/detail/{{! name|friendly }}/{{! id }}">
+                    <div class="fufi {{! id }}">
+                        <div class="letreros">
+                            <div class="letrero-sale hidden {{! promotion_price }}">OFERTA</div>
+                            <div class="letrero-new hidden {{! id }}">NUEVO</div>
+                            <div class="shape hidden {{! sku }}"></div>
+                            <div class="aa hidden {{! sku }}">AGOTADO</div>
+                        </div>
+                        <img src="{{! images[0]['thumb_500'] }}" alt="" class="img-responsive img-pro">
+                        <div class="overlay {{! id }}">
+                            <div class="text">COMPRAR</div>
+                        </div>
+                    </div>
+                    <p class="inf ellipsis multiline">{{! name }}</p>
+                    <a class="link-marca" marca="{{! brand }}" href="#">
+                        <p class="brand-color ellipsis multiline">{{! brand }}</p>
+                    </a>
+                    <div class="col-md-6 col-sm-6 col-xs-12 precios-div">
+                        <div class="product-price-3 producto {{! id }}">{{! main_price|money }} </div>
+                        <div class="hidden escondido {{! id }}">{{! main_price|money }} </div>
+                        <div class="hidden promocion {{! id }}">{{! promotion_price|money }} </div>
+                        <div class="product-price-3 sku-prod {{! sku }}">{{! main_price|money }} </div>
+                    </div>
+                    <button type="button" class="col-md-6 col-sm-6 col-xs-12 btn add-to-cart {{! sku }} btn-success comprar comprar-btn hidden {{! sku }}" id="open-cart" data-toggle="modal" data-target="#myModal" product-upp="{{! upp }}" product-name="{{! name }}" product-price="{{! main_price }}"
+                    product-sku="{{! sku }}" product-id="{{! id }}" product-img="{{! images[0]['thumb_500'] }}" product-weight="{{! weight }}" lp-cart-add> <img class="bolsa-agregar" src="https://cdn.loadingplay.com/static/images/a99be0bd09ebc9845d83e325177baa2d_bolsita_comprar.png">Agregar</button>
+                </a>
             </div>
-            <img src="{{! images[0]['thumb_500'] }}" alt="" class="img-responsive img-pro" >
-            <div class="overlay {{! id }}">
-              <div class="text">COMPRAR</div>
-            </div>
-          </div>
-          <p class="inf ellipsis multiline">{{! name }}</p>
-          <a class="link-marca" marca="{{! brand }}" href="#">
-            <p class="brand-color ellipsis multiline">{{! brand }}</p>
-          </a>
-          <div class="col-md-6 col-sm-6 col-xs-12 precios-div">
-            <div class="product-price-3 producto {{! id }}">{{! main_price|money }} </div>
-            <div class="hidden escondido {{! id }}">{{! main_price|money }} </div>
-            <div class="hidden promocion {{! id }}">{{! promotion_price|money }} </div>
-            <div class="product-price-3 sku-prod {{! sku }}">{{! main_price|money }} </div>
-          </div>
-          <button
-            type="button"
-            class="col-md-6 col-sm-6 col-xs-12 btn add-to-cart {{! sku }} btn-success comprar comprar-btn hidden {{! sku }}"
-            id="open-cart"
-            data-toggle="modal"
-            data-target="#myModal"
-            product-upp="{{! upp }}"
-            product-name="{{! name }}"
-            product-price="{{! main_price }}"
-            product-sku="{{! sku }}"
-            product-id="{{! id }}"
-            product-img="{{! images[0]['thumb_500'] }}"
-            product-weight="{{! weight }}"
-            lp-cart-add
-            > <img class="bolsa-agregar" src="https://cdn.loadingplay.com/static/images/a99be0bd09ebc9845d83e325177baa2d_bolsita_comprar.png">Agregar</button>
-        </a>
-      </div>
+        </div>
     </div>
-  </div>
 </script>

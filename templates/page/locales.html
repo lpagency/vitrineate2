@@ -12,6 +12,7 @@
 {% end %}
 
 {% block javascript %}
+<script type="text/javascript" src="{{ site_base }}/static/js/products.js?16"></script>
 <script type="text/javascript" src="{{ site_base }}/static/js/cart.config.js?16"></script>
 {% end %}
 
@@ -50,7 +51,7 @@
             <div class="text-center titulo-about {{editabletext}}" text-id="{{ site.name + '_loc' }}"> {{ read_text(site.name +  '_loc') }}</div>
         </div>
     </div>
- 
+
 </section>
 </div>
 
@@ -63,11 +64,11 @@
   </div>
 
 
-    <div class="col-md-6 col-sm-6 col-xs-12"> 
+    <div class="col-md-6 col-sm-6 col-xs-12">
           <div class="texto-con {{editabletext}}" text-id="{{ site.name + '_tienda_3' }}"> {{ read_text(site.name +  '_tienda_3') }}</div>
       </div>
-    
-    <div class="col-md-6 col-sm-6 col-xs-12"> 
+
+    <div class="col-md-6 col-sm-6 col-xs-12">
     <iframe class="map-mo" src="" width="480" height="435" frameborder="0" style="" allowfullscreen></iframe>
     </div>
 
@@ -82,5 +83,3 @@
 
 {% include '../home/footer.html' %}
 {% end %}
-
-

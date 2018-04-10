@@ -26,7 +26,7 @@
   //     // (this gives the illusion of the image scrolling slower than the rest of the page)
   //     var half = (difference / 2) + 'px';
 
- 
+
   //     $(this).find('img').css('top', half);
 
   //   } else {
@@ -47,8 +47,8 @@ $(document).ready(function(){
   // $(window).scroll(function() {
   //  if($(window).scrollTop() + $(window).height() == $(document).height()) {
   //       page += 1;
-  //       $.post(site_base + "/article/list", { 
-  //                   "tag" : "dermatologia", 
+  //       $.post(site_base + "/article/list", {
+  //                   "tag" : "dermatologia",
   //                   "limit" : 2,
   //                   "page" : page
   //               }, function(result)
@@ -63,6 +63,7 @@ $(document).ready(function(){
 });
 
 </script>
+<script type="text/javascript" src="{{ site_base }}/static/js/products.js?16"></script>
 <script type="text/javascript" src="{{ site_base }}/static/js/cart.config.js?16"></script>
 
 {% end %}
@@ -89,16 +90,16 @@ $(document).ready(function(){
                    <input type="file" class="editableimage" image-id="{{ site.name }}_banner_cate_li" name="image" id="img_banner_cate_li" >
                </div>
         {% end %}
-                <img id="{{ site.name }}_banner_cate_li" src="{{ read_image(site.name + '_banner_cate_li', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_cate_li',500) }}'" class="banner_uno_list hidden" alt="item">        
+                <img id="{{ site.name }}_banner_cate_li" src="{{ read_image(site.name + '_banner_cate_li', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_cate_li',500) }}'" class="banner_uno_list hidden" alt="item">
        </div>
-       
+
        <div class="col-md-12">
             <div class="box-text-gal">
                 <h1 class="text-center titulo {{editabletext}}" text-id="{{ site.name + '_til_li' }}"> {{ read_text(site.name +  '_til_li') }}</h1>
             </div>
 
         </div>
-    
+
 </section>
 </div>
 
@@ -128,7 +129,7 @@ $(document).ready(function(){
           {{ getArticleList(limit=1, html="page/article_home.html", tag='lutty,posicion 4') }}
         <!-- </div> -->
     </div>
-  
+
 </section>
 
 
@@ -149,4 +150,3 @@ $(document).ready(function(){
 {% include '../home/footer.html' %}
 
 {% end %}
-

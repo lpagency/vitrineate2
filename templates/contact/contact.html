@@ -7,7 +7,7 @@
 
 
 {% block javascript %}
-<script async defer 
+<script async defer
  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6EMDzcxYGCZ_8r-PUoUAFP06IA87KhGI&callback=initMap"
  type="text/javascript"></script>
 <script type="text/javascript">
@@ -28,7 +28,7 @@
                 var asunto = $("#itComentario").val();
 
                 var error_count = 0;
- 
+
                 // --- Condicionales anidados ----
                 //Si nombre está vacío
                 //Muestra el mensaje
@@ -74,11 +74,12 @@
                 {
                     return false;
                 }
- 
+
             });//click
         });//ready
 </script>
 <script type="text/javascript" src="{{ site_base }}/static/js/frubik.js"></script>
+<script type="text/javascript" src="{{ site_base }}/static/js/products.js?16"></script>
 <script type="text/javascript" src="{{ site_base }}/static/js/cart.config.js?16"></script>
 {% end %}
 
@@ -155,10 +156,10 @@
 </div>
 
     <!-- fin editar imagen -->
-            
+
             <div class="container min contact product text-left  fondo-contact" style="display: inherit;">
                 <div class="col-md-12 col-sm-12 col-xs-12" style="padding:0px;">
-                <div class="row">       
+                <div class="row">
 
                 <div class="container min">
 
@@ -167,7 +168,7 @@
                         </div>
                          <div class="titulo-claro {{editabletext}}" text-id="{{ site.name + '_h_contact_2' }}"> {{ read_text(site.name +  '_h_contact_2') }}
                         </div>
-                    </div>  
+                    </div>
                     <div class="col-xs-12 col-md-8 col-sm-12 align-form-contact fondo-contact">
 
                         <div>
@@ -189,8 +190,8 @@
                                         </div>
                                         <span id="helpBlock3" class="hidden help-block help-mail">Email</span>
                                     </div>
-                                </div>  
-                            </div>  
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <label class="control-label">Mensaje</label>
                                 <div class="controls">
@@ -200,11 +201,11 @@
                             </div>
                             <p><button name="submit" id="bEnviar" type="submit" class="btn btn-store btn-block contact" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Email Sent">Enviar mensaje </button></p>
                             <input type="hidden" name="submitted" id="submitted3" value="true">
-                        </form> 
+                        </form>
                         </div>
                      </div>
-                    </div>      
-                </div>  
+                    </div>
+                </div>
             </div>
     </div>
 </div>
@@ -212,5 +213,5 @@
     <div style="margin-bottom:50px;"></div>
 
 
-{% include '../home/footer.html' %}     
+{% include '../home/footer.html' %}
 {% end %}
