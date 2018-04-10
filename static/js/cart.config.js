@@ -62,7 +62,6 @@ $(document).ready(function()
 
     var random_seed = 'random('+ Math.random() +')';
 
-
     var config = {
         'app_public': app_public,
         'base_url': base_url,
