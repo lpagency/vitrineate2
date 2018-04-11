@@ -59,18 +59,6 @@ $(document).ready(function()
     if (tag === undefined || tag === 'todos'){
         $("#todos").addClass("active");
     }
-        var base_url = $.environmentVar(
-          /*'https://apibodegas.loadingplay.com/',*    <- para poder probar en ondev*/
-          'https://apibodegas.ondev.today/',
-          'https://apibodegas.ondev.today/',
-          'https://apibodegas.loadingplay.com/');
-        var checkout_url = $.environmentVar(
-          /*'https://lpcheckout.ondev.today/',    <- para poder probar en ondev*/
-          'https://pay.loadingplay.com',
-          'https://lpcheckout.ondev.today',
-          'https://pay.loadingplay.com');
-        var app_public = $.environmentVar(69,69,69);
-        var site_name = $.environmentVar('vitrineate', 'vitrineate', 'vitrineate');
 
     var random_seed = 'random('+ Math.random() +')';
 
@@ -94,73 +82,10 @@ $(document).ready(function()
                 units(config);
             });
 
-            for(x in products)
-            {
-                var prod = products[x].sku;
-
-                $.get( config.base_url+"v1/variant/"+prod+"/combination?site_name=vitrineate&sku="+prod, function(data)
-                {
-                    var aux = data.combinations[0].sku.split("-");
-                    if(data.combinations[0].sku.indexOf("-") == -1)
-                    {
-                        if(data.combinations.length == 1)
-                        {
-                            $("."+aux[0].toString()+".comprar-btn").removeClass("hidden");
-                        }
-                    }
-                });
-            }
             banners(tag);
             for(var x=0; x<products.length; x++)
             {
-                if(products[x].tags.indexOf("oferta") > -1)
-                {
-                    $(".letrero-sale."+products[x].promotion_price).removeClass("hidden");
-                    $(".overlay."+products[x].id).addClass("overlay-sale");
-                    $(".fufi."+products[x].id).addClass("fufi-sale");
-                }
-
-                if(products[x].tags.indexOf("nuevo") > -1)
-                {
-                    $(".letrero-new."+products[x].id).removeClass("hidden");
-                    $(".overlay."+products[x].id).addClass("overlay-new");
-                    $(".fufi."+products[x].id).addClass("fufi-new");
-                }
-
-                if(products[x].tags.indexOf("nuevo") > -1 && products[x].tags.indexOf("oferta") > -1)
-                {
-                    $(".fufi."+products[x].id).addClass("fufi-ambos");
-                    $(".fufi."+products[x].id).removeClass("fufi-sale");
-                    $(".overlay."+products[x].id).addClass("overlay-ambos");
-                    $(".overlay."+products[x].id).removeClass("overlay-sale");
-                    $(".letrero-sale."+products[x].promotion_price).removeClass("hidden");
-                    $(".letrero-new."+products[x].id).removeClass("hidden");
-                }
-
-                if(products[x].promotion_price == 0)
-                {
-                    $(".producto."+products[x].id).html("");
-                    $(".sku-prod."+products[x].sku).css("font-weight", "bold");
-                    $(".producto."+products[x].id).css("font-size","12px");
-                }
-                else
-                {
-                    $(".producto."+products[x].id).html($(".escondido."+products[x].id).html());
-                    $(".sku-prod."+products[x].sku).html($(".promocion."+products[x].id).html());
-                    $(".sku-prod."+products[x].sku).css("font-weight", "bold");
-                    $(".producto."+products[x].id).css("font-size","12px");
-                    $(".producto."+products[x].id).css("text-decoration", "line-through");
-                }
-
-                if(products[x].in_stock == false)
-                {
-                    $(".shape."+products[x].sku).removeClass("hidden");
-                    $(".aa."+products[x].sku).removeClass("hidden");
-                    $(".overlay."+products[x].id).addClass("overlay-agotado");
-                    $(".overlay."+products[x].id).html('<div class="text">AGOTADO</div>');
-                    $(".add-to-cart."+products[x].sku).html("AGOTADO");
-                    $(".add-to-cart."+products[x].sku).attr("disabled", true);
-                }
+                setBadges(products[x]);
             }
         }
     };

@@ -14,6 +14,7 @@
 {% end %}
 
 {% block javascript %}
+<script type="text/javascript" src="{{ site_base }}/static/js/products.js?16"></script>
 <script type="text/javascript">
     $(document).ready(function() {
 
@@ -283,10 +284,17 @@
                 'app_public': app_public,
                 'base_url': base_url,
                 'maxProducts': 4,
-                'templateOrigin': '#product_template_home',
+                'templateOrigin': '#product_template',
                 'tag': tag,
                 'ignore_stock': true,
-                'column': random_seed
+                'column': random_seed,
+                'onLoad': function(products)
+                {
+                    for(var x=0; x<products.length; x++)
+                    {
+                        setBadges(products[x]);
+                    }
+                }
             };
 
             $('.product-related').ecommerce('product_box', config);

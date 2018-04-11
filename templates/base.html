@@ -70,7 +70,14 @@
     <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/s/dt/dt-1.10.10/datatables.min.css"/> -->
 
 
-    {% block css %}{% end %} {% include 'product/product_box.html' %} {% include 'product/product_home.html' %} {% if is_admin %} {% set editabletext = 'editabletext' %} {% else %} {% set editabletext = '' %} {% end %}
+    {% block css %}{% end %}
+    {% include 'product/product_box.html' %}
+
+    {% if is_admin %}
+        {% set editabletext = 'editabletext' %}
+    {% else %}
+        {% set editabletext = '' %}
+    {% end %}
 
 </head>
 
