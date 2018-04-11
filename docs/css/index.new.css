@@ -108,6 +108,7 @@ Primer bloque del index:
     margin-top: 5%;
     height: 43.5%;
     width: 100%;
+    position: relative;
 }
 
 @media (max-width: 1199px)
@@ -143,6 +144,34 @@ Primer bloque del index:
     }
 }
 
+@media (max-width: 1024px)
+{
+    .div-index-1
+    {
+        height: 500px;
+    }
+    .div-index-2
+    {
+        height: 500px;
+    }
+    .div-index-3
+    {
+        height: 500px;
+    }
+    .item.active.fondo-principal.img-chica-1.fondo-img
+    {
+        height: 47%;
+    }
+    .item.active.fondo-principal.img-chica-1.fondo-img-2
+    {
+        height: 47%;
+    }
+    .fondo-principal
+    {
+        height: 96%;
+    }
+}
+
 @media (max-width: 991px)
 {
     .div-index-1
@@ -170,7 +199,7 @@ Primer bloque del index:
         height: 50.5%;
     }
 
-    .fondo-principal 
+    .fondo-principal
     {
         height: 104%;
     }
@@ -184,7 +213,7 @@ Primer bloque del index:
         height: 400px;
     }
 
-    .div-index-2 
+    .div-index-2
     {
         height: 400px;
     }
@@ -253,4 +282,3 @@ Primer bloque del index:
         width: 100%;
     }
 }
-
