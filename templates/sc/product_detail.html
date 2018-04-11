@@ -35,6 +35,20 @@
             $(".sku-prod").val($(".sku-producto-hidden").html());
             $(".nombre-prod").val($(".name_prod_detail").html());
         });
+
+        //condition when variants its clicked, the add-to-cart button is abled to use
+        $(document).on("click", ".tallas", function()
+        {
+            //si la variante no tiene la clase que la deshabilita, el boton agregar al carro se activa
+            if(!$(this).hasClass("btn-disabled"))
+            {
+                $(".add-to-cart").attr("disabled",false);
+            }
+            else
+            {
+                $(".add-to-cart").attr("disabled",true);
+            }
+        });
     });
 </script>
 <script>
