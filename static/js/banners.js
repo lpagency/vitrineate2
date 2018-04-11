@@ -70,5 +70,8 @@ function banners(tag)
 		case "ttanti":
 			$(".listado_productos_marca19").removeClass("hidden");
 		break;
+		case "srvittorio":
+			$(".listado_productos_marca20").removeClass("hidden");
+		break;
 	}
 }
