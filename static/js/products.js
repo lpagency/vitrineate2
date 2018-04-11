@@ -17,53 +17,35 @@ var site_name = $.environmentVar('vitrineate', 'vitrineate', 'vitrineate');
  */
 var setBadges = function(product)
 {
-    if(product.tags.indexOf("oferta") > -1)
+    if(products[x].tags.indexOf("nuevo") > -1)
     {
-        $(".letrero-sale."+product.promotion_price).removeClass("hidden");
-        $(".overlay."+product.id).addClass("overlay-sale");
-        $(".fufi."+product.id).addClass("fufi-sale");
+        $(".letrero-new."+products[x].id).removeClass("hidden");
     }
 
-    if(product.tags.indexOf("nuevo") > -1)
+    if(products[x].promotion_price == 0)
     {
-        $(".letrero-new."+product.id).removeClass("hidden");
-        $(".overlay."+product.id).addClass("overlay-new");
-        $(".fufi."+product.id).addClass("fufi-new");
-    }
-
-    if(product.tags.indexOf("nuevo") > -1 && product.tags.indexOf("oferta") > -1)
-    {
-        $(".fufi."+product.id).addClass("fufi-ambos");
-        $(".fufi."+product.id).removeClass("fufi-sale");
-        $(".overlay."+product.id).addClass("overlay-ambos");
-        $(".overlay."+product.id).removeClass("overlay-sale");
-        $(".letrero-sale."+product.promotion_price).removeClass("hidden");
-        $(".letrero-new."+product.id).removeClass("hidden");
-    }
-
-    if(product.promotion_price == 0)
-    {
-        $(".producto."+product.id).html("");
-        $(".sku-prod."+product.sku).css("font-weight", "bold");
-        $(".producto."+product.id).css("font-size","12px");
+        $(".producto."+products[x].id).html("");
+        $(".sku-prod."+products[x].sku).css("font-weight", "bold");
+        $(".producto."+products[x].id).css("font-size","12px");
     }
     else
     {
-        $(".producto."+product.id).html($(".escondido."+product.id).html());
-        $(".sku-prod."+product.sku).html($(".promocion."+product.id).html());
-        $(".sku-prod."+product.sku).css("font-weight", "bold");
-        $(".producto."+product.id).css("font-size","12px");
-        $(".producto."+product.id).css("text-decoration", "line-through");
+        $(".letrero-sale."+products[x].promotion_price).removeClass("hidden");
+        $(".producto."+products[x].id).html($(".escondido."+products[x].id).html());
+        $(".sku-prod."+products[x].sku).html($(".promocion."+products[x].id).html());
+        $(".sku-prod."+products[x].sku).css("font-weight", "bold");
+        $(".producto."+products[x].id).css("font-size","12px");
+        $(".producto."+products[x].id).css("text-decoration", "line-through");
     }
 
-    if(product.in_stock == false)
+    if(products[x].in_stock == false)
     {
-        $(".shape."+product.sku).removeClass("hidden");
-        $(".aa."+product.sku).removeClass("hidden");
-        $(".overlay."+product.id).addClass("overlay-agotado");
-        $(".overlay."+product.id).html('<div class="text">AGOTADO</div>');
-        $(".add-to-cart."+product.sku).html("AGOTADO");
-        $(".add-to-cart."+product.sku).attr("disabled", true);
+        $(".shape."+products[x].sku).removeClass("hidden");
+        $(".aa."+products[x].sku).removeClass("hidden");
+        $(".overlay."+products[x].id).addClass("overlay-agotado");
+        $(".overlay."+products[x].id).html('<div class="text">AGOTADO</div>');
+        $(".add-to-cart."+products[x].sku).html("AGOTADO");
+        $(".add-to-cart."+products[x].sku).attr("disabled", true);
     }
 
     $.get(base_url
