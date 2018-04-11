@@ -36,11 +36,12 @@
             $(".nombre-prod").val($(".name_prod_detail").html());
         });
 
+        //condition when variants its clicked, the add-to-cart button is abled to use
+
         $(document).on("click", ".tallas", function()
         {
             if(!$(this).hasClass("btn-disabled"))
             {
-                console.log("aaaa");
                 $(".add-to-cart").attr("disabled",false);
             }
             else
