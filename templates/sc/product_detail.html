@@ -200,18 +200,22 @@
                     }
 
                 }
-                if (product.bullet_1 != "") {
-                    $.get(site_base + "/article/tag?tag=" + product.bullet_1, function(data) {
+                if (product.bullet_1 != "")
+                {
+                    $.get(site_base + "/article/tag?tag=" + product.bullet_1, function(data)
+                    {
                         $("#article-reladed").html(data);
                     });
                 }
                 var mainImage = $("#mainImage");
-                $(".img-container img").hover(function() {
+                $(".img-container img").hover(function()
+                {
                     var src = $(this).attr("src");
                     $("#mainImage").attr("src", src);
                 });
 
-                mainImage.on("click", function() {
+                mainImage.on("click", function()
+                {
                     $(this).css("transform", "scale(1.1)");
                 });
 
