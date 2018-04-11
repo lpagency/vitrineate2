@@ -385,37 +385,57 @@
     </script>
 
     <script type="text/javascript">
-        function getCookie(cname) {
+        function getCookie(cname)
+        {
             var name = cname + "=";
             var decodedCookie = decodeURIComponent(document.cookie);
             var ca = decodedCookie.split(';');
-            for (var i = 0; i < ca.length; i++) {
+            for (var i = 0; i < ca.length; i++)
+            {
                 var c = ca[i];
-                while (c.charAt(0) == ' ') {
+                while (c.charAt(0) == ' ')
+                {
                     c = c.substring(1);
                 }
-                if (c.indexOf(name) == 0) {
+                if (c.indexOf(name) == 0)
+                {
                     return c.substring(name.length, c.length);
                 }
             }
             return "";
         }
 
-        $(document).ready(function() {
+        $(document).ready(function()
+        {
             // controll padding top for body
-            var recalcPadding = function() {
+            var recalcPadding = function()
+            {
                 var menu_height = $(".fix-position").outerHeight();
                 $(".content-body").css('margin-top', (menu_height + 5) + 'px');
             }
             recalcPadding();
 
 
-            $(document).on("click", ".cerrar-huincha", function() {
-                $(".huincha-header").slideToggle({
+            $(document).on("click", ".cerrar-huincha", function()
+            {
+                $(".huincha-header").slideToggle(
+                {
                     step: recalcPadding,
                     complete: recalcPadding
                 });
             });
+
+            //condicion si el menu movil esta funcionando
+            if($(".movil-menu").is(":visible"))
+            {
+                $(".w3-red").each(function()
+                {
+                    if(!$(this).hasClass("default-movil"))
+                    {
+                        $(this).removeClass("allow-default");
+                    }
+                });
+            }
         });
     </script>
 
