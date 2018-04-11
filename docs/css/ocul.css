@@ -2,6 +2,11 @@
 	display: none;
 }
 
+.product-related .grin
+{
+    display: block;
+}
+
 @media (max-width: 768px){
     .contenido-index {
         margin-top: 20% !important;

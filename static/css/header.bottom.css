@@ -17,7 +17,7 @@ header bottom
 
                     <!-- CATEGORIA MUJER -->
                     <div class="w3-dropdown-hover">
-                        <a class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" href="{{ site_base }}/listado_productos?tag=cat1_mujer">MUJER</a>
+                        <a class="w3-btn w3-red allow-default" data-toggle="dropdown" tag="colecciones" href="{{ site_base }}/listado_productos?tag=cat1_mujer">MUJER</a>
                         <div class="w3-dropdown-content w3-border">
                             <li class="dropdown-submenu">
                                 <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_ropa_m">ROPA</a></li>
@@ -29,7 +29,7 @@ header bottom
                     </div>
                     <!-- CATEGORIA HOMBRE -->
                     <div class="w3-dropdown-hover">
-                        <a class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" href="{{ site_base }}/listado_productos?tag=cat1_hombre">HOMBRE</a>
+                        <a class="w3-btn w3-red allow-default" data-toggle="dropdown" tag="colecciones" href="{{ site_base }}/listado_productos?tag=cat1_hombre">HOMBRE</a>
                         <div class="w3-dropdown-content w3-border">
                             <li class="dropdown-submenu">
                                 <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_camisa_h">CAMISAS</a></li>
@@ -40,7 +40,7 @@ header bottom
                     </div>
                     <!-- CATEGORIA NIÑOS -->
                     <div class="w3-dropdown-hover">
-                        <a class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" href="{{ site_base }}/listado_productos?tag=cat1_ninos">BEBE / NIÑOS</a>
+                        <a class="w3-btn w3-red allow-default" data-toggle="dropdown" tag="colecciones" href="{{ site_base }}/listado_productos?tag=cat1_ninos">BEBE / NIÑOS</a>
                         <div class="w3-dropdown-content w3-border">
                             <li class="dropdown-submenu">
                                 <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_ropa_n">ROPA</a></li>
@@ -50,7 +50,7 @@ header bottom
                     </div>
                     <!-- CATEGORIA ACCESORIOS -->
                     <div class="w3-dropdown-hover">
-                        <a class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" href="{{ site_base }}/listado_productos?tag=cat1_accesorios">ACCESORIOS</a>
+                        <a class="w3-btn w3-red allow-default" data-toggle="dropdown" tag="colecciones" href="{{ site_base }}/listado_productos?tag=cat1_accesorios">ACCESORIOS</a>
                         <div class="w3-dropdown-content w3-border">
                             <li class="dropdown-submenu">
                                 <li><a tabindex="-1" href="{{ site_base }}/listado_productos?tag=cat2_aros">AROS</a></li>
@@ -87,10 +87,10 @@ header bottom
                     </div>
                     <!-- CATEGORIA OFERTAS -->
                     <div class="w3-dropdown-hover">
-                        <a class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" href="https://vitrineate.cl/article/detail/quienes_somos/2110">QUIENES SOMOS</a>
+                        <a class="w3-btn w3-red allow-default default-movil" data-toggle="dropdown" tag="colecciones" href="https://vitrineate.cl/article/detail/quienes_somos/2110">QUIENES SOMOS</a>
                     </div>
                     <div class="w3-dropdown-hover">
-                        <a class="w3-btn w3-red" data-toggle="dropdown" href="{{ site_base }}/listado_productos?tag=oferta"><b>OFERTAS!</b></a>
+                        <a class="w3-btn w3-red allow-default default-movil" data-toggle="dropdown" href="{{ site_base }}/listado_productos?tag=oferta"><b>OFERTAS!</b></a>
                     </div>
 
                 </ul>
