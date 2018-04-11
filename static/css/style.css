@@ -1073,7 +1073,6 @@ hr.page-contact {
     }
 
     .logos-titulo{
-        top: -25px;
         position: relative;
         text-align: center;
         margin: 0px 290px 3.125rem auto;
@@ -1294,45 +1293,53 @@ hr.page-contact {
         text-align: center !important;
     }
 
-.image-somos-cir {
-    display: block;
-    width: 317px;
-    height: 314px;
-    margin-top: 80px;
-    object-fit: cover;
-    border-radius: 180px;
-}
+    .image-somos-cir
+    {
+        display: block;
+        width: 317px;
+        height: 314px;
+        margin-top: 80px;
+        object-fit: cover;
+        border-radius: 180px;
+    }
 
-.text-prod-desk {
-    margin-top: 0px !important;
-}
+    .text-prod-desk
+    {
+        margin-top: 0px !important;
+    }
 
-.logos-titulo{
-    margin: 0px 0px 3.125rem auto;
-}
+    .logos-titulo
+    {
+        margin: 0px 0px 0px auto;
+    }
 
-.logos-titulo-2{
-    text-align: center;
-    margin-bottom: 15px;
-}
+    .logos-titulo-2
+    {
+        text-align: center;
+        margin-bottom: 15px;
+    }
 
-.logos-titulo{
-    text-align: center;
-}
+    .logos-titulo
+    {
+        text-align: center;
+    }
 
-.logos-mobile {
-    height: 150px;
-    left: 14px;
-}
+    .logos-mobile
+    {
+        height: 150px;
+        left: 14px;
+    }
 
-.box-gra{
-    object-fit: cover;
-    height: 164px;
-}
+    .box-gra
+    {
+        object-fit: cover;
+        height: 164px;
+    }
 
-.box-gra-peq{
-    object-fit: contain;
-}
+    .box-gra-peq
+    {
+        object-fit: contain;
+    }
 
 }
 
