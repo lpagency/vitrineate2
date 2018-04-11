@@ -35,6 +35,19 @@
             $(".sku-prod").val($(".sku-producto-hidden").html());
             $(".nombre-prod").val($(".name_prod_detail").html());
         });
+
+        $(document).on("click", ".tallas", function()
+        {
+            if(!$(this).hasClass("btn-disabled"))
+            {
+                console.log("aaaa");
+                $(".add-to-cart").attr("disabled",false);
+            }
+            else
+            {
+                $(".add-to-cart").attr("disabled",true);
+            }
+        });
     });
 </script>
 <script>
