@@ -36,6 +36,7 @@ var setBadges = function(product)
         $(".sku-prod."+product.sku).css("font-weight", "bold");
         $(".producto."+product.id).css("font-size","12px");
         $(".producto."+product.id).css("text-decoration", "line-through");
+        $(".add-to-cart."+product.sku).attr("product-price", product.promotion_price);
     }
 
     if(product.in_stock == false)
