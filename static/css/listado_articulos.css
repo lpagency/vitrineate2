@@ -57,20 +57,20 @@
 }
 
 
-.article-box:nth-child(4n+2) 
+.article-box:nth-child(4n+2)
 {
     width: 50%
 }
 
 .article-box:nth-child(4n+3),
-.article-box:nth-child(4n+4) 
+.article-box:nth-child(4n+4)
 {
     height: 190px;
 }
 
 
 .article-box:nth-child(4n+3) .di,
-.article-box:nth-child(4n+4) .di 
+.article-box:nth-child(4n+4) .di
 {
     line-height: 190px;
 }
@@ -428,37 +428,36 @@ a.lok {
 
 }
 
-@media (max-width: 650px){
-    .box-4 .mask {
-    background: rgba(0,0,0,0.3);
-    height: 100%;
-    width: 86%;
-    opacity: 0;
-    position: absolute;
-    top: 0px;
-}
-.til-ban {
-    position: absolute;
-    bottom: 0px;
-    text-align: center;
-    width: 80%;
-    margin-bottom: 57px;
-    color: white;
-    font-weight: 400;
-    font-size: 25px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.banner-movil-det-art{
-    height: 132px !important;
-    background-size: cover;
-    margin-top: -1px;
-    filter: grayscale(0%) brightness(70%) !important;
-    -webkit-filter: grayscale(0%) brightness(70%) !important;
-    -moz-filter: grayscale(0%) brightness(70%) !important;
-    -ms-filter: grayscale(0%) brightness(70%) !important;
-    -o-filter: grayscale(0%) brightness(70%) !important;
-}
+@media (max-width: 650px)
+{
+    .box-4 .mask
+    {
+        background: rgba(0,0,0,0.3);
+        height: 100%;
+        width: 86%;
+        opacity: 0;
+        position: absolute;
+        top: 0px;
+    }
+    .til-ban
+    {
+        position: absolute;
+        bottom: 0px;
+        text-align: center;
+        width: 80%;
+        margin-bottom: 57px;
+        color: white;
+        font-weight: 400;
+        font-size: 25px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .banner-movil-det-art
+    {
+        height: 132px !important;
+        background-size: cover;
+        margin-top: -1px;
+    }
 }
 
 @media (max-width: 320px){
@@ -679,25 +678,25 @@ a.lok {
 }
 
 @media all and (max-width: 992px){
-    .article-box 
+    .article-box
     {
         padding: 0px 0px 10px 10px;
     }
 
 
     .article-box:nth-child(4n+3),
-    .article-box:nth-child(4n+4) 
+    .article-box:nth-child(4n+4)
     {
         height: 400px;
     }
 
     .article-box:nth-child(4n+3) .di,
-    .article-box:nth-child(4n+4) .di 
+    .article-box:nth-child(4n+4) .di
     {
         line-height: 400px;
     }
 
-    .article-box:nth-child(4n+2) 
+    .article-box:nth-child(4n+2)
     {
         width: 100%;
     }
@@ -706,7 +705,7 @@ a.lok {
 
 
 @media all and (max-width: 700px){
- /*   .article-box 
+ /*   .article-box
     {
         padding: 0px 10px 10px 10px;
     }*/
