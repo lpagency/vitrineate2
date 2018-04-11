@@ -46,7 +46,7 @@ var setBadges = function(product)
         $(".overlay."+product.id).html('<div class="text">AGOTADO</div>');
         $(".add-to-cart."+product.sku).html("AGOTADO");
         $(".add-to-cart."+product.sku).attr("disabled", true);
-                  }
+    }
 
     $.get(base_url
         + "v1/variant/"
