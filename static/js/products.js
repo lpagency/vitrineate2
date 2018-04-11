@@ -17,27 +17,8 @@ var site_name = $.environmentVar('vitrineate', 'vitrineate', 'vitrineate');
  */
 var setBadges = function(product)
 {
-    if(product.tags.indexOf("oferta") > -1)
-    {
-        $(".letrero-sale."+product.promotion_price).removeClass("hidden");
-        $(".overlay."+product.id).addClass("overlay-sale");
-        $(".fufi."+product.id).addClass("fufi-sale");
-    }
-
     if(product.tags.indexOf("nuevo") > -1)
     {
-        $(".letrero-new."+product.id).removeClass("hidden");
-        $(".overlay."+product.id).addClass("overlay-new");
-        $(".fufi."+product.id).addClass("fufi-new");
-    }
-
-    if(product.tags.indexOf("nuevo") > -1 && product.tags.indexOf("oferta") > -1)
-    {
-        $(".fufi."+product.id).addClass("fufi-ambos");
-        $(".fufi."+product.id).removeClass("fufi-sale");
-        $(".overlay."+product.id).addClass("overlay-ambos");
-        $(".overlay."+product.id).removeClass("overlay-sale");
-        $(".letrero-sale."+product.promotion_price).removeClass("hidden");
         $(".letrero-new."+product.id).removeClass("hidden");
     }
 
@@ -49,6 +30,7 @@ var setBadges = function(product)
     }
     else
     {
+        $(".letrero-sale."+product.promotion_price).removeClass("hidden");
         $(".producto."+product.id).html($(".escondido."+product.id).html());
         $(".sku-prod."+product.sku).html($(".promocion."+product.id).html());
         $(".sku-prod."+product.sku).css("font-weight", "bold");
