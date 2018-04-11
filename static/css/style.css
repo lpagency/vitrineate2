@@ -978,7 +978,6 @@ hr.page-contact {
 @media (max-width: 991px){
 
     .div-index-1{
-        top: 180px;
         padding-left: inherit;
         height: 400px;
     }
@@ -986,15 +985,12 @@ hr.page-contact {
     .div-index-2{
         padding-left: inherit;
         padding-right: inherit;
-        top: 180px;
         height: 400px;
     }
 
     .div-index-3{
         padding-right: inherit;
-        top: 180px;
         height: 400px;
-        margin-bottom: 28%;
     }
 
     .box-gra-peq {
@@ -1086,21 +1082,15 @@ hr.page-contact {
 @media (max-width: 767px){
 
     .div-index-1 {
-        top: 30px;
+        top: 0px;
         margin-bottom: 15%;
-        margin-top: 77px;
+        margin-top: 0px;
     }
 
     .div-index-2{
         top: 54%;
         height: 260px;
         margin-top: 130px;
-    }
-
-    .div-index-3{
-        top: 50px;
-        margin-top: -13%;
-        margin-bottom: 37%;
     }
 
     .contacto-btn {
@@ -1203,16 +1193,8 @@ hr.page-contact {
 
 @media (max-width: 500px){
 
-    .primero{
-        margin-top: 15% !important;
-    }
-
     .texto-hu{
         bottom: 96px;
-    }
-
-    .hgi {
-        margin-top: 6%;
     }
 
     .constr{
@@ -1279,10 +1261,6 @@ hr.page-contact {
 
     .logos-titulo{
         font-size: 14px;
-    }
-
-    .primero {
-        margin-top: 20% !important;
     }
 
     .product-price-3{
@@ -1451,9 +1429,6 @@ hr.page-contact {
     .contacto-btn {
         left: 0px;
         padding: 20px 54px 20px;
-    }
-    .logos-titulo-2 {
-        margin-top: 55px;
     }
 
     .logos-mobile{
