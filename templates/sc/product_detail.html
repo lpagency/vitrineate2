@@ -40,6 +40,7 @@
 
         $(document).on("click", ".tallas", function()
         {
+            //si la variante no tiene la clase que la deshabilita, el boton agregar al carro se activa
             if(!$(this).hasClass("btn-disabled"))
             {
                 $(".add-to-cart").attr("disabled",false);
