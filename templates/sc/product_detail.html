@@ -30,14 +30,6 @@
     $(document).ready(function()
     {
 
-        setTimeout(function()
-        {
-            if ($(".add-to-cart").html() == "AGOTADO")
-            {
-                $(".info-producto").removeClass("hidden");
-            }
-        }, 3000);
-
         $(document).on("click", ".info-href", function()
         {
             $(".sku-prod").val($(".sku-producto-hidden").html());
@@ -223,6 +215,11 @@
                     $(this).css("transform", "scale(1.1)");
                 });
 
+            }
+
+            if ($(".add-to-cart").html() == "AGOTADO")
+            {
+                $(".info-producto").removeClass("hidden");
             }
 
         };
