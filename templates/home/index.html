@@ -21,6 +21,7 @@
 {% end %}
 
 {% block javascript %}
+    <script type="text/javascript" src="{{ site_base }}/static/js/products.js?16"></script>
     <script>
         $(document).ready(function(){
           $('.dropdown-submenu a.test').on("click", function(e){
@@ -129,56 +130,9 @@
                 }
               });
 
-              for(x in products)
+              for(var x=0; x<products.length; x++)
               {
-                var prod = products[x].sku;
-
-                $.get( config.base_url+"v1/variant/"+prod+"/combination?site_name=vitrineate&sku="+prod, function(data)
-                {
-                  var aux = data.combinations[0].sku.split("-");
-                  if(data.combinations[0].sku.indexOf("-") == -1)
-                  {
-                    if(data.combinations.length == 1)
-                    {
-                      $("."+aux[0].toString()+".comprar-btn").removeClass("hidden");
-                    }
-                  }
-                });
-              }
-
-               for(var x=0; x<products.length; x++)
-              {
-
-                  if(products[x].tags.indexOf("nuevo") > -1)
-                  {
-                      $(".letrero-new."+products[x].id).removeClass("hidden");
-                  }
-
-                  if(products[x].promotion_price == 0)
-                  {
-                      $(".producto."+products[x].id).html("");
-                      $(".sku-prod."+products[x].sku).css("font-weight", "bold");
-                      $(".producto."+products[x].id).css("font-size","12px");
-                  }
-                  else
-                  {
-                      $(".letrero-sale."+products[x].promotion_price).removeClass("hidden");
-                      $(".producto."+products[x].id).html($(".escondido."+products[x].id).html());
-                      $(".sku-prod."+products[x].sku).html($(".promocion."+products[x].id).html());
-                      $(".sku-prod."+products[x].sku).css("font-weight", "bold");
-                      $(".producto."+products[x].id).css("font-size","12px");
-                      $(".producto."+products[x].id).css("text-decoration", "line-through");
-                  }
-
-                  if(products[x].in_stock == false)
-                  {
-                    $(".shape."+products[x].sku).removeClass("hidden");
-                    $(".aa."+products[x].sku).removeClass("hidden");
-                    $(".overlay."+products[x].id).addClass("overlay-agotado");
-                    $(".overlay."+products[x].id).html('<div class="text">AGOTADO</div>');
-                    $(".add-to-cart."+products[x].sku).html("AGOTADO");
-                    $(".add-to-cart."+products[x].sku).attr("disabled", true);
-                  }
+                setBadges(products[x]);
               }
              }
         };
