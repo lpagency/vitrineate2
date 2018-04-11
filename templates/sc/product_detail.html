@@ -215,11 +215,11 @@
                     $(this).css("transform", "scale(1.1)");
                 });
 
-            }
+                if ($(".add-to-cart").html() == "AGOTADO")
+                {
+                    $(".info-producto").removeClass("hidden");
+                }
 
-            if ($(".add-to-cart").html() == "AGOTADO")
-            {
-                $(".info-producto").removeClass("hidden");
             }
 
         };
