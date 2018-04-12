@@ -62,7 +62,6 @@ var setBadges = function(product)
                 var aux = data.combinations[0].sku;
                 if(data.combinations.length == 1)
                 {
-                    console.log(aux);
                     $("."+aux.toString()+".comprar-btn").removeClass("hidden");
                 }
             }
