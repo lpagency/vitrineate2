@@ -18,7 +18,7 @@
 <script type="text/javascript">
     function setDisabled()
     {
-        if($(".load-v").html() == "")
+        if($(".load-v").html() == "" || $(".load-v").html() == undefined)
         {
             $(".add-to-cart").attr("disabled",false);
         }
@@ -512,7 +512,7 @@
 </div>
 
 
-<div class="product-detail" style="margin-bottom: 50px;"></div>
+<div class="product-detail container-minimo" style="margin-bottom: 50px;"></div>
 <div class="container min">
     <div align="center">
         <div class="col-md-12 col-sm-12 col-xs-12">

@@ -56,12 +56,24 @@ var setBadges = function(product)
         + product.sku,
         function(data)
         {
-            var aux = data.combinations[0].sku.split("-");
-            if(data.combinations[0].sku.indexOf("-") == -1)
+            //BUG SKU CON GUION PERO SIN VARIANTES
+            if(data.combinations[0].sku.indexOf("SV") > -1)
             {
+                var aux = data.combinations[0].sku;
                 if(data.combinations.length == 1)
                 {
-                    $("."+aux[0].toString()+".comprar-btn").removeClass("hidden");
+                    $("."+aux.toString()+".comprar-btn").removeClass("hidden");
+                }
+            }
+            else
+            {
+                var aux = data.combinations[0].sku.split("-");
+                if(data.combinations[0].sku.indexOf("-") == -1)
+                {
+                    if(data.combinations.length == 1)
+                    {
+                        $("."+aux[0].toString()+".comprar-btn").removeClass("hidden");
+                    }
                 }
             }
         });
