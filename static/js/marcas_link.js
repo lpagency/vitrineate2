@@ -15,7 +15,7 @@ var marcas_link = function()
                 $(this).attr("href", window.location.origin+"/listado_productos?tag=dionea");
             break;
 
-            case "rossaria scarinci":
+            case "rosaría scarinci":
                 $(this).attr("href", window.location.origin+"/listado_productos?tag=rossaria_scarinci");
             break;
 
@@ -47,7 +47,7 @@ var marcas_link = function()
                 $(this).attr("href", window.location.origin+"/listado_productos?tag=yambo");
             break;
 
-            case "mora":
+            case "mora store":
                 $(this).attr("href", window.location.origin+"/listado_productos?tag=mora");
             break;
 
