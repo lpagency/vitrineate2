@@ -3,67 +3,67 @@ var marcas_link = function()
 
     $(".link-marca").each(function()
     {
-        var aux = $(this).attr("marca");
+        var aux = $(this).attr("marca").toLowerCase();
 
         switch(aux)
         {
-            case "Paula Mar":
+            case "paula mar":
                 $(this).attr("href", window.location.origin+"/listado_productos?tag=paula_mar");
             break;
 
-            case "Dionea":
+            case "dionea":
                 $(this).attr("href", window.location.origin+"/listado_productos?tag=dionea");
             break;
 
-            case "Rossaria Scarinci":
+            case "rossaria scarinci":
                 $(this).attr("href", window.location.origin+"/listado_productos?tag=rossaria_scarinci");
             break;
 
-            case "Pili Saenz Joyas":
+            case "pili saenz joyas":
                 $(this).attr("href", window.location.origin+"/listado_productos?tag=pili_saenz_joyas");
             break;
 
-            case "Lisantino":
+            case "lisantino":
                 $(this).attr("href", window.location.origin+"/listado_productos?tag=lisantino");
             break;
 
-            case "Kuyen":
+            case "kuyen":
                 $(this).attr("href", window.location.origin+"/listado_productos?tag=kuyen");
             break;
 
-            case "Amimevistemimami":
+            case "amimevistemimami":
                 $(this).attr("href", window.location.origin+"/listado_productos?tag=a_mi_me_viste_mi_mami");
             break;
 
-            case "A Mi Me Viste Mi Mami":
+            case "a mi me viste mi mami":
                 $(this).attr("href", window.location.origin+"/listado_productos?tag=a_mi_me_viste_mi_mami");
             break;
 
-            case "Stoff":
+            case "stoff":
                 $(this).attr("href", window.location.origin+"/listado_productos?tag=stoff");
             break;
 
-            case "Yambo":
+            case "yambo":
                 $(this).attr("href", window.location.origin+"/listado_productos?tag=yambo");
             break;
 
-            case "Mora":
+            case "mora":
                 $(this).attr("href", window.location.origin+"/listado_productos?tag=mora");
             break;
 
-            case "Villagran Villagran":
+            case "villagran villagran":
                 $(this).attr("href", window.location.origin+"/listado_productos?tag=villagran_villagran");
             break;
 
-            case "Amelie Lingerie":
+            case "amelie lingerie":
                 $(this).attr("href", window.location.origin+"/listado_productos?tag=amelie_lingerie");
             break;
 
-            case "Ttanti":
+            case "ttanti":
                 $(this).attr("href", window.location.origin+"/listado_productos?tag=ttanti");
             break;
 
-            case "Sr. Vittorio":
+            case "sr. vittorio":
                 $(this).attr("href", window.location.origin+"/listado_productos?tag=srvittorio");
             break;
         }
