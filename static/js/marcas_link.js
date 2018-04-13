@@ -73,8 +73,8 @@ var marcas_link = function()
                 $(this).attr("href", link+"listado_productos?tag=amelie_lingerie");
             break;
 
-            case "Ttani":
-                $(this).attr("href", link+"listado_productos?tag=ttani");
+            case "Ttanti":
+                $(this).attr("href", link+"listado_productos?tag=ttanti");
             break;
 
             case "Sr. Vittorio":
