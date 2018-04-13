@@ -82,6 +82,8 @@ $(document).ready(function()
                 units(config);
             });
 
+            marcas_link();
+
             banners(tag);
             for(var x=0; x<products.length; x++)
             {
