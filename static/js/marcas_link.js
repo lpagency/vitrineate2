@@ -34,6 +34,10 @@ var marcas_link = function()
                 $(this).attr("href", "{{ site_base }}/listado_productos?tag=a_mi_me_viste_mi_mami");
             break;
 
+            case "A Mi Me Viste Mi Mami":
+                $(this).attr("href", "{{ site_base }}/listado_productos?tag=a_mi_me_viste_mi_mami");
+            break;
+
             case "Stoff":
                 $(this).attr("href", "{{ site_base }}/listado_productos?tag=stoff");
             break;
