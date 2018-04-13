@@ -1,5 +1,5 @@
 var base_url = $.environmentVar(
-    'https://apibodegas.ondev.today/',
+    'https://apibodegas.loadingplay.com/',
     'https://apibodegas.loadingplay.com/',
     'https://apibodegas.loadingplay.com/');
 var checkout_url = $.environmentVar(
@@ -41,6 +41,7 @@ var setBadges = function(product)
 
     if(product.in_stock == false)
     {
+        console.log(product);
         $(".shape."+product.sku).removeClass("hidden");
         $(".aa."+product.sku).removeClass("hidden");
         $(".overlay."+product.id).addClass("overlay-agotado");
