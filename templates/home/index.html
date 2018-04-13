@@ -101,8 +101,8 @@
 <div class="cont"></div>
 <div class="container min contenido-index hidden-xs container-minimo">
   <div class="col-md-3 col-sm-3 col-xs-12 div-index-1">
-    <div class="item active fondo-principal img-chica-1 fondo-img" style="background:url('{{ read_image(site.name + '_img_slider_1') }}'); background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
-      <a class="link-banner" id="{{ site.name + '_img_slider_1' }}" href="{{ read_link(site.name + '_img_slider_1') }}">
+    <a class="link-banner" id="{{ site.name + '_img_slider_1' }}" href="{{ read_link(site.name + '_img_slider_1') }}">
+      <div class="item active fondo-principal img-chica-1 fondo-img" style="background:url('{{ read_image(site.name + '_img_slider_1') }}'); background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
         {% if is_admin %}
           <div class="image-upload visible-movil" >
             <label for="img_slider_1">
@@ -111,14 +111,14 @@
             <input type="file" class="editableimage" image-id="{{ site.name }}_img_slider_1" name="image" id="img_slider_1" >
           </div>
         {% end %}
-      </a>
-      {% if is_admin %}
-        <img class="change-image editablelink" link-id="{{ site.name + '_img_slider_1' }}" content="{{ read_link(site.name + '_img_slider_1') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';" style="top: 0px;">
-      {% end %}
-    </div>
+      </div>
+    </a>
+    {% if is_admin %}
+      <img class="change-image editablelink" link-id="{{ site.name + '_img_slider_1' }}" content="{{ read_link(site.name + '_img_slider_1') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';" style="top: 0px;">
+    {% end %}
 
-    <div class="item active fondo-principal img-chica-1 fondo-img-2" style="background:url('{{ read_image(site.name + '_img_slider_2') }}'); background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
-      <a class="link-banner" id="{{ site.name + '_img_slider_2' }}" href="{{ read_link(site.name + '_img_slider_2') }}">
+    <a class="link-banner" id="{{ site.name + '_img_slider_2' }}" href="{{ read_link(site.name + '_img_slider_2') }}">
+      <div class="item active fondo-principal img-chica-1 fondo-img-2" style="background:url('{{ read_image(site.name + '_img_slider_2') }}'); background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
         {% if is_admin %}
           <div class="image-upload visible-movil" >
             <label for="img_slider_2">
@@ -127,15 +127,16 @@
             <input type="file" class="editableimage" image-id="{{ site.name }}_img_slider_2" name="image" id="img_slider_2" >
           </div>
         {% end %}
-      </a>
-      {% if is_admin %}
-        <img class="change-image editablelink" link-id="{{ site.name + '_img_slider_2' }}" content="{{ read_link(site.name + '_img_slider_2') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
-      {% end %}
-    </div>
+      </div>
+    </a>
+    {% if is_admin %}
+      <img class="change-image editablelink" link-id="{{ site.name + '_img_slider_2' }}" content="{{ read_link(site.name + '_img_slider_2') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+    {% end %}
   </div>
+
   <div class="col-md-6 col-sm-6 col-xs-12 div-index-2">
-    <div class="item active fondo-principal" style="background:url('{{ read_image(site.name + '_img_slider_3') }}'); background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
-      <a class="link-banner-main" id="{{ site.name + '_img_slider_3' }}" href="{{ read_link(site.name + '_img_slider_3') }}">
+    <a class="link-banner-main" id="{{ site.name + '_img_slider_3' }}" href="{{ read_link(site.name + '_img_slider_3') }}">
+      <div class="item active fondo-principal" style="background:url('{{ read_image(site.name + '_img_slider_3') }}'); background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
         {% if is_admin %}
           <div class="image-upload visible-movil" >
             <label for="img_slider_3">
@@ -144,15 +145,16 @@
             <input type="file" class="editableimage" image-id="{{ site.name }}_img_slider_3" name="image" id="img_slider_3" >
           </div>
         {% end %}
-      </a>
-      {% if is_admin %}
-        <img class="change-image editablelink" link-id="{{ site.name + '_img_slider_3' }}" content="{{ read_link(site.name + '_img_slider_3') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';" style="top: 0px;">
-      {% end %}
-    </div>
+      </div>
+    </a>
+    {% if is_admin %}
+      <img class="change-image editablelink" link-id="{{ site.name + '_img_slider_3' }}" content="{{ read_link(site.name + '_img_slider_3') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';" style="top: 0px;">
+    {% end %}
   </div>
+
   <div class="col-md-3 col-sm-3 col-xs-12 div-index-3">
-    <div class="item active fondo-principal img-chica-1 fondo-img" style="background:url('{{ read_image(site.name + '_img_slider_4') }}'); background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
-      <a class="link-banner" id="{{ site.name + '_img_slider_4' }}" href="{{ read_link(site.name + '_img_slider_4') }}">
+    <a class="link-banner" id="{{ site.name + '_img_slider_4' }}" href="{{ read_link(site.name + '_img_slider_4') }}">
+      <div class="item active fondo-principal img-chica-1 fondo-img" style="background:url('{{ read_image(site.name + '_img_slider_4') }}'); background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
         {% if is_admin %}
           <div class="image-upload visible-movil" >
             <label for="img_slider_4">
@@ -161,14 +163,14 @@
             <input type="file" class="editableimage" image-id="{{ site.name }}_img_slider_4" name="image" id="img_slider_4" >
           </div>
         {% end %}
-      </a>
-      {% if is_admin %}
-        <img class="change-image editablelink" link-id="{{ site.name + '_img_slider_4' }}" content="{{ read_link(site.name + '_img_slider_4') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';" style="top: 0px;">
-      {% end %}
-    </div>
+      </div>
+    </a>
+    {% if is_admin %}
+      <img class="change-image editablelink" link-id="{{ site.name + '_img_slider_4' }}" content="{{ read_link(site.name + '_img_slider_4') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';" style="top: 0px;">
+    {% end %}
 
-    <div class="item active fondo-principal img-chica-1 fondo-img-2" style="background:url('{{ read_image(site.name + '_img_slider_5') }}'); background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
-      <a class="link-banner" id="{{ site.name + '_img_slider_5' }}" href="{{ read_link(site.name + '_img_slider_5') }}">
+    <a class="link-banner" id="{{ site.name + '_img_slider_5' }}" href="{{ read_link(site.name + '_img_slider_5') }}">
+      <div class="item active fondo-principal img-chica-1 fondo-img-2" style="background:url('{{ read_image(site.name + '_img_slider_5') }}'); background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
         {% if is_admin %}
           <div class="image-upload visible-movil" >
             <label for="img_slider_5">
@@ -177,13 +179,14 @@
             <input type="file" class="editableimage" image-id="{{ site.name }}_img_slider_5" name="image" id="img_slider_5" >
           </div>
         {% end %}
-      </a>
-      {% if is_admin %}
-        <img class="change-image editablelink" link-id="{{ site.name + '_img_slider_5' }}" content="{{ read_link(site.name + '_img_slider_5') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
-      {% end %}
-    </div>
+      </div>
+    </a>
+    {% if is_admin %}
+      <img class="change-image editablelink" link-id="{{ site.name + '_img_slider_5' }}" content="{{ read_link(site.name + '_img_slider_5') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+    {% end %}
   </div>
 </div>
+
 <div class="container min contenido-index visible-xs">
     <div class="col-md-3 col-sm-3 col-xs-12 div-index-1">
         <div class="item active fondo-principal img-chica-1 fondo-img">
