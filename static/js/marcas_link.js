@@ -16,7 +16,7 @@ var marcas_link = function()
             break;
 
             case "rosaría scarinci":
-                $(this).attr("href", window.location.origin+"/listado_productos?tag=rossaria_scarinci");
+                $(this).attr("href", window.location.origin+"/listado_productos?tag=rosaria_scarinci");
             break;
 
             case "pili saenz joyas":
