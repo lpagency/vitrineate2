@@ -1,5 +1,5 @@
 var base_url = $.environmentVar(
-    'https://apibodegas.ondev.today/',
+    'https://apibodegas.loadingplay.com/',
     'https://apibodegas.loadingplay.com/',
     'https://apibodegas.loadingplay.com/');
 var checkout_url = $.environmentVar(
