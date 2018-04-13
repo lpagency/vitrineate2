@@ -67,8 +67,4 @@ var marcas_link = function()
             break;
         }
     });
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> d0a951d7ae45499a4765917829adc52ad68bcaf1
