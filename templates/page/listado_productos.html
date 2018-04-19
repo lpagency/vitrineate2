@@ -11,7 +11,7 @@
 
 {% if is_admin %}
 {% end %}
-<link rel="stylesheet" type="text/css" href="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.css?20">
+<link rel="stylesheet" type="text/css" href="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.css?25">
 <style type="text/css">
     @media (max-width: 768px){
         .contenido-index {
@@ -40,9 +40,9 @@
 
 
 {% block javascript %}
-<script type="text/javascript" src="{{ site_base }}/static/js/products.js?20"></script>
-<script type="text/javascript" src="{{ site_base }}/static/js/cart.config.js?20"></script>
-<script type="text/javascript" src="{{ site_base }}/static/js/banners.js?20"></script>
+<script type="text/javascript" src="{{ site_base }}/static/js/products.js?25"></script>
+<script type="text/javascript" src="{{ site_base }}/static/js/cart.config.js?25"></script>
+<script type="text/javascript" src="{{ site_base }}/static/js/banners.js?25"></script>
 <script type="text/javascript">
     $(document).ready(function()
     {
@@ -430,6 +430,74 @@
         <div align="center" class=" hidden listado_productos_marca20 texto-one marcas-movil {{editabletext}}" text-id="{{ site.name + '_marca20' }}"> {{ read_text(site.name +  '_marca20') }}</div>
     </div>
     <!--END SR.VITORIO-->
+    <!--ZELK-->
+    <div class="mobile banner-movil hidden listado_productos_marca21" style="background:url('{{ read_image(site.name + '_productos_marca21',500) }}'); height:300px; background-size:cover; margin-top: -1px;  filter: grayscale(0%) brightness(90%); -webkit-filter: grayscale(0%) brightness(90%); -moz-filter: grayscale(0%) brightness(90%); -ms-filter: grayscale(0%) brightness(90%);-o-filter: grayscale(0%) brightness(90%); background-position:center; margin-bottom: 40px;" data-img-width="1600" data-img-height="1064" data-diff="100">
+        {% if is_admin %}
+        <div class="image-upload part1 lapiz visible-movil">
+            <label for="img_productos_marca21">
+                <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+            </label>
+            <input type="file" class="editableimage" image-id="{{ site.name }}_productos_marca21" name="image" id="img_productos_marca21" >
+        </div>
+        {% end %}
+        <img id="{{ site.name }}_productos_marca21" src="{{ read_image(site.name + '_productos_marca21', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_productos_marca21',500) }}'" class="banner_uno_list hidden" alt="item">
+    </div>
+
+     <div class="col-md-12">
+        <div align="center" class=" hidden listado_productos_marca21 texto-one marcas-movil {{editabletext}}" text-id="{{ site.name + '_marca21' }}"> {{ read_text(site.name +  '_marca21') }}</div>
+    </div>
+    <!--END ZELK-->
+    <!--TOROSANTO-->
+    <div class="mobile banner-movil hidden listado_productos_marca22" style="background:url('{{ read_image(site.name + '_productos_marca22',500) }}'); height:300px; background-size:cover; margin-top: -1px;  filter: grayscale(0%) brightness(90%); -webkit-filter: grayscale(0%) brightness(90%); -moz-filter: grayscale(0%) brightness(90%); -ms-filter: grayscale(0%) brightness(90%);-o-filter: grayscale(0%) brightness(90%); background-position:center; margin-bottom: 40px;" data-img-width="1600" data-img-height="1064" data-diff="100">
+        {% if is_admin %}
+        <div class="image-upload part1 lapiz visible-movil">
+            <label for="img_productos_marca22">
+                <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+            </label>
+            <input type="file" class="editableimage" image-id="{{ site.name }}_productos_marca22" name="image" id="img_productos_marca22" >
+        </div>
+        {% end %}
+        <img id="{{ site.name }}_productos_marca22" src="{{ read_image(site.name + '_productos_marca22', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_productos_marca22',500) }}'" class="banner_uno_list hidden" alt="item">
+    </div>
+
+     <div class="col-md-12">
+        <div align="center" class=" hidden listado_productos_marca22 texto-one marcas-movil {{editabletext}}" text-id="{{ site.name + '_marca22' }}"> {{ read_text(site.name +  '_marca22') }}</div>
+    </div>
+    <!--END TOROSANTO-->
+    <!--NYAH-->
+    <div class="mobile banner-movil hidden listado_productos_marca23" style="background:url('{{ read_image(site.name + '_productos_marca23',500) }}'); height:300px; background-size:cover; margin-top: -1px;  filter: grayscale(0%) brightness(90%); -webkit-filter: grayscale(0%) brightness(90%); -moz-filter: grayscale(0%) brightness(90%); -ms-filter: grayscale(0%) brightness(90%);-o-filter: grayscale(0%) brightness(90%); background-position:center; margin-bottom: 40px;" data-img-width="1600" data-img-height="1064" data-diff="100">
+        {% if is_admin %}
+        <div class="image-upload part1 lapiz visible-movil">
+            <label for="img_productos_marca23">
+                <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+            </label>
+            <input type="file" class="editableimage" image-id="{{ site.name }}_productos_marca23" name="image" id="img_productos_marca23" >
+        </div>
+        {% end %}
+        <img id="{{ site.name }}_productos_marca23" src="{{ read_image(site.name + '_productos_marca23', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_productos_marca23',500) }}'" class="banner_uno_list hidden" alt="item">
+    </div>
+
+     <div class="col-md-12">
+        <div align="center" class=" hidden listado_productos_marca23 texto-one marcas-movil {{editabletext}}" text-id="{{ site.name + '_marca23' }}"> {{ read_text(site.name +  '_marca23') }}</div>
+    </div>
+    <!--END NYAH-->
+    <!--FIBRA EYEWEAR-->
+    <div class="mobile banner-movil hidden listado_productos_marca24" style="background:url('{{ read_image(site.name + '_productos_marca24',500) }}'); height:300px; background-size:cover; margin-top: -1px;  filter: grayscale(0%) brightness(90%); -webkit-filter: grayscale(0%) brightness(90%); -moz-filter: grayscale(0%) brightness(90%); -ms-filter: grayscale(0%) brightness(90%);-o-filter: grayscale(0%) brightness(90%); background-position:center; margin-bottom: 40px;" data-img-width="1600" data-img-height="1064" data-diff="100">
+        {% if is_admin %}
+        <div class="image-upload part1 lapiz visible-movil">
+            <label for="img_productos_marca24">
+                <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+            </label>
+            <input type="file" class="editableimage" image-id="{{ site.name }}_productos_marca24" name="image" id="img_productos_marca24" >
+        </div>
+        {% end %}
+        <img id="{{ site.name }}_productos_marca24" src="{{ read_image(site.name + '_productos_marca24', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_productos_marca24',500) }}'" class="banner_uno_list hidden" alt="item">
+    </div>
+
+     <div class="col-md-12">
+        <div align="center" class=" hidden listado_productos_marca24 texto-one marcas-movil {{editabletext}}" text-id="{{ site.name + '_marca24' }}"> {{ read_text(site.name +  '_marca24') }}</div>
+    </div>
+    <!--END FIBRA EYEWEAR-->
 </div>
 </section>
 </div>
