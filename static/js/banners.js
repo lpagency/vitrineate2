@@ -73,5 +73,17 @@ function banners(tag)
 		case "srvittorio":
 			$(".listado_productos_marca20").removeClass("hidden");
 		break;
+		case "zelk":
+			$(".listado_productos_marca21").removeClass("hidden");
+		break;
+		case "torosanto":
+			$(".listado_productos_marca22").removeClass("hidden");
+		break;
+		case "nyah":
+			$(".listado_productos_marca23").removeClass("hidden");
+		break;
+		case "fibra_eyewear":
+			$(".listado_productos_marca24").removeClass("hidden");
+		break;
 	}
 }
