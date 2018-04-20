@@ -242,6 +242,21 @@ ul.nav.navbar-nav.navbar-right.buscador-header
     margin: 0;
     padding: 0;
     top: 47px;
+    max-height: 300px;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar
+{
+    -webkit-appearance: none;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb
+{
+    border-radius: 5px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 
 .w3-dropdown-content a
@@ -282,19 +297,6 @@ ul.nav.navbar-nav.navbar-right.buscador-header
 
 @media (max-width: 991px)
 {
-    ::-webkit-scrollbar
-    {
-      -webkit-appearance: none;
-      width: 10px;
-    }
-
-    ::-webkit-scrollbar-thumb
-    {
-      border-radius: 5px;
-      background-color: rgba(0,0,0,.5);
-      -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
-    }
-
     div.navbar-collapse.collapse
     {
         display: none!important;
@@ -371,8 +373,10 @@ ul.nav.navbar-nav.navbar-right.buscador-header
         width: 100%;
     }
 }
-@media (max-width: 320px) {
-    a.textos-movil-menu {
+@media (max-width: 320px)
+{
+    a.textos-movil-menu
+    {
         font-weight: bold;
         text-align: left;
         font-size: 9px;
