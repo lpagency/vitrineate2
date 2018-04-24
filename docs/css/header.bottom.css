@@ -322,6 +322,8 @@ ul.nav.navbar-nav.navbar-right.buscador-header
     .w3-dropdown-content
     {
         position: initial;
+        max-height: none;
+        overflow: inherit;
     }
 
     .w3-dropdown-hover
