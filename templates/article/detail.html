@@ -1,100 +1,95 @@
 {% extends "../base.html" %}
 
 {% block title %}
-{{ site.name }}
+    {{ site.name }}
 {% end %}
 
 {% block header %}
- {% include '../home/header.html' %}
+    {% include '../home/header.html' %}
 {% end %}
 
 
 {% block css %}
-<link href="https://fonts.googleapis.com/css?family=Lato" type="text/css"/>
-{% if is_admin %}
-<link rel="stylesheet" href="{{ site_base }}/static/css/textbox_io.css" type="text/css">
-<link rel="stylesheet" href="{{ site_base }}/static/css/detalle_articulos.css?83">
-<script type="text/javascript" src="{{ site_base }}/static/js/article/detail.js"></script>
-{% end %}
-<style type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" type="text/css"/>
+    {% if is_admin %}
+        <link rel="stylesheet" href="{{ site_base }}/static/css/textbox_io.css" type="text/css">
+        <link rel="stylesheet" href="{{ site_base }}/static/css/detalle_articulos.css?83">
+        <script type="text/javascript" src="{{ site_base }}/static/js/article/detail.js"></script>
+    {% end %}
+    <style type="text/css">
 
-      @media screen and (max-width: 700px){
-        .ol{
-          visibility: hidden;
+        @media screen and (max-width: 700px)
+        {
+            .ol
+            {
+                visibility: hidden;
+            }
+
+            .franja-color
+            {
+                background: transparent;
+            }
         }
 
-        .franja-color{
-            background: transparent;
-        }
-    }
-
-</style>
+    </style>
 {% end %}
 
 {% block javascript %}
-<script type="text/javascript" src="{{ site_base }}/static/js/dermatologia.js"></script>
-<script type="text/javascript" src="{{ site_base }}/static/js/products.js?83"></script>
-<script type="text/javascript" src="{{ site_base }}/static/js/cart.config.js?83"></script>
+    <script type="text/javascript" src="{{ site_base }}/static/js/dermatologia.js"></script>
+    <script type="text/javascript" src="{{ site_base }}/static/js/products.js?83"></script>
+    <script type="text/javascript" src="{{ site_base }}/static/js/cart.config.js?83"></script>
 {% end %}
 
 {% block body %}
-<!-- registration -->
-<div class="container min contenido-index container-minimo">
-    <section>
-        <div class="banner-movil-det-art mobile-det" style="background:url('{{ article['thumb_500'] }}'); height:400px; background-position:
-      center; background-size:cover; margin-top: -1px;">
-            <img class="fondo-articulo hidden" src="{{ article['thumb_500'] }}" class="img-responsive lazy" data-original="{{ article['url'] }}" alt="item">
-        </div>
-    </section>
-</div>
-
-<div id="first-page-scroll" class="container min cart-list productlist">
-    <div class="col-sm-12 blog-content">
-        <input type="hidden" id="article-description-ajax-url" value="{{ site.url }}article/update-description">
-        <input type="hidden" id="article-content-id" value="{{article['id']}}">
-        <div class="col-sm-12 blog-content" style="margin-bottom: 30px;">
-            <h1 class="text-center h1-art til-ban">
-                {{ article["title"] }}
-            </h1>
-            <div class="post-date" style="text-align:center;">
-                <br>
+    <!-- registration -->
+    <div class="container min contenido-index container-minimo">
+        <section>
+            <div class="banner-movil-det-art mobile-det" style="background:url('{{ article['thumb_500'] }}'); height:400px; background-position: center; background-size:cover; margin-top: -1px;">
+                <img class="fondo-articulo hidden" src="{{ article['thumb_500'] }}" class="img-responsive lazy" data-original="{{ article['url'] }}" alt="item">
             </div>
-        </div>
+        </section>
 
-        <div class="content articulo-text" style="text-align:center; float:left; width: 100%">
-            <div class="col-sm-12 especial">
-                <h2 class="h2-art til-ban-2">
-                    {{ article["caption"] }}
-                </h2>
-            </div>
-
-            <div align="center">
-                <div class="col-md-12 content-picture">
+        <div id="first-page-scroll" class="container min cart-list productlist">
+            <div class="col-sm-12 blog-content">
+                <input type="hidden" id="article-description-ajax-url" value="{{ site.url }}article/update-description">
+                <input type="hidden" id="article-content-id" value="{{article['id']}}">
+                <div class="col-sm-12 blog-content">
+                    <h1 class="text-center h1-art til-ban">
+                        {{ article["title"] }}
+                    </h1>
                 </div>
             </div>
 
-            <div align="center">
-                <div class="col-sm-12">
-                    <div class="">
-                        <div id="description" class="p-art dan">
-                            {{ article["description"] }}
+            <div class="content articulo-text" style="text-align:center; float:left; width: 100%">
+                <div class="col-sm-12 especial">
+                    <h2 class="h2-art til-ban-2">
+                        {{ article["caption"] }}
+                    </h2>
+                </div>
+
+                <div align="center">
+                    <div class="col-md-12 content-picture">
+                    </div>
+                </div>
+
+                <div align="center">
+                    <div class="col-sm-12">
+                        <div class="">
+                            <div id="description" class="p-art dan">
+                                {{ article["description"] }}
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-12 especial p-art" style="text-align: right;"></div>
+                <div class="col-sm-12 p-art "></div>
             </div>
-            <div class="col-sm-12 especial p-art" style="text-align: right;">
-            </div>
-            <div class="col-sm-12 p-art ">
+        </div>
+        <div class="col-sm-3 blog-sidebar">
+            <div class="widget" style="text-align:left;">
             </div>
         </div>
     </div>
-    <div class="col-sm-3 blog-sidebar">
-        <div class="widget" style="text-align:left;">
-        </div>
-    </div>
 
-</div>
-
-
-{% include '../home/footer.html' %}
+    {% include '../home/footer.html' %}
 {% end %}

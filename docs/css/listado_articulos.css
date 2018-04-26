@@ -243,12 +243,11 @@
 
 .til-ban
 {
-    position: absolute;
+    position: relative;
     bottom: 0px;
     text-align: center;
     width: 100%;
-    margin-bottom: 89px;
-    color: white;
+    color: black;
     font-weight: 400;
     font-size: 30px;
     left: 0;
@@ -367,6 +366,11 @@ a.lok
         height: 397px;
         width: 100%;
         left: 0px;
+    }
+
+    .dan
+    {
+        text-align: justify;
     }
 
     .tres
@@ -494,13 +498,6 @@ a.lok
 
     .til-ban
     {
-        position: absolute;
-        bottom: 0px;
-        text-align: center;
-        width: 80%;
-        margin-bottom: 57px;
-        color: white;
-        font-weight: 400;
         font-size: 25px;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
