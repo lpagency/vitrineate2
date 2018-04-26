@@ -776,6 +776,7 @@ hr.detalle
     .banner-movil
     {
         height: 95px !important;
+        background-size: contain !important;
     }
 
     .descr_prod_detail
