@@ -775,8 +775,8 @@ hr.detalle
 
     .banner-movil
     {
-        height: 95px !important;
-        background-size: contain !important;
+        height: 140px !important;
+        background-size: cover !important;
     }
 
     .descr_prod_detail
@@ -825,6 +825,10 @@ hr.detalle
         margin-top: 12px;
     }
 
+    .banner-movil
+    {
+        height: 125px !important;
+    }
 }
 
 @media (max-width: 360px)
@@ -832,6 +836,11 @@ hr.detalle
     .img_prod_little
     {
         left: 69px;
+    }
+
+    .banner-movil
+    {
+        height: 120px !important;
     }
 
     .fin
@@ -898,6 +907,11 @@ hr.detalle
     {
         left: -56px;
         top: 24px;
+    }
+
+    .banner-movil
+    {
+        height: 106px !important;
     }
 
     .letrero-sale-detail
