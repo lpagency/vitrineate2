@@ -143,19 +143,6 @@ a:link{
     border: solid 1px #3ae0bc;
 }
 
-.letrero-new {
-    position: relative;
-    left: 0px;
-    top: 3px;
-    font-size: 11px;
-    text-align: center;
-    padding: 2px;
-    color: black;
-    background-color: #d4ff67;
-    width: 60px;
-    border: solid 1px #d4ff67;
-}
-
 .fufi-new{
     top: -20px;
 }
