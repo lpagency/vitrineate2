@@ -909,11 +909,6 @@ hr.detalle
         top: 24px;
     }
 
-    .banner-movil
-    {
-        height: 106px !important;
-    }
-
     .letrero-sale-detail
     {
         left: -5px;
@@ -995,7 +990,7 @@ hr.detalle
 
     .banner-movil
     {
-        height: 75px !important
+        height: 106px !important
     }
 
     .descr_prod_detail
