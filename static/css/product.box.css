@@ -257,6 +257,18 @@ Producto en oferta agotado:
     border: solid 1px red;
 }
 
+.letrero-new
+{
+    position: absolute;
+    font-size: 11px;
+    text-align: center;
+    padding: 2px;
+    width: 60px;
+    color: black;
+    background-color: #d4ff67;
+    border: solid 1px #d4ff67;
+}
+
 .shape
 {
     float: right;
