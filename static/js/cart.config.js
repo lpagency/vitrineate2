@@ -65,7 +65,7 @@ $(document).ready(function()
     var config = {
         'app_public': app_public,
         'base_url': base_url,
-        'products_per_page' : 8,
+        'products_per_page' : 12,
         'tag': tag,
         'ignore_stock': true,
         'infinite_scroll': false,
