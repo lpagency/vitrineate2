@@ -24,6 +24,7 @@ div.image-upload.part1
     width: 100%;
     height: 300px;
     margin-bottom: 25px;
+    background-size: cover !important;
 }
 
 .cuerpo-producto
@@ -776,7 +777,6 @@ hr.detalle
     .banner-movil
     {
         height: 140px !important;
-        background-size: cover !important;
     }
 
     .descr_prod_detail

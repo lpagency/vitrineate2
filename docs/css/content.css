@@ -1,6 +1,6 @@
 .container-minimo
 {
-    min-height: 490px;
+    min-height: 660px;
 }
 
 @media screen and (max-width: 500px)
