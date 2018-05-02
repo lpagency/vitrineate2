@@ -53,19 +53,6 @@
             $(this).addClass('active');
         });
     });
-
-    $(function()
-    {
-        $(window).unload(function()
-        {
-            var scrollPosition = $("div#element").scrollTop();
-            localStorage.setItem("scrollPosition", scrollPosition);
-        });
-        if(localStorage.scrollPosition)
-        {
-            $("div#element").scrollTop(localStorage.getItem("scrollPosition"));
-        }
-    });
 </script>
 
 {% end %}
