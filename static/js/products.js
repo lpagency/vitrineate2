@@ -22,6 +22,11 @@ var setBadges = function(product)
         $(".letrero-new."+product.id).removeClass("hidden");
     }
 
+    if(product.tags.indexOf("oferta") > -1)
+    {
+        $(".letrero-sale."+product.promotion_price).removeClass("hidden");
+    }
+
     if(product.promotion_price == 0)
     {
         $(".producto."+product.id).html("");
