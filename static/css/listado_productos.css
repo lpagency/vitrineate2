@@ -420,14 +420,7 @@ hr.detalle
     {
         position: relative;
         left: -129px;
-        top: 100px;
-    }
-
-    .letrero-sale-detail
-    {
-        width: 40%;
-        left: 9px;
-        top: -68px;
+        top: 55px;
     }
 
     .letrero-new-detail
@@ -724,12 +717,6 @@ hr.detalle
         left: -106px;
     }
 
-    .letrero-sale-detail
-    {
-        left: 9px;
-        top: 0px;
-    }
-
     .variants-container 
     {
         margin-bottom: 50px;
@@ -808,13 +795,6 @@ hr.detalle
 
 @media (max-width: 400px)
 {
-    .letrero-sale-detail 
-    {
-        width: 40%;
-        top: 30px;
-        left: 9px;
-    }
-
     .letreros-detalle
     {
         left: -95px;
@@ -907,11 +887,6 @@ hr.detalle
     {
         left: -56px;
         top: 24px;
-    }
-
-    .letrero-sale-detail
-    {
-        left: -5px;
     }
 
     .brand-color
