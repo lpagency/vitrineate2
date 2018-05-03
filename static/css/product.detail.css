@@ -118,6 +118,20 @@ Imagenes de detalle de producto:
     transition: all 0.5s linear;
 }
 
+.letrero-sale-detail
+{
+    position: relative;
+    left: 0px;
+    font-size: 17px;
+    text-align: center;
+    padding: 2px;
+    color: white;
+    background-color: red;
+    width: 22%;
+    border: solid 1px red;
+    z-index: 1;
+}
+
 @media (max-width: 1024px)
 {
     .fondo-detalle
@@ -129,6 +143,11 @@ Imagenes de detalle de producto:
     .image_little
     {
         left: -8px;
+    }
+
+    .letrero-sale-detail
+    {
+        left: 22px;
     }
 }
 
@@ -143,6 +162,11 @@ Imagenes de detalle de producto:
     {
         left: -12px;
     }
+
+    .letrero-sale-detail
+    {
+        width: 32%;
+    }
 }
 
 @media (max-width: 414px)
@@ -152,6 +176,12 @@ Imagenes de detalle de producto:
     {
         right: 0px;
         height: auto;
+    }
+
+    .letrero-sale-detail
+    {
+        width: 34%;
+        left: 0px;
     }
 
     .img-ppal-movil
@@ -174,7 +204,13 @@ Imagenes de detalle de producto:
 
 @media (max-width: 320px)
 {
-    .img-div {
+    .img-div
+    {
         margin-top: 80px;
+    }
+
+    .letrero-sale-detail
+    {
+        width: 50%;
     }
 }
