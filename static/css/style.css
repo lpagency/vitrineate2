@@ -1044,12 +1044,10 @@ hr.page-contact
     {
         width: 100%;
     }
-
 }
 
 @media (max-width: 1039px)
 {
-
     .bot
     {
         top: -24px;
@@ -1159,7 +1157,6 @@ hr.page-contact
     {
         height: 208px !important;
     }
-
 }
 
 @media (max-width: 800px)
