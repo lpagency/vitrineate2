@@ -139,6 +139,7 @@
                 },
                 onLoad: function(product)
                 {
+                    window.product_tag = product.tags;
                     var mainImage = $("#mainImage");
                     $(".img-container img").hover(function()
                     {
@@ -325,6 +326,22 @@
                         $(".info-producto").removeClass("hidden");
                         $(".main-price").addClass("hidden");
                         $(".promotion-price").addClass("hidden");
+
+                        for(var x = 0; x < window.product_tag.length; x++)
+                        {
+                            if(window.product_tag[x].name.indexOf("tailor_made")> -1)
+                            {
+                                $(".add-to-cart").html("HECHO A MEDIDA");
+                                $(".add-to-cart").attr("data-target","#myModalInfo")
+                                $(".add-to-cart").removeAttr("lp-cart-add");
+
+                                $(document).on("click", ".add-to-cart", function()
+                                {
+                                    $(".sku-prod").val($(".sku-producto-hidden").html());
+                                    $(".nombre-prod").val($(".name_prod_detail").html());
+                                });
+                            }
+                        }
                         $(".add-to-cart").attr("disabled", true);
                     }
 
@@ -356,6 +373,7 @@
                 $('.product-related').ecommerce('product_box', config);
             };
         });
+
     </script>
 
     <script type="text/javascript">

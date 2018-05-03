@@ -54,6 +54,14 @@ var setBadges = function(product)
         $(".add-to-cart."+product.sku).attr("disabled", true);
     }
 
+    if(product.tags.indexOf("tailor_made") > -1)
+    {
+        $(".add-to-cart."+product.sku).html("A MEDIDA");
+        $(".overlay."+product.id).html('<div class="text">A MEDIDA</div>');
+        $(".shape."+product.sku).addClass("hidden");
+        $(".aa."+product.sku).addClass("hidden");
+    }
+
     $.get(base_url
         + "v1/variant/"
         + product.sku
