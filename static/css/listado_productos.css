@@ -489,11 +489,6 @@ hr.detalle
         top: 0px;
     }
 
-    .container-minimo
-    {
-        min-height: 600px;
-    }
-
     input.textos-info
     {
         height: 30px !important;
