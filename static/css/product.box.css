@@ -394,6 +394,11 @@ Producto en oferta agotado:
     {
         font-size: inherit;
     }
+
+    .text:hover
+    {
+        padding: 5px 12px;
+    }
 }
 
 @media (max-width: 630px)
@@ -482,5 +487,10 @@ Producto en oferta agotado:
     .aa
     {
         left: 60px;
+    }
+
+    .text:hover
+    {
+        font-size: 12px;
     }
 }
