@@ -1,72 +1,77 @@
 {% extends "../base.html" %}
 
 {% block title %}
-{{ site.name }}
+    {{ site.name }}
 {% end %}
 
 {% block header %}
-{% include '../home/header.html' %}
+    {% include '../home/header.html' %}
 {% end %}
 {% block css %}
 
-{% if is_admin %}
+    {% if is_admin %}
+    {% end %}
+    <link rel="stylesheet" type="text/css" href="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.css?22">
+    <style type="text/css">
+        @media (max-width: 768px)
+        {
+            .contenido-index
+            {
+                margin-top: 15%;
+            }
+        }
+
+        @media (max-width: 414px)
+        {
+            .contenido-index
+            {
+                margin-top: 35%;
+            }
+        }
+
+        @media (max-width: 375px)
+        {
+            .contenido-index
+            {
+                margin-top: 45%;
+            }
+        }
+
+        @media (max-width: 320px)
+        {
+            .contenido-index
+            {
+                margin-top: 41%;
+            }
+        }
+    </style>
 {% end %}
-<link rel="stylesheet" type="text/css" href="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.css?99">
-<style type="text/css">
-    @media (max-width: 768px){
-        .contenido-index {
-            margin-top: 15%;
-        }
-    }
-
-    @media (max-width: 414px){
-        .contenido-index {
-            margin-top: 35%;
-        }
-    }
-
-    @media (max-width: 375px){
-        .contenido-index {
-            margin-top: 45%;
-        }
-    }
-    @media (max-width: 320px){
-        .contenido-index {
-            margin-top: 41%;
-        }
-    }
-</style>
-{% end %}
-
 
 {% block javascript %}
-<script type="text/javascript" src="{{ site_base }}/static/js/products.js?99"></script>
-<script type="text/javascript" src="{{ site_base }}/static/js/cart.config.js?99"></script>
-<script type="text/javascript" src="{{ site_base }}/static/js/banners.js?99"></script>
-<script type="text/javascript">
-    $(document).ready(function()
-    {
-    //
-        $(document).on("click", ".subcateg", function(ev){
-            // ev.preventDefault();
-            $(".subcateg").removeClass('active');
-            $(this).addClass('active');
+    <script type="text/javascript" src="{{ site_base }}/static/js/products.js?99"></script>
+    <script type="text/javascript" src="{{ site_base }}/static/js/cart.config.js?99"></script>
+    <script type="text/javascript" src="{{ site_base }}/static/js/banners.js?99"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $(document).on("click", ".subcateg", function(ev)
+            {
+                $(".subcateg").removeClass('active');
+                $(this).addClass('active');
+            });
         });
-    });
-</script>
-
+    </script>
 {% end %}
 
 {% block body %}
 
-{% if is_admin %}
-    {% set editabletext = 'editabletext' %}
-{% else %}
-    {% set editabletext = '' %}
-{% end %}
+    {% if is_admin %}
+        {% set editabletext = 'editabletext' %}
+    {% else %}
+        {% set editabletext = '' %}
+    {% end %}
 
-
-<!-- *contenido* -->
+    <!-- *contenido* -->
     <body id="lapimport">
         <div class="container min contenido-index">
             <section>
@@ -494,6 +499,42 @@
                         <div align="center" class=" hidden listado_productos_marca24 texto-one marcas-movil {{editabletext}}" text-id="{{ site.name + '_marca24' }}"> {{ read_text(site.name +  '_marca24') }}</div>
                     </div>
                 <!--END FIBRA EYEWEAR-->
+
+                <!--SUNDARA ACCESORIOS-->
+                    <div class="mobile banner-movil hidden banner-listado-productos listado_productos_marca25" style="background:url('{{ read_image(site.name + '_productos_marca25',500) }}');" data-img-width="1600" data-img-height="1064" data-diff="100">
+                        {% if is_admin %}
+                            <div class="image-upload part1 lapiz visible-movil">
+                                <label for="img_productos_marca25">
+                                    <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+                                </label>
+                                <input type="file" class="editableimage" image-id="{{ site.name }}_productos_marca25" name="image" id="img_productos_marca25" >
+                            </div>
+                        {% end %}
+                        <img id="{{ site.name }}_productos_marca25" src="{{ read_image(site.name + '_productos_marca25', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_productos_marca25',500) }}'" class="banner_uno_list hidden" alt="item">
+                    </div>
+
+                    <div class="col-md-12">
+                        <div align="center" class=" hidden listado_productos_marca25 texto-one marcas-movil {{editabletext}}" text-id="{{ site.name + '_marca25' }}"> {{ read_text(site.name +  '_marca25') }}</div>
+                    </div>
+                <!--END SUNDARA ACCESORIOS-->
+
+                <!--LOLALOLA SHOES-->
+                    <div class="mobile banner-movil hidden banner-listado-productos listado_productos_marca26" style="background:url('{{ read_image(site.name + '_productos_marca26',500) }}');" data-img-width="1600" data-img-height="1064" data-diff="100">
+                        {% if is_admin %}
+                            <div class="image-upload part1 lapiz visible-movil">
+                                <label for="img_productos_marca26">
+                                    <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+                                </label>
+                                <input type="file" class="editableimage" image-id="{{ site.name }}_productos_marca26" name="image" id="img_productos_marca26" >
+                            </div>
+                        {% end %}
+                        <img id="{{ site.name }}_productos_marca26" src="{{ read_image(site.name + '_productos_marca26', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_productos_marca26',500) }}'" class="banner_uno_list hidden" alt="item">
+                    </div>
+
+                    <div class="col-md-12">
+                        <div align="center" class=" hidden listado_productos_marca26 texto-one marcas-movil {{editabletext}}" text-id="{{ site.name + '_marca26' }}"> {{ read_text(site.name +  '_marca26') }}</div>
+                    </div>
+                <!--END LOLALOLA SHOES-->
             </section>
         </div>
 
