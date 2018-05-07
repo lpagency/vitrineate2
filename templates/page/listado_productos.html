@@ -1,75 +1,83 @@
 {% extends "../base.html" %}
 
 {% block title %}
-{{ site.name }}
+    {{ site.name }}
 {% end %}
 
 {% block header %}
-{% include '../home/header.html' %}
+    {% include '../home/header.html' %}
 {% end %}
 {% block css %}
 
-{% if is_admin %}
+    {% if is_admin %}
+    {% end %}
+    <link rel="stylesheet" type="text/css" href="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.css?22">
+    <style type="text/css">
+        @media (max-width: 768px)
+        {
+            .contenido-index
+            {
+                margin-top: 15%;
+            }
+        }
+
+        @media (max-width: 414px)
+        {
+            .contenido-index
+            {
+                margin-top: 35%;
+            }
+        }
+
+        @media (max-width: 375px)
+        {
+            .contenido-index
+            {
+                margin-top: 45%;
+            }
+        }
+
+        @media (max-width: 320px)
+        {
+            .contenido-index
+            {
+                margin-top: 41%;
+            }
+        }
+    </style>
 {% end %}
-<link rel="stylesheet" type="text/css" href="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.css?22">
-<style type="text/css">
-    @media (max-width: 768px){
-        .contenido-index {
-            margin-top: 15%;
-        }
-    }
-
-    @media (max-width: 414px){
-        .contenido-index {
-            margin-top: 35%;
-        }
-    }
-
-    @media (max-width: 375px){
-        .contenido-index {
-            margin-top: 45%;
-        }
-    }
-    @media (max-width: 320px){
-        .contenido-index {
-            margin-top: 41%;
-        }
-    }
-</style>
-{% end %}
-
 
 {% block javascript %}
-<script type="text/javascript" src="{{ site_base }}/static/js/products.js?99"></script>
-<script type="text/javascript" src="{{ site_base }}/static/js/cart.config.js?99"></script>
-<script type="text/javascript" src="{{ site_base }}/static/js/banners.js?99"></script>
-<script type="text/javascript">
-    $(document).ready(function()
-    {
-    //
-        $(document).on("click", ".subcateg", function(ev){
-            // ev.preventDefault();
-            $(".subcateg").removeClass('active');
-            $(this).addClass('active');
+    <script type="text/javascript" src="{{ site_base }}/static/js/products.js?99"></script>
+    <script type="text/javascript" src="{{ site_base }}/static/js/cart.config.js?99"></script>
+    <script type="text/javascript" src="{{ site_base }}/static/js/banners.js?99"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $(document).on("click", ".subcateg", function(ev)
+            {
+                $(".subcateg").removeClass('active');
+                $(this).addClass('active');
+            });
         });
-    });
-</script>
-
+    </script>
 {% end %}
 
 {% block body %}
 
-{% if is_admin %}
-    {% set editabletext = 'editabletext' %}
-{% else %}
-    {% set editabletext = '' %}
-{% end %}
+    {% if is_admin %}
+        {% set editabletext = 'editabletext' %}
+    {% else %}
+        {% set editabletext = '' %}
+    {% end %}
 
-
-<!-- *contenido* -->
+    <!-- *contenido* -->
     <body id="lapimport">
         <div class="container min contenido-index">
             <section>
+                <!--COMENTARIO PARA LINK-->
+                <div class="hidden">Ven a conocer nuestros productos!</div>
+                <!--END COMENTARIO PARA LINK-->
                 <!--ROSARIO SCARINI-->
                     <div class="mobile banner-movil hidden banner-listado-productos listado_productos_marca1" style="background:url('{{ read_image(site.name + '_productos_marca1',500) }}');" data-img-width="1600" data-img-height="1064" data-diff="100">
                         {% if is_admin %}
