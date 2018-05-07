@@ -48,9 +48,9 @@
 {% end %}
 
 {% block javascript %}
-    <script type="text/javascript" src="{{ site_base }}/static/js/products.js?99"></script>
-    <script type="text/javascript" src="{{ site_base }}/static/js/cart.config.js?99"></script>
-    <script type="text/javascript" src="{{ site_base }}/static/js/banners.js?99"></script>
+    <script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/products.js?99"></script>
+    <script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/cart.config.js?99"></script>
+    <script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/banners.js?99"></script>
     <script type="text/javascript">
         $(document).ready(function()
         {
@@ -59,6 +59,14 @@
                 $(".subcateg").removeClass('active');
                 $(this).addClass('active');
             });
+        });
+
+        $(window).load(function()
+        {
+            setTimeout(function()
+            {
+                window.scrollTo(0, 0);
+            },1);
         });
     </script>
 {% end %}
