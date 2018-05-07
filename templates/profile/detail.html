@@ -4,17 +4,17 @@
 {% end %}
 {% block css %}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ site_base }}/static/cssbt/style.css?v=5">
+    <link rel="stylesheet" href="{{ site_base }}/{{ nocache_static }}/cssbt/style.css?v=5">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="{{ site_base }}/static/css/profile.css">
+    <link rel="stylesheet" type="text/css" href="{{ site_base }}/{{ nocache_static }}/css/profile.css">
 {% end %}
 {% block header %}
     {% include '../home/inside_header_profile.html' %}
 {% end %}
 
 {% block scripts %}
-<script type="text/javascript" src="{{ site_base }}/static/js/members/detail.js" ></script>
-<script type="text/javascript" src="{{ site_base }}/static/js/profile_contact.js"></script>
+<script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/members/detail.js" ></script>
+<script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/profile_contact.js"></script>
 {% end %}
 {% block body %}
     <div class="container-fluid-profile cart-list productlist" style="text-align:left;">
