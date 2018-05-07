@@ -24,7 +24,7 @@ var setBadges = function(product)
 
     if(product.tags.indexOf("oferta") > -1)
     {
-        $(".letrero-sale."+product.promotion_price).removeClass("hidden");
+        $(".letrero-sale."+product.sku).removeClass("hidden");
     }
 
     if(product.promotion_price == 0)
@@ -35,7 +35,7 @@ var setBadges = function(product)
     }
     else
     {
-        $(".letrero-sale."+product.promotion_price).removeClass("hidden");
+        $(".letrero-sale."+product.sku).removeClass("hidden");
         $(".producto."+product.id).html($(".escondido."+product.id).html());
         $(".sku-prod."+product.sku).html($(".promocion."+product.id).html());
         $(".sku-prod."+product.sku).css("font-weight", "bold");
