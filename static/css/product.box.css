@@ -296,7 +296,6 @@ Producto en oferta agotado:
 
 @media (max-width: 1199px)
 {
-
     .shape
     {
         left: 172px;
@@ -359,7 +358,6 @@ Producto en oferta agotado:
 
 @media (max-width: 767px)
 {
-
     .art-hi
     {
         min-height: 546px;
@@ -396,6 +394,11 @@ Producto en oferta agotado:
     {
         font-size: inherit;
     }
+
+    .text:hover
+    {
+        padding: 5px 12px;
+    }
 }
 
 @media (max-width: 630px)
@@ -418,7 +421,7 @@ Producto en oferta agotado:
 {
     .art-hi
     {
-        min-height: 400px;
+        min-height: 320px;
     }
 
     .shape
@@ -432,10 +435,8 @@ Producto en oferta agotado:
     }
 }
 
-
 @media (max-width: 400px)
 {
-
     .shape
     {
         -webkit-clip-path: polygon(0 0, 100% 85%, 100% 42%, 50% 0);
@@ -443,10 +444,6 @@ Producto en oferta agotado:
         width: 70px;
     }
 
-    .art-hi
-    {
-        min-height: 365px;
-    }
     .aa
     {
         position: absolute;
@@ -486,8 +483,14 @@ Producto en oferta agotado:
     {
         left: 45px;
     }
+
     .aa
     {
         left: 60px;
+    }
+
+    .text:hover
+    {
+        font-size: 12px;
     }
 }
