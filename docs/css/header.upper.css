@@ -9,7 +9,7 @@ category: header
 ```html_example
 <div>
     <div class="col-md-12 col-sm-12 col-xs-12 huincha-header">
-    <div class="editabletext col-md-10 col-md-10 col-xs-10 header-text-huincha" text-id="vitrineate2_head_1">
+    <div class="editabletext col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-md-10 col-md-10 col-xs-10 header-text-huincha" text-id="vitrineate2_head_1">
     <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras<br></p>
     </div>
     <button class="cerrar-huincha">X</button>
@@ -76,6 +76,7 @@ principio del header en movil
 {
     position: relative;
     top: 4px;
+    text-align: center;
 }
 
 .cerrar-huincha
