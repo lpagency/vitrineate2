@@ -299,16 +299,17 @@ img#vitrineate2_img_logo.img-responsive.logo
     }
 }
 
-@media (max-width: 767px)
-{
-}
-
 @media (max-width: 320px)
 {
     input.img-lupa.img-lupa-movil,
     .navbar-header-movil .img-bolsa
     {
         height: 19px;
+    }
+
+    .header-text-huincha
+    {
+        width: 82%;
     }
 
     .navbar-header-movil li.lupa-movil
