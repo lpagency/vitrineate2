@@ -162,6 +162,13 @@ buscador movil
     display: block;
 }
 
+/*TO DO: BORRAR ESTO CUANDO PASE EL CYBER DAY!!*/
+.cyber-day
+{
+    color: red !important;
+}
+/*END*/
+
 .container.min
 {
     width: 1124px;
@@ -307,6 +314,13 @@ ul.nav.navbar-nav.navbar-right.buscador-header
         margin: 0px 0px;
     }
 
+/*TO DO: BORRAR ESTO CUANDO PASE EL CYBER DAY*/
+    .cyber-day
+    {
+        font-size: 12px;
+    }
+/*END*/
+
     div.navbar-collapse.collapse.in
     {
         max-height: 400px;
@@ -367,6 +381,16 @@ ul.nav.navbar-nav.navbar-right.buscador-header
         text-align: left;
     }
 }
+
+/*TO DO: BORRAR ESTO CUANDO PASE EL CYBER DAY*/
+@media (max-width: 414px)
+{
+    .cyber-day
+    {
+        padding-top: 0px !important;
+    }
+}
+/*END*/
 
 @media (max-width: 1199px)
 {
