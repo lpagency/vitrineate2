@@ -109,5 +109,9 @@ function banners(tag)
         case "nicolas_sanchez":
             $(".listado_productos_marca27").removeClass("hidden");
         break;
+
+        case "quemonamaria":
+            $(".listado_productos_marca28").removeClass("hidden");
+        break;
     }
 }
