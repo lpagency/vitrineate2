@@ -113,5 +113,9 @@ function banners(tag)
         case "quemonamaria":
             $(".listado_productos_marca28").removeClass("hidden");
         break;
+
+        case "kantabrya":
+            $(".listado_productos_marca29").removeClass("hidden");
+        break;
     }
 }
