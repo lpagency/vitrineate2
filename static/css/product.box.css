@@ -372,6 +372,7 @@ Producto en oferta agotado:
     .precios-div
     {
         padding-right: 0px;
+        margin-bottom: 5px;
     }
 
     .brand-color
@@ -386,8 +387,7 @@ Producto en oferta agotado:
 
     .btn.add-to-cart
     {
-        font-size: inherit;
-        height: inherit;
+        margin-bottom: 0px;
     }
 
     .btn.add-to-cart:hover
@@ -421,7 +421,7 @@ Producto en oferta agotado:
 {
     .art-hi
     {
-        min-height: 366px;
+        min-height: 350px;
     }
 
     .shape
@@ -437,6 +437,11 @@ Producto en oferta agotado:
 
 @media (max-width: 400px)
 {
+    .art-hi
+    {
+        min-height: 300px;
+    }
+
     .shape
     {
         -webkit-clip-path: polygon(0 0, 100% 85%, 100% 42%, 50% 0);
