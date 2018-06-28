@@ -87,6 +87,8 @@ principio del header en movil
     border: solid 1px;
     top: 2px;
     position: relative;
+    color: white;
+    border-color: white;
 }
 
 .head-logo
