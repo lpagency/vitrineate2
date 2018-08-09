@@ -80,7 +80,14 @@
     <div class="content-body">
         {% block body %}{% end %}
     </div>
-
+    <!-- Password Modal -->
+    <div id="password-modal" class="password-modal">
+        <div class="password-modal-content">
+            <label for="password">Ingrese la contraseña del sitio: </label>
+            <input id="pass" type="password" />
+            <button id="password-enter" >Ingresar</button>
+        </div>
+    </div>
     <!-- Modal -->
     <div align="center">
         <div class="modal fade" id="myModal" role="dialog">
@@ -183,6 +190,12 @@
                     overlay: {
                         locked: false
                     }
+                }
+            });
+            
+            $('#password-enter').on('click', function(){
+                if($('#pass').val() === 'loadingplay1234') {
+                    $('#password-modal').hide();
                 }
             });
         });
